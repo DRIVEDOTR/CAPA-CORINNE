@@ -1,0 +1,709 @@
+{
+  "title": "CAPA — carnet d’aromathérapie",
+  "version": "0.1",
+  "date": "2026-10-02",
+  "status": "Base de travail — relecture nécessaire",
+  "scope": "13 fiches issues de 10 entrées botaniques ; pages 3 à 12 du module Hippocratus 35708.",
+  "sources": {
+    "hippocratus": {
+      "title": "Hippocratus — HE les plus utilisées en infectiologie",
+      "url": "https://cours.hippocratus.com/classroom/47137/player/35708",
+      "type": "Cours privé",
+      "date": null,
+      "consulted": "2026-10-02"
+    },
+    "ema-thyme": {
+      "title": "EMA — Thymi aetheroleum, synthèse publique",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/thymi-aetheroleum",
+      "type": "Synthèse institutionnelle",
+      "date": "2020-10-15",
+      "consulted": "2026-10-02"
+    },
+    "ema-thyme-report": {
+      "title": "EMA — Rapport d’évaluation du thym, révision 1",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-report/final-assessment-report-thymus-vulgaris-l-thymus-zygis-l-aetheroleum-revision-1_en.pdf",
+      "type": "Rapport institutionnel",
+      "date": "2020-09-21",
+      "consulted": "2026-10-02"
+    },
+    "ema-clove": {
+      "title": "EMA — Monographie du giroflier, 2011",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-syzygium-aromaticum-l-merill-et-l-m-perry-floris-aetheroleum_en.pdf",
+      "type": "Monographie institutionnelle",
+      "date": "2011-09-13",
+      "consulted": "2026-10-02"
+    },
+    "ema-teatree": {
+      "title": "EMA — Melaleucae aetheroleum, synthèse publique",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/melaleucae-aetheroleum",
+      "type": "Synthèse institutionnelle",
+      "date": "2017-03-09",
+      "consulted": "2026-10-02"
+    },
+    "anses-melaleuca": {
+      "title": "Anses — Melaleuca par voie orale, Vigil’Anses, juin 2021",
+      "url": "https://vigilanses.anses.fr/sites/default/files/VigilAnsesN14_Juin2021_0.pdf",
+      "type": "Toxicovigilance",
+      "date": "2021-06",
+      "consulted": "2026-10-02"
+    },
+    "anses-melaleuca-suite": {
+      "title": "Anses — Melaleuca : vigilance et conservation, juin 2021",
+      "url": "https://vigilanses.anses.fr/sites/default/files/VigilAnsesN14_Juin2021_1.pdf",
+      "type": "Toxicovigilance",
+      "date": "2021-06",
+      "consulted": "2026-10-02"
+    },
+    "ema-cinnamon-index": {
+      "title": "EMA — Cinnamomi corticis aetheroleum, notice documentaire",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/cinnamomi-corticis-aetheroleum",
+      "type": "Identification et inventaire documentaire",
+      "date": null,
+      "consulted": "2026-10-02"
+    }
+  },
+  "oils": [
+    {
+      "id": "tea-tree",
+      "name": "Arbre à thé · tea tree",
+      "botanical": "Melaleuca alternifolia",
+      "aliases": [
+        "Tea-tree",
+        "Tea tree",
+        "Arbre à thé"
+      ],
+      "family": "Myrtaceae",
+      "part": "Feuilles",
+      "chemotype": null,
+      "components": [
+        "Terpinène-4-ol",
+        "Alpha-terpinéol",
+        "1,8-cinéole"
+      ],
+      "domains": [
+        "Peau",
+        "Bucco-dentaire",
+        "ORL",
+        "Digestif",
+        "Génital"
+      ],
+      "courseSummary": "Le cours rapporte des usages infectieux variés. Les indications ORL, digestives et génitales ne sont pas assimilées aux usages traditionnels limités de la synthèse EMA.",
+      "coursePage": 12,
+      "contraindications": [],
+      "precautions": [
+        {
+          "text": "L’Anses déconseille la consommation orale de ces HE de Melaleuca aux enfants et aux femmes enceintes ou allaitantes.",
+          "source": "anses-melaleuca"
+        },
+        {
+          "text": "La synthèse EMA concerne certains usages cutanés ou buccaux chez l’adulte et l’adolescent de plus de 12 ans ; elle ne justifie pas l’ingestion.",
+          "source": "ema-teatree"
+        },
+        {
+          "text": "Conservation au frais et à l’obscurité recommandée par l’Anses pour limiter l’altération de l’HE.",
+          "source": "anses-melaleuca-suite"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Irritation, brûlure, rougeur, gonflement et réactions allergiques ont été rapportés.",
+          "source": "ema-teatree"
+        }
+      ],
+      "interactions": [],
+      "evidence": [
+        {
+          "text": "L’EMA retient un usage traditionnel pour certaines petites lésions cutanées et inflammations buccales ; les essais ne suffisent pas à établir un usage clinique bien démontré.",
+          "source": "ema-teatree"
+        }
+      ],
+      "reviewNotes": [
+        "La présentation rassurante du cours est incomplète au regard des effets indésirables décrits par l’EMA.",
+        "Les limites d’âge sont liées aux préparations et voies décrites ; ce ne sont pas des autorisations générales."
+      ],
+      "sourceIds": [
+        "hippocratus",
+        "ema-teatree",
+        "anses-melaleuca",
+        "anses-melaleuca-suite"
+      ],
+      "status": "partial",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "cannelle-ceylan-ecorce",
+      "name": "Cannelle de Ceylan · écorce",
+      "botanical": "Cinnamomum verum",
+      "aliases": [
+        "Cinnamomum zeylanicum",
+        "Cannelle écorce"
+      ],
+      "family": "Lauraceae",
+      "part": "Écorce",
+      "chemotype": null,
+      "components": [
+        "Cinnamaldéhyde"
+      ],
+      "domains": [
+        "Digestif",
+        "ORL",
+        "Urinaire",
+        "Génital"
+      ],
+      "courseSummary": "Le cours la classe parmi les HE anti-infectieuses et cite plusieurs sphères d’application. Ces mentions ne constituent pas des indications cliniques validées dans cette fiche.",
+      "coursePage": 3,
+      "contraindications": [
+        {
+          "text": "Le cours exclut l’emploi chez l’enfant et pendant la grossesse, sans définir de seuil d’âge.",
+          "source": "hippocratus"
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Le cours proscrit les usages cutanéo-muqueux et en aérosol.",
+          "source": "hippocratus"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Causticité et irritation signalées par le cours.",
+          "source": "hippocratus"
+        }
+      ],
+      "interactions": [],
+      "evidence": [
+        {
+          "text": "La notice EMA identifie C. verum et son synonyme C. zeylanicum. Le contenu de la monographie finale n’a pas été recoupé ici.",
+          "source": "ema-cinnamon-index"
+        }
+      ],
+      "reviewNotes": [
+        "Conserver la distinction écorce / feuille et l’identité botanique.",
+        "Préciser les formulations et voies concernées avant toute recommandation."
+      ],
+      "sourceIds": [
+        "hippocratus",
+        "ema-cinnamon-index"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "citron-pericarpe",
+      "name": "Citron · péricarpe",
+      "botanical": "Citrus limon",
+      "aliases": [],
+      "family": "Rutaceae",
+      "part": "Péricarpe",
+      "chemotype": null,
+      "components": [
+        "Limonène",
+        "Aldéhydes",
+        "Furocoumarines — selon le cours"
+      ],
+      "domains": [
+        "Infectiologie"
+      ],
+      "courseSummary": "Le cours évoque l’emploi du citron dans des associations d’HE. Les autres propriétés rapportées ne sont pas retenues comme indications validées dans cette fiche.",
+      "coursePage": 11,
+      "contraindications": [],
+      "precautions": [
+        {
+          "text": "Le cours signale un risque lié à l’exposition solaire en raison des furocoumarines.",
+          "source": "hippocratus"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Photosensibilisation signalée par le cours.",
+          "source": "hippocratus"
+        }
+      ],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "La page ne précise pas le mode d’obtention. Vérifier s’il s’agit d’une essence exprimée, d’une HE distillée ou d’un produit sans furocoumarines.",
+        "Le risque doit être rattaché au produit, à la voie et à la concentration ; le délai avant exposition reste à documenter."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "giroflier-clou",
+      "name": "Giroflier · clou",
+      "botanical": "Syzygium aromaticum",
+      "aliases": [
+        "Clou de girofle",
+        "Eugenia caryophyllus"
+      ],
+      "family": "Myrtaceae",
+      "part": "Bouton floral",
+      "chemotype": null,
+      "components": [
+        "Eugénol"
+      ],
+      "domains": [
+        "Bucco-dentaire",
+        "ORL"
+      ],
+      "courseSummary": "Le cours rapporte une activité anti-infectieuse et antalgique. Son exemple concernant les otites n’est pas validé par la monographie dentaire consultée.",
+      "coursePage": 4,
+      "contraindications": [
+        {
+          "text": "Hypersensibilité à l’HE ou au baume du Pérou.",
+          "source": "ema-clove"
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Emploi non recommandé avant 18 ans ainsi que pendant la grossesse et l’allaitement, faute de données suffisantes.",
+          "source": "ema-clove"
+        },
+        {
+          "text": "La monographie concerne des médicaments pour usage dentaire ou buccal ; un soulagement dentaire reste temporaire.",
+          "source": "ema-clove"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Irritations des muqueuses et réactions allergiques rapportées.",
+          "source": "ema-clove"
+        }
+      ],
+      "interactions": [
+        {
+          "text": "Le cours signale une interaction avec les anticoagulants et les salicylés ; portée clinique à préciser.",
+          "source": "hippocratus"
+        },
+        {
+          "text": "La monographie ne rapporte pas d’interaction pour les usages qu’elle encadre. Cela ne démontre pas leur absence dans d’autres contextes.",
+          "source": "ema-clove"
+        }
+      ],
+      "evidence": [
+        {
+          "text": "Usage traditionnel pour de petites inflammations buccales et un soulagement temporaire des douleurs de carie.",
+          "source": "ema-clove"
+        }
+      ],
+      "reviewNotes": [
+        "Conserver côte à côte les deux informations sur les interactions : les contextes et niveaux de preuve diffèrent.",
+        "Ne pas déduire une administration dans l’oreille de la mention d’otite."
+      ],
+      "sourceIds": [
+        "hippocratus",
+        "ema-clove"
+      ],
+      "status": "partial",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "marjolaine",
+      "name": "Marjolaine",
+      "botanical": "Origanum majorana",
+      "aliases": [],
+      "family": "Lamiaceae",
+      "part": "Parties aériennes fleuries",
+      "chemotype": null,
+      "components": [
+        "Monoterpènes",
+        "Monoterpénols",
+        "Esters terpéniques"
+      ],
+      "domains": [
+        "Infectiologie"
+      ],
+      "courseSummary": "Le cours décrit des propriétés antispasmodiques et anti-infectieuses. Il ne précise pas d’indication clinique distincte sur cette page.",
+      "coursePage": 9,
+      "contraindications": [],
+      "precautions": [
+        {
+          "text": "Le cours déconseille l’usage pendant la grossesse et chez le jeune enfant, sans seuil d’âge défini.",
+          "source": "hippocratus"
+        }
+      ],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Préciser le profil chimique et les indications avant d’enrichir la fiche.",
+        "Ne pas assimiler la marjolaine à l’origan compact."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "origan-compact",
+      "name": "Origan compact",
+      "botanical": "Origanum compactum",
+      "aliases": [
+        "Origan à inflorescences compactes"
+      ],
+      "family": "Lamiaceae",
+      "part": "Sommités fleuries",
+      "chemotype": null,
+      "components": [
+        "Carvacrol",
+        "Thymol"
+      ],
+      "domains": [
+        "Respiratoire",
+        "Digestif",
+        "Urinaire",
+        "Génital"
+      ],
+      "courseSummary": "Le cours présente cette HE comme riche en phénols et la rattache à plusieurs domaines infectieux. L’efficacité clinique de ces usages reste à examiner.",
+      "coursePage": 6,
+      "contraindications": [
+        {
+          "text": "Le cours exclut l’emploi chez l’enfant et pendant la grossesse, sans seuil d’âge précisé.",
+          "source": "hippocratus"
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Le cours proscrit les usages cutanéo-muqueux et en aérosol.",
+          "source": "hippocratus"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Causticité importante signalée par le cours.",
+          "source": "hippocratus"
+        }
+      ],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Les autres origans cités dans le cours ne sont pas fusionnés avec O. compactum.",
+        "Interactions, allaitement et modalités d’emploi à documenter."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "ravintsara-cineole",
+      "name": "Ravintsara · cinéole",
+      "botanical": "Cinnamomum camphora",
+      "aliases": [],
+      "family": "Lauraceae",
+      "part": "Feuilles",
+      "chemotype": "1,8-cinéole",
+      "components": [
+        "1,8-cinéole",
+        "Alpha-terpinéol",
+        "Terpinène-4-ol",
+        "Monoterpènes"
+      ],
+      "domains": [
+        "ORL",
+        "Respiratoire"
+      ],
+      "courseSummary": "Le cours cite des usages ORL et broncho-pulmonaires, avec des propriétés antivirales et expectorantes rapportées. Leur portée clinique n’a pas été vérifiée dans ce lot.",
+      "coursePage": 10,
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "La page ne documente pas les contre-indications et effets indésirables : cela ne prouve pas leur absence.",
+        "Conserver le chémotype et vérifier la composition du produit ; ne pas généraliser à toutes les HE de C. camphora.",
+        "Pédiatrie, grossesse, allaitement, voies et interactions restent à documenter."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "sarriette-montagnes",
+      "name": "Sarriette des montagnes",
+      "botanical": "Satureja montana",
+      "aliases": [],
+      "family": "Lamiaceae",
+      "part": "Sommités fleuries",
+      "chemotype": null,
+      "components": [
+        "Carvacrol",
+        "Thymol",
+        "Monoterpènes"
+      ],
+      "domains": [
+        "Respiratoire",
+        "Digestif",
+        "Urinaire",
+        "Génital"
+      ],
+      "courseSummary": "Le cours rapproche cette HE des HE phénolées et cite des applications respiratoires, intestinales et uro-génitales. Ces usages restent à vérifier.",
+      "coursePage": 7,
+      "contraindications": [
+        {
+          "text": "Le cours exclut l’emploi chez l’enfant et pendant la grossesse, sans seuil d’âge précisé.",
+          "source": "hippocratus"
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Le cours proscrit les usages cutanéo-muqueux et en aérosol.",
+          "source": "hippocratus"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Causticité importante signalée par le cours.",
+          "source": "hippocratus"
+        }
+      ],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Interactions et précautions d’emploi à recouper avec une source indépendante."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "serpolet",
+      "name": "Serpolet",
+      "botanical": "Thymus serpyllum",
+      "aliases": [
+        "Thym sauvage"
+      ],
+      "family": "Lamiaceae",
+      "part": "Parties aériennes fleuries",
+      "chemotype": null,
+      "components": [
+        "Monoterpènes",
+        "Monoterpénols",
+        "Phénols — faible proportion selon le cours"
+      ],
+      "domains": [
+        "Respiratoire"
+      ],
+      "courseSummary": "Le cours cite la toux et plusieurs affections respiratoires, dont la coqueluche et l’asthme. Ces mentions sont des pistes de lecture, pas des traitements validés ici.",
+      "coursePage": 8,
+      "contraindications": [],
+      "precautions": [
+        {
+          "text": "Grossesse déconseillée dans le cours.",
+          "source": "hippocratus"
+        }
+      ],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "L’affirmation de bonne tolérance pédiatrique n’indique ni âge, ni voie, ni dose ; elle ne permet pas d’autoriser l’usage chez l’enfant.",
+        "Ne pas appliquer à T. serpyllum les conclusions EMA relatives à T. vulgaris / T. zygis."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "thym-carvacrol",
+      "name": "Thym · carvacrol",
+      "botanical": "Thymus vulgaris",
+      "aliases": [],
+      "family": "Lamiaceae",
+      "part": "Parties aériennes fleuries",
+      "chemotype": "carvacrol",
+      "components": [
+        "Carvacrol"
+      ],
+      "domains": [
+        "Respiratoire",
+        "Digestif",
+        "Urinaire"
+      ],
+      "courseSummary": "Le cours distingue les chémotypes phénolés et ceux à alcools monoterpéniques. Les usages cités doivent rester rattachés au chémotype et à la préparation.",
+      "coursePage": 5,
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "La rubrique de sécurité du cours regroupe quatre chémotypes sans préciser son champ d’application. Ne pas transférer indistinctement toutes ses exclusions à chaque chémotype.",
+        "Les modalités d’emploi restent non renseignées.",
+        "La monographie EMA du thym de type thymol n’est pas extrapolée à ce chémotype."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "thym-linalol",
+      "name": "Thym · linalol",
+      "botanical": "Thymus vulgaris",
+      "aliases": [],
+      "family": "Lamiaceae",
+      "part": "Parties aériennes fleuries",
+      "chemotype": "linalol",
+      "components": [
+        "Linalol"
+      ],
+      "domains": [
+        "Urinaire",
+        "Génital"
+      ],
+      "courseSummary": "Le cours distingue les chémotypes phénolés et ceux à alcools monoterpéniques. Les usages cités doivent rester rattachés au chémotype et à la préparation.",
+      "coursePage": 5,
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "La rubrique de sécurité du cours regroupe quatre chémotypes sans préciser son champ d’application. Ne pas transférer indistinctement toutes ses exclusions à chaque chémotype.",
+        "Les modalités d’emploi restent non renseignées.",
+        "La monographie EMA du thym de type thymol n’est pas extrapolée à ce chémotype."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "thym-thuyanol",
+      "name": "Thym · thuyanol",
+      "botanical": "Thymus vulgaris",
+      "aliases": [],
+      "family": "Lamiaceae",
+      "part": "Parties aériennes fleuries",
+      "chemotype": "thuyanol",
+      "components": [
+        "Thuyanol"
+      ],
+      "domains": [
+        "Urinaire",
+        "Génital"
+      ],
+      "courseSummary": "Le cours distingue les chémotypes phénolés et ceux à alcools monoterpéniques. Les usages cités doivent rester rattachés au chémotype et à la préparation.",
+      "coursePage": 5,
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "La rubrique de sécurité du cours regroupe quatre chémotypes sans préciser son champ d’application. Ne pas transférer indistinctement toutes ses exclusions à chaque chémotype.",
+        "Les modalités d’emploi restent non renseignées.",
+        "La monographie EMA du thym de type thymol n’est pas extrapolée à ce chémotype."
+      ],
+      "sourceIds": [
+        "hippocratus"
+      ],
+      "status": "draft",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    },
+    {
+      "id": "thym-thymol",
+      "name": "Thym · thymol",
+      "botanical": "Thymus vulgaris",
+      "aliases": [],
+      "family": "Lamiaceae",
+      "part": "Parties aériennes fleuries",
+      "chemotype": "thymol",
+      "components": [
+        "Thymol"
+      ],
+      "domains": [
+        "Respiratoire",
+        "Digestif",
+        "Urinaire"
+      ],
+      "courseSummary": "Le cours distingue les chémotypes phénolés et ceux à alcools monoterpéniques. Les usages cités doivent rester rattachés au chémotype et à la préparation.",
+      "coursePage": 5,
+      "contraindications": [
+        {
+          "text": "Hypersensibilité à l’huile de thym.",
+          "source": "ema-thyme"
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Les limites d’âge varient selon la préparation et la voie. Ne pas appliquer sur le visage.",
+          "source": "ema-thyme"
+        },
+        {
+          "text": "Grossesse et allaitement : usage non recommandé faute de données suffisantes.",
+          "source": "ema-thyme-report"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Allergies et irritation cutanée rapportées.",
+          "source": "ema-thyme"
+        }
+      ],
+      "interactions": [],
+      "evidence": [
+        {
+          "text": "Usage traditionnel de préparations définies pour les symptômes de toux et rhume ; preuve clinique insuffisante.",
+          "source": "ema-thyme"
+        },
+        {
+          "text": "Le rapport vise une HE de type thymol conforme à la Pharmacopée, pas tous les chémotypes.",
+          "source": "ema-thyme-report"
+        }
+      ],
+      "reviewNotes": [
+        "La rubrique de sécurité du cours regroupe quatre chémotypes sans préciser son champ d’application. Ne pas transférer indistinctement toutes ses exclusions à chaque chémotype.",
+        "Les modalités d’emploi restent non renseignées."
+      ],
+      "sourceIds": [
+        "hippocratus",
+        "ema-thyme",
+        "ema-thyme-report"
+      ],
+      "status": "partial",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-02",
+      "dosage": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CAPA : carnet documentaire d’aromathérapie de Corinne. Recherche par huile essentielle, composant et usage cité, avec sources et points à relire.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#302c40">
+  <title>CAPA · Carnet d’aromathérapie</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo-capa.jpg">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="data.js" defer></script>
+  <script src="app.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip" href="#search">Aller à la recherche</a>
+  <div class="ambient-background" aria-hidden="true"></div>
+<header class="masthead">
+  <div class="banner-inner">
+    <a class="logo-frame" href="#" aria-label="CAPA, accueil"><img src="assets/logo-capa.jpg" alt="CAPA — Conseils, Aroma, Phyto, Api" width="1290" height="1900"></a>
+    <div class="banner-copy"><p class="eyebrow">LE CARNET D’AROMATHÉRAPIE DE CORINNE</p>
+      <h1 id="title">La nature en essence.</h1>
+      <p class="lead">Retrouver les huiles essentielles,<br>leurs usages et leurs précautions.</p>
+      <div class="banner-bottom"><span class="collection"><strong id="total">13</strong><span>fiches à explorer</span></span><button id="motion-toggle" type="button" aria-pressed="false">Mettre le fond en pause</button></div>
+    </div>
+  </div>
+</header>
+<main>
+<div class="work-note"><strong>Version de travail.</strong> Les usages rapportés dans les cours restent à vérifier. Aucune fiche ne constitue une prescription ; une information manquante ne signifie pas une absence de risque.</div>
+    <section class="search-area" aria-label="Recherche dans les fiches">
+      <div class="search-field"><label for="search">Rechercher dans le carnet</label><div class="input-wrap"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="search" type="search" placeholder="Une huile, une indication citée, un composant…" autocomplete="off"><button id="clear" type="button" hidden>Effacer</button></div></div>
+      <div class="filter-field"><label for="domain">Domaine cité</label><select id="domain"><option value="">Tous les domaines</option></select></div>
+    </section>
+    <p class="search-hint">Essayez « thym linalol », « eugénol », « anticoagulant » ou « grossesse ».</p>
+    <div class="workspace">
+      <aside class="catalog" aria-label="Fiches disponibles"><div class="catalog-heading"><h2>Le répertoire</h2><span id="count" role="status" aria-live="polite"></span></div><div id="results"></div><p class="scope">Premier lot : 10 entrées botaniques, dont 4 chémotypes de thym.</p></aside>
+      <article id="detail" class="detail" aria-label="Détail de la fiche"></article>
+    </div>
+    <footer>CAPA <span>·</span> Synthèses de travail sourcées <span>·</span> Les cours Hippocratus nécessitent votre connexion.</footer>
+  </main>
+  <noscript><p class="no-script">Activez JavaScript pour consulter et rechercher les fiches.</p></noscript>
+</body>
+</html>
