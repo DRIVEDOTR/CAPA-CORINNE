@@ -1,43 +1,38 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CAPA : carnet documentaire d’aromathérapie de Corinne. Recherche par huile essentielle, composant et usage cité, avec sources et points à relire.">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="theme-color" content="#302c40">
-  <title>CAPA · Carnet d’aromathérapie</title>
-  <link rel="icon" type="image/jpeg" href="assets/logo-capa.jpg">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="data.js" defer></script>
-  <script src="app.js?v=3" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Le carnet botanique de Corinne : huiles essentielles, plantes illustrées, usages documentés et précautions, avec leurs sources.">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f4f0fa">
+<title>CAPA · Le carnet botanique de Corinne</title>
+<link rel="icon" type="image/png" href="assets/logo-capa-transparent.png">
+<link rel="stylesheet" href="styles.css?v=6"><script src="data.js?v=6" defer></script><script src="app.js?v=6" defer></script>
 </head>
 <body>
-  <a class="skip" href="#search">Aller à la recherche</a>
-  <div class="ambient-background" aria-hidden="true"></div>
-<header class="masthead">
-  <div class="banner-inner">
-    <a class="logo-frame" href="#" aria-label="CAPA, accueil"><img src="assets/logo-capa.jpg" alt="CAPA — Conseils, Aroma, Phyto, Api" width="1290" height="1900"></a>
-    <div class="banner-copy"><p class="eyebrow">LE CARNET D’AROMATHÉRAPIE DE CORINNE</p>
-      <h1 id="title">La nature en essence.</h1>
-      <p class="lead">Retrouver les huiles essentielles,<br>leurs usages et leurs précautions.</p>
-      <div class="banner-bottom"><span class="collection"><strong id="total">13</strong><span>fiches à explorer</span></span><button id="motion-toggle" type="button" aria-pressed="false">Mettre le fond en pause</button></div>
-    </div>
-  </div>
+<a class="skip" href="#search">Aller à la recherche</a>
+<div class="ambient" aria-hidden="true"><img class="ambient-one" src="assets/plantes/eucalyptus.webp" alt=""><img class="ambient-two" src="assets/plantes/lavande.webp" alt=""></div>
+<header>
+ <div class="topbar wrap"><a class="wordmark" href="#" id="home">CAPA <span>Le carnet de Corinne</span></a><nav aria-label="Navigation principale"><a href="#explorer">Explorer l’herbier</a><button id="motion-toggle" type="button" aria-pressed="false">Mettre l’animation en pause</button></nav></div>
+ <div class="hero wrap">
+  <img class="hero-logo" src="assets/logo-capa-transparent.png" alt="CAPA — Conseils, Aroma, Phyto, Api" width="1024" height="1536">
+  <div class="hero-copy"><p class="eyebrow">L’HERBIER DES HUILES ESSENTIELLES</p><h1>La nature,<br><em>en toute connaissance.</em></h1><p>Un carnet pour explorer les plantes, comprendre leurs usages<br class="desktop-break"> et retrouver les précautions qui comptent.</p><div class="hero-meta"><span><strong id="total">61</strong> fiches à explorer</span><span class="dot">·</span><span>Des repères, des sources, de la curiosité.</span></div></div>
+  <div class="hero-garden" aria-hidden="true"><div class="garden-wash"></div><img class="garden-leaf" src="assets/plantes/eucalyptus.webp" alt="" width="1280" height="1280"><img class="garden-flower" src="assets/plantes/lavande.webp" alt="" width="1280" height="1280"><span class="garden-caption">Au fil des plantes</span></div>
+ </div>
 </header>
-<main>
-<div class="work-note"><strong>Version de travail.</strong> Les usages rapportés dans les cours restent à vérifier. Aucune fiche ne constitue une prescription ; une information manquante ne signifie pas une absence de risque.</div>
-    <section class="search-area" aria-label="Recherche dans les fiches">
-      <div class="search-field"><label for="search">Rechercher dans le carnet</label><div class="input-wrap"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="search" type="search" placeholder="Une huile, une indication citée, un composant…" autocomplete="off"><button id="clear" type="button" hidden>Effacer</button></div></div>
-      <div class="filter-field"><label for="domain">Domaine cité</label><select id="domain"><option value="">Tous les domaines</option></select></div>
-    </section>
-    <p class="search-hint">Essayez « thym linalol », « eugénol », « anticoagulant » ou « grossesse ».</p>
-    <div class="workspace">
-      <aside class="catalog" aria-label="Fiches disponibles"><div class="catalog-heading"><h2>Le répertoire</h2><span id="count" role="status" aria-live="polite"></span></div><div id="results"></div><p class="scope">Premier lot : 10 entrées botaniques, dont 4 chémotypes de thym.</p></aside>
-      <article id="detail" class="detail" aria-label="Détail de la fiche"></article>
-    </div>
-    <footer>CAPA <span>·</span> Synthèses de travail sourcées <span>·</span> Les cours Hippocratus nécessitent votre connexion.</footer>
-  </main>
-  <noscript><p class="no-script">Activez JavaScript pour consulter et rechercher les fiches.</p></noscript>
-</body>
-</html>
+<main class="wrap">
+ <section class="explorer" id="explorer" aria-label="Recherche dans le carnet">
+  <div class="search-row"><div class="search-field"><label for="search">Quelle huile souhaitez-vous explorer ?</label><div class="input-wrap"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input type="search" id="search" placeholder="Lavande, sommeil, précaution, molécule…" autocomplete="off"><button id="clear" type="button" hidden aria-label="Effacer la recherche">Effacer</button></div></div><div class="filter-field"><label for="domain">Par domaine cité</label><select id="domain"><option value="">Tous les domaines</option></select></div></div>
+  <div class="explorer-bottom"><div class="views" role="group" aria-label="Collection affichée"><button type="button" data-view="all" aria-pressed="true">Tout l’herbier</button><button type="button" data-view="new" aria-pressed="false">Les nouveautés <span>48</span></button><button type="button" data-view="favorites" aria-pressed="false">Mes favoris <span id="favorite-count">0</span></button></div><button id="discover" class="discover" type="button"><span aria-hidden="true">✧</span> Découvrir une plante</button></div>
+ </section>
+ <p class="work-note"><span aria-hidden="true">i</span><span><strong>Un carnet pour s’informer.</strong> Les fiches sont à relire et ne constituent pas une prescription. Une information manquante ne signifie pas une absence de risque.</span></p>
+ <div class="risk-filters" role="group" aria-label="Filtrer les vigilances documentées"><span>Une vigilance en particulier ?</span><button type="button" data-risk="" aria-pressed="true">Toutes</button><button type="button" data-risk="skin" aria-pressed="false">✋ Peau</button><button type="button" data-risk="allergy" aria-pressed="false">✳ Allergies</button><button type="button" data-risk="lungs" aria-pressed="false">🫁 Bronches</button><button type="button" data-risk="liver" aria-pressed="false">◈ Foie</button><button type="button" data-risk="kidney" aria-pressed="false">◉ Reins</button><button type="button" data-risk="neuro" aria-pressed="false">🧠 Neurologique</button></div>
+ <details class="course-coverage"><summary>Quelles sources ont déjà été explorées ?</summary><div id="coverage"></div></details>
+ <div class="workspace">
+  <aside class="catalog" id="catalog" aria-label="Fiches disponibles"><div class="catalog-heading"><h2>Votre herbier</h2><span id="count" role="status" aria-live="polite"></span></div><div id="results"></div><p class="catalog-foot">Chaque plante a son histoire.<br>Chaque huile, ses précautions.</p></aside>
+  <article id="detail" class="detail" aria-label="Détail de la fiche"></article>
+ </div>
+ <footer><div><strong>CAPA</strong><span>Le carnet d’aromathérapie de Corinne</span></div><p>Illustrations artistiques générées par IA, à visée décorative ; elles ne permettent pas une identification botanique. Sources médicales accessibles sur chaque fiche. Les cours Hippocratus nécessitent une connexion.</p><a href="#explorer">Revenir à la recherche ↑</a></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p>Activez JavaScript pour rechercher et consulter les fiches de l’herbier.</p></noscript>
+</body></html>

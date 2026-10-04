@@ -1,71 +1,68 @@
 (() => {
-  'use strict';
-  const data = window.CAPA_DATA;
-  const $ = id => document.getElementById(id);
-  const search = $('search'), domain = $('domain'), results = $('results'), detail = $('detail');
-  const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[’'\-·]/g,' ').replace(/\s+/g,' ').trim();
-  const initialId = location.hash.slice(1);
-  let selected = data.oils.some(o => o.id === initialId) ? initialId : 'tea-tree';
-  $('total').textContent = data.oils.length;
-  [...new Set(data.oils.flatMap(o => o.domains))].sort((a,b) => a.localeCompare(b,'fr')).forEach(d => {
-    const option = document.createElement('option'); option.value = d; option.textContent = d; domain.append(option);
-  });
-  function sourceLink(id) {
-    const source = data.sources[id];
-    const label = id === 'hippocratus' ? 'Cours' : id.startsWith('ema') ? 'EMA' : 'Anses';
-    return `<a class="source-link" href="${escape(source.url)}" target="_blank" rel="noopener noreferrer" aria-label="Source : ${escape(source.title)}">${label}</a>`;
-  }
-  function facts(items) {
-    return items.length ? `<ul class="facts">${items.map(f => `<li>${escape(f.text)} ${sourceLink(f.source)}</li>`).join('')}</ul>` : '<p class="unknown">Non renseigné.<small>Les sources exploitées ne permettent pas de conclure à une absence de risque.</small></p>';
-  }
-  const searchable = new Map(data.oils.map(o => [o.id,normalize([o.name,o.botanical,...o.aliases,o.chemotype||'',...o.components,...o.domains,o.courseSummary,...['contraindications','precautions','adverseEffects','interactions','evidence'].flatMap(k=>o[k].map(f=>f.text)),...o.reviewNotes].join(' '))]));
-  function showDetail(oil) {
-    if (!oil) { detail.innerHTML = '<div class="empty-detail"><h2>Aucune fiche correspondante.</h2><p>Essayez un terme plus court ou choisissez tous les domaines.</p></div>'; return; }
-    const partial = oil.status === 'partial';
-    const status = partial ? 'Recoupement partiel · à relire' : 'Synthèse du cours · à relire';
-    detail.innerHTML = `<div class="detail-top">
-      <div class="detail-meta"><span class="label ${partial?'partial':''}">${status}</span><a class="page-ref" href="${escape(data.sources.hippocratus.url)}" target="_blank" rel="noopener noreferrer">Hippocratus · page ${oil.coursePage}</a></div>
-      <h2 tabindex="-1" id="oil-title">${escape(oil.name)}</h2><p class="latin">${escape(oil.botanical)}</p>
-      <dl class="identity"><div><dt>Famille botanique</dt><dd>${escape(oil.family)}</dd></div><div><dt>Partie utilisée</dt><dd>${escape(oil.part)}</dd></div><div><dt>Chémotype</dt><dd>${escape(oil.chemotype||'Non précisé')}</dd></div></dl>
-      </div><div class="detail-body">
-      <section aria-labelledby="components-heading"><h3 id="components-heading">Composants cités dans le cours</h3><div class="chips">${oil.components.map(c=>`<span class="chip">${escape(c)}</span>`).join('')}</div></section>
-      <section class="course-box"><h3>Usages cités · à vérifier</h3><p class="caption">Domaines indexés dans les sources : ${oil.domains.map(escape).join(' · ')}</p><p>${escape(oil.courseSummary)}</p></section>
-      <section class="review"><h3>Points à relire avant utilisation</h3><ul>${oil.reviewNotes.map(n=>`<li>${escape(n)}</li>`).join('')}</ul></section>
-      <section class="safety-grid" aria-label="Informations de sécurité">
-        <section><h3>Contre-indications</h3>${facts(oil.contraindications)}</section><section><h3>Précautions</h3>${facts(oil.precautions)}</section>
-        <section><h3>Effets indésirables</h3>${facts(oil.adverseEffects)}</section><section><h3>Interactions</h3>${facts(oil.interactions)}</section>
-      </section>
-      <section class="evidence"><h3>Ce que les sources permettent de dire</h3>${oil.evidence.length?facts(oil.evidence):'<p class="unknown">Les usages de cette fiche n’ont pas encore fait l’objet d’un recoupement clinique indépendant.</p>'}<p class="caption">Aucune posologie proposée dans cette version. Une monographie concerne une préparation définie et ne s’applique pas automatiquement à tous les produits.</p></section>
-      <section class="sources"><h3>Sources & traçabilité</h3><ol>${oil.sourceIds.map(id=>{const s=data.sources[id];return `<li><a href="${escape(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.title)}</a><span class="source-type">${escape(s.type)}${id==='hippocratus'?` · page ${oil.coursePage} · connexion requise`:s.date?` · ${escape(s.date)}`:''} · consulté le 02/10/2026</span></li>`;}).join('')}</ol></section>
-    </div>`;
-  }
-  function render() {
-    const query = normalize(search.value).split(' ').filter(Boolean);
-    const list = data.oils.filter(o => (!domain.value || o.domains.includes(domain.value)) && query.every(term=>searchable.get(o.id).includes(term)));
-    if (!list.some(o=>o.id===selected)) selected = list[0]?.id || '';
-    try { history.replaceState(null,'',location.pathname+location.search+(selected?'#'+selected:'')); } catch (_) { /* File previews may restrict history. */ }
-    $('count').textContent = `${list.length} fiche${list.length===1?'':'s'}`;
-    $('clear').hidden = !search.value;
-    results.innerHTML = list.length ? list.map(o=>`<button class="oil-item" type="button" data-id="${escape(o.id)}" aria-pressed="${o.id===selected}" aria-controls="detail"><strong>${escape(o.name)}</strong><em>${escape(o.botanical)}</em><small class="${o.status==='partial'?'partial':''}">${o.status==='partial'?'Sources recoupées en partie':'Cours à recouper'}</small></button>`).join('') : '<div class="empty"><strong>Aucun résultat</strong>Effacez un mot ou élargissez le domaine.</div>';
-    showDetail(list.find(o=>o.id===selected));
-  }
-  results.addEventListener('click', event => {
-    const button = event.target.closest('[data-id]'); if (!button) return;
-    selected=button.dataset.id;
-    results.querySelectorAll('[data-id]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.id===selected)));
-    showDetail(data.oils.find(o=>o.id===selected));
-    try { history.replaceState(null,'','#'+selected); } catch (_) { /* File previews may restrict history. */ }
-    if (window.matchMedia('(max-width:740px)').matches) { $('oil-title').focus({preventScroll:true}); detail.scrollIntoView({behavior:'auto',block:'start'}); }
-  });
-  search.addEventListener('input',render); domain.addEventListener('change',render);
-  $('clear').addEventListener('click',()=>{search.value='';render();search.focus();});
-  window.addEventListener('hashchange',()=>{if(data.oils.some(o=>o.id===location.hash.slice(1))){selected=location.hash.slice(1);render();}});
-  const motionButton = $('motion-toggle');
-  motionButton.addEventListener('click', () => {
-    const paused = document.body.classList.toggle('motion-paused');
-    motionButton.setAttribute('aria-pressed', String(paused));
-    motionButton.textContent = paused ? 'Animer le fond' : 'Mettre le fond en pause';
-  });
-  render();
+'use strict';
+const data=window.CAPA_DATA, $=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=v=>String(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[’'\-·×]/g,' ').replace(/\s+/g,' ').trim();
+const search=$('search'),domain=$('domain'),results=$('results'),detail=$('detail');
+const oils=new Map(data.oils.map(o=>[o.id,o]));
+let selected=oils.has(location.hash.slice(1))?location.hash.slice(1):'lavande-vraie',view='all',risk='',timer;
+let favorites=new Set();
+try { const saved=JSON.parse(localStorage.getItem('capa-favorites')||'[]'); if(Array.isArray(saved))favorites=new Set(saved.filter(id=>oils.has(id))); } catch(_) {}
+function announce(text){$('toast').textContent=text;$('toast').classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>$('toast').classList.remove('visible'),2500);}
+function saveFavorites(){try{localStorage.setItem('capa-favorites',JSON.stringify([...favorites]));return true;}catch(_){return false;}}
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+function setMotion(paused){document.body.classList.toggle('motion-paused',paused);$('motion-toggle').setAttribute('aria-pressed',String(paused));$('motion-toggle').textContent=paused?'Reprendre l’animation':'Mettre l’animation en pause';}
+try{setMotion(localStorage.getItem('capa-motion-paused')==='true');}catch(_){}
+$('motion-toggle').addEventListener('click',()=>{const paused=!document.body.classList.contains('motion-paused');setMotion(paused);try{localStorage.setItem('capa-motion-paused',String(paused));}catch(_){}});
+$('total').textContent=data.oils.length;
+$('coverage').innerHTML=`<p>${esc(data.coverage?.note||'Inventaire en cours.')}</p><ul>${(data.coverage?.courses||[]).map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title)}</a> · ${esc(c.pagesRead)} · ${esc(c.status)}</li>`).join('')}</ul>`;
+[...new Set(data.oils.flatMap(o=>o.domains))].sort((a,b)=>a.localeCompare(b,'fr')).forEach(d=>{const option=document.createElement('option');option.value=d;option.textContent=d;domain.append(option);});
+const searchable=new Map(data.oils.map(o=>[o.id,norm([o.name,o.botanical,...o.aliases,o.chemotype||'',...o.components,...o.domains,o.courseSummary,...['contraindications','precautions','adverseEffects','interactions','evidence'].flatMap(k=>o[k].map(f=>f.text)),...o.reviewNotes].join(' '))]));
+function sourceLink(id,page){const s=data.sources[id];return s?`<a class="source-link" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" aria-label="Source : ${esc(s.title)}${page?' · page '+esc(page):''}">${id.startsWith('hippocratus')?'Cours':id.startsWith('ema')?'EMA':id.startsWith('kew')?'Kew':id.startsWith('anses')?'Anses':'Source'}${page?' · p. '+esc(page):''} ↗</a>`:'';}
+function facts(items){return items.length?`<ul class="facts">${items.map(f=>`<li>${esc(f.text)} ${sourceLink(f.source,f.page)}</li>`).join('')}</ul>`:'<p class="unknown">À documenter.<small>Une information manquante ne signifie pas une absence de risque.</small></p>';}
+function status(o){return o.status==='institutional'?'Fiche institutionnelle · à relire':o.status==='partial'?'Sources recoupées en partie · à relire':'Synthèse du cours · à recouper';}
+function art(o){return `assets/plantes/${o.art}.webp`;}
+const isNew=o=>o.status==='institutional'||Boolean(o.collection);
+document.querySelector('[data-view="new"] span').textContent=data.oils.filter(isNew).length;
+function riskOverview(o){const categories=[['skin','✋','Peau & muqueuses'],['allergy','✳','Allergies'],['lungs','🫁','Poumons & bronches'],['liver','◈','Foie & voies biliaires'],['kidney','◉','Reins'],['neuro','🧠','Système nerveux']];return `<section class="risk-overview" aria-labelledby="risk-heading"><p class="section-kicker">LES REPÈRES VISUELS</p><h3 id="risk-heading">La vigilance, en un regard</h3><p class="reading-note">Un signal indique une précaution documentée, sans mesurer la gravité. « À documenter » ne signifie jamais « sans risque ».</p><div class="risk-grid">${categories.map(([key,icon,label])=>{const r=o.riskSignals?.[key];return `<article class="risk-card ${r?'known':'unknown-risk'}"><div class="risk-title"><span class="risk-icon" aria-hidden="true">${icon}</span><h4>${label}</h4></div><span class="risk-status">${r?'Vigilance signalée':'À documenter'}</span><p class="risk-description">${r?esc(r.text):'Évaluation spécifique encore manquante dans cette fiche.'}</p>${r?sourceLink(r.source,r.page):''}</article>`}).join('')}</div></section>`;}
+function date(s){return (s||'').split('-').reverse().join('/');}
+function updateHash(){try{history.replaceState(null,'',location.pathname+location.search+(selected?'#'+selected:''));}catch(_){}}
+function filtered(){const words=norm(search.value).split(' ').filter(Boolean);return data.oils.filter(o=>(!risk||Boolean(o.riskSignals?.[risk]))&&(!domain.value||o.domains.includes(domain.value))&&(view!=='favorites'||favorites.has(o.id))&&(view!=='new'||isNew(o))&&words.every(w=>searchable.get(o.id).includes(w)));}
+function showDetail(o){
+ if(!o){detail.innerHTML='<div class="empty-detail"><p class="eyebrow">UNE AUTRE PISTE ?</p><h2>Aucune fiche pour cette sélection.</h2><p>Essayez un autre mot, élargissez le domaine ou retrouvez tout l’herbier.</p><button type="button" data-reset>Voir tout l’herbier</button></div>';return;}
+ const isFavorite=favorites.has(o.id);
+ detail.innerHTML=`<div class="detail-top"><div class="detail-meta"><span class="label">${status(o)}</span><button class="favorite" type="button" id="favorite" aria-pressed="${isFavorite}" aria-label="${isFavorite?'Retirer':'Ajouter'} ${esc(o.name)} ${isFavorite?'des':'aux'} favoris"><span aria-hidden="true">${isFavorite?'★':'☆'}</span>${isFavorite?'Dans mes favoris':'Garder en favori'}</button></div>
+ <div class="plant-heading"><div><h2 tabindex="-1" id="oil-title">${esc(o.name)}</h2><p class="latin">${esc(o.botanical)}</p><div class="domains">${o.domains.map(d=>`<span class="chip">${esc(d)}</span>`).join('')}</div></div><figure class="plant-figure"><img src="${art(o)}" alt="Illustration artistique de ${esc(o.botanical)}" width="1280" height="1280"><figcaption>Illustration artistique</figcaption></figure></div>
+ <dl class="identity"><div><dt>Famille</dt><dd>${esc(o.family)}${o.identitySource?' '+sourceLink(o.identitySource):''}</dd></div><div><dt>Partie utilisée</dt><dd>${esc(o.part)}</dd></div><div><dt>Chémotype</dt><dd>${esc(o.chemotype||'Non précisé')}</dd></div></dl></div>
+ <nav class="detail-nav" aria-label="Dans cette fiche"><a href="#essentiel">L’essentiel</a><a href="#vigilance">Vigilance</a><a href="#sources">Les sources</a></nav>
+ <div class="detail-body"><section class="course-box" id="essentiel"><p class="section-kicker">LES USAGES DOCUMENTÉS</p><h3>Ce qu’en disent les sources</h3><p>${esc(o.courseSummary)} ${sourceLink(o.summarySource,(o.summarySource||'').startsWith('hippocratus')?o.coursePage:null)}</p><p class="reading-note">Les domaines cités sont des repères de recherche, pas des indications personnelles de traitement.</p></section>
+ <section><h3>Repères de composition</h3>${o.components.length?`<div class="components">${o.components.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div><p class="reading-note">Composants cités dans ${(o.componentSource||'hippocratus').startsWith('hippocratus')?'le cours':'la source institutionnelle'} ${sourceLink(o.componentSource||'hippocratus')} · La composition du produit reste à vérifier.</p>`:'<p class="unknown">Composition détaillée à documenter dans cette fiche.</p>'}</section>
+ ${riskOverview(o)}
+ <section class="safety" id="vigilance"><p class="section-kicker">À LIRE AVANT TOUTE UTILISATION</p><h3>Les points de vigilance</h3><div class="safety-grid"><section><h4>Contre-indications</h4>${facts(o.contraindications)}</section><section><h4>Précautions</h4>${facts(o.precautions)}</section><section><h4>Effets indésirables</h4>${facts(o.adverseEffects)}</section><section><h4>Interactions</h4>${facts(o.interactions)}</section></div><details class="review" open><summary>Limites de cette fiche & points à relire</summary><ul>${o.reviewNotes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></details></section>
+ <section class="discovery-note"><h3>Le petit repère botanique</h3><p>${esc(o.discovery)}</p></section>
+ <section class="evidence"><h3>Quel niveau de preuve ?</h3>${o.evidence.length?facts(o.evidence):'<p class="unknown">Les usages de cette fiche n’ont pas encore été recoupés de façon indépendante.</p>'}<p class="reading-note">Aucune posologie dans ce carnet. Une monographie porte sur une préparation définie et ne s’applique pas automatiquement à tous les produits.</p></section>
+ <section class="sources" id="sources"><h3>Les sources, en toute transparence</h3><ol>${o.sourceIds.map(id=>{const s=data.sources[id];return `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a><span class="source-type">${esc(s.type)}${id.startsWith('hippocratus')?` · page(s) ${esc((o.sourcePages?.[id]||[o.coursePage]).join(', '))} · connexion requise`:''} · consulté le ${date(s.consulted)}</span></li>`;}).join('')}</ol><p class="reading-note">Fiche mise à jour le ${date(o.reviewedAt)}. Les illustrations sont décoratives et ne constituent pas une clé d’identification.</p></section><a class="back-catalog" href="#catalog">↑ Revenir aux plantes</a></div>`;
+}
+function renderList(list){
+ $('count').textContent=`${list.length} fiche${list.length===1?'':'s'}`;$('clear').hidden=!search.value;$('favorite-count').textContent=favorites.size;
+ document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
+ $('discover').disabled=list.length===0;
+ document.querySelectorAll('[data-risk]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.risk===risk));});
+ results.innerHTML=list.length?list.map(o=>`<button class="oil-item" type="button" data-id="${esc(o.id)}" aria-pressed="${o.id===selected}" aria-controls="detail"><img class="oil-thumb" src="${art(o)}" alt="" width="50" height="55" loading="lazy"><span class="oil-text"><strong>${esc(o.name)}${favorites.has(o.id)?' <span aria-label="Favori">★</span>':''}</strong><em>${esc(o.botanical)}</em>${isNew(o)?`<small>${o.status==='institutional'?'Source institutionnelle':'Relevé Hippocratus'}</small>`:''}</span></button>`).join(''):`<div class="empty"><strong>${view==='favorites'&&!favorites.size?'Votre herbier personnel':'Aucun résultat'}</strong>${view==='favorites'&&!favorites.size?'Ouvrez une fiche et touchez « Garder en favori » pour la retrouver ici.':risk?'Aucun signal documenté pour cette sélection. Cela ne signifie pas une absence de risque.':'Essayez moins de mots ou un autre domaine.'}<button type="button" data-reset>Voir toutes les plantes</button></div>`;
+}
+function render(){const list=filtered();if(!list.some(o=>o.id===selected))selected=list[0]?.id||'';updateHash();renderList(list);showDetail(oils.get(selected));}
+function openOil(id,focus){selected=id;updateHash();renderList(filtered());showDetail(oils.get(id));if(focus){$('oil-title').focus({preventScroll:true});if(matchMedia('(max-width:700px)').matches)detail.scrollIntoView({behavior:reduceMotion.matches?'auto':'smooth',block:'start'});}}
+function reset(){search.value='';domain.value='';view='all';risk='';render();}
+results.addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(b)openOil(b.dataset.id,true);});
+document.addEventListener('click',e=>{if(e.target.closest('[data-reset]')){reset();search.focus();}});
+document.querySelectorAll('[data-risk]').forEach(b=>b.addEventListener('click',()=>{risk=b.dataset.risk;render();if(!filtered().length)announce('Aucun signal documenté dans cette sélection ; cela ne signifie pas une absence de risque.');}));
+search.addEventListener('input',render);domain.addEventListener('change',render);
+$('clear').addEventListener('click',()=>{search.value='';render();search.focus();});
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;render();}));
+$('discover').addEventListener('click',()=>{const list=filtered();const other=list.filter(o=>o.id!==selected);const pool=other.length?other:list;if(!pool.length)return;const o=pool[Math.floor(Math.random()*pool.length)];openOil(o.id,true);announce(`À découvrir : ${o.name}`);});
+detail.addEventListener('click',e=>{const b=e.target.closest('#favorite');if(!b)return;const o=oils.get(selected);if(!o)return;const added=!favorites.has(o.id);if(added)favorites.add(o.id);else favorites.delete(o.id);const saved=saveFavorites();render();if($('favorite'))$('favorite').focus({preventScroll:true});else document.querySelector('[data-view="all"]').focus();announce(saved?(added?'Ajouté à vos favoris sur cet appareil':'Retiré des favoris'):'Favoris conservés pour cette session uniquement');});
+$('home').addEventListener('click',e=>{e.preventDefault();reset();selected='lavande-vraie';render();window.scrollTo({top:0,behavior:reduceMotion.matches?'auto':'smooth'});});
+window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(oils.has(id)){search.value='';domain.value='';view='all';risk='';selected=id;render();}});
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.id==='home')return;const target=document.getElementById(a.getAttribute('href').slice(1));if(!target)return;e.preventDefault();target.scrollIntoView({behavior:reduceMotion.matches||document.body.classList.contains('motion-paused')?'auto':'smooth',block:'start'});if(target.matches('input,button'))target.focus({preventScroll:true});});
+render();
 })();
