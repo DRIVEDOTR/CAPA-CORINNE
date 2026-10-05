@@ -3,7 +3,7 @@
   "version": "0.3",
   "date": "2026-10-05",
   "status": "Base de travail — relecture nécessaire",
-  "scope": "71 fiches ; inventaire Hippocratus partiel, encore en cours.",
+  "scope": "74 fiches ; inventaire Hippocratus partiel, encore en cours.",
   "sources": {
     "hippocratus": {
       "title": "Hippocratus — HE les plus utilisées en infectiologie",
@@ -171,6 +171,48 @@
       "url": "https://www.anses.fr/fr/system/files/AIR2018SA0145Ra.pdf",
       "type": "Rapport institutionnel · toxicovigilance",
       "date": null,
+      "consulted": "2026-10-05"
+    },
+    "hippocratus-gynecologie": {
+      "title": "Hippocratus — Aromathérapeutique en gynécologie et système génito-urinaire",
+      "url": "https://cours.hippocratus.com/classroom/47137/player/36742",
+      "type": "Cours privé · affirmation à recouper",
+      "date": null,
+      "consulted": "2026-10-05"
+    },
+    "kew-sclaree": {
+      "title": "Kew — Plants of the World Online : Salvia sclarea L.",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:457210-1",
+      "type": "Référentiel botanique · identité uniquement",
+      "date": null,
+      "consulted": "2026-10-05"
+    },
+    "kew-ylang": {
+      "title": "Kew — Plants of the World Online : Cananga odorata",
+      "url": "https://powo.science.kew.org/taxon/72580-1",
+      "type": "Référentiel botanique · identité uniquement",
+      "date": null,
+      "consulted": "2026-10-05"
+    },
+    "sccs-allergenes-contact": {
+      "title": "Commission européenne / SCCS — Allergènes de contact établis chez l’humain, tableau 13-1",
+      "url": "https://ec.europa.eu/health/scientific_committees/opinions_layman/perfume-allergies/en/figtableboxes/table-13-1.htm",
+      "type": "Avis scientifique · allergie cutanée",
+      "date": null,
+      "consulted": "2026-10-05"
+    },
+    "kew-citratus": {
+      "title": "Kew — Plants of the World Online : Cymbopogon citratus",
+      "url": "https://powo.science.kew.org/taxon/396896-1",
+      "type": "Référentiel botanique · identité uniquement",
+      "date": null,
+      "consulted": "2026-10-05"
+    },
+    "saleem-citratus-2003": {
+      "title": "Saleem et al. — Chemistry and biological significance of essential oils of Cymbopogon citratus from Pakistan (2003)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12737398/",
+      "type": "Étude expérimentale · résumé bibliographique consulté",
+      "date": "2003-06",
       "consulted": "2026-10-05"
     }
   },
@@ -370,6 +412,9 @@
       "sourcePages": {
         "hippocratus-gastro": [
           12
+        ],
+        "hippocratus-gynecologie": [
+          15
         ]
       },
       "contraindications": [],
@@ -378,14 +423,16 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
+        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "aneth",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -415,6 +462,12 @@
       "sourcePages": {
         "hippocratus-gastro": [
           10
+        ],
+        "hippocratus-gynecologie": [
+          12,
+          15,
+          16,
+          19
         ]
       },
       "contraindications": [],
@@ -423,14 +476,16 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
+        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "anis",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -494,18 +549,20 @@
       "reviewNotes": [
         "La présentation rassurante du cours est incomplète au regard des effets indésirables décrits par l’EMA.",
         "Les limites d’âge sont liées aux préparations et voies décrites ; ce ne sont pas des autorisations générales.",
-        "Les formulations du cours suggérant une tolérance générale ou une absence de contre-indication ne constituent pas une garantie de sécurité."
+        "Les formulations du cours suggérant une tolérance générale ou une absence de contre-indication ne constituent pas une garantie de sécurité.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus",
         "ema-teatree",
         "anses-melaleuca",
         "anses-melaleuca-suite",
-        "hippocratus-derm"
+        "hippocratus-derm",
+        "hippocratus-gynecologie"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "tea-tree",
       "summarySource": "hippocratus",
@@ -516,6 +573,14 @@
         ],
         "hippocratus-derm": [
           3
+        ],
+        "hippocratus-gynecologie": [
+          21,
+          24,
+          25,
+          26,
+          27,
+          28
         ]
       },
       "riskSignals": {
@@ -1204,6 +1269,10 @@
       "sourcePages": {
         "hippocratus-gastro": [
           9
+        ],
+        "hippocratus-gynecologie": [
+          12,
+          15
         ]
       },
       "contraindications": [],
@@ -1212,14 +1281,16 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
+        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "carvi",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1369,6 +1440,75 @@
       }
     },
     {
+      "id": "citronnelle-citratus",
+      "name": "Citronnelle · Cymbopogon citratus",
+      "botanical": "Cymbopogon citratus",
+      "aliases": [
+        "Citronnelle des Indes",
+        "Lemongrass"
+      ],
+      "family": "Poaceae",
+      "identitySource": "kew-citratus",
+      "part": "Feuilles",
+      "chemotype": null,
+      "components": [
+        "Citral"
+      ],
+      "componentSource": "saleem-citratus-2003",
+      "domains": [
+        "Infectiologie",
+        "Génital"
+      ],
+      "courseSummary": "Le cours cite cette huile de feuilles dans un mélange proposé pour l’herpès génital. Cette mention ne démontre pas l’efficacité clinique de l’huile seule et ne constitue pas une recommandation de traitement.",
+      "summarySource": "hippocratus-gynecologie",
+      "coursePage": 27,
+      "sourcePages": {
+        "hippocratus-gynecologie": [
+          27,
+          28
+        ]
+      },
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [
+        {
+          "text": "Le SCCS classe les huiles de Cymbopogon citratus / schoenanthus parmi les allergènes de contact établis chez l’humain.",
+          "source": "sccs-allergenes-contact"
+        }
+      ],
+      "interactions": [],
+      "evidence": [
+        {
+          "text": "Une étude expérimentale de 2003 identifie le citral comme constituant majoritaire d’une huile de Cymbopogon citratus obtenue par distillation à la vapeur. Cette analyse d’échantillon ne décrit pas tous les produits et ne prouve pas une efficacité clinique.",
+          "source": "saleem-citratus-2003"
+        }
+      ],
+      "reviewNotes": [
+        "Cette fiche concerne Cymbopogon citratus. Cymbopogon nardus et Cymbopogon winterianus, cités séparément p. 24 du cours, ne sont pas assimilés à cette espèce.",
+        "Le tableau SCCS regroupe citratus et schoenanthus ; il ne fournit pas une mesure du risque propre à chaque produit.",
+        "Les recettes du cours ne sont pas reproduites. Contre-indications, interactions et sécurité selon la voie d’utilisation restent à documenter."
+      ],
+      "sourceIds": [
+        "hippocratus-gynecologie",
+        "kew-citratus",
+        "saleem-citratus-2003",
+        "sccs-allergenes-contact"
+      ],
+      "status": "course",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-05",
+      "dosage": null,
+      "art": "citronnelle-citratus",
+      "discovery": "Le mot « citronnelle » peut désigner plusieurs espèces. Le nom botanique est le repère à vérifier.",
+      "collection": "hippocratus-2026-10",
+      "riskSignals": {
+        "allergy": {
+          "text": "Allergie de contact documentée dans l’avis SCCS.",
+          "source": "sccs-allergenes-contact"
+        }
+      }
+    },
+    {
       "id": "coriandre-fruit",
       "name": "Coriandre · fruit",
       "botanical": "Coriandrum sativum",
@@ -1493,6 +1633,10 @@
           16,
           18,
           19
+        ],
+        "hippocratus-gynecologie": [
+          14,
+          19
         ]
       },
       "contraindications": [],
@@ -1515,16 +1659,18 @@
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
         "La partie distillée indiquée ici vient du cours ; vérifier le produit et ne pas assimiler cônes et rameaux.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-derm",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "cypres",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -1622,6 +1768,10 @@
         ],
         "hippocratus-snc": [
           32
+        ],
+        "hippocratus-gynecologie": [
+          17,
+          18
         ]
       },
       "contraindications": [],
@@ -1637,12 +1787,14 @@
       "evidence": [],
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
-        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions."
+        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-gastro",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
@@ -1808,6 +1960,9 @@
       "sourcePages": {
         "hippocratus-gastro": [
           8
+        ],
+        "hippocratus-gynecologie": [
+          14
         ]
       },
       "contraindications": [],
@@ -1816,14 +1971,16 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
+        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "fenouil",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1852,6 +2009,9 @@
       "sourcePages": {
         "hippocratus-gastro": [
           8
+        ],
+        "hippocratus-gynecologie": [
+          14
         ]
       },
       "contraindications": [],
@@ -1860,14 +2020,16 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
+        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "fenouil",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -2091,6 +2253,10 @@
         ],
         "hippocratus-cardio": [
           23
+        ],
+        "hippocratus-gynecologie": [
+          16,
+          22
         ]
       },
       "contraindications": [],
@@ -2107,15 +2273,17 @@
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
         "La page cite aussi gingérols et shogaols ; leur attribution à la fraction volatile demande vérification. Ils ne sont pas retenus comme composants établis ici.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus-rhum",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "gingembre",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -2584,7 +2752,8 @@
         "Les affirmations générales d’innocuité du cours ne sont pas retenues : les précautions de la monographie institutionnelle restent applicables.",
         "Les formulations du cours suggérant une tolérance générale ou une absence de contre-indication ne constituent pas une garantie de sécurité.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
-        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions."
+        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "ema-lavande",
@@ -2592,7 +2761,8 @@
         "hippocratus-rhum",
         "hippocratus-derm",
         "hippocratus-cardio",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hippocratus-gynecologie"
       ],
       "status": "institutional",
       "publicationReady": false,
@@ -2634,6 +2804,11 @@
           25,
           32,
           33
+        ],
+        "hippocratus-gynecologie": [
+          20,
+          21,
+          26
         ]
       },
       "componentSource": "hippocratus-derm"
@@ -2717,6 +2892,9 @@
           18,
           25,
           31
+        ],
+        "hippocratus-gynecologie": [
+          17
         ]
       },
       "contraindications": [],
@@ -2725,10 +2903,12 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Synthèse du cours ; efficacité et bilan de sécurité encore incomplets. Aucune formule ni posologie transcrite."
+        "Synthèse du cours ; efficacité et bilan de sécurité encore incomplets. Aucune formule ni posologie transcrite.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
@@ -2772,13 +2952,15 @@
         "Préciser le profil chimique et les indications avant d’enrichir la fiche.",
         "Ne pas assimiler la marjolaine à l’origan compact.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
-        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions."
+        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus",
         "hippocratus-gastro",
         "hippocratus-cardio",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hippocratus-gynecologie"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -2807,6 +2989,11 @@
           27,
           28,
           32
+        ],
+        "hippocratus-gynecologie": [
+          16,
+          22,
+          23
         ]
       },
       "riskSignals": {}
@@ -2914,17 +3101,19 @@
       "reviewNotes": [
         "Interactions, grossesse et allaitement à compléter avant tout conseil. La synthèse ne constitue pas une autorisation d’ingérer une HE du commerce.",
         "Le cours digestif évoque le reflux, alors que les données institutionnelles signalent son aggravation possible. Ne pas retenir le reflux comme indication. Les seuils pédiatriques diffèrent selon la préparation et la voie.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "ema-menthe",
         "hippocratus-gastro",
         "hippocratus-rhum",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus-gynecologie"
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "menthe",
       "discovery": "Le signe × du nom botanique indique une origine hybride. La menthe poivrée n’est pas interchangeable avec les autres menthes.",
@@ -2964,6 +3153,9 @@
         ],
         "hippocratus-cardio": [
           18,
+          19
+        ],
+        "hippocratus-gynecologie": [
           19
         ]
       }
@@ -3047,6 +3239,11 @@
           27,
           28,
           32
+        ],
+        "hippocratus-gynecologie": [
+          16,
+          22,
+          23
         ]
       },
       "contraindications": [],
@@ -3062,11 +3259,13 @@
       "evidence": [],
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
-        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions."
+        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
@@ -3322,6 +3521,9 @@
       "sourcePages": {
         "hippocratus-derm": [
           6
+        ],
+        "hippocratus-gynecologie": [
+          26
         ]
       },
       "contraindications": [],
@@ -3331,14 +3533,16 @@
       "evidence": [],
       "reviewNotes": [
         "Usages issus du cours, non validés indépendamment ; bilan de sécurité incomplet.",
-        "Les formulations du cours suggérant une tolérance générale ou une absence de contre-indication ne constituent pas une garantie de sécurité."
+        "Les formulations du cours suggérant une tolérance générale ou une absence de contre-indication ne constituent pas une garantie de sécurité.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus-derm"
+        "hippocratus-derm",
+        "hippocratus-gynecologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "palmarosa",
       "discovery": "L’identité botanique, la partie distillée et le produit précis doivent être distingués.",
@@ -3597,14 +3801,16 @@
       "reviewNotes": [
         "La page ne documente pas les contre-indications et effets indésirables : cela ne prouve pas leur absence.",
         "Conserver le chémotype et vérifier la composition du produit ; ne pas généraliser à toutes les HE de C. camphora.",
-        "Pédiatrie, grossesse, allaitement, voies et interactions restent à documenter."
+        "Pédiatrie, grossesse, allaitement, voies et interactions restent à documenter.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
-        "hippocratus"
+        "hippocratus",
+        "hippocratus-gynecologie"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-02",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "ravintsara",
       "summarySource": "hippocratus",
@@ -3612,6 +3818,10 @@
       "sourcePages": {
         "hippocratus": [
           10
+        ],
+        "hippocratus-gynecologie": [
+          27,
+          28
         ]
       },
       "riskSignals": {}
@@ -3912,16 +4122,18 @@
       "evidence": [],
       "reviewNotes": [
         "Interactions et précautions d’emploi à recouper avec une source indépendante.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus",
         "hippocratus-gastro",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus-gynecologie"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "sarriette",
       "summarySource": "hippocratus",
@@ -3935,6 +4147,9 @@
         ],
         "hippocratus-cardio": [
           23
+        ],
+        "hippocratus-gynecologie": [
+          24
         ]
       },
       "riskSignals": {
@@ -3991,6 +4206,72 @@
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {}
+    },
+    {
+      "id": "sauge-sclaree",
+      "name": "Sauge sclarée",
+      "botanical": "Salvia sclarea",
+      "family": "Lamiaceae",
+      "part": "Plante fleurie",
+      "aliases": [
+        "Sclarée"
+      ],
+      "chemotype": null,
+      "components": [
+        "Linalol",
+        "Acétate de linalyle",
+        "Sclaréol"
+      ],
+      "componentSource": "hippocratus-gynecologie",
+      "domains": [
+        "Génital"
+      ],
+      "courseSummary": "Le cours cite cette huile dans le contexte de troubles gynécologiques. Ses affirmations hormonales nécessitent un recoupement : elles ne constituent pas ici une indication thérapeutique démontrée.",
+      "summarySource": "hippocratus-gynecologie",
+      "coursePage": 13,
+      "sourcePages": {
+        "hippocratus-gynecologie": [
+          13,
+          16,
+          19,
+          20,
+          21,
+          23
+        ]
+      },
+      "contraindications": [],
+      "precautions": [
+        {
+          "text": "Le linalol, l’acétate de linalyle et le sclaréol sont recensés comme allergènes de contact par le SCCS. Cette donnée sur les composants ne quantifie pas le risque du produit fini.",
+          "source": "sccs-allergenes-contact"
+        }
+      ],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Le cours qualifie l’effet hormonal du sclaréol de suspecté (p. 8), puis affirme un effet œstrogénique (p. 13). Cette divergence est conservée comme point à vérifier, sans conclure à un effet clinique établi.",
+        "Ne pas confondre avec Salvia officinalis, Salvia lavandulifolia ou Salvia miltiorrhiza. Les informations propres à ces espèces ne sont pas transférées à cette fiche.",
+        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune posologie ni recette reproduite."
+      ],
+      "sourceIds": [
+        "hippocratus-gynecologie",
+        "kew-sclaree",
+        "sccs-allergenes-contact"
+      ],
+      "status": "course",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-05",
+      "dosage": null,
+      "art": "sauge-sclaree",
+      "discovery": "Le nom botanique et la préparation précise permettent de distinguer des huiles portant des noms proches.",
+      "collection": "hippocratus-2026-10",
+      "riskSignals": {
+        "allergy": {
+          "text": "Composants allergènes documentés ; risque propre au produit à évaluer.",
+          "source": "sccs-allergenes-contact"
+        }
+      }
     },
     {
       "id": "serpolet",
@@ -4239,17 +4520,19 @@
       ],
       "reviewNotes": [
         "La rubrique de sécurité du cours regroupe quatre chémotypes sans préciser son champ d’application. Ne pas transférer indistinctement toutes ses exclusions à chaque chémotype.",
-        "Les modalités d’emploi restent non renseignées."
+        "Les modalités d’emploi restent non renseignées.",
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
         "hippocratus",
         "ema-thyme",
         "ema-thyme-report",
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus-gynecologie"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-02",
+      "reviewedAt": "2026-10-05",
       "dosage": null,
       "art": "thym",
       "summarySource": "hippocratus",
@@ -4260,6 +4543,11 @@
         ],
         "hippocratus-gastro": [
           18
+        ],
+        "hippocratus-gynecologie": [
+          24,
+          27,
+          28
         ]
       },
       "riskSignals": {
@@ -4339,6 +4627,65 @@
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {}
+    },
+    {
+      "id": "ylang-ylang-complet",
+      "name": "Ylang-ylang · complet",
+      "botanical": "Cananga odorata",
+      "family": "Annonaceae",
+      "part": "Fleurs · distillation complète",
+      "aliases": [
+        "Ylang ylang",
+        "Ylang-ylang totum"
+      ],
+      "chemotype": null,
+      "components": [],
+      "componentSource": "hippocratus-gynecologie",
+      "domains": [
+        "Stress"
+      ],
+      "courseSummary": "Le cours décrit une réputation apaisante et aphrodisiaque, tout en précisant que la réputation aphrodisiaque n’est pas établie scientifiquement. Une mention dans un mélange ne prouve pas l’efficacité de cette huile seule.",
+      "summarySource": "hippocratus-gynecologie",
+      "coursePage": 15,
+      "sourcePages": {
+        "hippocratus-gynecologie": [
+          15,
+          23
+        ]
+      },
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [
+        {
+          "text": "Les huiles de Cananga odorata / ylang-ylang figurent parmi les allergènes de contact établis chez l’humain dans l’avis SCCS.",
+          "source": "sccs-allergenes-contact"
+        }
+      ],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Cette fiche concerne la distillation complète explicitement citée p. 23. La fraction extra, mentionnée p. 15, reste à documenter séparément.",
+        "Le tableau SCCS concerne les huiles de Cananga odorata / ylang-ylang sans quantifier le risque pour chaque fraction de distillation.",
+        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune posologie ni recette reproduite."
+      ],
+      "sourceIds": [
+        "hippocratus-gynecologie",
+        "kew-ylang",
+        "sccs-allergenes-contact"
+      ],
+      "status": "course",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-05",
+      "dosage": null,
+      "art": "ylang-ylang",
+      "discovery": "Le nom botanique et la préparation précise permettent de distinguer des huiles portant des noms proches.",
+      "collection": "hippocratus-2026-10",
+      "riskSignals": {
+        "allergy": {
+          "text": "Allergie de contact documentée pour les huiles de Cananga odorata / ylang-ylang.",
+          "source": "sccs-allergenes-contact"
+        }
+      }
     }
   ],
   "coverage": {
@@ -4380,6 +4727,12 @@
         "url": "https://cours.hippocratus.com/classroom/47137/player/36665",
         "pagesRead": "1–33 enregistrées ; page 34 sans contenu visible",
         "status": "Pages de contenu relevées ; recoupements en cours"
+      },
+      {
+        "title": "Hippocratus — Aromathérapeutique en gynécologie et système génito-urinaire",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/36742",
+        "pagesRead": "1–30 relevées ; page 31 sans texte de cours visible",
+        "status": "Recoupements en cours ; sept tableaux annexes de grossesse restent à examiner"
       }
     ]
   }

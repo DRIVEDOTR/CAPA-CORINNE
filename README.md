@@ -16,7 +16,7 @@ Remplacer les fichiers modifiés sur GitHub puis cliquer sur « Commit changes �
 
 ## Consultation locale
 
-Ouvrir `index.html` dans un navigateur. Les données et les images sont locales ; seuls les liens de sources nécessitent Internet. Les 71 fiches conservent leur statut de travail à relire.
+Ouvrir `index.html` dans un navigateur. Les données et les images sont locales ; seuls les liens de sources nécessitent Internet. Les 74 fiches conservent leur statut de travail à relire.
 
 ## Fichiers
 
@@ -31,8 +31,17 @@ Documentation : https://docs.github.com/en/pages/getting-started-with-github-pag
 
 ## Version du 5 octobre 2026
 
-71 fiches illustrées. Inventaire Hippocratus encore partiel : infectiologie (relevé partiel), rhumatologie, gastro-entérologie et volet huiles essentielles de dermatologie, ainsi que des mentions du chapitre cardiovasculaire (relevé partiel). Les sources et les limites figurent dans chaque fiche. Les repères de vigilance ne mesurent pas la gravité et une rubrique non renseignée ne signifie pas absence de risque.
+74 fiches illustrées. Inventaire Hippocratus encore partiel : infectiologie (relevé partiel), rhumatologie, gastro-entérologie et volet huiles essentielles de dermatologie, ainsi que des mentions du chapitre cardiovasculaire (relevé partiel). Les sources et les limites figurent dans chaque fiche. Les repères de vigilance ne mesurent pas la gravité et une rubrique non renseignée ne signifie pas absence de risque.
 
 Cette livraison comprend uniquement les fichiers du site, sans archive ni dossier caché à téléverser. Les cours complets et les notes de travail ne sont pas inclus. La publication reste à effectuer sur GitHub.
 
 Ajouts : néroli (fleurs), mandarine (zeste), bergamote (zeste exprimé). Module SNC relevé pages 1–33 ; page 34 sans contenu visible. Bilan de sécurité et efficacité encore à recouper.
+
+
+Mise à jour du 5 octobre — gynécologie : 18 fiches existantes disposent de références supplémentaires avec pages précises. Le catalogue contient toujours 74 fiches. Les nouvelles huiles repérées et les tableaux annexes restent à vérifier ; aucune recette du cours n’est reproduite.
+
+
+Ajout : sauge sclarée et ylang-ylang complet, illustrés. Identités recoupées avec Kew et informations d’allergie sourcées SCCS. Efficacité et sécurité globale encore incomplètement documentées.
+
+
+Ajout : Cymbopogon citratus (citronnelle / lemongrass), avec illustration, identité Kew, composition documentée dans une étude expérimentale et référence SCCS sur l’allergie de contact. Données cliniques et sécurité encore incomplètes.
