@@ -11,9 +11,6 @@ try { const saved=JSON.parse(localStorage.getItem('capa-favorites')||'[]'); if(A
 function announce(text){$('toast').textContent=text;$('toast').classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>$('toast').classList.remove('visible'),2500);}
 function saveFavorites(){try{localStorage.setItem('capa-favorites',JSON.stringify([...favorites]));return true;}catch(_){return false;}}
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
-function setMotion(paused){document.body.classList.toggle('motion-paused',paused);$('motion-toggle').setAttribute('aria-pressed',String(paused));$('motion-toggle').textContent=paused?'Reprendre l’animation':'Mettre l’animation en pause';}
-try{setMotion(localStorage.getItem('capa-motion-paused')==='true');}catch(_){}
-$('motion-toggle').addEventListener('click',()=>{const paused=!document.body.classList.contains('motion-paused');setMotion(paused);try{localStorage.setItem('capa-motion-paused',String(paused));}catch(_){}});
 $('total').textContent=data.oils.length;
 $('coverage').innerHTML=`<p>${esc(data.coverage?.note||'Inventaire en cours.')}</p><ul>${(data.coverage?.courses||[]).map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title)}</a> · ${esc(c.pagesRead)} · ${esc(c.status)}</li>`).join('')}</ul>`;
 [...new Set(data.oils.flatMap(o=>o.domains))].sort((a,b)=>a.localeCompare(b,'fr')).forEach(d=>{const option=document.createElement('option');option.value=d;option.textContent=d;domain.append(option);});
