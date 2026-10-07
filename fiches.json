@@ -1,16 +1,16 @@
 {
   "title": "CAPA — carnet d’aromathérapie",
   "version": "0.3",
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "status": "Base de travail — relecture nécessaire",
-  "scope": "74 fiches ; inventaire Hippocratus partiel, encore en cours.",
+  "scope": "76 fiches ; inventaire Hippocratus partiel, encore en cours.",
   "sources": {
     "hippocratus": {
       "title": "Hippocratus — HE les plus utilisées en infectiologie",
       "url": "https://cours.hippocratus.com/classroom/47137/player/35708",
       "type": "Cours privé",
       "date": null,
-      "consulted": "2026-10-02"
+      "consulted": "2026-10-06"
     },
     "ema-thyme": {
       "title": "EMA — Thymi aetheroleum, synthèse publique",
@@ -214,6 +214,34 @@
       "type": "Étude expérimentale · résumé bibliographique consulté",
       "date": "2003-06",
       "consulted": "2026-10-05"
+    },
+    "kew-niaouli": {
+      "title": "Kew — Melaleuca quinquenervia",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:598073-1",
+      "type": "Référentiel botanique · identité uniquement",
+      "date": null,
+      "consulted": "2026-10-06"
+    },
+    "kew-myrrhe": {
+      "title": "Kew — Commiphora myrrha",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:127741-1",
+      "type": "Référentiel botanique · identité uniquement",
+      "date": null,
+      "consulted": "2026-10-06"
+    },
+    "anses-melaleuca-oral": {
+      "title": "Anses — Huiles essentielles de Melaleuca par voie orale, Vigil’Anses n°14, juin 2021, p. 16",
+      "url": "https://vigilanses.anses.fr/sites/default/files/VigilAnsesN14_Juin2021_0.pdf",
+      "type": "Nutrivigilance · risques liés à l’ingestion",
+      "date": null,
+      "consulted": "2026-10-06"
+    },
+    "hippocratus-endocrinologie": {
+      "title": "Hippocratus — Aromathérapeutique en endocrinologie",
+      "url": "https://cours.hippocratus.com/classroom/47137/player/36821",
+      "type": "Cours privé · affirmation à recouper",
+      "date": null,
+      "consulted": "2026-10-06"
     }
   },
   "oils": [
@@ -468,6 +496,9 @@
           15,
           16,
           19
+        ],
+        "hippocratus-endocrinologie": [
+          13
         ]
       },
       "contraindications": [],
@@ -477,15 +508,17 @@
       "evidence": [],
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "anis",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -984,6 +1017,9 @@
         ],
         "hippocratus-snc": [
           22
+        ],
+        "hippocratus": [
+          25
         ]
       },
       "contraindications": [],
@@ -995,16 +1031,19 @@
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
         "La page regroupe ces plantes sous une affirmation sur le chamazulène. Composition et espèce doivent être recoupées séparément ; cette molécule n’est pas attribuée automatiquement à chaque huile.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
-        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions."
+        "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "La mention de chamazulène dans le cours d’infectiologie (p. 25) reste à vérifier pour cette espèce ; elle n’est pas ajoutée automatiquement à la composition."
       ],
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-cardio",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hippocratus"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "camomille-romaine",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -1273,6 +1312,10 @@
         "hippocratus-gynecologie": [
           12,
           15
+        ],
+        "hippocratus-endocrinologie": [
+          10,
+          11
         ]
       },
       "contraindications": [],
@@ -1282,15 +1325,17 @@
       "evidence": [],
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "carvi",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1399,17 +1444,19 @@
         "La page ne précise pas le mode d’obtention. Vérifier s’il s’agit d’une essence exprimée, d’une HE distillée ou d’un produit sans furocoumarines.",
         "Le risque doit être rattaché au produit, à la voie et à la concentration ; le délai avant exposition reste à documenter.",
         "Les affirmations de détoxification ou anticancéreuses du chapitre digestif ne sont pas retenues comme indications validées.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus",
         "hippocratus-gastro",
         "hippocratus-derm",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus-endocrinologie"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "citron",
       "summarySource": "hippocratus",
@@ -1429,6 +1476,12 @@
           15,
           16,
           22
+        ],
+        "hippocratus-endocrinologie": [
+          16,
+          17,
+          18,
+          21
         ]
       },
       "riskSignals": {
@@ -1452,9 +1505,11 @@
       "part": "Feuilles",
       "chemotype": null,
       "components": [
-        "Citral"
+        "Citrals : géranial et néral",
+        "Citronellal",
+        "Limonène"
       ],
-      "componentSource": "saleem-citratus-2003",
+      "componentSource": "hippocratus",
       "domains": [
         "Infectiologie",
         "Génital"
@@ -1466,10 +1521,22 @@
         "hippocratus-gynecologie": [
           27,
           28
+        ],
+        "hippocratus": [
+          14
+        ],
+        "hippocratus-endocrinologie": [
+          17,
+          18
         ]
       },
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "Le cours d’infectiologie signale une irritation cutanée possible (p. 14). Ce point reste à recouper indépendamment ; aucune dilution n’est déduite de cette mention.",
+          "source": "hippocratus"
+        }
+      ],
       "adverseEffects": [
         {
           "text": "Le SCCS classe les huiles de Cymbopogon citratus / schoenanthus parmi les allergènes de contact établis chez l’humain.",
@@ -1486,17 +1553,22 @@
       "reviewNotes": [
         "Cette fiche concerne Cymbopogon citratus. Cymbopogon nardus et Cymbopogon winterianus, cités séparément p. 24 du cours, ne sont pas assimilés à cette espèce.",
         "Le tableau SCCS regroupe citratus et schoenanthus ; il ne fournit pas une mesure du risque propre à chaque produit.",
-        "Les recettes du cours ne sont pas reproduites. Contre-indications, interactions et sécurité selon la voie d’utilisation restent à documenter."
+        "Les recettes du cours ne sont pas reproduites. Contre-indications, interactions et sécurité selon la voie d’utilisation restent à documenter.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "Le cours de gynécologie indique les feuilles ; le cours d’infectiologie indique l’herbe. La partie effectivement distillée reste à vérifier sur le produit. Le nom commun lemongrass est aussi employé pour Cymbopogon flexuosus, espèce distincte.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gynecologie",
         "kew-citratus",
         "saleem-citratus-2003",
-        "sccs-allergenes-contact"
+        "sccs-allergenes-contact",
+        "hippocratus",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "citronnelle-citratus",
       "discovery": "Le mot « citronnelle » peut désigner plusieurs espèces. Le nom botanique est le repère à vérifier.",
@@ -1637,6 +1709,14 @@
         "hippocratus-gynecologie": [
           14,
           19
+        ],
+        "hippocratus": [
+          18
+        ],
+        "hippocratus-endocrinologie": [
+          13,
+          18,
+          19
         ]
       },
       "contraindications": [],
@@ -1660,17 +1740,22 @@
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
         "La partie distillée indiquée ici vient du cours ; vérifier le produit et ne pas assimiler cônes et rameaux.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "Le cours d’infectiologie décrit une huile de cônes et rameaux (p. 18), tandis que d’autres cours citent les galbules. Ces descriptions ne garantissent pas une préparation identique.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-derm",
         "hippocratus-cardio",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "cypres",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -1906,16 +1991,20 @@
         }
       ],
       "reviewNotes": [
-        "La révision finale 2025 prime sur l’ancienne synthèse publique pour la sécurité. Les autres limites d’âge et conditions d’emploi dépendent de la voie et du médicament : consulter sa notice."
+        "La révision finale 2025 prime sur l’ancienne synthèse publique pour la sécurité. Les autres limites d’âge et conditions d’emploi dépendent de la voie et du médicament : consulter sa notice.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "ema-eucalyptus",
         "ema-eucalyptus-mo",
-        "ema-eucalyptus-ar"
+        "ema-eucalyptus-ar",
+        "hippocratus",
+        "hippocratus-endocrinologie"
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "eucalyptus",
       "discovery": "Les feuilles adultes sont longues et courbées. Le nom de l’espèce doit accompagner le nom « eucalyptus ».",
@@ -1937,7 +2026,15 @@
           "page": null
         }
       },
-      "sourcePages": {}
+      "sourcePages": {
+        "hippocratus": [
+          15
+        ],
+        "hippocratus-endocrinologie": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "fenouil-amer",
@@ -1963,6 +2060,9 @@
         ],
         "hippocratus-gynecologie": [
           14
+        ],
+        "hippocratus-endocrinologie": [
+          11
         ]
       },
       "contraindications": [],
@@ -1972,15 +2072,17 @@
       "evidence": [],
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "fenouil",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -2012,6 +2114,9 @@
         ],
         "hippocratus-gynecologie": [
           14
+        ],
+        "hippocratus-endocrinologie": [
+          11
         ]
       },
       "contraindications": [],
@@ -2021,15 +2126,17 @@
       "evidence": [],
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "fenouil",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -2599,6 +2706,13 @@
         ],
         "hippocratus-gastro": [
           13
+        ],
+        "hippocratus": [
+          20
+        ],
+        "hippocratus-endocrinologie": [
+          16,
+          17
         ]
       },
       "contraindications": [],
@@ -2608,15 +2722,19 @@
       "evidence": [],
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
-        "La bonne tolérance affirmée dans le cours ne suffit pas à exclure allergie ou contre-indication."
+        "La bonne tolérance affirmée dans le cours ne suffit pas à exclure allergie ou contre-indication.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-rhum",
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hippocratus",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "laurier",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -2753,7 +2871,8 @@
         "Les formulations du cours suggérant une tolérance générale ou une absence de contre-indication ne constituent pas une garantie de sécurité.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
         "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité."
       ],
       "sourceIds": [
         "ema-lavande",
@@ -2762,11 +2881,12 @@
         "hippocratus-derm",
         "hippocratus-cardio",
         "hippocratus-snc",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus"
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "lavande",
       "discovery": "Lavande vraie, lavande aspic et lavandin correspondent à des identités différentes. Toujours lire le nom botanique.",
@@ -2809,6 +2929,9 @@
           20,
           21,
           26
+        ],
+        "hippocratus": [
+          23
         ]
       },
       "componentSource": "hippocratus-derm"
@@ -3102,18 +3225,20 @@
         "Interactions, grossesse et allaitement à compléter avant tout conseil. La synthèse ne constitue pas une autorisation d’ingérer une HE du commerce.",
         "Le cours digestif évoque le reflux, alors que les données institutionnelles signalent son aggravation possible. Ne pas retenir le reflux comme indication. Les seuils pédiatriques diffèrent selon la préparation et la voie.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
-        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
+        "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité."
       ],
       "sourceIds": [
         "ema-menthe",
         "hippocratus-gastro",
         "hippocratus-rhum",
         "hippocratus-cardio",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hippocratus"
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "menthe",
       "discovery": "Le signe × du nom botanique indique une origine hybride. La menthe poivrée n’est pas interchangeable avec les autres menthes.",
@@ -3157,8 +3282,74 @@
         ],
         "hippocratus-gynecologie": [
           19
+        ],
+        "hippocratus": [
+          17
         ]
       }
+    },
+    {
+      "id": "myrrhe",
+      "name": "Myrrhe · huile essentielle",
+      "botanical": "Commiphora myrrha",
+      "aliases": [
+        "Commiphora molmol",
+        "Myrrhe du balsamier"
+      ],
+      "family": "Burseraceae",
+      "identitySource": "kew-myrrhe",
+      "part": "Gomme-résine",
+      "chemotype": null,
+      "components": [
+        "Sesquiterpènes",
+        "Furanosesquiterpènes",
+        "Eugénol"
+      ],
+      "componentSource": "hippocratus",
+      "domains": [
+        "Peau",
+        "Génital"
+      ],
+      "courseSummary": "Le cours décrit des usages antiseptiques, anti-inflammatoires et cicatrisants de l’huile essentielle. Ces mentions ne démontrent pas une efficacité clinique et ne sont pas transposées en conseils d’utilisation.",
+      "summarySource": "hippocratus",
+      "coursePage": 26,
+      "sourcePages": {
+        "hippocratus": [
+          26
+        ],
+        "hippocratus-gynecologie": [
+          24,
+          25
+        ],
+        "hippocratus-endocrinologie": [
+          15
+        ]
+      },
+      "contraindications": [],
+      "precautions": [],
+      "adverseEffects": [],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Identité botanique recoupée ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette ni posologie reproduite.",
+        "Cette fiche concerne l’huile essentielle issue de la gomme-résine, et non une teinture, un extrait ou la résine entière. Leurs propriétés et précautions ne sont pas interchangeables.",
+        "Commiphora abyssinica, aussi citée dans le cours de gynécologie, n’est pas fusionnée avec Commiphora myrrha.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
+      ],
+      "sourceIds": [
+        "hippocratus",
+        "kew-myrrhe",
+        "hippocratus-gynecologie",
+        "hippocratus-endocrinologie"
+      ],
+      "status": "course",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-06",
+      "dosage": null,
+      "art": "myrrhe",
+      "discovery": "Le nom botanique, la partie utilisée et la préparation exacte sont trois repères à vérifier.",
+      "collection": "hippocratus-2026-10",
+      "riskSignals": {}
     },
     {
       "id": "myrte-commun",
@@ -3206,6 +3397,68 @@
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {}
+    },
+    {
+      "id": "niaouli",
+      "name": "Niaouli · Melaleuca quinquenervia",
+      "botanical": "Melaleuca quinquenervia",
+      "aliases": [],
+      "family": "Myrtaceae",
+      "identitySource": "kew-niaouli",
+      "part": "Feuilles",
+      "chemotype": null,
+      "components": [],
+      "componentSource": "hippocratus",
+      "domains": [
+        "ORL",
+        "Respiratoire"
+      ],
+      "courseSummary": "Le cours cite le niaouli dans les affections respiratoires. Il regroupe plusieurs noms botaniques ; cette fiche est limitée à Melaleuca quinquenervia. Les effets thérapeutiques décrits restent à recouper indépendamment.",
+      "summarySource": "hippocratus",
+      "coursePage": 13,
+      "sourcePages": {
+        "hippocratus": [
+          13
+        ]
+      },
+      "contraindications": [],
+      "precautions": [
+        {
+          "text": "Dans son évaluation de la consommation par voie orale, l’Anses déconseille ces huiles aux enfants et aux femmes enceintes ou allaitantes.",
+          "source": "anses-melaleuca-oral"
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "L’Anses identifie des risques neurologiques liés à l’absorption orale de certains composés des huiles de niaouli.",
+          "source": "anses-melaleuca-oral"
+        }
+      ],
+      "interactions": [],
+      "evidence": [],
+      "reviewNotes": [
+        "Identité botanique recoupée ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette ni posologie reproduite.",
+        "Le cours regroupe Melaleuca quinquenervia et Melaleuca viridiflora : la composition collective citée n’est pas attribuée automatiquement à chaque produit. Chémotype et composition restent à vérifier.",
+        "La formule de bonne tolérance du cours ne vaut pas pour toutes les voies. Les données Anses présentées ici concernent l’ingestion ; elles ne constituent pas un bilan de sécurité cutanée ou respiratoire."
+      ],
+      "sourceIds": [
+        "hippocratus",
+        "kew-niaouli",
+        "anses-melaleuca-oral"
+      ],
+      "status": "course",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-06",
+      "dosage": null,
+      "art": "niaouli",
+      "discovery": "Le nom botanique, la partie utilisée et la préparation exacte sont trois repères à vérifier.",
+      "collection": "hippocratus-2026-10",
+      "riskSignals": {
+        "neuro": {
+          "text": "Risques neurologiques documentés par l’Anses pour la voie orale.",
+          "source": "anses-melaleuca-oral"
+        }
+      }
     },
     {
       "id": "muscade",
@@ -3358,6 +3611,9 @@
         "hippocratus-cardio": [
           16,
           17
+        ],
+        "hippocratus-endocrinologie": [
+          21
         ]
       },
       "contraindications": [],
@@ -3367,14 +3623,16 @@
       "evidence": [],
       "reviewNotes": [
         "Mention dans le cours ; bilan de sécurité incomplet et efficacité non recoupée indépendamment. Aucune formule ni posologie n’est transcrite.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "bigaradier",
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
@@ -3737,6 +3995,12 @@
         ],
         "hippocratus-cardio": [
           23
+        ],
+        "hippocratus": [
+          21
+        ],
+        "hippocratus-endocrinologie": [
+          14
         ]
       },
       "contraindications": [],
@@ -3752,15 +4016,19 @@
       "evidence": [],
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-rhum",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hippocratus",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "pin-sylvestre",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -3881,16 +4149,18 @@
       ],
       "reviewNotes": [
         "La monographie concerne des préparations cutanées définies, pas une ingestion ni tous les chémotypes.",
-        "Kew retient Salvia rosmarinus comme nom accepté et Rosmarinus officinalis comme synonyme, dans la famille des Lamiaceae."
+        "Kew retient Salvia rosmarinus comme nom accepté et Rosmarinus officinalis comme synonyme, dans la famille des Lamiaceae.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité."
       ],
       "sourceIds": [
         "ema-romarin",
         "ema-romarin-mo",
-        "kew-romarin"
+        "kew-romarin",
+        "hippocratus"
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "romarin",
       "discovery": "Les romarins commercialisés peuvent porter des chémotypes différents. Cette fiche générale ne valide pas leur interchangeabilité.",
@@ -3911,7 +4181,11 @@
           "page": null
         }
       },
-      "sourcePages": {},
+      "sourcePages": {
+        "hippocratus": [
+          22
+        ]
+      },
       "identitySource": "kew-romarin"
     },
     {
@@ -3941,6 +4215,9 @@
       "sourcePages": {
         "hippocratus-rhum": [
           5
+        ],
+        "hippocratus": [
+          22
         ]
       },
       "contraindications": [],
@@ -3956,15 +4233,17 @@
       "evidence": [],
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
-        "Kew retient Salvia rosmarinus comme nom accepté et Rosmarinus officinalis comme synonyme, dans la famille des Lamiaceae."
+        "Kew retient Salvia rosmarinus comme nom accepté et Rosmarinus officinalis comme synonyme, dans la famille des Lamiaceae.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité."
       ],
       "sourceIds": [
         "hippocratus-rhum",
-        "kew-romarin"
+        "kew-romarin",
+        "hippocratus"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "romarin",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -4002,6 +4281,9 @@
       "sourcePages": {
         "hippocratus-gastro": [
           26
+        ],
+        "hippocratus-endocrinologie": [
+          17
         ]
       },
       "contraindications": [],
@@ -4012,15 +4294,17 @@
       "reviewNotes": [
         "Relevé du cours ; sécurité et efficacité à recouper avec des références indépendantes.",
         "La page associe par erreur le romarin aux Apiaceae et aux semences. Ces mentions ne sont pas reprises comme identité botanique fiable.",
-        "Kew retient Salvia rosmarinus comme nom accepté et Rosmarinus officinalis comme synonyme, dans la famille des Lamiaceae."
+        "Kew retient Salvia rosmarinus comme nom accepté et Rosmarinus officinalis comme synonyme, dans la famille des Lamiaceae.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "kew-romarin"
+        "kew-romarin",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "romarin",
       "discovery": "Vérifier l’espèce et la partie utilisée : une huile essentielle n’est pas interchangeable avec un autre extrait de la plante.",
@@ -4051,6 +4335,9 @@
       "sourcePages": {
         "hippocratus-derm": [
           4
+        ],
+        "hippocratus": [
+          24
         ]
       },
       "contraindications": [],
@@ -4065,14 +4352,16 @@
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Usages issus du cours, non validés indépendamment ; bilan de sécurité incomplet."
+        "Usages issus du cours, non validés indépendamment ; bilan de sécurité incomplet.",
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité."
       ],
       "sourceIds": [
-        "hippocratus-derm"
+        "hippocratus-derm",
+        "hippocratus"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "santal",
       "discovery": "L’identité botanique, la partie distillée et le produit précis doivent être distingués.",
@@ -4237,6 +4526,10 @@
           20,
           21,
           23
+        ],
+        "hippocratus-endocrinologie": [
+          9,
+          10
         ]
       },
       "contraindications": [],
@@ -4252,16 +4545,18 @@
       "reviewNotes": [
         "Le cours qualifie l’effet hormonal du sclaréol de suspecté (p. 8), puis affirme un effet œstrogénique (p. 13). Cette divergence est conservée comme point à vérifier, sans conclure à un effet clinique établi.",
         "Ne pas confondre avec Salvia officinalis, Salvia lavandulifolia ou Salvia miltiorrhiza. Les informations propres à ces espèces ne sont pas transférées à cette fiche.",
-        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune posologie ni recette reproduite."
+        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune posologie ni recette reproduite.",
+        "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gynecologie",
         "kew-sclaree",
-        "sccs-allergenes-contact"
+        "sccs-allergenes-contact",
+        "hippocratus-endocrinologie"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "dosage": null,
       "art": "sauge-sclaree",
       "discovery": "Le nom botanique et la préparation précise permettent de distinguer des huiles portant des noms proches.",
@@ -4690,13 +4985,13 @@
   ],
   "coverage": {
     "complete": false,
-    "note": "Inventaire Hippocratus en cours ; le catalogue ne couvre pas encore toutes les formations.",
+    "note": "Inventaire Hippocratus en cours. Les cours sur les interactions traitent aussi de plantes, d'extraits et de boissons : leurs risques ne se transposent pas automatiquement aux huiles essentielles. Les signaux médicamenteux propres à chaque HE restent à vérifier.",
     "courses": [
       {
         "title": "HE les plus utilisées en infectiologie",
         "url": "https://cours.hippocratus.com/classroom/47137/player/35708",
-        "pagesRead": "3–12",
-        "status": "Premier lot relevé"
+        "pagesRead": "1–26 parcourues ; page 27 sans texte visible",
+        "status": "Relevé complété ; monographies détaillées et recoupements à poursuivre"
       },
       {
         "title": "HE les plus employées en rhumatologie",
@@ -4731,8 +5026,62 @@
       {
         "title": "Hippocratus — Aromathérapeutique en gynécologie et système génito-urinaire",
         "url": "https://cours.hippocratus.com/classroom/47137/player/36742",
-        "pagesRead": "1–30 relevées ; page 31 sans texte de cours visible",
-        "status": "Recoupements en cours ; sept tableaux annexes de grossesse restent à examiner"
+        "pagesRead": "1–30 relevées ; page 31 sans texte ; annexes 1–7 examinées (8 pages PDF)",
+        "status": "Sept annexes grossesse lues ; portée des préparations et divergences à recouper"
+      },
+      {
+        "title": "Hippocratus — Aromathérapeutique en endocrinologie",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/36821",
+        "pagesRead": "1–24 relevées ; page 25 sans texte de cours visible",
+        "status": "Références intégrées ; affirmations cliniques à recouper"
+      },
+      {
+        "title": "Hippocratus — Monographies des principes actifs principaux en infectiologie",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/36024",
+        "pagesRead": "1–41 parcourues ; page 42 sans texte de cours visible",
+        "status": "Molécules relevées ; toxicologie et transposition aux huiles à recouper"
+      },
+      {
+        "title": "Hippocratus — Monographies des principes actifs principaux en rhumatologie",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/36221",
+        "pagesRead": "1–22 parcourues ; fin des monographies indiquée page 22 ; annexe de toxicité cutanée lue",
+        "status": "Molécules et annexe relevées ; application aux huiles à recouper"
+      },
+      {
+        "title": "Hippocratus — Monographies des principes actifs principaux en gastro-entérologie",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/36546",
+        "pagesRead": "1–24 parcourues ; page 25 sans texte de cours visible",
+        "status": "Molécules relevées ; risques à vérifier avant application aux huiles"
+      },
+      {
+        "title": "Hippocratus — Introduction aux interactions plantes-médicaments",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/144410",
+        "pagesRead": "1–21 relevées ; pages 22–24 : activités et bilan",
+        "status": "Mécanismes relevés ; exemples de plantes et de jus non transposés aux HE"
+      },
+      {
+        "title": "Hippocratus — Plantes A à M : interactions",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/144744",
+        "pagesRead": "1–35 relevées, dont 34 notices et une suite",
+        "status": "Formes utilisées souvent non précisées ; signaux HE à recouper"
+      },
+      {
+        "title": "Hippocratus — Plantes O à Z : interactions",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/144922",
+        "pagesRead": "1–20 relevées, dont bibliographie PDF intégrée",
+        "status": "Distinction jus, aliments, extraits et HE requise"
+      },
+      {
+        "title": "Hippocratus — Autres formes d'interactions",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/153447",
+        "pagesRead": "1–10 relevées",
+        "status": "Pages 7–9 sur les HE : preuves et portée clinique à recouper"
+      },
+      {
+        "title": "Hippocratus — Tableaux interactions plantes-médicaments",
+        "url": "https://cours.hippocratus.com/classroom/47137/player/147367",
+        "pagesRead": "1–3 relevées, dont deux tableaux PDF ; activités non réalisées",
+        "status": "Tableaux de plantes et médicaments non transposés automatiquement aux HE"
       }
     ]
   }

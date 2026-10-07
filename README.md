@@ -16,7 +16,7 @@ Remplacer les fichiers modifiés sur GitHub puis cliquer sur « Commit changes �
 
 ## Consultation locale
 
-Ouvrir `index.html` dans un navigateur. Les données et les images sont locales ; seuls les liens de sources nécessitent Internet. Les 74 fiches conservent leur statut de travail à relire.
+Ouvrir `index.html` dans un navigateur. Les données et les images sont locales ; seuls les liens de sources nécessitent Internet. Les 76 fiches conservent leur statut de travail à relire.
 
 ## Fichiers
 
@@ -31,17 +31,35 @@ Documentation : https://docs.github.com/en/pages/getting-started-with-github-pag
 
 ## Version du 5 octobre 2026
 
-74 fiches illustrées. Inventaire Hippocratus encore partiel : infectiologie (relevé partiel), rhumatologie, gastro-entérologie et volet huiles essentielles de dermatologie, ainsi que des mentions du chapitre cardiovasculaire (relevé partiel). Les sources et les limites figurent dans chaque fiche. Les repères de vigilance ne mesurent pas la gravité et une rubrique non renseignée ne signifie pas absence de risque.
+76 fiches illustrées. Inventaire Hippocratus encore partiel : infectiologie (relevé partiel), rhumatologie, gastro-entérologie et volet huiles essentielles de dermatologie, ainsi que des mentions du chapitre cardiovasculaire (relevé partiel). Les sources et les limites figurent dans chaque fiche. Les repères de vigilance ne mesurent pas la gravité et une rubrique non renseignée ne signifie pas absence de risque.
 
 Cette livraison comprend uniquement les fichiers du site, sans archive ni dossier caché à téléverser. Les cours complets et les notes de travail ne sont pas inclus. La publication reste à effectuer sur GitHub.
 
 Ajouts : néroli (fleurs), mandarine (zeste), bergamote (zeste exprimé). Module SNC relevé pages 1–33 ; page 34 sans contenu visible. Bilan de sécurité et efficacité encore à recouper.
 
 
-Mise à jour du 5 octobre — gynécologie : 18 fiches existantes disposent de références supplémentaires avec pages précises. Le catalogue contient toujours 74 fiches. Les nouvelles huiles repérées et les tableaux annexes restent à vérifier ; aucune recette du cours n’est reproduite.
+Mise à jour du 5 octobre — gynécologie : 18 fiches existantes disposent de références supplémentaires avec pages précises. Le catalogue contient toujours 76 fiches. Les nouvelles huiles repérées et les tableaux annexes restent à vérifier ; aucune recette du cours n’est reproduite.
 
 
 Ajout : sauge sclarée et ylang-ylang complet, illustrés. Identités recoupées avec Kew et informations d’allergie sourcées SCCS. Efficacité et sécurité globale encore incomplètement documentées.
 
 
 Ajout : Cymbopogon citratus (citronnelle / lemongrass), avec illustration, identité Kew, composition documentée dans une étude expérimentale et référence SCCS sur l’allergie de contact. Données cliniques et sécurité encore incomplètes.
+
+
+6 octobre 2026 : fin du cours d’infectiologie parcourue, références ajoutées à 11 fiches. Composition de Cymbopogon citratus enrichie ; divergences de parties utilisées signalées. Toujours 76 fiches.
+
+7 octobre 2026 : les cinq modules Hippocratus consacrés aux interactions plantes–médicaments ont été parcourus. Leur couverture apparaît dans « Quelles sources ont déjà été explorées ? ». Beaucoup d’exemples concernent des plantes, des extraits ou des boissons plutôt que des huiles essentielles : aucune nouvelle interaction clinique n’a été attribuée à une fiche sans vérification indépendante. Le site contient toujours 76 fiches de travail.
+
+
+Mise à jour du 6 octobre 2026 : ajout du niaouli et de la myrrhe, avec illustrations et références précises. Le risque neurologique du niaouli est documenté pour la voie orale ; les données des autres voies ne sont pas extrapolées. Inventaire Hippocratus encore incomplet.
+
+Mise à jour endocrinologie du 6 octobre : 14 fiches enrichies de références paginées. Pages 1–24 relevées ; page 25 sans texte. Aucune nouvelle recommandation thérapeutique déduite du cours.
+
+Annexes grossesse : les 7 PDF (8 pages) ont été examinés. Leur portée et leurs divergences restent à recouper ; aucune contre-indication propre à une HE n’est déduite automatiquement de ces listes de plantes.
+
+Mise à jour du 7 octobre : monographies des principes actifs en infectiologie parcourues (pages 1–41). Elles concernent des molécules ; leur toxicologie ne s’applique pas automatiquement aux huiles entières. Aucun nouveau conseil clinique n’en est déduit.
+
+Monographies de rhumatologie : pages 1–22 et tableau annexe de toxicité cutanée examinés le 7 octobre. Le suivi des sources est actualisé ; les effets des principes actifs restent à vérifier pour chaque huile entière.
+
+Monographies digestives : pages 1–24 examinées le 7 octobre. Les données sur les composants sont conservées pour recoupement ; les fiches publiques ne reprennent pas de nouvelles posologies ni d’affirmations cliniques issues de ce seul module.
