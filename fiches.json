@@ -1,9 +1,9 @@
 {
   "title": "CAPA — carnet d’aromathérapie",
-  "version": "0.8",
-  "date": "2026-10-07",
+  "version": "0.9",
+  "date": "2026-10-08",
   "status": "Base de travail — relecture nécessaire",
-  "scope": "78 fiches ; usages EMA pour 12 huiles, mentions de cours structurées pour les autres et premières posologies de monographies à périmètre défini.",
+  "scope": "79 fiches ; usages EMA pour 13 huiles, 49 fiches avec mentions de cours structurées et 16 modalités chiffrées de monographies pour 11 huiles.",
   "sources": {
     "hippocratus": {
       "title": "Hippocratus — HE les plus utilisées en infectiologie",
@@ -94,7 +94,7 @@
       "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-eucalyptus-globulus-labill-eucalyptus-polybractea-rt-baker-eucalyptus-smithii-rt-baker-aetheroleum-revision-1_en.pdf",
       "type": "Référence institutionnelle",
       "date": null,
-      "consulted": "2026-10-07"
+      "consulted": "2026-10-08"
     },
     "ema-eucalyptus-ar": {
       "title": "EMA — Eucalyptus, rapport final, révision 1 (2025)",
@@ -259,10 +259,10 @@
     },
     "ema-teatree-mo": {
       "title": "EMA — Monographie Melaleuca, première version",
-      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-melaleuca-alternifolia-maiden-and-betch-cheel-m-linariifolia-smith-m-dissitiflora-f-mueller-and-or-other-species-melaleuca-aetheroleum-first-version_en.pdf",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-melaleuca-alternifolia-maiden-betch-cheel-m-linariifolia-smith/other-species-melaleuca-aetheroleum-first-version_en.pdf",
       "type": "Monographie institutionnelle",
       "date": null,
-      "consulted": "2026-10-07"
+      "consulted": "2026-10-08"
     },
     "ema-menthe-ar": {
       "title": "EMA — Rapport d’évaluation de Mentha x piperita, révision 1",
@@ -389,6 +389,132 @@
       "type": "Référence botanique institutionnelle",
       "date": null,
       "consulted": "2026-10-07"
+    },
+    "ema-genevrier-mo": {
+      "title": "EMA — Monographie de l’huile de cônes de baies de genévrier, finale",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-juniperus-communis-l-aetheroleum_en.pdf",
+      "type": "Monographie institutionnelle",
+      "date": "2010-11-25",
+      "consulted": "2026-10-08"
+    },
+    "ema-genevrier-addendum": {
+      "title": "EMA — Réexamen de l’huile de genévrier, addendum 2020",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-report/addendum-assessment-report-juniperus-communis-l-aetheroleum_en.pdf",
+      "type": "Rapport institutionnel",
+      "date": "2020-09-23",
+      "consulted": "2026-10-08"
+    },
+    "dgccrf-diffusion": {
+      "title": "DGCCRF / Ministère de l’Économie — Comment utiliser les huiles essentielles en toute sécurité ?, rubrique « Comment les utiliser ? »",
+      "url": "https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/comment-utiliser-les-huiles-essentielles-en-toute",
+      "type": "Conseils officiels de sécurité des consommateurs",
+      "date": "2020-07-29",
+      "consulted": "2026-10-08"
+    },
+    "ema-menthe-mo": {
+      "title": "EMA — Monographie européenne finale de l’huile essentielle de menthe poivrée, révision 1 (2020)",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/european-union-herbal-monograph-mentha-x-piperita-l-aetheroleum-revision-1_en.pdf",
+      "type": "Monographie institutionnelle",
+      "date": "2020-01-15",
+      "consulted": "2026-10-08"
+    },
+    "essai-menthe-carvi-2000": {
+      "title": "May et al. — Essai randomisé menthe poivrée–carvi dans la dyspepsie fonctionnelle (2000)",
+      "url": "https://doi.org/10.1046/j.1365-2036.2000.00873.x",
+      "type": "Essai clinique original · 96 participants",
+      "date": "2000-12-01",
+      "consulted": "2026-10-08"
+    },
+    "ema-achillee-herba": {
+      "title": "EMA — Monographie Achillea millefolium, parties aériennes",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/millefolii-herba",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-ail-bulbe": {
+      "title": "EMA — Monographie Allium sativum, bulbe",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/allii-sativi-bulbus",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-gingembre-rhizome": {
+      "title": "EMA — Monographie Zingiber officinale, rhizome",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/zingiberis-rhizoma",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-estragole": {
+      "title": "EMA — Déclaration sur les produits végétaux contenant de l’estragole",
+      "url": "https://www.ema.europa.eu/en/scientific-guidelines/use-herbal-medicinal-products-containing-estragole",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "anses-badiane": {
+      "title": "Anses — Évaluation des risques liés aux plantes, substitution de la badiane",
+      "url": "https://www.anses.fr/system/files/NUT-Ra-PlantesEN.pdf",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-camomille-romaine-fleur": {
+      "title": "EMA — Camomille romaine, fleur",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/chamomillae-romanae-flos",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-quality-essential-oils": {
+      "title": "EMA — Qualité des huiles essentielles comme substances actives",
+      "url": "https://www.ema.europa.eu/en/scientific-guidelines/quality-essential-oils-active-substances-herbal-medicinal-products-traditional-herbal-medicinal-products",
+      "type": "Guide institutionnel de qualité",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-bergamote-rapport": {
+      "title": "EMA — Rapport final sur l’huile de bergamote",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-report/final-assessment-report-citrus-bergamia-risso-et-poiteau-aetheroleum_en.pdf",
+      "type": "Rapport institutionnel",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "anses-bouleaux-salicylates": {
+      "title": "Anses — Plantes à dérivés salicylés, avis NUT2020SA0045",
+      "url": "https://www.anses.fr/fr/system/files/NUT2020SA0045.pdf",
+      "type": "Avis institutionnel",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "etude-bouleau-flexible-composition": {
+      "title": "Étude originale — Composition et authenticité de l’huile de Betula lenta",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36015435/",
+      "type": "Étude de composition",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-marjolaine-herba": {
+      "title": "EMA — Marjolaine, monographie des parties aériennes fleuries (herba)",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/origani-majoranae-herba",
+      "type": "Monographie institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-myrrha": {
+      "title": "EMA — Myrrhe, monographie de la gomme-résine et de sa teinture",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/myrrha",
+      "type": "Monographie institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "ema-verveine-folium": {
+      "title": "EMA — Verveine citronnelle, monographie des feuilles",
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/verbenae-citriodorae-folium",
+      "type": "Monographie institutionnelle",
+      "date": null,
+      "consulted": "2026-10-08"
     }
   },
   "oils": [
@@ -424,16 +550,22 @@
         "La page regroupe ces plantes sous une affirmation sur le chamazulène. Composition et espèce doivent être recoupées séparément ; cette molécule n’est pas attribuée automatiquement à chaque huile."
       ],
       "sourceIds": [
-        "hippocratus-rhum"
+        "hippocratus-rhum",
+        "ema-achillee-herba"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "achillee-millefeuille",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La monographie EMA repérée concerne les parties aériennes et leurs préparations, notamment les infusions. Aucune dose de cette monographie n’est transférée à l’huile essentielle, dont la partie distillée reste à identifier dans cette fiche.",
+        "source": "ema-achillee-herba",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "achillee-ligustica",
@@ -467,16 +599,22 @@
         "La page regroupe ces plantes sous une affirmation sur le chamazulène. Composition et espèce doivent être recoupées séparément ; cette molécule n’est pas attribuée automatiquement à chaque huile."
       ],
       "sourceIds": [
-        "hippocratus-rhum"
+        "hippocratus-rhum",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "achillee-ligustica",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La page de cours ne précise pas la partie distillée. L’espèce A. ligustica doit être caractérisée séparément ; les doses de l’achillée millefeuille ou de la plante entière ne sont pas attribuées à cette huile.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "achillee-mosquee",
@@ -510,16 +648,22 @@
         "La page regroupe ces plantes sous une affirmation sur le chamazulène. Composition et espèce doivent être recoupées séparément ; cette molécule n’est pas attribuée automatiquement à chaque huile."
       ],
       "sourceIds": [
-        "hippocratus-rhum"
+        "hippocratus-rhum",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "achillee-mosquee",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La partie distillée et la composition de cette huile ne sont pas encore identifiées dans la fiche. Aucune dose de l’achillée millefeuille ni d’une autre achillée ne peut être substituée.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "ail",
@@ -555,11 +699,12 @@
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "ema-ail-bulbe"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "ail",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -571,7 +716,12 @@
           "source": "hippocratus-gastro",
           "page": 16
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA traite la poudre de bulbe et des extraits définis, dont un extrait au solvant huile de colza. Cet extrait n’est pas une huile essentielle de bulbe : ses doses ne sont pas reprises ici.",
+        "source": "ema-ail-bulbe",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "aneth",
@@ -614,7 +764,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "aneth",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -631,7 +781,12 @@
           "source": "hippocratus-gastro",
           "page": 12
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours mentionne l’huile du fruit, mais la fiche ne dispose pas encore d’une préparation médicinale et d’une dose humaine recoupées pour cette huile précise.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "anis-vert",
@@ -813,6 +968,10 @@
         {
           "text": "Grossesse et allaitement : usage non recommandé faute de données suffisantes.",
           "source": "ema-teatree-mo"
+        },
+        {
+          "text": "Une ingestion accidentelle d’huile de tea tree chez l’enfant est une urgence médicale nécessitant une prise en charge hospitalière.",
+          "source": "ema-teatree-mo"
         }
       ],
       "adverseEffects": [
@@ -845,7 +1004,7 @@
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "tea-tree",
       "summarySource": "hippocratus",
@@ -881,7 +1040,7 @@
       "verifiedUses": [
         {
           "label": "Petites plaies et piqûres d’insecte",
-          "context": "Préparations cutanées pour adultes et adolescents de plus de 12 ans.",
+          "context": "Préparations cutanées pour adultes et adolescents à partir de 12 ans.",
           "level": "Usage traditionnel",
           "source": "ema-teatree"
         },
@@ -902,6 +1061,48 @@
           "context": "Préparations buccales définies ; ne pas avaler.",
           "level": "Usage traditionnel",
           "source": "ema-teatree"
+        }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Acné légère et petits furoncles",
+          "route": "Application cutanée",
+          "population": "Adultes et adolescents de 12 ans et plus",
+          "preparation": "Médicament liquide huileux ou semi-solide contenant 10 % d’huile essentielle de Melaleuca",
+          "dose": "Appliquer sur la zone concernée une à trois fois par jour",
+          "limit": "Au maximum un mois ; consulter si les symptômes persistent, s’aggravent ou si l’acné est sévère. Arrêter en cas d’éruption cutanée.",
+          "source": "ema-teatree-mo",
+          "page": 4
+        },
+        {
+          "indication": "Petites plaies superficielles et piqûres d’insecte",
+          "route": "Application cutanée",
+          "population": "Adultes et adolescents à partir de 12 ans",
+          "preparation": "Médicament liquide contenant 0,5 à 10 % d’huile essentielle de Melaleuca",
+          "dose": "Appliquer sur la zone concernée une à trois fois par jour",
+          "limit": "Consulter si les symptômes persistent plus d’une semaine ; arrêter en cas de réaction cutanée. Ne pas appliquer près des yeux ou des oreilles.",
+          "source": "ema-teatree-mo",
+          "page": 4
+        },
+        {
+          "indication": "Démangeaisons et irritation du pied d’athlète léger",
+          "route": "Application cutanée",
+          "population": "Adultes et adolescents à partir de 12 ans",
+          "preparation": "Médicament liquide huileux ou semi-solide contenant 10 % d’huile essentielle de Melaleuca",
+          "dose": "Appliquer sur la zone concernée une à trois fois par jour",
+          "limit": "Durée maximale d’un mois ; consulter si les symptômes persistent ou s’aggravent. Ce repère ne vaut pas pour une mycose étendue ou de l’ongle.",
+          "source": "ema-teatree-mo",
+          "page": 5
+        },
+        {
+          "indication": "Inflammation mineure de la muqueuse buccale",
+          "route": "Bain de bouche ou gargarisme",
+          "population": "Adultes et adolescents à partir de 12 ans",
+          "preparation": "Médicament buccal : 0,17–0,33 mL d’huile de Melaleuca mélangée dans 100 mL d’eau",
+          "dose": "Rincer ou gargariser plusieurs fois par jour avec cette préparation définie",
+          "limit": "Ne jamais avaler ; consulter si les symptômes persistent plus de cinq jours. Une ingestion accidentelle chez l’enfant est une urgence médicale.",
+          "source": "ema-teatree-mo",
+          "page": 5
         }
       ]
     },
@@ -936,6 +1137,10 @@
           "text": "Le cours alerte sur la substitution avec Illicium anisatum (badiane du Japon), associée à un risque de convulsions.",
           "source": "hippocratus-gastro",
           "page": 11
+        },
+        {
+          "text": "L’Anses rapporte des convulsions après substitution de la badiane de Chine par la badiane du Japon dans des préparations à base de fruits. Vérifier l’identité de l’espèce ; ces données ne chiffrent pas le risque propre de l’huile essentielle authentifiée.",
+          "source": "anses-badiane"
         }
       ],
       "adverseEffects": [],
@@ -945,11 +1150,12 @@
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "anses-badiane"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "badiane",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -966,7 +1172,12 @@
           "source": "hippocratus-gastro",
           "page": 11
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La provenance botanique est prioritaire : l’Anses décrit des intoxications par substitution avec la badiane du Japon. L’évaluation porte sur le fruit ; elle ne fournit pas une posologie de l’huile essentielle de badiane de Chine.",
+        "source": "anses-badiane",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "basilic-tropical",
@@ -1012,6 +1223,10 @@
           "text": "Le cours signale un risque génotoxique lié à l’estragole ; l’exposition et la préparation doivent être évaluées.",
           "source": "hippocratus-gastro",
           "page": 4
+        },
+        {
+          "text": "L’EMA demande de limiter autant que possible l’exposition à l’estragole dans les produits végétaux ; un emploi de cette huile riche en estragole exige une évaluation de la composition et de la voie.",
+          "source": "ema-estragole"
         }
       ],
       "adverseEffects": [],
@@ -1023,11 +1238,12 @@
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "ema-estragole"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "basilic",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1039,7 +1255,12 @@
           "source": "hippocratus-gastro",
           "page": 4
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La teneur du produit en estragole et son exposition selon la voie doivent être connues avant d’envisager une dose. La déclaration EMA traite ce risque ; elle ne valide pas une posologie du basilic tropical.",
+        "source": "ema-estragole",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "basilic-linalol",
@@ -1073,16 +1294,22 @@
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-03",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "basilic",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "Le chémotype annoncé « linalol » doit être confirmé par la composition du produit. La mention du cours ne définit ni préparation médicinale ni dose vérifiée pour ce chémotype.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "bergamote",
@@ -1122,6 +1349,10 @@
         {
           "text": "Le cours demande d’éviter une forte exposition solaire pendant l’utilisation. La composition exacte du produit doit être vérifiée.",
           "source": "hippocratus-snc"
+        },
+        {
+          "text": "L’EMA décrit un risque de phototoxicité lié aux furocoumarines, notamment au bergaptène, après contact cutané et exposition aux UV ; la composition du produit doit être connue.",
+          "source": "ema-bergamote-rapport"
         }
       ],
       "adverseEffects": [
@@ -1144,11 +1375,12 @@
       "sourceIds": [
         "hippocratus-snc",
         "anses-diffuseurs-photosensibilisation",
-        "ema-bergamote"
+        "ema-bergamote",
+        "ema-bergamote-rapport"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "bergamote",
       "discovery": "Une même plante peut donner des produits différents selon la partie utilisée : fleurs, feuilles ou zeste.",
@@ -1169,7 +1401,12 @@
           "source": "hippocratus-snc",
           "page": 19
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "L’EMA n’a pas établi de monographie d’usage traditionnel pour l’huile de bergamote, faute de données suffisantes sur la concentration et la posologie des préparations rapportées. Le risque phototoxique dépend aussi des furocoumarines du produit.",
+        "source": "ema-bergamote-rapport",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "bois-inde",
@@ -1204,11 +1441,12 @@
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil."
       ],
       "sourceIds": [
-        "hippocratus-rhum"
+        "hippocratus-rhum",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "bois-inde",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -1225,7 +1463,12 @@
           "source": "hippocratus-rhum",
           "page": 9
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours cite un usage local mais ne définit pas la teneur du produit, la dilution, la durée ni une posologie humaine vérifiée pour Pimenta racemosa var. racemosa.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "bouleau-flexible",
@@ -1251,7 +1494,12 @@
         ]
       },
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "Des huiles de Betula lenta authentifiées dans une étude de composition contenaient majoritairement du salicylate de méthyle. Cela appelle une vérification de la composition et des traitements associés avant toute utilisation.",
+          "source": "etude-bouleau-flexible-composition"
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -1260,11 +1508,12 @@
         "La présence de salicylate de méthyle justifie un recoupement ciblé des contre-indications et interactions ; la page ne constitue pas un bilan de sécurité."
       ],
       "sourceIds": [
-        "hippocratus-rhum"
+        "hippocratus-rhum",
+        "etude-bouleau-flexible-composition"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "bouleau-flexible",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -1276,7 +1525,12 @@
           "source": "hippocratus-rhum",
           "page": 3
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Une étude de composition trouve le salicylate de méthyle dominant dans des échantillons authentifiés de Betula lenta ; elle ne détermine pas une dose clinique sûre de cette huile. Une analyse du produit est indispensable.",
+        "source": "etude-bouleau-flexible-composition",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "bouleau-jaune",
@@ -1302,7 +1556,12 @@
         ]
       },
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "L’Anses cite Betula alleghaniensis parmi les plantes contenant des dérivés salicylés ; la composition de cette huile précise reste à vérifier.",
+          "source": "anses-bouleaux-salicylates"
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -1311,11 +1570,12 @@
         "La présence de salicylate de méthyle justifie un recoupement ciblé des contre-indications et interactions ; la page ne constitue pas un bilan de sécurité."
       ],
       "sourceIds": [
-        "hippocratus-rhum"
+        "hippocratus-rhum",
+        "anses-bouleaux-salicylates"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "bouleau-jaune",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -1327,7 +1587,12 @@
           "source": "hippocratus-rhum",
           "page": 3
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "L’Anses classe Betula alleghaniensis parmi les plantes à dérivés salicylés ; cet avis ne précise ni la composition de l’huile du bois étudiée ici ni une dose humaine. Ne pas reprendre la dose du bouleau flexible ou de la gaulthérie.",
+        "source": "anses-bouleaux-salicylates",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "camomille-romaine",
@@ -1378,16 +1643,22 @@
         "hippocratus-rhum",
         "hippocratus-cardio",
         "hippocratus-snc",
-        "hippocratus"
+        "hippocratus",
+        "ema-camomille-romaine-fleur"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "camomille-romaine",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La monographie EMA retrouvée vise les fleurs et leurs préparations. Elle ne donne pas de dose transférable à l’huile essentielle ; la partie distillée n’est pas encore précisée dans le relevé du cours.",
+        "source": "ema-camomille-romaine-fleur",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "cannelle-ceylan-ecorce",
@@ -1425,6 +1696,10 @@
         {
           "text": "L’huile non diluée n’est pas recommandée à cause de l’irritation locale.",
           "source": "ema-cannelle-mo"
+        },
+        {
+          "text": "La DGCCRF classe cette huile parmi celles qui ne conviennent pas à la diffusion d’ambiance ou à l’inhalation libre, en raison de substances irritantes pour les voies respiratoires. La fiche concerne ici l’huile d’écorce ; la DGCCRF nomme la cannelle de Ceylan sans préciser la partie de plante.",
+          "source": "dgccrf-diffusion"
         }
       ],
       "adverseEffects": [
@@ -1454,11 +1729,12 @@
         "ema-cinnamon-index",
         "hippocratus-gastro",
         "hippocratus-derm",
-        "ema-cannelle-mo"
+        "ema-cannelle-mo",
+        "dgccrf-diffusion"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "cannelle",
       "summarySource": "ema-cannelle-mo",
@@ -1499,6 +1775,18 @@
           "level": "Usage traditionnel",
           "source": "ema-cannelle-mo"
         }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Troubles digestifs spasmodiques légers, ballonnements et flatulences",
+          "route": "Voie orale",
+          "population": "Adultes uniquement",
+          "preparation": "Médicament liquide oral à base d’huile distillée de l’écorce de cannelle de Ceylan",
+          "dose": "50 à 200 mg par jour, répartis en deux à trois prises",
+          "limit": "Huile non diluée déconseillée en raison de l’irritation locale ; consulter si les symptômes persistent plus de deux semaines.",
+          "source": "ema-cannelle-mo",
+          "page": 3
+        }
       ]
     },
     {
@@ -1531,11 +1819,12 @@
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "ema-cinnamon-index"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "cannelle-chine",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1547,7 +1836,12 @@
           "source": "hippocratus-gastro",
           "page": 17
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA du catalogue concerne l’huile de l’écorce de Cinnamomum verum (cannelle de Ceylan), pas Cinnamomum cassia. L’organe distillé du produit étudié ici n’est pas renseigné : dose et sécurité ne sont pas transposées.",
+        "source": "ema-cinnamon-index",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "cardamome",
@@ -1588,7 +1882,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "cardamome",
       "discovery": "Vérifier l’espèce et la partie utilisée : une huile essentielle n’est pas interchangeable avec un autre extrait de la plante.",
@@ -1600,7 +1894,12 @@
           "source": "hippocratus-gastro",
           "page": 23
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La mention du cours ne documente pas une préparation médicinale précise ni une dose humaine vérifiée pour l’huile essentielle des graines.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "carotte",
@@ -1645,11 +1944,12 @@
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "hippocratus-derm"
+        "hippocratus-derm",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "carotte",
       "discovery": "Vérifier l’espèce et la partie utilisée : une huile essentielle n’est pas interchangeable avec un autre extrait de la plante.",
@@ -1660,6 +1960,11 @@
           "source": "hippocratus-gastro",
           "page": 26
         }
+      },
+      "doseResearch": {
+        "text": "La sous-espèce Daucus carota subsp. maximus et l’huile de ses semences demandent une identification et une composition propres. Les allégations du cours et le renvoi aux précautions du céleri ne suffisent pas à fixer une dose.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
       }
     },
     {
@@ -1724,7 +2029,7 @@
         }
       ],
       "reviewNotes": [
-        "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
+        "L’usage traditionnel pour les ballonnements et flatulences est documenté par l’EMA pour des préparations définies ; les autres pistes relevées dans les cours restent à recouper et la sécurité de chaque produit à vérifier.",
         "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
         "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
@@ -1733,11 +2038,12 @@
         "hippocratus-gynecologie",
         "hippocratus-endocrinologie",
         "ema-carvi",
-        "ema-carvi-mo"
+        "ema-carvi-mo",
+        "essai-menthe-carvi-2000"
       ],
-      "status": "partial",
+      "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "carvi",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1772,6 +2078,28 @@
           "limit": "Voie orale non recommandée avant 18 ans ; consulter si les symptômes persistent plus de deux semaines.",
           "source": "ema-carvi-mo",
           "page": 3
+        },
+        {
+          "indication": "Ballonnements et flatulences",
+          "route": "Application cutanée sur l’abdomen",
+          "population": "Tous âges dans la monographie, uniquement avec un médicament adapté et sa notice",
+          "preparation": "Préparation semi-solide contenant 2 % d’huile essentielle distillée des fruits secs de carvi",
+          "dose": "Appliquer une fine couche sur la zone abdominale, une fois par jour",
+          "limit": "Ne pas utiliser sur peau lésée, près des yeux ou sur les muqueuses ; consulter si les symptômes persistent plus de deux semaines.",
+          "source": "ema-carvi-mo",
+          "page": 3
+        }
+      ],
+      "studiedAssociations": [
+        {
+          "partnerId": "menthe-poivree",
+          "title": "Menthe poivrée + carvi · dyspepsie fonctionnelle",
+          "context": "Une étude randomisée contrôlée contre placebo a évalué une association fixe chez 96 patients pendant 28 jours ; elle ne démontre pas l’efficacité de chaque huile prise séparément.",
+          "preparation": "Gélule gastro-résistante contenant 90 mg d’huile de menthe poivrée et 50 mg d’huile de carvi",
+          "studiedDose": "Une gélule deux fois par jour dans cet essai.",
+          "finding": "Après 28 jours, la baisse moyenne de la douleur par rapport au départ était de 40 % avec la préparation combinée contre 22 % avec le placebo ; la comparaison était statistiquement significative dans cet essai.",
+          "limit": "Résultat d’un essai de 96 participants portant sur une formulation précise ; ce pourcentage ne correspond pas à une guérison et la dose ne se convertit pas en gouttes ni en mélange maison.",
+          "source": "essai-menthe-carvi-2000"
         }
       ]
     },
@@ -1828,11 +2156,12 @@
       "sourceIds": [
         "hippocratus-derm",
         "kew-ciste",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "ciste",
       "discovery": "L’identité botanique, la partie distillée et le produit précis doivent être distingués.",
@@ -1845,7 +2174,12 @@
           "source": "hippocratus-derm",
           "page": 12
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le rameau feuillé est indiqué dans la fiche, mais aucune préparation médicinale ni dose humaine vérifiée de cette huile n’est établie par les sources consultées. Les formules du cours ne sont pas converties en posologie générale.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "citron-pericarpe",
@@ -1896,7 +2230,7 @@
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "citron",
       "summarySource": "hippocratus",
@@ -1930,6 +2264,11 @@
           "source": "hippocratus",
           "page": 11
         }
+      },
+      "doseResearch": {
+        "text": "Le mode d’obtention de l’huile n’est pas fixé dans la source relevée : essence exprimée, huile distillée et produit dépourvu de furocoumarines ne sont pas interchangeables pour la sécurité ni pour une dose.",
+        "source": "hippocratus",
+        "reviewedAt": "2026-10-08"
       }
     },
     {
@@ -2008,7 +2347,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "citronnelle-citratus",
       "discovery": "Le mot « citronnelle » peut désigner plusieurs espèces. Le nom botanique est le repère à vérifier.",
@@ -2025,7 +2364,12 @@
           "source": "hippocratus-gynecologie",
           "page": 27
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "L’étude citée porte sur la composition et des propriétés expérimentales ; elle ne définit pas une dose clinique pour l’huile de Cymbopogon citratus. Ne pas remplacer cette espèce par C. nardus, C. winterianus ou C. flexuosus.",
+        "source": "saleem-citratus-2003",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "coriandre-fruit",
@@ -2069,7 +2413,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "coriandre",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -2081,7 +2425,12 @@
           "source": "hippocratus-gastro",
           "page": 15
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours cite le fruit et des usages digestifs, mais la préparation, la voie et une dose humaine de l’huile essentielle de fruit restent à établir indépendamment.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "cumin",
@@ -2117,7 +2466,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "cumin",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -2134,7 +2483,12 @@
           "source": "hippocratus-gastro",
           "page": 9
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Les mentions du cours ne définissent pas un médicament à base de l’huile essentielle du fruit ni une posologie humaine vérifiée.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "cypres",
@@ -2217,11 +2571,12 @@
         "hippocratus-cardio",
         "hippocratus-gynecologie",
         "hippocratus",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "ema-quality-essential-oils"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "cypres",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -2244,7 +2599,12 @@
           "source": "hippocratus-rhum",
           "page": 12
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La partie indiquée par ce cours est le cône femelle ; elle doit être confirmée sur le produit, car d’autres huiles de Cupressus sempervirens proviennent de parties différentes. Aucune posologie ne peut être reprise sans cette identité et une source clinique propre.",
+        "source": "ema-quality-essential-oils",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "celeri",
@@ -2291,7 +2651,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "celeri",
       "discovery": "Vérifier l’espèce et la partie utilisée : une huile essentielle n’est pas interchangeable avec un autre extrait de la plante.",
@@ -2302,6 +2662,11 @@
           "source": "hippocratus-gastro",
           "page": 25
         }
+      },
+      "doseResearch": {
+        "text": "La fiche concerne l’huile des semences. Les précautions relevées dans le cours ne fournissent pas une préparation médicinale, une voie et une dose vérifiées pour cette huile.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
       }
     },
     {
@@ -2343,6 +2708,14 @@
           "text": "Le cours déconseille cette huile pendant la grossesse et l’allaitement et recommande d’éviter un emploi prolongé.",
           "source": "hippocratus-gastro",
           "page": 7
+        },
+        {
+          "text": "La DGCCRF classe cette huile parmi celles qui ne conviennent pas à la diffusion d’ambiance ou à l’inhalation libre, en raison de substances irritantes pour les voies respiratoires.",
+          "source": "dgccrf-diffusion"
+        },
+        {
+          "text": "L’EMA recommande de réduire autant que possible l’exposition à l’estragole dans les produits végétaux ; la teneur de chaque huile d’estragon doit être vérifiée avant toute évaluation de sécurité.",
+          "source": "ema-estragole"
         }
       ],
       "adverseEffects": [],
@@ -2357,16 +2730,24 @@
         "hippocratus-rhum",
         "hippocratus-gastro",
         "hippocratus-snc",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "dgccrf-diffusion",
+        "ema-estragole"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "estragon",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "lungs": {
+          "text": "Diffusion et inhalation libres inadaptées selon la DGCCRF : risque d’irritation des voies respiratoires.",
+          "source": "dgccrf-diffusion",
+          "page": null
+        }
+      },
       "courseUses": [
         {
           "label": "Spasmes musculaires évoqués",
@@ -2378,7 +2759,12 @@
           "source": "hippocratus-rhum",
           "page": 11
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La composition exacte, notamment une éventuelle teneur en estragole, doit être connue avant d’évaluer l’exposition. La déclaration EMA sur l’estragole est une référence de sécurité, pas une monographie posologique de l’huile d’estragon.",
+        "source": "ema-estragole",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "eucalyptus-citronne",
@@ -2421,11 +2807,12 @@
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-derm",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "ema-eucalyptus"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "eucalyptus-citronne",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -2437,7 +2824,12 @@
           "source": "hippocratus-rhum",
           "page": 6
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA « eucalyptus » porte sur Eucalyptus globulus, E. polybractea et E. smithii. Corymbia citriodora est une autre espèce : leurs indications et doses ne sont pas appliquées à son huile.",
+        "source": "ema-eucalyptus",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "eucalyptus-globuleux",
@@ -2510,7 +2902,7 @@
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "eucalyptus",
       "discovery": "Les feuilles adultes sont longues et courbées. Le nom de l’espèce doit accompagner le nom « eucalyptus ».",
@@ -2558,6 +2950,58 @@
           "context": "Préparations cutanées ou pour bain décrites par l’EMA.",
           "level": "Usage traditionnel",
           "source": "ema-eucalyptus-mo"
+        }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Toux associée au rhume",
+          "route": "Voie orale",
+          "population": "Adultes et adolescents de 12 ans et plus",
+          "preparation": "Médicament solide contenant l’huile essentielle d’eucalyptus définie dans la monographie EMA",
+          "dose": "100–200 mg par prise, deux à cinq fois par jour ; total quotidien de 200–600 mg",
+          "limit": "Pas d’emploi oral avant 12 ans ; prudence en cas d’inflammation ou d’ulcération digestive. Consulter si la toux persiste au-delà d’une semaine, s’aggrave, ou s’accompagne de dyspnée, fièvre ou expectoration purulente.",
+          "source": "ema-eucalyptus-mo",
+          "page": 4
+        },
+        {
+          "indication": "Douleur musculaire localisée",
+          "route": "Application cutanée",
+          "population": "Adultes et adolescents de 12 ans et plus",
+          "preparation": "Médicament en pommade à 10 % d’huile essentielle d’eucalyptus",
+          "dose": "Appliquer une fine couche sur la zone douloureuse deux à trois fois par jour",
+          "limit": "Sur peau intacte uniquement ; consulter si la douleur persiste plus de deux semaines ou si la zone rougit ou gonfle.",
+          "source": "ema-eucalyptus-mo",
+          "page": 6
+        },
+        {
+          "indication": "Toux associée au rhume",
+          "route": "Application cutanée",
+          "population": "Adultes et adolescents de 12 ans et plus",
+          "preparation": "Pommade médicamenteuse contenant 10 % d’huile essentielle d’eucalyptus conforme à la monographie",
+          "dose": "Appliquer une fine couche sur le thorax et le dos deux à trois fois par jour",
+          "limit": "Sur peau intacte ; consulter si la toux dure plus d’une semaine, s’aggrave ou s’accompagne de fièvre, dyspnée ou expectoration purulente. Tenir hors de portée des jeunes enfants.",
+          "source": "ema-eucalyptus-mo",
+          "page": 5
+        },
+        {
+          "indication": "Toux associée au rhume",
+          "route": "Bain complet",
+          "population": "Adultes et adolescents de 12 ans et plus",
+          "preparation": "Préparation liquide médicamenteuse pour bain contenant l’huile essentielle d’eucalyptus conforme à la monographie",
+          "dose": "1,5 à 6 g d’huile pour 100 L d’eau, trois à quatre bains par semaine ; eau à 35–38 °C pendant 10–20 minutes",
+          "limit": "Consulter si la toux persiste plus d’une semaine. Bain complet chaud contre-indiqué en cas de plaie étendue, maladie cutanée aiguë, forte fièvre, infection grave, trouble circulatoire sévère ou insuffisance cardiaque.",
+          "source": "ema-eucalyptus-mo",
+          "page": 5
+        },
+        {
+          "indication": "Douleur musculaire localisée",
+          "route": "Bain complet",
+          "population": "Adultes et adolescents de 12 ans et plus",
+          "preparation": "Préparation liquide médicamenteuse pour bain contenant l’huile essentielle d’eucalyptus conforme à la monographie",
+          "dose": "2,7 à 4 g d’huile pour 100 L d’eau, trois à quatre bains par semaine ; eau à 35–38 °C pendant 10–20 minutes",
+          "limit": "Consulter si la douleur persiste plus d’une semaine. Bain complet chaud contre-indiqué en cas de plaie étendue, maladie cutanée aiguë, forte fièvre, infection grave, trouble circulatoire sévère ou insuffisance cardiaque.",
+          "source": "ema-eucalyptus-mo",
+          "page": 6
         }
       ]
     },
@@ -2610,7 +3054,7 @@
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "eucalyptus-radie",
       "discovery": "« Eucalyptus » désigne plusieurs espèces : E. radiata et E. globulus ont des fiches séparées dans ce carnet.",
@@ -2622,7 +3066,12 @@
           "source": "hippocratus",
           "page": 16
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA « eucalyptus » ne couvre pas Eucalyptus radiata. Une composition proche en 1,8-cinéole ne suffit pas à transférer ses doses ou ses limites d’âge.",
+        "source": "ema-eucalyptus",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "fenouil-amer",
@@ -2677,15 +3126,20 @@
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "fenouil",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {},
       "safetyNotice": {
-        "text": "L’EMA a remplacé l’ancienne monographie par une déclaration publique : les préoccupations de génotoxicité et de cancérogénicité liées à l’estragole ne permettent plus de soutenir une monographie d’usage de l’huile de fenouil amer. Ne pas reprendre les anciennes posologies ou indications comme recommandations.",
+        "text": "L’EMA ne soutient plus de monographie pour l’huile de fenouil amer : aux doses d’expectorant examinées, l’exposition à l’estragole entraîne un rapport bénéfice-risque défavorable. Les anciennes doses ne sont pas recommandées dans ce carnet.",
         "source": "ema-fenouil-amer-ps"
+      },
+      "doseResearch": {
+        "text": "Le comité EMA a retiré la possibilité d’une monographie européenne de l’huile de fenouil amer : le rapport bénéfice-risque des doses traditionnelles examinées est jugé défavorable en raison de l’estragole. Ces anciennes doses ne sont donc pas retenues.",
+        "source": "ema-fenouil-amer-ps",
+        "reviewedAt": "2026-10-08"
       }
     },
     {
@@ -2719,7 +3173,12 @@
         ]
       },
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "L’estragole cité parmi les composants appelle une évaluation de la teneur du produit et de l’exposition selon la voie ; la monographie du fruit ne tranche pas cette question pour l’huile essentielle.",
+          "source": "ema-estragole"
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [
@@ -2738,11 +3197,12 @@
         "hippocratus-gastro",
         "hippocratus-gynecologie",
         "hippocratus-endocrinologie",
-        "ema-fenouil-doux-fruit"
+        "ema-fenouil-doux-fruit",
+        "ema-estragole"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "fenouil",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -2758,7 +3218,12 @@
           "source": "hippocratus-gastro",
           "page": 8
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA concerne le fruit sec de fenouil doux préparé en infusion, pas son huile essentielle. La dose de tisane ne se transpose pas à l’huile ; sa teneur en estragole doit être vérifiée séparément.",
+        "source": "ema-fenouil-doux-fruit",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "gaultherie-couchee",
@@ -2835,7 +3300,7 @@
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "gaultherie-couchee",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -2866,7 +3331,12 @@
           "source": "hippocratus-rhum",
           "page": 2
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La toxicovigilance Anses documente les risques du salicylate de méthyle, notamment l’ingestion et les associations avec certains médicaments. Elle ne définit pas une dose cutanée sûre universelle de l’huile de Gaultheria procumbens.",
+        "source": "anses-vigilance-2024",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "gaultherie-odorante",
@@ -2969,13 +3439,180 @@
           "source": "hippocratus-rhum",
           "page": 2
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque un emploi local en rhumatologie, mais ne définit pas ici une préparation et une quantité vérifiables. La vigilance toxicologique de l’Anses, notamment sur l’ingestion, interdit de déduire une dose de cette simple mention.",
+        "source": "anses-vigilance-2024",
+        "reviewedAt": "2026-10-08"
+      }
+    },
+    {
+      "id": "genevrier-baies",
+      "name": "Genévrier commun · cônes de baies",
+      "botanical": "Juniperus communis L.",
+      "aliases": [
+        "Genévrier baies",
+        "Huile de baies de genévrier",
+        "Juniper berry oil"
+      ],
+      "family": "Cupressaceae",
+      "part": "Cônes de baies mûrs, non fermentés",
+      "chemotype": null,
+      "components": [],
+      "componentSource": null,
+      "domains": [
+        "Urinaire",
+        "Digestif",
+        "Muscles",
+        "Articulations"
+      ],
+      "courseSummary": "La monographie EMA concerne exclusivement l’huile distillée des cônes de baies mûrs non fermentés. Elle retient trois usages traditionnels pour des médicaments définis ; la fiche du cours sur les « rameaux avec baies » reste distincte.",
+      "summarySource": "ema-genevrier-mo",
+      "coursePage": null,
+      "sourcePages": {},
+      "contraindications": [
+        {
+          "text": "Hypersensibilité à l’huile de genévrier.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        },
+        {
+          "text": "Pour la voie orale : maladie rénale grave, notamment néphrite interstitielle infectieuse, pyélite ou pyélonéphrite.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        },
+        {
+          "text": "Pour l’usage visant à augmenter la diurèse : situation nécessitant une restriction hydrique, par exemple une maladie cardiaque grave.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Voie orale non recommandée avant 18 ans ; bain non recommandé avant 12 ans. Grossesse et allaitement : emploi non recommandé faute de données suffisantes.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        },
+        {
+          "text": "Pour les troubles urinaires, consulter en cas de fièvre, douleur ou brûlure à la miction, spasmes ou sang dans les urines. Ne pas employer pour stimuler la diurèse en cas d’œdème lié à une fonction cardiaque ou rénale limitée.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        },
+        {
+          "text": "Bain complet : prudence en cas d’hypertension. Si les symptômes persistent plus de deux semaines ou s’aggravent, consulter.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        }
+      ],
+      "adverseEffects": [
+        {
+          "text": "Réactions allergiques cutanées rapportées ; fréquence inconnue.",
+          "source": "ema-genevrier-mo",
+          "page": 5
+        },
+        {
+          "text": "La monographie signale qu’un usage oral prolongé ou un surdosage peut provoquer irritation et douleur rénales, sang ou protéines dans les urines, troubles digestifs, accélération du cœur et hausse de la pression artérielle ; des convulsions et saignements utérins sont aussi mentionnés.",
+          "source": "ema-genevrier-mo",
+          "page": 5
+        }
+      ],
+      "interactions": [
+        {
+          "text": "Aucune interaction rapportée dans la monographie ; cela ne démontre pas une absence d’interaction.",
+          "source": "ema-genevrier-mo",
+          "page": 5
+        }
+      ],
+      "evidence": [
+        {
+          "text": "Usages traditionnels retenus par l’EMA, sur la base d’un emploi ancien ; ils ne constituent pas des preuves cliniques formelles et ne concernent que l’huile de cônes de baies définie.",
+          "source": "ema-genevrier-mo",
+          "page": 3
+        }
+      ],
+      "reviewNotes": [
+        "Ne pas appliquer ces usages ni ces doses à une huile de rameaux ou de bois, ni aux cônes de baies sous forme non distillée.",
+        "Vérifier la partie distillée et la composition sur l’étiquette du produit ; la fiche reste un repère documentaire, pas une prescription.",
+        "Le réexamen EMA de 2020 n’a pas conduit à réviser la monographie de 2010."
+      ],
+      "sourceIds": [
+        "ema-genevrier-mo",
+        "ema-genevrier-addendum"
+      ],
+      "status": "institutional",
+      "publicationReady": false,
+      "reviewedAt": "2026-10-08",
+      "dosage": null,
+      "art": "genevrier",
+      "discovery": "Le « fruit » bleu du genévrier est un cône charnu. Pour cette monographie, seuls ses cônes mûrs non fermentés sont distillés.",
+      "riskSignals": {
+        "kidney": {
+          "text": "Voie orale contre-indiquée en cas de maladie rénale grave ; irritation rénale possible lors d’un usage prolongé ou d’un surdosage.",
+          "source": "ema-genevrier-mo",
+          "page": 4
+        },
+        "skin": {
+          "text": "Réactions allergiques cutanées rapportées.",
+          "source": "ema-genevrier-mo",
+          "page": 5
+        },
+        "neuro": {
+          "text": "Convulsions mentionnées lors d’un surdosage ou d’un usage oral prolongé.",
+          "source": "ema-genevrier-mo",
+          "page": 6
+        }
+      },
+      "verifiedUses": [
+        {
+          "label": "Élimination urinaire en complément pour des troubles mineurs",
+          "context": "Médicament oral défini ; usage traditionnel pour augmenter le volume d’urine, sous réserve de l’absence de signes d’alerte.",
+          "level": "Usage traditionnel",
+          "source": "ema-genevrier-mo"
+        },
+        {
+          "label": "Dyspepsie et flatulences",
+          "context": "Médicament oral défini ; soulagement symptomatique traditionnel.",
+          "level": "Usage traditionnel",
+          "source": "ema-genevrier-mo"
+        },
+        {
+          "label": "Douleurs musculaires et articulaires légères",
+          "context": "Additif de bain médicamenteux, en complément ; usage traditionnel.",
+          "level": "Usage traditionnel",
+          "source": "ema-genevrier-mo"
+        }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Troubles urinaires mineurs, dyspepsie ou flatulences",
+          "route": "Voie orale",
+          "population": "Adultes uniquement",
+          "preparation": "Médicament liquide contenant l’huile distillée des cônes de baies mûrs non fermentés",
+          "dose": "60–100 mg d’huile par jour, répartis en une à trois prises",
+          "limit": "Contre-indiqué en cas de maladie rénale grave ; ne pas utiliser pour stimuler la diurèse si l’apport hydrique doit être limité. Consulter si les symptômes persistent plus de deux semaines.",
+          "source": "ema-genevrier-mo",
+          "page": 3
+        },
+        {
+          "indication": "Douleurs musculaires et articulaires légères",
+          "route": "Bain médicamenteux",
+          "population": "Adolescents de 12 ans et plus et adultes",
+          "preparation": "Additif pour bain contenant l’huile distillée des cônes de baies mûrs non fermentés",
+          "dose": "1–1,5 g d’huile dans un bain complet, trois à quatre fois par semaine ; 10–20 minutes à 35–38 °C",
+          "limit": "Prudence en cas d’hypertension ; consulter si les symptômes persistent plus de deux semaines.",
+          "source": "ema-genevrier-mo",
+          "page": 3
+        }
+      ],
+      "identitySource": "ema-genevrier-mo"
     },
     {
       "id": "genevrier-commun",
-      "name": "Genévrier commun",
+      "name": "Genévrier commun · rameaux avec baies",
       "botanical": "Juniperus communis subsp. communis",
-      "aliases": [],
+      "aliases": [
+        "Genévrier rameaux"
+      ],
       "family": "Cupressaceae",
       "part": "Rameaux avec baies",
       "chemotype": null,
@@ -3021,7 +3658,8 @@
       ],
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
-        "Vérifier sur l’étiquette et auprès du fournisseur si le produit est issu des seuls cônes de baies mûres ou de rameaux ; ne pas mélanger les profils de sécurité."
+        "Vérifier sur l’étiquette et auprès du fournisseur si le produit est issu des seuls cônes de baies mûres ou de rameaux ; ne pas mélanger les profils de sécurité.",
+        "La fiche « Genévrier commun · cônes de baies » documente séparément la préparation exacte de la monographie EMA."
       ],
       "sourceIds": [
         "hippocratus-rhum",
@@ -3030,7 +3668,7 @@
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "genevrier",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -3052,7 +3690,12 @@
           "source": "hippocratus-rhum",
           "page": 9
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La fiche porte sur des rameaux avec baies. La monographie EMA de l’huile de genévrier définit une huile obtenue à partir des cônes de baies mûres : cette posologie ne peut pas être reportée sans certitude sur la partie effectivement distillée.",
+        "source": "ema-genevrier-ar",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "gingembre",
@@ -3108,11 +3751,12 @@
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-cardio",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "ema-gingembre-rhizome"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "gingembre",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -3124,7 +3768,12 @@
           "source": "hippocratus-rhum",
           "page": 4
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA porte sur la poudre et la teinture du rhizome, pas sur son huile essentielle. Ses doses et indications, notamment digestives, ne sont donc pas attribuées à l’huile de gingembre.",
+        "source": "ema-gingembre-rhizome",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "giroflier-clou",
@@ -3164,6 +3813,10 @@
         {
           "text": "Une douleur dentaire soulagée temporairement nécessite une consultation dentaire dès que possible ; éviter le contact avec les gencives.",
           "source": "ema-clove"
+        },
+        {
+          "text": "La DGCCRF classe cette huile parmi celles qui ne conviennent pas à la diffusion d’ambiance ou à l’inhalation libre, en raison de substances irritantes pour les voies respiratoires.",
+          "source": "dgccrf-diffusion"
         }
       ],
       "adverseEffects": [
@@ -3188,18 +3841,20 @@
         "Le cours évoque les anticoagulants, les salicylés et la thrombopénie sur la base notamment de l’eugénol. L’importance clinique pour l’huile entière et les préparations dentaires EMA reste à vérifier ; ne pas présenter ce signal comme une interaction établie.",
         "Conserver côte à côte les deux informations sur les interactions : les contextes et niveaux de preuve diffèrent.",
         "Ne pas déduire une administration dans l’oreille de la mention d’otite.",
-        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
+        "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
+        "La modalité dentaire EMA décrit une préparation et une application très ciblées ; irritation muqueuse et toxicité en cas d’ingestion, surtout chez l’enfant, imposent de conserver ce contexte."
       ],
       "sourceIds": [
         "hippocratus",
         "ema-clove",
         "hippocratus-rhum",
         "hippocratus-gastro",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "dgccrf-diffusion"
       ],
-      "status": "partial",
+      "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "giroflier",
       "summarySource": "hippocratus",
@@ -3240,6 +3895,11 @@
           "text": "Convulsions et coma décrits après surdosage oral ; signal de toxicité, pas d’effet attendu d’un usage dentaire normal.",
           "source": "ema-clove",
           "page": null
+        },
+        "lungs": {
+          "text": "Diffusion et inhalation libres inadaptées selon la DGCCRF : risque d’irritation des voies respiratoires.",
+          "source": "dgccrf-diffusion",
+          "page": null
         }
       },
       "verifiedUses": [
@@ -3254,6 +3914,28 @@
           "context": "Médicament dentaire défini ; consultation dentaire à obtenir rapidement.",
           "level": "Usage traditionnel",
           "source": "ema-clove"
+        }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Inflammations mineures de la bouche ou de la gorge",
+          "route": "Usage buccal",
+          "population": "Adultes uniquement",
+          "preparation": "Bain de bouche médicamenteux à base d’huile distillée des boutons floraux",
+          "dose": "Concentration de 1 à 5 % d’huile ; utilisation plusieurs fois par jour",
+          "limit": "Au plus une semaine ; ne pas avaler ; usage buccal distinct de l’application dentaire.",
+          "source": "ema-clove",
+          "page": 4
+        },
+        {
+          "indication": "Soulagement temporaire d’une douleur de carie",
+          "route": "Usage dentaire localisé",
+          "population": "Adultes uniquement",
+          "preparation": "Médicament dentaire : huile de clou de girofle non diluée, solution dosée à au moins 50 % ou gel à 20 % ; application ciblée sur la partie cariée avec coton ou coton-tige",
+          "dose": "Une application ; répétition possible après 20 minutes, puis toutes les 2 heures si nécessaire",
+          "limit": "Mesure provisoire : consulter un dentiste dès que possible ; ne pas dépasser une semaine, éviter tout contact avec la gencive. Ne pas transposer à un emploi buccal libre ni à un mélange maison.",
+          "source": "ema-clove",
+          "page": 4
         }
       ]
     },
@@ -3309,7 +3991,12 @@
           "source": "hippocratus-derm",
           "page": 9
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque des usages cutanés pour le géranium rosat d’Égypte, sans préciser une préparation, une dilution et une quantité vérifiables pour cette huile. Les données d’une autre espèce ou d’un autre cultivar ne déterminent pas sa dose.",
+        "source": "hippocratus-derm",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "geranium-graveolens",
@@ -3354,7 +4041,12 @@
       "art": "geranium",
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "Cette fiche concerne Pelargonium graveolens et ses feuilles. La source de cours ne fournit pas de schéma chiffré vérifiable pour une préparation identifiée de cette huile ; la dose du géranium rosat d’Égypte ne s’y transpose pas.",
+        "source": "hippocratus-cardio",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "helichryse-italienne",
@@ -3439,7 +4131,12 @@
           "source": "hippocratus-rhum",
           "page": 13
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours cite un emploi autour des hématomes, mais ne donne pas ici de formulation et de quantité étayées pour cette huile. Il déconseille en outre la voie interne : aucune dose orale ne peut être tirée de cette mention.",
+        "source": "hippocratus-rhum",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "laurier-noble",
@@ -3509,7 +4206,12 @@
           "source": "hippocratus-rhum",
           "page": 8
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours mentionne contractures et névralgies sans définir une préparation, une voie et une quantité vérifiables pour l’huile de feuilles de laurier noble. Cette mention ne suffit pas à proposer une posologie.",
+        "source": "hippocratus-rhum",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "lavande-aspic",
@@ -3562,7 +4264,8 @@
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-derm",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "ema-lavande"
       ],
       "status": "course",
       "publicationReady": false,
@@ -3584,7 +4287,12 @@
           "source": "hippocratus-rhum",
           "page": 19
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA de l’huile de lavande vise Lavandula angustifolia, tandis que cette fiche concerne Lavandula latifolia. Ses doses ne peuvent pas être transposées à la lavande aspic, pour laquelle le cours signale aussi la présence de camphre.",
+        "source": "ema-lavande",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "lavande-vraie",
@@ -3801,7 +4509,12 @@
           "source": "hippocratus-cardio",
           "page": 13
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque les jambes lourdes pour le lentisque, mais ne précise pas de préparation, de concentration et de quantité vérifiables pour l’huile des rameaux feuillés. Aucune dose n’est déduite de cet usage cité.",
+        "source": "hippocratus-cardio",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "mandarine-zeste",
@@ -3867,7 +4580,12 @@
           "source": "hippocratus-snc",
           "page": 18
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La mention du cours porte sur des mélanges pour le sommeil, sans définir la quantité propre à l’huile de zeste de mandarine ni le procédé d’obtention du produit. Une dose isolée ne peut pas être extrapolée du mélange.",
+        "source": "hippocratus-snc",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "marjolaine",
@@ -3910,7 +4628,8 @@
         "hippocratus-gastro",
         "hippocratus-cardio",
         "hippocratus-snc",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "ema-marjolaine-herba"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -3946,7 +4665,12 @@
           23
         ]
       },
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La monographie EMA concerne les parties aériennes fleuries séchées et un extrait semi-solide de marjolaine, non son huile essentielle. Les quantités d’infusion ou d’extrait ne constituent donc pas une dose de l’huile de cette fiche.",
+        "source": "ema-marjolaine-herba",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "matricaire",
@@ -4024,7 +4748,7 @@
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "matricaire",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -4042,6 +4766,18 @@
           "context": "Additif de bain défini, en complément et après exclusion d’une affection grave ; à partir de 12 ans selon la monographie.",
           "level": "Usage traditionnel",
           "source": "ema-matricaire"
+        }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "En complément pour les irritations cutanées ou péri-anales et génitales, après exclusion d’une affection sérieuse",
+          "route": "Additif de bain",
+          "population": "Adolescents dès 12 ans et adultes",
+          "preparation": "Médicament en additif de bain à base d’huile de capitules de matricaire",
+          "dose": "0,5 à 1 mg par litre ; bain complet d’environ 100 L une fois par jour ou un jour sur deux, ou bain partiel de 20 à 50 L une à deux fois par jour",
+          "limit": "Bain de 10 à 20 minutes à 35–38 °C ; consulter si les symptômes persistent plus d’une semaine.",
+          "source": "ema-matricaire-mo",
+          "page": 3
         }
       ]
     },
@@ -4072,21 +4808,38 @@
       ],
       "precautions": [
         {
-          "text": "Limites distinctes : digestif à partir de 8 ans, céphalées à partir de 18 ans, rhume à partir de 12 ans, uniquement selon la préparation autorisée.",
-          "source": "ema-menthe"
+          "text": "Les limites d’âge dépendent de la forme et de la voie : gélules digestives dès 8 ans ; céphalée par préparation cutanée chez l’adulte ; pour le rhume, les formes inhalées, orales ou nasales ne sont pas établies entre 2 et 11 ans, tandis que certaines préparations cutanées sont décrites dès 4 ans. Toujours vérifier la notice du produit.",
+          "source": "ema-menthe-mo",
+          "page": 7
         },
         {
           "text": "Par voie orale, des brûlures d’estomac peuvent survenir et un reflux gastro-œsophagien peut être aggravé ; le reflux ne constitue pas une indication.",
           "source": "ema-menthe-ar"
+        },
+        {
+          "text": "La DGCCRF classe cette huile parmi celles qui ne conviennent pas à la diffusion d’ambiance ou à l’inhalation libre, en raison de substances irritantes pour les voies respiratoires. Ce conseil général ne remplace pas les conditions d’emploi d’une préparation médicinale définie par l’EMA.",
+          "source": "dgccrf-diffusion"
+        },
+        {
+          "text": "Pour les médicaments à base de menthe poivrée, la teneur en pulégone et menthofurane doit être spécifiée ; les limites d’exposition de la monographie ne se déduisent pas d’un simple nombre de gouttes.",
+          "source": "ema-menthe-mo",
+          "page": 12
         }
       ],
       "adverseEffects": [
         {
-          "text": "Irritations, brûlures digestives, allergies parfois sévères ; à l’inhalation, apnée ou spasmes respiratoires possibles.",
-          "source": "ema-menthe"
+          "text": "Selon la voie : brûlures digestives et réactions allergiques possibles. Chez des personnes hypersensibles, l’inhalation a été associée à apnée ou constriction bronchique ou laryngée ; ces événements ne sont pas l’effet habituel attendu.",
+          "source": "ema-menthe-mo",
+          "page": 9
         }
       ],
-      "interactions": [],
+      "interactions": [
+        {
+          "text": "Pour les gélules gastro-résistantes, aliments ou antiacides pris en même temps peuvent libérer l’huile trop tôt ; les anti-H2 et inhibiteurs de la pompe à protons peuvent dissoudre prématurément l’enrobage et doivent être évités selon la monographie.",
+          "source": "ema-menthe-mo",
+          "page": 8
+        }
+      ],
       "evidence": [
         {
           "text": "Le niveau de preuve dépend de l’indication et de la formulation.",
@@ -4094,11 +4847,12 @@
         }
       ],
       "reviewNotes": [
-        "Interactions, grossesse et allaitement à compléter avant tout conseil. La synthèse ne constitue pas une autorisation d’ingérer une HE du commerce.",
+        "Les interactions avec les médicaments diminuant l’acidité gastrique, la grossesse et l’allaitement sont documentés dans la monographie ; la fiche reste à relire avant toute publication. Les doses concernent des médicaments définis, pas un flacon commercial quelconque.",
         "Le cours digestif évoque le reflux, alors que les données institutionnelles signalent son aggravation possible. Ne pas retenir le reflux comme indication. Les seuils pédiatriques diffèrent selon la préparation et la voie.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
         "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
-        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité."
+        "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
+        "La monographie EMA décrit une inhalation dans un médicament défini pour les symptômes du rhume, alors que la DGCCRF déconseille la diffusion ou l’inhalation libre de cette huile ; ne pas assimiler ces contextes."
       ],
       "sourceIds": [
         "ema-menthe",
@@ -4107,11 +4861,14 @@
         "hippocratus-cardio",
         "hippocratus-gynecologie",
         "hippocratus",
-        "ema-menthe-ar"
+        "ema-menthe-ar",
+        "dgccrf-diffusion",
+        "ema-menthe-mo",
+        "essai-menthe-carvi-2000"
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "menthe",
       "discovery": "Le signe × du nom botanique indique une origine hybride. La menthe poivrée n’est pas interchangeable avec les autres menthes.",
@@ -4122,9 +4879,9 @@
           "page": null
         },
         "lungs": {
-          "text": "Apnée ou spasme à l’inhalation",
-          "source": "ema-menthe",
-          "page": null
+          "text": "Chez des personnes hypersensibles, apnée ou constriction bronchique ou laryngée rapportées avec l’inhalation.",
+          "source": "ema-menthe-mo",
+          "page": 9
         },
         "skin": {
           "text": "Irritations rapportées selon la voie",
@@ -4185,6 +4942,50 @@
           "level": "Usage traditionnel",
           "source": "ema-menthe"
         }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Spasmes, douleurs abdominales et ballonnements",
+          "route": "Voie orale",
+          "population": "Adultes et adolescents à partir de 12 ans",
+          "preparation": "Médicament en gélules gastro-résistantes contenant l’huile de menthe poivrée",
+          "dose": "0,2–0,4 mL par prise ; 0,6–1,2 mL par jour, répartis en deux ou trois prises",
+          "limit": "Avaler la gélule entière 30 minutes avant le repas ; attention au reflux et aux traitements qui diminuent l’acidité gastrique. La teneur en pulégone et menthofurane doit être contrôlée.",
+          "source": "ema-menthe-mo",
+          "page": 4
+        },
+        {
+          "indication": "Spasmes, douleurs abdominales et ballonnements",
+          "route": "Voie orale",
+          "population": "Enfants de 8 à 11 ans, uniquement selon un médicament adapté et sa notice",
+          "preparation": "Médicament en gélules gastro-résistantes contenant l’huile de menthe poivrée",
+          "dose": "0,2 mL par prise, trois fois par jour ; total 0,6 mL par jour",
+          "limit": "Pas d’emploi avant 8 ans pour cette indication ; vérifier la teneur en pulégone et menthofurane et les contre-indications de la notice.",
+          "source": "ema-menthe-mo",
+          "page": 4
+        },
+        {
+          "indication": "Céphalée légère de tension",
+          "route": "Application cutanée",
+          "population": "Adultes uniquement",
+          "preparation": "Médicament liquide ou semi-solide contenant 10 % d’huile de menthe poivrée dans l’éthanol",
+          "dose": "Une application sur le front et les tempes ; répétable deux fois à 15 minutes d’intervalle ; une séquence de traitement par jour",
+          "limit": "Éviter les yeux ; consulter si la céphalée persiste ou s’aggrave. Ne pas appliquer une huile pure à la place de cette préparation.",
+          "source": "ema-menthe-mo",
+          "page": 5
+        }
+      ],
+      "studiedAssociations": [
+        {
+          "partnerId": "carvi",
+          "title": "Menthe poivrée + carvi · dyspepsie fonctionnelle",
+          "context": "Une étude randomisée contrôlée contre placebo a évalué une association fixe chez 96 patients pendant 28 jours ; elle ne démontre pas l’efficacité de chaque huile prise séparément.",
+          "preparation": "Gélule gastro-résistante contenant 90 mg d’huile de menthe poivrée et 50 mg d’huile de carvi",
+          "studiedDose": "Une gélule deux fois par jour dans cet essai.",
+          "finding": "Après 28 jours, la baisse moyenne de la douleur par rapport au départ était de 40 % avec la préparation combinée contre 22 % avec le placebo ; la comparaison était statistiquement significative dans cet essai.",
+          "limit": "Résultat d’un essai de 96 participants portant sur une formulation précise ; ce pourcentage ne correspond pas à une guérison et la dose ne se convertit pas en gouttes ni en mélange maison.",
+          "source": "essai-menthe-carvi-2000"
+        }
       ]
     },
     {
@@ -4239,7 +5040,8 @@
         "hippocratus",
         "kew-myrrhe",
         "hippocratus-gynecologie",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "ema-myrrha"
       ],
       "status": "course",
       "publicationReady": false,
@@ -4255,7 +5057,12 @@
           "source": "hippocratus",
           "page": 26
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA couvre une teinture obtenue par extraction de la gomme-résine, non l’huile essentielle de cette fiche. La quantité appliquée pour la teinture ne peut donc pas devenir une dose de l’huile essentielle.",
+        "source": "ema-myrrha",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "myrte-commun",
@@ -4314,7 +5121,12 @@
           "source": "hippocratus-rhum",
           "page": 10
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours mentionne un emploi musculaire et respiratoire, mais la partie végétale est indiquée « rameaux avec baies » selon ce seul cours. Sans identification du produit et schéma chiffré vérifiable, aucune dose de cette huile ne peut être retenue.",
+        "source": "hippocratus-rhum",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "niaouli",
@@ -4400,7 +5212,12 @@
           "source": "hippocratus",
           "page": 13
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours cite des affections respiratoires, mais ne définit pas ici une préparation et une quantité vérifiables. L’Anses signale en outre un risque neurologique avec l’ingestion des huiles de Melaleuca, dont le niaouli ; cette mention ne justifie pas une dose orale.",
+        "source": "anses-melaleuca-oral",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "muscade",
@@ -4482,7 +5299,12 @@
           "source": "hippocratus-gastro",
           "page": 13
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque des usages digestifs de l’huile de muscade sans détailler ici un produit, une voie et une quantité vérifiables. Les quantités alimentaires de muscade ne peuvent pas être converties en dose d’huile essentielle.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "neroli",
@@ -4543,7 +5365,12 @@
           "source": "hippocratus-snc",
           "page": 17
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le néroli apparaît dans le cours au sein de mélanges pour l’anxiété ou l’endormissement. La quantité propre à son huile, la composition complète et le protocole du mélange ne sont pas établis dans cette mention.",
+        "source": "hippocratus-snc",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "bigaradier-zeste",
@@ -4600,7 +5427,12 @@
           "source": "hippocratus-cardio",
           "page": 16
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours cite le zeste de bigaradier dans une formule portant sur la circulation, sans donner une dose propre et vérifiée de l’huile de zeste. Il faut identifier la préparation exacte avant d’en déduire un emploi.",
+        "source": "hippocratus-cardio",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "origan-compact",
@@ -4681,7 +5513,12 @@
           "source": "hippocratus",
           "page": 6
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours mentionne des affections infectieuses mais proscrit les usages cutanéo-muqueux et en aérosol pour cette huile. Il ne fournit pas ici de schéma chiffré vérifiable pour une autre voie et une préparation définie.",
+        "source": "hippocratus",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "origan-vrai",
@@ -4732,7 +5569,12 @@
           "source": "hippocratus-gastro",
           "page": 20
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque une activité anti-infectieuse, sans préciser une formulation et une dose vérifiables pour l’huile d’Origanum vulgare subsp. vulgare. Les données d’une autre espèce ou d’un autre chémotype ne sont pas interchangeables.",
+        "source": "hippocratus-gastro",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "palmarosa",
@@ -4789,7 +5631,12 @@
           "source": "hippocratus-derm",
           "page": 6
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque les mycoses cutanées, sans définir dans cette mention la dilution, le véhicule et la quantité pour l’huile de palmarosa. Une piste d’usage ne suffit pas à fixer une dose cutanée.",
+        "source": "hippocratus-derm",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "petit-grain-bigarade",
@@ -4859,7 +5706,12 @@
           "source": "hippocratus-cardio",
           "page": 21
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours mentionne les feuilles et jeunes rameaux de bigaradier dans une formule pour le stress. Cette formule ne permet pas d’isoler une quantité vérifiée de petit grain ni de la transposer à l’huile du zeste ou de la fleur.",
+        "source": "hippocratus-cardio",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "petit-grain-mandarine",
@@ -4920,7 +5772,12 @@
           "source": "hippocratus-cardio",
           "page": 21
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours mentionne les feuilles de mandarinier dans une formule pour le stress, sans isoler une quantité vérifiée de cette huile. Le petit grain ne se confond pas avec l’huile tirée du zeste du même fruit.",
+        "source": "hippocratus-cardio",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "pin-maritime",
@@ -4971,7 +5828,12 @@
           "source": "hippocratus-rhum",
           "page": 8
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La fiche désigne une oléorésine de pin maritime, tandis que le cours évoque seulement un emploi externe pour les névralgies. Le produit exact et une quantité d’application vérifiable ne sont pas établis par cette mention.",
+        "source": "hippocratus-rhum",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "pin-sylvestre",
@@ -5056,7 +5918,12 @@
           "source": "hippocratus-rhum",
           "page": 7
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque l’huile des aiguilles pour les contractures et douleurs rhumatismales, mais ne décrit pas ici une dilution, un véhicule et une quantité vérifiables. Il signale en plus un potentiel allergisant lié aux terpènes.",
+        "source": "hippocratus-rhum",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "ravintsara-cineole",
@@ -5124,7 +5991,12 @@
           "source": "hippocratus",
           "page": 10
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours cite les voies ORL et respiratoires. Le rapport Anses identifie le ravintsara comme l’huile des feuilles de Cinnamomum camphora à chémotype 1,8-cinéole, mais cette identification ne fournit pas une dose clinique ni une voie sûre pour le produit de la fiche.",
+        "source": "anses-ravintsara-rapport",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "romarin",
@@ -5196,7 +6068,7 @@
       ],
       "status": "institutional",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "romarin",
       "discovery": "Les romarins commercialisés peuvent porter des chémotypes différents. Cette fiche générale ne valide pas leur interchangeabilité.",
@@ -5240,6 +6112,18 @@
           "context": "Préparations semi-solides à appliquer sur la peau.",
           "level": "Usage traditionnel",
           "source": "ema-romarin"
+        }
+      ],
+      "verifiedRegimens": [
+        {
+          "indication": "Douleurs musculaires et articulaires légères ; troubles circulatoires mineurs des jambes",
+          "route": "Application cutanée",
+          "population": "Adultes uniquement",
+          "preparation": "Médicament semi-solide à base d’huile essentielle de romarin",
+          "dose": "Préparation à 6–10 % d’huile, appliquée deux à trois fois par jour",
+          "limit": "Ne pas appliquer sur une peau lésée ou irritée ; consulter si les symptômes persistent plus de quatre semaines.",
+          "source": "ema-romarin-mo",
+          "page": 4
         }
       ]
     },
@@ -5294,7 +6178,8 @@
       "sourceIds": [
         "hippocratus-rhum",
         "kew-romarin",
-        "hippocratus"
+        "hippocratus",
+        "ema-romarin"
       ],
       "status": "course",
       "publicationReady": false,
@@ -5317,7 +6202,12 @@
           "source": "hippocratus-rhum",
           "page": 5
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA concerne l’huile de romarin définie dans ses documents, sans établir une dose propre au chémotype à camphre de cette fiche. Le cours alerte sur sa neurotoxicité et privilégie la voie externe : aucune dose d’un autre chémotype n’est transposée.",
+        "source": "ema-romarin",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "romarin-verbenone",
@@ -5362,7 +6252,8 @@
       "sourceIds": [
         "hippocratus-gastro",
         "kew-romarin",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "ema-romarin"
       ],
       "status": "course",
       "publicationReady": false,
@@ -5372,7 +6263,12 @@
       "discovery": "Vérifier l’espèce et la partie utilisée : une huile essentielle n’est pas interchangeable avec un autre extrait de la plante.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {},
-      "identitySource": "kew-romarin"
+      "identitySource": "kew-romarin",
+      "doseResearch": {
+        "text": "La fiche mentionne un chémotype à verbénone sans fiabiliser la partie distillée. La monographie EMA de l’huile de romarin ne résout pas cette identité de produit ni une dose spécifique à ce chémotype.",
+        "source": "ema-romarin",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "santal-blanc",
@@ -5428,7 +6324,12 @@
       "art": "santal",
       "discovery": "L’identité botanique, la partie distillée et le produit précis doivent être distingués.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "Le cours recommande pour le santal un usage prudent et bref, les effets indésirables et contre-indications restant mal connus. Il ne fournit pas ici de préparation et de schéma chiffré vérifiables pour l’huile du bois.",
+        "source": "hippocratus-derm",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "sarriette-montagnes",
@@ -5521,7 +6422,12 @@
           "source": "hippocratus",
           "page": 7
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque des usages respiratoires et intestinaux, tout en proscrivant les applications cutanéo-muqueuses et en aérosol pour cette huile. Il ne documente pas ici une autre voie et une dose chiffrée pour une préparation définie.",
+        "source": "hippocratus",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "sauge-espagne",
@@ -5563,7 +6469,12 @@
       "art": "sauge-espagne",
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La fiche concerne Salvia lavandulifolia et non la sauge officinale. La source de cours ne définit pas une préparation, une voie et une quantité vérifiables pour son huile ; une éventuelle dose d’une autre sauge serait une extrapolation.",
+        "source": "hippocratus-cardio",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "sauge-sclaree",
@@ -5642,7 +6553,12 @@
           "source": "hippocratus-gynecologie",
           "page": 13
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque des usages gynécologiques de la sauge sclarée, sans fournir ici un schéma chiffré vérifiable pour son huile. Le signalement d’allergènes de contact par le SCCS ne définit pas non plus une dose sûre pour le produit fini.",
+        "source": "hippocratus-gynecologie",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "serpolet",
@@ -5679,7 +6595,8 @@
         "Ne pas appliquer à T. serpyllum les conclusions EMA relatives à T. vulgaris / T. zygis."
       ],
       "sourceIds": [
-        "hippocratus"
+        "hippocratus",
+        "ema-thyme"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -5700,7 +6617,12 @@
           "source": "hippocratus",
           "page": 8
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque la toux pour l’huile de Thymus serpyllum, sans définir une préparation, une voie et une quantité vérifiables. La monographie EMA du thym concerne Thymus vulgaris ou Thymus zygis : elle ne fixe pas une dose pour le serpolet.",
+        "source": "ema-thyme",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "thym-carvacrol",
@@ -5731,7 +6653,8 @@
         "La monographie EMA du thym de type thymol n’est pas extrapolée à ce chémotype."
       ],
       "sourceIds": [
-        "hippocratus"
+        "hippocratus",
+        "ema-thyme"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -5745,7 +6668,12 @@
           5
         ]
       },
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "La monographie EMA concerne une huile de thym définie par son identité et sa qualité, sans établir une posologie propre au chémotype à carvacrol de cette fiche. Sans composition du lot et préparation concordantes, ses chiffres ne sont pas repris ici.",
+        "source": "ema-thyme",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "thym-linalol",
@@ -5777,7 +6705,8 @@
       ],
       "sourceIds": [
         "hippocratus",
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "ema-thyme"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -5794,7 +6723,12 @@
           18
         ]
       },
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "Le cours distingue le thym à linalol, mais les repères EMA portent sur les préparations d’huile de thym définies dans la monographie et ne constituent pas une dose spécifique à ce chémotype. Une vérification du produit reste nécessaire.",
+        "source": "ema-thyme",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "thym-thuyanol",
@@ -5826,7 +6760,8 @@
       ],
       "sourceIds": [
         "hippocratus",
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "ema-thyme"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -5843,7 +6778,12 @@
           18
         ]
       },
-      "riskSignals": {}
+      "riskSignals": {},
+      "doseResearch": {
+        "text": "Le thym à thuyanol est présenté comme un chémotype particulier dans le cours. La monographie EMA de l’huile de thym ne donne pas une quantité propre à ce chémotype et à un produit identifié ; une dose générique n’est pas transposée.",
+        "source": "ema-thyme",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "thym-thymol",
@@ -5881,6 +6821,10 @@
         {
           "text": "Grossesse et allaitement : usage non recommandé faute de données suffisantes.",
           "source": "ema-thyme-report"
+        },
+        {
+          "text": "La DGCCRF classe cette huile parmi celles qui ne conviennent pas à la diffusion d’ambiance ou à l’inhalation libre, en raison de substances irritantes pour les voies respiratoires.",
+          "source": "dgccrf-diffusion"
         }
       ],
       "adverseEffects": [
@@ -5910,7 +6854,8 @@
         "ema-thyme",
         "ema-thyme-report",
         "hippocratus-gastro",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "dgccrf-diffusion"
       ],
       "status": "partial",
       "publicationReady": false,
@@ -5942,6 +6887,11 @@
           "text": "Irritation cutanée rapportée",
           "source": "ema-thyme",
           "page": null
+        },
+        "lungs": {
+          "text": "Diffusion et inhalation libres inadaptées selon la DGCCRF : risque d’irritation des voies respiratoires.",
+          "source": "dgccrf-diffusion",
+          "page": null
         }
       },
       "verifiedUses": [
@@ -5951,7 +6901,12 @@
           "level": "Usage traditionnel",
           "source": "ema-thyme"
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA définit des préparations et des voies pour l’huile de thym, mais pas une dose individualisée pour le chémotype à thymol de cette fiche. Son statut irritant pour les voies respiratoires en diffusion, signalé par la DGCCRF, impose aussi de ne pas improviser cette voie.",
+        "source": "ema-thyme",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "valeriane",
@@ -6150,7 +7105,8 @@
       ],
       "sourceIds": [
         "hippocratus-cardio",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "ema-verveine-folium"
       ],
       "status": "course",
       "publicationReady": false,
@@ -6166,7 +7122,12 @@
           "source": "hippocratus-cardio",
           "page": 20
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "La monographie EMA porte sur les feuilles de verveine citronnelle préparées en tisane, non sur l’huile essentielle. Le cours mentionne un effet sédatif sans dose propre de l’huile ; aucune quantité de feuilles ne lui est transposée.",
+        "source": "ema-verveine-folium",
+        "reviewedAt": "2026-10-08"
+      }
     },
     {
       "id": "ylang-ylang-complet",
@@ -6232,7 +7193,12 @@
           "source": "hippocratus-gynecologie",
           "page": 15
         }
-      ]
+      ],
+      "doseResearch": {
+        "text": "Le cours évoque un effet apaisant pour l’ylang-ylang, sans définir une préparation, une dilution et une quantité vérifiables pour l’huile issue d’une distillation complète. Le recensement d’allergènes de contact ne donne pas une dose sûre du produit fini.",
+        "source": "hippocratus-gynecologie",
+        "reviewedAt": "2026-10-08"
+      }
     }
   ],
   "coverage": {
