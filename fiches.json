@@ -3,7 +3,7 @@
   "version": "0.9",
   "date": "2026-10-08",
   "status": "Base de travail — relecture nécessaire",
-  "scope": "79 fiches ; usages EMA pour 13 huiles, 49 fiches avec mentions de cours structurées et 16 modalités chiffrées de monographies pour 11 huiles.",
+  "scope": "79 fiches ; 13 huiles avec usages EMA, 49 avec mentions de cours structurées, 10 avec essais cliniques contextualisés et 30 modalités chiffrées EMA.",
   "sources": {
     "hippocratus": {
       "title": "Hippocratus — HE les plus utilisées en infectiologie",
@@ -515,6 +515,104 @@
       "type": "Monographie institutionnelle",
       "date": null,
       "consulted": "2026-10-08"
+    },
+    "ema-thyme-mo": {
+      "title": "EMA — Monographie finale de l’huile de thym, révision 1",
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-thymus-vulgaris-l-thymus-zygis-l-aetheroleum-revision-1_en.pdf",
+      "type": "Monographie institutionnelle",
+      "date": "2020-07-08",
+      "consulted": "2026-10-08"
+    },
+    "trial-geranium-stomatitis": {
+      "title": "Sabzghabaee et al. — Essai randomisé du gel à 1 % de Pelargonium graveolens pour la stomatite sous prothèse",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3556280/",
+      "type": "Essai clinique original",
+      "date": "2011-12",
+      "consulted": "2026-10-08"
+    },
+    "trial-lemon-nausea": {
+      "title": "Yavari kia et al. — Essai randomisé de l’inhalation de citron pour les nausées de grossesse",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4005434/",
+      "type": "Essai clinique original",
+      "date": "2014",
+      "consulted": "2026-10-08"
+    },
+    "trial-sage-memory": {
+      "title": "Kennedy et al. — Essai croisé d’huile de sauge d’Espagne sur la cognition de volontaires sains",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20937617/",
+      "type": "Essai clinique original",
+      "date": "2010",
+      "consulted": "2026-10-08"
+    },
+    "ncbi-sauge-taxonomie": {
+      "title": "NCBI Taxonomy — Salvia lavandulaefolia, variante orthographique de Salvia lavandulifolia",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3110498&mode=Info",
+      "type": "Référence taxonomique",
+      "date": null,
+      "consulted": "2026-10-08"
+    },
+    "trial-sandal-psoriasis": {
+      "title": "Sharma et al. — Essai ouvert exploratoire du santal blanc sur le psoriasis en plaques",
+      "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2017.00125/full",
+      "type": "Essai clinique original · ouvert, sans témoin",
+      "date": "2017",
+      "consulted": "2026-10-08"
+    },
+    "trial-marjoram-stress": {
+      "title": "Lee et al. — Essai randomisé de l’inhalation de marjolaine chez des infirmières de réanimation",
+      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1287282/full",
+      "type": "Essai clinique original · randomisé",
+      "date": "2023",
+      "consulted": "2026-10-08"
+    },
+    "trial-sclaree-dysmenorrhee": {
+      "title": "Kobayashi et al. — Essai croisé de diffusion de sauge sclarée pendant le cycle menstruel",
+      "url": "https://www.mdpi.com/2076-3417/16/7/3234",
+      "type": "Essai clinique original · croisé, 12 participantes analysées",
+      "date": "2026",
+      "consulted": "2026-10-08"
+    },
+    "trial-camomille-romaine-massage": {
+      "title": "Wilkinson et al. — Essai randomisé du massage avec ou sans huile essentielle de camomille romaine en soins palliatifs",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10659113/",
+      "type": "Essai clinique original · randomisé, sans insu",
+      "date": "1999",
+      "consulted": "2026-10-08"
+    },
+    "trial-gingembre-postoperatoire": {
+      "title": "Hunt et al. — Essai randomisé de l’inhalation de gingembre contre les nausées après chirurgie ambulatoire",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22392970/",
+      "type": "Essai clinique original · randomisé",
+      "date": "2013",
+      "consulted": "2026-10-08"
+    },
+    "trial-citratus-dentiste": {
+      "title": "Maybodi et al. — Essai randomisé de citronnelle Cymbopogon citratus pendant un détartrage",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11899488/",
+      "type": "Essai clinique original · randomisé sans insu complet",
+      "date": "2025",
+      "consulted": "2026-10-08"
+    },
+    "trial-neroli-accouchement": {
+      "title": "Scandurra et al. — Essai randomisé de diffusion du néroli pendant le travail obstétrical",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8871902/",
+      "type": "Essai clinique original · randomisé",
+      "date": "2022",
+      "consulted": "2026-10-08"
+    },
+    "hc-aromatherapie-2025": {
+      "title": "Santé Canada — Aromatherapy: Essential Oils, monographie des produits de santé naturels (25 juillet 2025)",
+      "url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/dbImages/mono_aromatherapy--essential-oils_english.pdf",
+      "type": "Monographie réglementaire canadienne · allégations d’étiquetage et concentrations de produit fini",
+      "date": "2025-07-25",
+      "consulted": "2026-10-08"
+    },
+    "hippocratus-toxicite-n1": {
+      "title": "Hippocratus — Les huiles essentielles peuvent être toxiques, niveau 1",
+      "url": "https://cours.hippocratus.com/classroom/47133/player/69008",
+      "type": "Cours privé · lecture critique et attribution à recouper",
+      "date": "",
+      "consulted": "2026-10-08"
     }
   },
   "oils": [
@@ -565,7 +663,8 @@
         "text": "La monographie EMA repérée concerne les parties aériennes et leurs préparations, notamment les infusions. Aucune dose de cette monographie n’est transférée à l’huile essentielle, dont la partie distillée reste à identifier dans cette fiche.",
         "source": "ema-achillee-herba",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "achillee-ligustica",
@@ -614,7 +713,8 @@
         "text": "La page de cours ne précise pas la partie distillée. L’espèce A. ligustica doit être caractérisée séparément ; les doses de l’achillée millefeuille ou de la plante entière ne sont pas attribuées à cette huile.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "achillee-mosquee",
@@ -663,7 +763,8 @@
         "text": "La partie distillée et la composition de cette huile ne sont pas encore identifiées dans la fiche. Aucune dose de l’achillée millefeuille ni d’une autre achillée ne peut être substituée.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "ail",
@@ -721,7 +822,8 @@
         "text": "La monographie EMA traite la poudre de bulbe et des extraits définis, dont un extrait au solvant huile de colza. Cet extrait n’est pas une huile essentielle de bulbe : ses doses ne sont pas reprises ici.",
         "source": "ema-ail-bulbe",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "aneth",
@@ -786,7 +888,8 @@
         "text": "Le cours mentionne l’huile du fruit, mais la fiche ne dispose pas encore d’une préparation médicinale et d’une dose humaine recoupées pour cette huile précise.",
         "source": "hippocratus-gastro",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "anis-vert",
@@ -803,7 +906,8 @@
       ],
       "componentSource": "hippocratus-gastro",
       "domains": [
-        "Digestif"
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "L’EMA retient un usage traditionnel de préparations orales définies pour les ballonnements et flatulences légers, ainsi que pour la toux du rhume avec sécrétions. Les propriétés hormonales évoquées par le cours ne sont pas des indications validées.",
       "summarySource": "ema-anis",
@@ -914,6 +1018,10 @@
           "source": "ema-anis-mo",
           "page": 4
         }
+      ],
+      "evidenceDomains": [
+        "Digestif",
+        "Respiratoire"
       ]
     },
     {
@@ -1104,6 +1212,10 @@
           "source": "ema-teatree-mo",
           "page": 5
         }
+      ],
+      "evidenceDomains": [
+        "Peau",
+        "Bucco-dentaire"
       ]
     },
     {
@@ -1121,7 +1233,11 @@
       ],
       "componentSource": "hippocratus-gastro",
       "domains": [
-        "Digestif"
+        "Digestif",
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours cite les crampes, ballonnements et flatulences. Il distingue cette espèce de la badiane du Japon, toxique.",
       "summarySource": "hippocratus-gastro",
@@ -1131,7 +1247,13 @@
           11
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours alerte sur la substitution avec Illicium anisatum (badiane du Japon), associée à un risque de convulsions.",
@@ -1141,6 +1263,11 @@
         {
           "text": "L’Anses rapporte des convulsions après substitution de la badiane de Chine par la badiane du Japon dans des préparations à base de fruits. Vérifier l’identité de l’espèce ; ces données ne chiffrent pas le risque propre de l’huile essentielle authentifiée.",
           "source": "anses-badiane"
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
         }
       ],
       "adverseEffects": [],
@@ -1151,7 +1278,8 @@
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "anses-badiane"
+        "anses-badiane",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -1160,7 +1288,13 @@
       "art": "badiane",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        }
+      },
       "courseUses": [
         {
           "label": "Crampes digestives",
@@ -1173,10 +1307,63 @@
           "page": 11
         }
       ],
-      "doseResearch": {
-        "text": "La provenance botanique est prioritaire : l’Anses décrit des intoxications par substitution avec la badiane du Japon. L’évaluation porte sur le fruit ; elle ne fournit pas une posologie de l’huile essentielle de badiane de Chine.",
-        "source": "anses-badiane",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée du fruit d’Illicium verum",
+        "massage": "1–1,75 %",
+        "local": "1–1,75 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 13
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -1260,7 +1447,8 @@
         "text": "La teneur du produit en estragole et son exposition selon la voie doivent être connues avant d’envisager une dose. La déclaration EMA traite ce risque ; elle ne valide pas une posologie du basilic tropical.",
         "source": "ema-estragole",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "basilic-linalol",
@@ -1309,7 +1497,8 @@
         "text": "Le chémotype annoncé « linalol » doit être confirmé par la composition du produit. La mention du cours ne définit ni préparation médicinale ni dose vérifiée pour ce chémotype.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "bergamote",
@@ -1332,7 +1521,10 @@
       "componentSource": "hippocratus-snc",
       "domains": [
         "Sommeil",
-        "Stress"
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours évoque le sommeil et cite l’essence du zeste dans une formulation. Les hypothèses concernant la mélatonine ne sont pas retenues comme une indication thérapeutique démontrée.",
       "summarySource": "hippocratus-snc",
@@ -1344,7 +1536,13 @@
           31
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours demande d’éviter une forte exposition solaire pendant l’utilisation. La composition exacte du produit doit être vérifiée.",
@@ -1353,6 +1551,16 @@
         {
           "text": "L’EMA décrit un risque de phototoxicité lié aux furocoumarines, notamment au bergaptène, après contact cutané et exposition aux UV ; la composition du produit doit être connue.",
           "source": "ema-bergamote-rapport"
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        },
+        {
+          "text": "Santé Canada classe cette huile comme phototoxique dans sa monographie : pour les produits cutanés correspondants, éviter le soleil sur la zone appliquée pendant 24 à 48 heures.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
         }
       ],
       "adverseEffects": [
@@ -1369,14 +1577,15 @@
         }
       ],
       "reviewNotes": [
-        "Synthèse du cours ; efficacité et bilan de sécurité encore incomplets. Aucune formule ni posologie transcrite.",
+        "Synthèse du cours ; efficacité et bilan de sécurité encore incomplets. Aucune formule du cours reproduite ; les quantités canadiennes concernent des produits définis.",
         "La déclaration EMA n’établit pas une indication pour le sommeil ; la photo-toxicité reste documentée séparément par l’Anses."
       ],
       "sourceIds": [
         "hippocratus-snc",
         "anses-diffuseurs-photosensibilisation",
         "ema-bergamote",
-        "ema-bergamote-rapport"
+        "ema-bergamote-rapport",
+        "hc-aromatherapie-2025"
       ],
       "status": "partial",
       "publicationReady": false,
@@ -1389,6 +1598,11 @@
         "skin": {
           "text": "Risque de phototoxicité lié aux furocoumarines et à l’exposition aux UVA.",
           "source": "anses-diffuseurs-photosensibilisation"
+        },
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
         }
       },
       "safetyNotice": {
@@ -1402,10 +1616,47 @@
           "page": 19
         }
       ],
-      "doseResearch": {
-        "text": "L’EMA n’a pas établi de monographie d’usage traditionnel pour l’huile de bergamote, faute de données suffisantes sur la concentration et la posologie des préparations rapportées. Le risque phototoxique dépend aussi des furocoumarines du produit.",
-        "source": "ema-bergamote-rapport",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE exprimée du zeste de Citrus bergamia, non rectifiée",
+        "massage": "0,4 %",
+        "local": "0,4 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -1468,7 +1719,8 @@
         "text": "Le cours cite un usage local mais ne définit pas la teneur du produit, la dilution, la durée ni une posologie humaine vérifiée pour Pimenta racemosa var. racemosa.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "bouleau-flexible",
@@ -1530,7 +1782,8 @@
         "text": "Une étude de composition trouve le salicylate de méthyle dominant dans des échantillons authentifiés de Betula lenta ; elle ne détermine pas une dose clinique sûre de cette huile. Une analyse du produit est indispensable.",
         "source": "etude-bouleau-flexible-composition",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "bouleau-jaune",
@@ -1592,7 +1845,8 @@
         "text": "L’Anses classe Betula alleghaniensis parmi les plantes à dérivés salicylés ; cet avis ne précise ni la composition de l’huile du bois étudiée ici ni une dose humaine. Ne pas reprendre la dose du bouleau flexible ou de la gaulthérie.",
         "source": "anses-bouleaux-salicylates",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "camomille-romaine",
@@ -1605,7 +1859,8 @@
       "components": [],
       "componentSource": "hippocratus-rhum",
       "domains": [
-        "Rhumatologie"
+        "Rhumatologie",
+        "Stress"
       ],
       "courseSummary": "La camomille romaine est mentionnée parmi les huiles du chapitre rhumatologie ; le cours souligne une limite liée au coût.",
       "summarySource": "hippocratus-rhum",
@@ -1644,7 +1899,8 @@
         "hippocratus-cardio",
         "hippocratus-snc",
         "hippocratus",
-        "ema-camomille-romaine-fleur"
+        "ema-camomille-romaine-fleur",
+        "trial-camomille-romaine-massage"
       ],
       "status": "course",
       "publicationReady": false,
@@ -1655,10 +1911,23 @@
       "collection": "hippocratus-2026-10",
       "riskSignals": {},
       "doseResearch": {
-        "text": "La monographie EMA retrouvée vise les fleurs et leurs préparations. Elle ne donne pas de dose transférable à l’huile essentielle ; la partie distillée n’est pas encore précisée dans le relevé du cours.",
-        "source": "ema-camomille-romaine-fleur",
+        "text": "Un essai randomisé de massage avec ou sans huile de camomille romaine a concerné 103 patients en soins palliatifs. Le résumé ne donne pas de concentration, et l’effet propre de l’huile n’est pas établi : aucune dose cutanée ne peut en être déduite.",
+        "source": "trial-camomille-romaine-massage",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "clinicalStudies": [
+        {
+          "indication": "Anxiété en soins palliatifs — effet propre de l’huile non démontré",
+          "population": "103 personnes atteintes de cancer recevant des soins palliatifs, réparties entre deux groupes de massage",
+          "route": "Application cutanée par massage dans l’essai",
+          "preparation": "Huile végétale de massage seule ou avec huile essentielle de camomille romaine ; concentration non précisée dans le résumé de l’étude",
+          "protocol": "Massage comparé au même massage avec ajout d’huile essentielle ; évaluation de l’anxiété et de la qualité de vie",
+          "result": "L’anxiété diminuait après massage dans les deux groupes. Le résumé de l’essai ne permet pas d’attribuer avec certitude le bénéfice à l’huile essentielle elle-même.",
+          "limit": "Essai sans insu, dans une situation clinique précise ; l’effet du massage et celui de l’huile sont difficiles à séparer. Aucune dose ni indication autonome de la camomille romaine ne peut en être déduite.",
+          "source": "trial-camomille-romaine-massage"
+        }
+      ],
+      "evidenceDomains": []
     },
     {
       "id": "cannelle-ceylan-ecorce",
@@ -1730,7 +1999,8 @@
         "hippocratus-gastro",
         "hippocratus-derm",
         "ema-cannelle-mo",
-        "dgccrf-diffusion"
+        "dgccrf-diffusion",
+        "hc-aromatherapie-2025"
       ],
       "status": "partial",
       "publicationReady": false,
@@ -1787,7 +2057,15 @@
           "source": "ema-cannelle-mo",
           "page": 3
         }
-      ]
+      ],
+      "evidenceDomains": [
+        "Digestif"
+      ],
+      "canadaExclusion": {
+        "text": "Santé Canada exclut explicitement l’huile essentielle de l’écorce de Cinnamomum verum de sa monographie d’aromathérapie en raison d’un risque potentiel de toxicité/cancérogénicité. Cette décision canadienne concerne les produits couverts par cette monographie ; elle ne remplace pas la monographie EMA distincte sur un médicament oral défini.",
+        "source": "hc-aromatherapie-2025",
+        "page": 6
+      }
     },
     {
       "id": "cannelle-chine",
@@ -1841,7 +2119,8 @@
         "text": "La monographie EMA du catalogue concerne l’huile de l’écorce de Cinnamomum verum (cannelle de Ceylan), pas Cinnamomum cassia. L’organe distillé du produit étudié ici n’est pas renseigné : dose et sécurité ne sont pas transposées.",
         "source": "ema-cinnamon-index",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "cardamome",
@@ -1858,7 +2137,8 @@
       ],
       "componentSource": "hippocratus-gastro",
       "domains": [
-        "Digestif"
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours évoque un emploi dans les spasmes digestifs. Cette mention ne valide pas un traitement des maladies inflammatoires intestinales.",
       "summarySource": "hippocratus-gastro",
@@ -1869,7 +2149,13 @@
           24
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [],
       "adverseEffects": [],
       "interactions": [],
@@ -1878,7 +2164,8 @@
         "Relevé du cours ; sécurité et efficacité à recouper avec des références indépendantes."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -1895,10 +2182,39 @@
           "page": 23
         }
       ],
-      "doseResearch": {
-        "text": "La mention du cours ne documente pas une préparation médicinale précise ni une dose humaine vérifiée pour l’huile essentielle des graines.",
-        "source": "hippocratus-gastro",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des graines d’Elettaria cardamomum",
+        "massage": "1–4 %",
+        "local": "1–4 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -1965,7 +2281,8 @@
         "text": "La sous-espèce Daucus carota subsp. maximus et l’huile de ses semences demandent une identification et une composition propres. Les allégations du cours et le renvoi aux précautions du céleri ne suffisent pas à fixer une dose.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "carvi",
@@ -2101,6 +2418,9 @@
           "limit": "Résultat d’un essai de 96 participants portant sur une formulation précise ; ce pourcentage ne correspond pas à une guérison et la dose ne se convertit pas en gouttes ni en mélange maison.",
           "source": "essai-menthe-carvi-2000"
         }
+      ],
+      "evidenceDomains": [
+        "Digestif"
       ]
     },
     {
@@ -2179,7 +2499,8 @@
         "text": "Le rameau feuillé est indiqué dans la fiche, mais aucune préparation médicinale ni dose humaine vérifiée de cette huile n’est établie par les sources consultées. Les formules du cours ne sont pas converties en posologie générale.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "citron-pericarpe",
@@ -2195,7 +2516,8 @@
         "Furocoumarines — selon le cours"
       ],
       "domains": [
-        "Infectiologie"
+        "Infectiologie",
+        "Digestif"
       ],
       "courseSummary": "Le cours évoque l’emploi du citron dans des associations d’HE. Les autres propriétés rapportées ne sont pas retenues comme indications validées dans cette fiche.",
       "coursePage": 11,
@@ -2226,7 +2548,8 @@
         "hippocratus-gastro",
         "hippocratus-derm",
         "hippocratus-cardio",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "trial-lemon-nausea"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -2266,10 +2589,25 @@
         }
       },
       "doseResearch": {
-        "text": "Le mode d’obtention de l’huile n’est pas fixé dans la source relevée : essence exprimée, huile distillée et produit dépourvu de furocoumarines ne sont pas interchangeables pour la sécurité ni pour une dose.",
-        "source": "hippocratus",
+        "text": "Un essai court a étudié l’inhalation ponctuelle d’une solution au citron pendant la grossesse, avec une quantité propre au protocole. Le procédé d’obtention et la composition du produit de cette fiche ne sont pas établis ; ce chiffre ne peut pas servir de dose générale de diffusion, d’application ou d’automédication.",
+        "source": "trial-lemon-nausea",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "clinicalStudies": [
+        {
+          "indication": "Nausées et vomissements légers à modérés pendant la grossesse",
+          "population": "100 femmes enceintes dans un essai de quatre jours",
+          "route": "Inhalation ponctuelle sur coton dans l’essai, sans diffusion d’ambiance",
+          "preparation": "Solution contenant de l’huile de péricarpe de citron, comparée à un placebo ; procédé d’obtention du produit non confirmé pour la fiche CAPA",
+          "protocol": "Deux gouttes de la solution sur coton à environ 3 cm du nez, trois inspirations lors des nausées ; protocole de recherche, non une recommandation",
+          "result": "Scores de nausées et vomissements plus faibles que dans le groupe témoin aux jours 2 et 4.",
+          "limit": "Essai court et de taille modeste ; sécurité et efficacité d’un flacon de citron non établies par ce seul résultat, particulièrement pendant la grossesse. Ce protocole ne valide pas la diffusion ni l’application cutanée.",
+          "source": "trial-lemon-nausea"
+        }
+      ],
+      "evidenceDomains": [
+        "Digestif"
+      ]
     },
     {
       "id": "citronnelle-citratus",
@@ -2291,7 +2629,11 @@
       "componentSource": "hippocratus",
       "domains": [
         "Infectiologie",
-        "Génital"
+        "Génital",
+        "Stress",
+        "Muscles",
+        "Céphalées",
+        "Digestif"
       ],
       "courseSummary": "Le cours cite cette huile de feuilles dans un mélange proposé pour l’herpès génital. Cette mention ne démontre pas l’efficacité clinique de l’huile seule et ne constitue pas une recommandation de traitement.",
       "summarySource": "hippocratus-gynecologie",
@@ -2309,11 +2651,27 @@
           18
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        },
+        {
+          "text": "Santé Canada : les produits cutanés contenant cette huile à plus de 0,7 % ne doivent pas être utilisés chez les personnes sujettes aux réactions allergiques, à l’eczéma ou aux réactions cutanées inhabituelles.",
+          "source": "hc-aromatherapie-2025",
+          "page": 21
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours d’infectiologie signale une irritation cutanée possible (p. 14). Ce point reste à recouper indépendamment ; aucune dilution n’est déduite de cette mention.",
           "source": "hippocratus"
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
         }
       ],
       "adverseEffects": [
@@ -2343,7 +2701,9 @@
         "saleem-citratus-2003",
         "sccs-allergenes-contact",
         "hippocratus",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "trial-citratus-dentiste",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -2365,10 +2725,67 @@
           "page": 27
         }
       ],
-      "doseResearch": {
-        "text": "L’étude citée porte sur la composition et des propriétés expérimentales ; elle ne définit pas une dose clinique pour l’huile de Cymbopogon citratus. Ne pas remplacer cette espèce par C. nardus, C. winterianus ou C. flexuosus.",
-        "source": "saleem-citratus-2003",
-        "reviewedAt": "2026-10-08"
+      "clinicalStudies": [
+        {
+          "indication": "Anxiété pendant un détartrage — piste exploratoire",
+          "population": "38 adultes analysés pendant un traitement parodontal non chirurgical, dans un essai à deux groupes",
+          "route": "Exposition olfactive avec compresse au contact du pourtour des narines dans l’essai",
+          "preparation": "Quatre gouttes (0,2 mL selon l’article) d’huile de Cymbopogon citratus diluées dans 100 mL d’eau ; quatre gouttes de ce mélange posées sur une compresse stérile",
+          "protocol": "Compresse appliquée au pourtour des narines et au-dessus de la lèvre durant le soin, au plus 35 minutes ; témoin à l’eau distillée",
+          "result": "Le score d’anxiété et certains paramètres cardiovasculaires ont davantage baissé que dans le groupe témoin ; la douleur du soin ne différait pas significativement.",
+          "limit": "Petit essai dans un acte dentaire précis, sans insu possible à cause de l’odeur. La quantité d’huile réellement déposée sur la compresse n’est pas déterminable à partir du mélange décrit ; la compresse a touché la peau. Ce n’est ni un protocole de diffusion atmosphérique ni une dose générale.",
+          "source": "trial-citratus-dentiste"
+        }
+      ],
+      "evidenceDomains": [
+        "Stress",
+        "Muscles",
+        "Céphalées",
+        "Digestif"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles de Cymbopogon citratus",
+        "massage": "0,7–4 %",
+        "local": "0,7–4 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -2430,7 +2847,8 @@
         "text": "Le cours cite le fruit et des usages digestifs, mais la préparation, la voie et une dose humaine de l’huile essentielle de fruit restent à établir indépendamment.",
         "source": "hippocratus-gastro",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "cumin",
@@ -2488,7 +2906,8 @@
         "text": "Les mentions du cours ne définissent pas un médicament à base de l’huile essentielle du fruit ni une posologie humaine vérifiée.",
         "source": "hippocratus-gastro",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "cypres",
@@ -2604,7 +3023,8 @@
         "text": "La partie indiquée par ce cours est le cône femelle ; elle doit être confirmée sur le produit, car d’autres huiles de Cupressus sempervirens proviennent de parties différentes. Aucune posologie ne peut être reprise sans cette identité et une source clinique propre.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "celeri",
@@ -2622,7 +3042,9 @@
       ],
       "componentSource": "hippocratus-gastro",
       "domains": [
-        "Digestif"
+        "Digestif",
+        "Muscles",
+        "Stress"
       ],
       "courseSummary": "Le cours évoque une hypothèse d’activité hépatoprotectrice de l’huile des semences. Il ne démontre pas ici un bénéfice clinique pour une maladie du foie.",
       "summarySource": "hippocratus-gastro",
@@ -2632,12 +3054,28 @@
           25
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours déconseille l’emploi avant 6 ans et pendant la grossesse, et signale une photosensibilisation.",
           "source": "hippocratus-gastro",
           "page": 25
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 11
+        },
+        {
+          "text": "Santé Canada classe cette huile comme phototoxique dans sa monographie : pour les produits cutanés correspondants, éviter le soleil sur la zone appliquée pendant 24 à 48 heures.",
+          "source": "hc-aromatherapie-2025",
+          "page": 11
         }
       ],
       "adverseEffects": [],
@@ -2647,7 +3085,8 @@
         "Relevé du cours ; sécurité et efficacité à recouper avec des références indépendantes."
       ],
       "sourceIds": [
-        "hippocratus-gastro"
+        "hippocratus-gastro",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -2661,12 +3100,46 @@
           "text": "Photosensibilisation signalée dans le cours ; précaution à recouper.",
           "source": "hippocratus-gastro",
           "page": 25
+        },
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 11
         }
       },
-      "doseResearch": {
-        "text": "La fiche concerne l’huile des semences. Les précautions relevées dans le cours ne fournissent pas une préparation médicinale, une voie et une dose vérifiées pour cette huile.",
-        "source": "hippocratus-gastro",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des graines d’Apium graveolens",
+        "massage": "1–4 %",
+        "local": "1–4 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 11
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -2764,7 +3237,8 @@
         "text": "La composition exacte, notamment une éventuelle teneur en estragole, doit être connue avant d’évaluer l’exposition. La déclaration EMA sur l’estragole est une référence de sécurité, pas une monographie posologique de l’huile d’estragon.",
         "source": "ema-estragole",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "eucalyptus-citronne",
@@ -2779,7 +3253,10 @@
       ],
       "componentSource": "hippocratus-rhum",
       "domains": [
-        "Rhumatologie"
+        "Rhumatologie",
+        "Muscles",
+        "Céphalées",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours cite des usages locaux anti-inflammatoires et antalgiques. Cette espèce ne doit pas être confondue avec Eucalyptus globulus.",
       "summarySource": "hippocratus-rhum",
@@ -2795,8 +3272,20 @@
           19
         ]
       },
-      "contraindications": [],
-      "precautions": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -2808,7 +3297,8 @@
         "hippocratus-rhum",
         "hippocratus-derm",
         "hippocratus-cardio",
-        "ema-eucalyptus"
+        "ema-eucalyptus",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -2817,7 +3307,13 @@
       "art": "eucalyptus-citronne",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        }
+      },
       "courseUses": [
         {
           "label": "Douleurs locales et inflammation évoquées",
@@ -2825,10 +3321,47 @@
           "page": 6
         }
       ],
-      "doseResearch": {
-        "text": "La monographie EMA « eucalyptus » porte sur Eucalyptus globulus, E. polybractea et E. smithii. Corymbia citriodora est une autre espèce : leurs indications et doses ne sont pas appliquées à son huile.",
-        "source": "ema-eucalyptus",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Céphalées",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles de Corymbia citriodora",
+        "massage": "1–5 %",
+        "local": "1–20 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -2844,7 +3377,8 @@
       ],
       "domains": [
         "Respiratoire",
-        "Muscles"
+        "Muscles",
+        "Céphalées"
       ],
       "courseSummary": "Usage traditionnel pour la toux du rhume et les douleurs musculaires localisées. Le dossier EMA couvre plusieurs espèces riches en 1,8-cinéole ; la fiche illustre Eucalyptus globulus.",
       "summarySource": "ema-eucalyptus",
@@ -2857,6 +3391,11 @@
         {
           "text": "Bain complet chaud contre-indiqué en cas de plaie étendue, maladie cutanée aiguë, forte fièvre, infection grave, trouble circulatoire sévère ou insuffisance cardiaque.",
           "source": "ema-eucalyptus-mo"
+        },
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
         }
       ],
       "precautions": [
@@ -2867,6 +3406,11 @@
         {
           "text": "Grossesse et allaitement : usage déconseillé, données insuffisantes. Ne pas appliquer sur une peau lésée ou irritée.",
           "source": "ema-eucalyptus-mo"
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
         }
       ],
       "adverseEffects": [
@@ -2898,7 +3442,8 @@
         "ema-eucalyptus-mo",
         "ema-eucalyptus-ar",
         "hippocratus",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "hc-aromatherapie-2025"
       ],
       "status": "institutional",
       "publicationReady": false,
@@ -3003,7 +3548,49 @@
           "source": "ema-eucalyptus-mo",
           "page": 6
         }
-      ]
+      ],
+      "evidenceDomains": [
+        "Respiratoire",
+        "Muscles",
+        "Céphalées"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles d’Eucalyptus globulus",
+        "massage": "1–5 %",
+        "local": "1–20 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
+      }
     },
     {
       "id": "eucalyptus-radie",
@@ -3021,7 +3608,9 @@
       ],
       "componentSource": "etude-eucalyptus-radie-2011",
       "domains": [
-        "Respiratoire"
+        "Respiratoire",
+        "Muscles",
+        "Céphalées"
       ],
       "courseSummary": "Le cours mentionne l’eucalyptus radié dans le contexte des voies respiratoires hautes. Cette mention ne démontre pas une efficacité clinique de son huile essentielle.",
       "summarySource": "hippocratus",
@@ -3031,8 +3620,20 @@
           16
         ]
       },
-      "contraindications": [],
-      "precautions": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [
@@ -3050,7 +3651,8 @@
         "hippocratus",
         "kew-eucalyptus-radie",
         "etude-eucalyptus-radie-2011",
-        "ema-eucalyptus"
+        "ema-eucalyptus",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -3059,7 +3661,13 @@
       "art": "eucalyptus-radie",
       "discovery": "« Eucalyptus » désigne plusieurs espèces : E. radiata et E. globulus ont des fiches séparées dans ce carnet.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        }
+      },
       "courseUses": [
         {
           "label": "Voies respiratoires hautes évoquées",
@@ -3067,10 +3675,47 @@
           "page": 16
         }
       ],
-      "doseResearch": {
-        "text": "La monographie EMA « eucalyptus » ne couvre pas Eucalyptus radiata. Une composition proche en 1,8-cinéole ne suffit pas à transférer ses doses ou ses limites d’âge.",
-        "source": "ema-eucalyptus",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Céphalées",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles d’Eucalyptus radiata",
+        "massage": "1–5 %",
+        "local": "1–20 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 13
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -3140,7 +3785,8 @@
         "text": "Le comité EMA a retiré la possibilité d’une monographie européenne de l’huile de fenouil amer : le rapport bénéfice-risque des doses traditionnelles examinées est jugé défavorable en raison de l’estragole. Ces anciennes doses ne sont donc pas retenues.",
         "source": "ema-fenouil-amer-ps",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "fenouil-doux",
@@ -3223,7 +3869,8 @@
         "text": "La monographie EMA concerne le fruit sec de fenouil doux préparé en infusion, pas son huile essentielle. La dose de tisane ne se transpose pas à l’huile ; sa teneur en estragole doit être vérifiée séparément.",
         "source": "ema-fenouil-doux-fruit",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "gaultherie-couchee",
@@ -3336,7 +3983,8 @@
         "text": "La toxicovigilance Anses documente les risques du salicylate de méthyle, notamment l’ingestion et les associations avec certains médicaments. Elle ne définit pas une dose cutanée sûre universelle de l’huile de Gaultheria procumbens.",
         "source": "anses-vigilance-2024",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "gaultherie-odorante",
@@ -3444,7 +4092,8 @@
         "text": "Le cours évoque un emploi local en rhumatologie, mais ne définit pas ici une préparation et une quantité vérifiables. La vigilance toxicologique de l’Anses, notamment sur l’ingestion, interdit de déduire une dose de cette simple mention.",
         "source": "anses-vigilance-2024",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "genevrier-baies",
@@ -3604,7 +4253,13 @@
           "page": 3
         }
       ],
-      "identitySource": "ema-genevrier-mo"
+      "identitySource": "ema-genevrier-mo",
+      "evidenceDomains": [
+        "Urinaire",
+        "Digestif",
+        "Muscles",
+        "Articulations"
+      ]
     },
     {
       "id": "genevrier-commun",
@@ -3695,7 +4350,8 @@
         "text": "La fiche porte sur des rameaux avec baies. La monographie EMA de l’huile de genévrier définit une huile obtenue à partir des cônes de baies mûres : cette posologie ne peut pas être reportée sans certitude sur la partie effectivement distillée.",
         "source": "ema-genevrier-ar",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "gingembre",
@@ -3714,7 +4370,10 @@
       ],
       "componentSource": "hippocratus-rhum",
       "domains": [
-        "Rhumatologie"
+        "Rhumatologie",
+        "Digestif",
+        "Muscles",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours décrit des usages locaux antalgiques et anti-inflammatoires, avec un effet réchauffant.",
       "summarySource": "hippocratus-rhum",
@@ -3731,7 +4390,13 @@
           22
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours recommande de limiter les associations avec d’autres huiles à effet révulsif.",
@@ -3752,7 +4417,9 @@
         "hippocratus-rhum",
         "hippocratus-cardio",
         "hippocratus-gynecologie",
-        "ema-gingembre-rhizome"
+        "ema-gingembre-rhizome",
+        "trial-gingembre-postoperatoire",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
@@ -3769,10 +4436,59 @@
           "page": 4
         }
       ],
-      "doseResearch": {
-        "text": "La monographie EMA porte sur la poudre et la teinture du rhizome, pas sur son huile essentielle. Ses doses et indications, notamment digestives, ne sont donc pas attribuées à l’huile de gingembre.",
-        "source": "ema-gingembre-rhizome",
-        "reviewedAt": "2026-10-08"
+      "clinicalStudies": [
+        {
+          "indication": "Nausées après chirurgie ambulatoire — piste clinique",
+          "population": "301 adultes avec nausées après une chirurgie ambulatoire, analysés dans un essai randomisé à plusieurs bras",
+          "route": "Inhalation directe sur compresse dans l’essai",
+          "preparation": "Compresse imprégnée d’huile essentielle de gingembre ; quantité d’huile non précisée dans le résumé de l’étude",
+          "protocol": "Trois inspirations profondes, puis réévaluation de la nausée cinq minutes après ; médicaments antiémétiques donnés selon la décision clinique",
+          "result": "La variation du score de nausée était supérieure au témoin salin dans le bras gingembre ; les demandes ultérieures d’antiémétiques étaient également moins nombreuses.",
+          "limit": "Cadre postopératoire surveillé, avec autres soins possibles, et quantité d’huile non détaillée dans le résumé ; cela ne démontre pas une dose ou une efficacité pour les nausées d’autres causes.",
+          "source": "trial-gingembre-postoperatoire"
+        }
+      ],
+      "evidenceDomains": [
+        "Digestif",
+        "Muscles",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée du rhizome de Zingiber officinale",
+        "massage": "1–4 %",
+        "local": "1–4 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 15
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -3937,6 +4653,10 @@
           "source": "ema-clove",
           "page": 4
         }
+      ],
+      "evidenceDomains": [
+        "Bucco-dentaire",
+        "ORL"
       ]
     },
     {
@@ -3996,7 +4716,8 @@
         "text": "Le cours évoque des usages cutanés pour le géranium rosat d’Égypte, sans préciser une préparation, une dilution et une quantité vérifiables pour cette huile. Les données d’une autre espèce ou d’un autre cultivar ne déterminent pas sa dose.",
         "source": "hippocratus-derm",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "geranium-graveolens",
@@ -4011,7 +4732,8 @@
       ],
       "componentSource": "hippocratus-cardio",
       "domains": [
-        "Peau"
+        "Peau",
+        "Bucco-dentaire"
       ],
       "courseSummary": "Le cours décrit des emplois cutanés et évoque un effet sur la pénétration transdermique des substances associées. Ce relevé est distingué du géranium P. asperum cité en dermatologie.",
       "summarySource": "hippocratus-cardio",
@@ -4032,21 +4754,37 @@
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
       ],
       "sourceIds": [
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "trial-geranium-stomatitis"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "geranium",
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {},
       "doseResearch": {
-        "text": "Cette fiche concerne Pelargonium graveolens et ses feuilles. La source de cours ne fournit pas de schéma chiffré vérifiable pour une préparation identifiée de cette huile ; la dose du géranium rosat d’Égypte ne s’y transpose pas.",
-        "source": "hippocratus-cardio",
+        "text": "Un essai de 80 porteurs de prothèse a utilisé un gel mucoadhésif à 1 % de cette huile sur la muqueuse buccale. Cette concentration étudiée ne valide ni l’huile pure, ni un gel préparé à domicile, ni d’autres indications cutanées ; aucune posologie générale n’est retenue.",
+        "source": "trial-geranium-stomatitis",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "clinicalStudies": [
+        {
+          "indication": "Stomatite sous prothèse dentaire",
+          "population": "80 porteurs adultes de prothèse complète, 38–78 ans, avec stomatite modérée ou sévère",
+          "route": "Application sur la muqueuse buccale dans l’essai",
+          "preparation": "Gel mucoadhésif contenant 1 % d’huile essentielle de Pelargonium graveolens, comparé au même gel sans huile",
+          "protocol": "Application du gel matin et soir pendant 14 jours, avec conseils d’hygiène des prothèses dans les deux groupes",
+          "result": "Amélioration complète rapportée chez 34 % des participants du groupe huile contre 5 % du groupe témoin ; réduction de la charge fongique.",
+          "limit": "Un seul essai de petite taille dans une situation précise ; ni l’huile pure ni un gel maison ne sont validés pour la bouche. Le diagnostic et la prise en charge d’une stomatite restent médicaux.",
+          "source": "trial-geranium-stomatitis"
+        }
+      ],
+      "evidenceDomains": [
+        "Bucco-dentaire"
+      ]
     },
     {
       "id": "helichryse-italienne",
@@ -4063,7 +4801,12 @@
       "componentSource": "hippocratus-rhum",
       "domains": [
         "Rhumatologie",
-        "Circulation"
+        "Circulation",
+        "Peau",
+        "Muscles",
+        "Stress",
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours décrit des usages locaux après un traumatisme musculaire avec hématome. La preuve clinique de ces usages reste à recouper.",
       "summarySource": "hippocratus-rhum",
@@ -4079,7 +4822,13 @@
           12
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours déconseille la voie interne, citant une neurotoxicité potentielle et une connaissance insuffisante des effets indésirables.",
@@ -4109,11 +4858,12 @@
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-derm",
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "helichryse",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -4132,10 +4882,77 @@
           "page": 13
         }
       ],
-      "doseResearch": {
-        "text": "Le cours cite un emploi autour des hématomes, mais ne donne pas ici de formulation et de quantité étayées pour cette huile. Il déconseille en outre la voie interne : aucune dose orale ne peut être tirée de cette mention.",
-        "source": "hippocratus-rhum",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Peau",
+        "Muscles",
+        "Stress",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement symptomatique de l’acné ou des furoncles",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement de petites irritations, coupures, ecchymoses ou brûlures",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’eczéma ou de la dermatite",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des sommités fleuries d’Helichrysum italicum",
+        "massage": "0,5 %",
+        "local": "0,5 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 13
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -4155,7 +4972,11 @@
       "componentSource": "hippocratus-rhum",
       "domains": [
         "Rhumatologie",
-        "Digestif"
+        "Digestif",
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours cite des usages locaux décontracturants et antinévralgiques.",
       "summarySource": "hippocratus-rhum",
@@ -4175,8 +4996,20 @@
           17
         ]
       },
-      "contraindications": [],
-      "precautions": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -4190,16 +5023,23 @@
         "hippocratus-rhum",
         "hippocratus-gastro",
         "hippocratus",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "laurier",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        }
+      },
       "courseUses": [
         {
           "label": "Contractures et névralgies évoquées",
@@ -4207,10 +5047,55 @@
           "page": 8
         }
       ],
-      "doseResearch": {
-        "text": "Le cours mentionne contractures et névralgies sans définir une préparation, une voie et une quantité vérifiables pour l’huile de feuilles de laurier noble. Cette mention ne suffit pas à proposer une posologie.",
-        "source": "hippocratus-rhum",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles de Laurus nobilis",
+        "massage": "0,5 %",
+        "local": "0,5 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 13
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -4228,7 +5113,12 @@
       "componentSource": "hippocratus-derm",
       "domains": [
         "Peau",
-        "Rhumatologie"
+        "Rhumatologie",
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours mentionne cette espèce dans les usages locaux cutanés, musculaires et articulaires. Elle reste distincte de la lavande vraie.",
       "summarySource": "hippocratus-rhum",
@@ -4245,12 +5135,28 @@
           19
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours appelle à la prudence du fait de la présence de camphre.",
           "source": "hippocratus-derm",
           "page": 15
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        },
+        {
+          "text": "Santé Canada classe cette huile comme phototoxique dans sa monographie : pour les produits cutanés correspondants, éviter le soleil sur la zone appliquée pendant 24 à 48 heures.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
         }
       ],
       "adverseEffects": [],
@@ -4265,11 +5171,12 @@
         "hippocratus-rhum",
         "hippocratus-derm",
         "hippocratus-cardio",
-        "ema-lavande"
+        "ema-lavande",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "lavande-aspic",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -4279,6 +5186,16 @@
           "text": "Présence de camphre : précaution spécifique signalée dans le cours.",
           "source": "hippocratus-derm",
           "page": 15
+        },
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
+        },
+        "skin": {
+          "text": "Santé Canada classe cette huile comme phototoxique dans sa monographie : pour les produits cutanés correspondants, éviter le soleil sur la zone appliquée pendant 24 à 48 heures.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
         }
       },
       "courseUses": [
@@ -4288,10 +5205,63 @@
           "page": 19
         }
       ],
-      "doseResearch": {
-        "text": "La monographie EMA de l’huile de lavande vise Lavandula angustifolia, tandis que cette fiche concerne Lavandula latifolia. Ses doses ne peuvent pas être transposées à la lavande aspic, pour laquelle le cours signale aussi la présence de camphre.",
-        "source": "ema-lavande",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée de la plante fleurie de Lavandula latifolia",
+        "massage": "1–5 %",
+        "local": "1–8 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 13
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -4455,6 +5425,10 @@
           "source": "ema-lavande-mo",
           "page": 3
         }
+      ],
+      "evidenceDomains": [
+        "Sommeil",
+        "Stress"
       ]
     },
     {
@@ -4514,7 +5488,8 @@
         "text": "Le cours évoque les jambes lourdes pour le lentisque, mais ne précise pas de préparation, de concentration et de quantité vérifiables pour l’huile des rameaux feuillés. Aucune dose n’est déduite de cet usage cité.",
         "source": "hippocratus-cardio",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "mandarine-zeste",
@@ -4585,7 +5560,8 @@
         "text": "La mention du cours porte sur des mélanges pour le sommeil, sans définir la quantité propre à l’huile de zeste de mandarine ni le procédé d’obtention du produit. Une dose isolée ne peut pas être extrapolée du mélange.",
         "source": "hippocratus-snc",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "marjolaine",
@@ -4602,11 +5578,22 @@
       ],
       "domains": [
         "Infectiologie",
-        "Digestif"
+        "Digestif",
+        "Stress",
+        "Peau",
+        "Muscles",
+        "Céphalées",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours décrit des propriétés antispasmodiques et anti-infectieuses. Il ne précise pas d’indication clinique distincte sur cette page.",
       "coursePage": 9,
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours déconseille l’usage pendant la grossesse et chez le jeune enfant, sans seuil d’âge défini.",
@@ -4629,11 +5616,13 @@
         "hippocratus-cardio",
         "hippocratus-snc",
         "hippocratus-gynecologie",
-        "ema-marjolaine-herba"
+        "ema-marjolaine-herba",
+        "trial-marjoram-stress",
+        "hc-aromatherapie-2025"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "marjolaine",
       "summarySource": "hippocratus",
@@ -4666,10 +5655,90 @@
         ]
       },
       "riskSignals": {},
-      "doseResearch": {
-        "text": "La monographie EMA concerne les parties aériennes fleuries séchées et un extrait semi-solide de marjolaine, non son huile essentielle. Les quantités d’infusion ou d’extrait ne constituent donc pas une dose de l’huile de cette fiche.",
-        "source": "ema-marjolaine-herba",
-        "reviewedAt": "2026-10-08"
+      "clinicalStudies": [
+        {
+          "indication": "Stress perçu pendant une garde en réanimation — piste exploratoire",
+          "population": "57 infirmières d’un seul service de réanimation COVID-19, 29 avec marjolaine et 28 avec témoin",
+          "route": "Inhalation passive à proximité du nez dans l’essai",
+          "preparation": "0,2 mL d’un mélange à 3 % d’huile essentielle de marjolaine dans l’huile d’amande, sur une compresse fixée à 10 cm du nez",
+          "protocol": "Exposition unique de 2 heures pendant le travail, comparée à l’huile d’amande seule",
+          "result": "Le score visuel de stress était plus bas que dans le groupe témoin après l’intervention ; la différence entre groupes n’était pas significative pour les scores globaux d’anxiété.",
+          "limit": "Un seul essai dans un contexte professionnel particulier, sur une séance. Il ne valide ni une diffusion dans une pièce, ni le traitement d’un trouble anxieux, ni une dose à reproduire.",
+          "source": "trial-marjoram-stress"
+        }
+      ],
+      "evidenceDomains": [
+        "Stress",
+        "Peau",
+        "Muscles",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de petites irritations, coupures, ecchymoses ou brûlures",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’eczéma ou de la dermatite",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des sommités fleuries d’Origanum majorana",
+        "massage": "1–4 %",
+        "local": "1–4 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 14
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -4779,6 +5848,9 @@
           "source": "ema-matricaire-mo",
           "page": 3
         }
+      ],
+      "evidenceDomains": [
+        "Peau"
       ]
     },
     {
@@ -4986,6 +6058,13 @@
           "limit": "Résultat d’un essai de 96 participants portant sur une formulation précise ; ce pourcentage ne correspond pas à une guérison et la dose ne se convertit pas en gouttes ni en mélange maison.",
           "source": "essai-menthe-carvi-2000"
         }
+      ],
+      "evidenceDomains": [
+        "Digestif",
+        "Céphalées",
+        "Respiratoire",
+        "Muscles",
+        "Peau"
       ]
     },
     {
@@ -5008,7 +6087,8 @@
       "componentSource": "hippocratus",
       "domains": [
         "Peau",
-        "Génital"
+        "Génital",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours décrit des usages antiseptiques, anti-inflammatoires et cicatrisants de l’huile essentielle. Ces mentions ne démontrent pas une efficacité clinique et ne sont pas transposées en conseils d’utilisation.",
       "summarySource": "hippocratus",
@@ -5025,13 +6105,19 @@
           15
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Identité botanique recoupée ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette ni posologie reproduite.",
+        "Identité botanique recoupée ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette du cours reproduite ; les quantités canadiennes concernent des produits définis.",
         "Cette fiche concerne l’huile essentielle issue de la gomme-résine, et non une teinture, un extrait ou la résine entière. Leurs propriétés et précautions ne sont pas interchangeables.",
         "Commiphora abyssinica, aussi citée dans le cours de gynécologie, n’est pas fusionnée avec Commiphora myrrha.",
         "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
@@ -5041,11 +6127,12 @@
         "kew-myrrhe",
         "hippocratus-gynecologie",
         "hippocratus-endocrinologie",
-        "ema-myrrha"
+        "ema-myrrha",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "myrrhe",
       "discovery": "Le nom botanique, la partie utilisée et la préparation exacte sont trois repères à vérifier.",
@@ -5058,10 +6145,46 @@
           "page": 26
         }
       ],
-      "doseResearch": {
-        "text": "La monographie EMA couvre une teinture obtenue par extraction de la gomme-résine, non l’huile essentielle de cette fiche. La quantité appliquée pour la teinture ne peut donc pas devenir une dose de l’huile essentielle.",
-        "source": "ema-myrrha",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Peau",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de petites irritations, coupures, ecchymoses ou brûlures",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement symptomatique de l’eczéma ou de la dermatite",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée de la gomme-résine de Commiphora myrrha",
+        "massage": "1–5 %",
+        "local": "1–8 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -5126,7 +6249,8 @@
         "text": "Le cours mentionne un emploi musculaire et respiratoire, mais la partie végétale est indiquée « rameaux avec baies » selon ce seul cours. Sans identification du produit et schéma chiffré vérifiable, aucune dose de cette huile ne peut être retenue.",
         "source": "hippocratus-rhum",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "niaouli",
@@ -5155,6 +6279,11 @@
         {
           "text": "Pour la consommation orale comme complément alimentaire, l’Anses recommande d’interdire le niaouli aux enfants de moins de 30 mois et à ceux ayant des antécédents d’épilepsie ou de convulsions fébriles.",
           "source": "anses-melaleuca-avis"
+        },
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
         }
       ],
       "precautions": [
@@ -5165,6 +6294,11 @@
         {
           "text": "Conserver l’huile de Melaleuca au frais et à l’obscurité pour limiter la formation d’ascaridole, substance toxique.",
           "source": "anses-vigilance-2024"
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
         }
       ],
       "adverseEffects": [
@@ -5181,7 +6315,7 @@
         }
       ],
       "reviewNotes": [
-        "Identité botanique recoupée ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette ni posologie reproduite.",
+        "Identité botanique recoupée ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette du cours reproduite ; les quantités canadiennes concernent des produits définis.",
         "Le cours regroupe Melaleuca quinquenervia et Melaleuca viridiflora : la composition collective citée n’est pas attribuée automatiquement à chaque produit. Chémotype et composition restent à vérifier.",
         "La formule de bonne tolérance du cours ne vaut pas pour toutes les voies. Les données Anses présentées ici concernent l’ingestion ; elles ne constituent pas un bilan de sécurité cutanée ou respiratoire.",
         "Les restrictions précises de l’avis Anses concernent la consommation orale en complément alimentaire ; ne pas les présenter comme une monographie de toutes les voies."
@@ -5191,11 +6325,12 @@
         "kew-niaouli",
         "anses-melaleuca-oral",
         "anses-melaleuca-avis",
-        "anses-vigilance-2024"
+        "anses-vigilance-2024",
+        "hc-aromatherapie-2025"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "niaouli",
       "discovery": "Le nom botanique, la partie utilisée et la préparation exacte sont trois repères à vérifier.",
@@ -5204,6 +6339,11 @@
         "neuro": {
           "text": "Voie orale : restriction Anses chez les jeunes enfants et ceux ayant des antécédents de convulsions.",
           "source": "anses-melaleuca-avis"
+        },
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 13
         }
       },
       "courseUses": [
@@ -5213,10 +6353,31 @@
           "page": 13
         }
       ],
-      "doseResearch": {
-        "text": "Le cours cite des affections respiratoires, mais ne définit pas ici une préparation et une quantité vérifiables. L’Anses signale en outre un risque neurologique avec l’ingestion des huiles de Melaleuca, dont le niaouli ; cette mention ne justifie pas une dose orale.",
-        "source": "anses-melaleuca-oral",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles de Melaleuca quinquenervia",
+        "massage": "1–5 %",
+        "local": "1–10 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 13
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -5237,7 +6398,9 @@
       ],
       "componentSource": "hippocratus-gastro",
       "domains": [
-        "Digestif"
+        "Digestif",
+        "Muscles",
+        "Stress"
       ],
       "courseSummary": "Le cours décrit des usages digestifs tout en soulignant que la toxicité limite l’emploi de cette huile.",
       "summarySource": "hippocratus-gastro",
@@ -5258,7 +6421,13 @@
           23
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [],
       "adverseEffects": [
         {
@@ -5277,11 +6446,12 @@
       "sourceIds": [
         "hippocratus-gastro",
         "hippocratus-snc",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "muscade",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -5300,10 +6470,47 @@
           "page": 13
         }
       ],
-      "doseResearch": {
-        "text": "Le cours évoque des usages digestifs de l’huile de muscade sans détailler ici un produit, une voie et une quantité vérifiables. Les quantités alimentaires de muscade ne peuvent pas être converties en dose d’huile essentielle.",
-        "source": "hippocratus-gastro",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress",
+        "Digestif"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 9
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée de la graine de Myristica fragrans",
+        "massage": "0,8 %",
+        "local": "0,8 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 14
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -5349,11 +6556,12 @@
         "Synthèse du cours ; efficacité et bilan de sécurité encore incomplets. Aucune formule ni posologie transcrite."
       ],
       "sourceIds": [
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "trial-neroli-accouchement"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "bigaradier",
       "discovery": "Une même plante peut donner des produits différents selon la partie utilisée : fleurs, feuilles ou zeste.",
@@ -5367,10 +6575,25 @@
         }
       ],
       "doseResearch": {
-        "text": "Le néroli apparaît dans le cours au sein de mélanges pour l’anxiété ou l’endormissement. La quantité propre à son huile, la composition complète et le protocole du mélange ne sont pas établis dans cette mention.",
-        "source": "hippocratus-snc",
+        "text": "Un essai randomisé en salle de naissance a étudié la diffusion de néroli chez 88 femmes. L’article rapporte quatre gouttes pour 300 mL d’eau, mais décrit aussi une formulation distincte à 5 % ; cette ambiguïté et le contexte obstétrical empêchent de retenir une posologie générale.",
+        "source": "trial-neroli-accouchement",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "clinicalStudies": [
+        {
+          "indication": "Anxiété et douleur perçue pendant le travail obstétrical — piste exploratoire",
+          "population": "88 femmes à grossesse à faible risque, à terme, analysées : 44 avec diffusion et 44 avec soins habituels",
+          "route": "Diffusion atmosphérique en salle de naissance dans l’essai",
+          "preparation": "L’article mentionne quatre gouttes de néroli pour 300 mL d’eau diffusée et décrit séparément une formulation complexe contenant 5 % de l’huile",
+          "protocol": "Diffusion continue pendant le travail, ajoutée aux soins obstétricaux habituels ; groupe témoin sans diffusion",
+          "result": "Les scores d’anxiété et de douleur perçue étaient plus bas dans le groupe diffusion aux étapes du travail étudiées.",
+          "limit": "Pas de placebo odorant et exposition exacte ambiguë entre les deux formulations décrites. Cette étude ne fixe ni une dose générale de diffusion ni un usage autonome pendant la grossesse.",
+          "source": "trial-neroli-accouchement"
+        }
+      ],
+      "evidenceDomains": [
+        "Stress"
+      ]
     },
     {
       "id": "bigaradier-zeste",
@@ -5432,7 +6655,8 @@
         "text": "Le cours cite le zeste de bigaradier dans une formule portant sur la circulation, sans donner une dose propre et vérifiée de l’huile de zeste. Il faut identifier la préparation exacte avant d’en déduire un emploi.",
         "source": "hippocratus-cardio",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "origan-compact",
@@ -5518,7 +6742,8 @@
         "text": "Le cours mentionne des affections infectieuses mais proscrit les usages cutanéo-muqueux et en aérosol pour cette huile. Il ne fournit pas ici de schéma chiffré vérifiable pour une autre voie et une préparation définie.",
         "source": "hippocratus",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "origan-vrai",
@@ -5574,7 +6799,8 @@
         "text": "Le cours évoque une activité anti-infectieuse, sans préciser une formulation et une dose vérifiables pour l’huile d’Origanum vulgare subsp. vulgare. Les données d’une autre espèce ou d’un autre chémotype ne sont pas interchangeables.",
         "source": "hippocratus-gastro",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "palmarosa",
@@ -5590,7 +6816,9 @@
       ],
       "componentSource": "hippocratus-derm",
       "domains": [
-        "Peau"
+        "Peau",
+        "Stress",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours cite des usages cutanés, notamment antifongiques. L’efficacité clinique et la tolérance doivent être vérifiées indépendamment.",
       "summarySource": "hippocratus-derm",
@@ -5603,8 +6831,20 @@
           26
         ]
       },
-      "contraindications": [],
-      "precautions": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -5615,16 +6855,23 @@
       ],
       "sourceIds": [
         "hippocratus-derm",
-        "hippocratus-gynecologie"
+        "hippocratus-gynecologie",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "palmarosa",
       "discovery": "L’identité botanique, la partie distillée et le produit précis doivent être distingués.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        }
+      },
       "courseUses": [
         {
           "label": "Mycoses cutanées évoquées",
@@ -5632,10 +6879,39 @@
           "page": 6
         }
       ],
-      "doseResearch": {
-        "text": "Le cours évoque les mycoses cutanées, sans définir dans cette mention la dilution, le véhicule et la quantité pour l’huile de palmarosa. Une piste d’usage ne suffit pas à fixer une dose cutanée.",
-        "source": "hippocratus-derm",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Stress",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée de la partie herbacée de Cymbopogon martinii",
+        "massage": "1–5 %",
+        "local": "1–6,5 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -5657,7 +6933,8 @@
       ],
       "componentSource": "hippocratus-snc",
       "domains": [
-        "Stress"
+        "Stress",
+        "Muscles"
       ],
       "courseSummary": "L’huile des feuilles est citée dans une formule du cours liée au stress. Son identité doit rester distincte de l’essence du zeste et de l’huile des fleurs.",
       "summarySource": "hippocratus-cardio",
@@ -5678,28 +6955,57 @@
           33
         ]
       },
-      "contraindications": [],
-      "precautions": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        },
+        {
+          "text": "Santé Canada classe cette huile comme phototoxique dans sa monographie : pour les produits cutanés correspondants, éviter le soleil sur la zone appliquée pendant 24 à 48 heures.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Mention dans le cours ; bilan de sécurité incomplet et efficacité non recoupée indépendamment. Aucune formule ni posologie n’est transcrite.",
+        "Mention dans le cours ; bilan de sécurité incomplet et efficacité non recoupée indépendamment. Aucune formule du cours reproduite ; les quantités canadiennes concernent des produits définis.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
         "Les formulations du cours SNC ne sont pas des preuves d’efficacité ; elles ne sont pas reproduites comme prescriptions."
       ],
       "sourceIds": [
         "hippocratus-cardio",
-        "hippocratus-snc"
+        "hippocratus-snc",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "bigaradier",
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        },
+        "skin": {
+          "text": "Santé Canada classe cette huile comme phototoxique dans sa monographie : pour les produits cutanés correspondants, éviter le soleil sur la zone appliquée pendant 24 à 48 heures.",
+          "source": "hc-aromatherapie-2025",
+          "page": 12
+        }
+      },
       "courseUses": [
         {
           "label": "Stress : mention dans une formule",
@@ -5707,10 +7013,39 @@
           "page": 21
         }
       ],
-      "doseResearch": {
-        "text": "Le cours mentionne les feuilles et jeunes rameaux de bigaradier dans une formule pour le stress. Cette formule ne permet pas d’isoler une quantité vérifiée de petit grain ni de la transposer à l’huile du zeste ou de la fleur.",
-        "source": "hippocratus-cardio",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des feuilles de Citrus aurantium",
+        "massage": "1–5 %",
+        "local": "1–10 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 12
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -5777,7 +7112,8 @@
         "text": "Le cours mentionne les feuilles de mandarinier dans une formule pour le stress, sans isoler une quantité vérifiée de cette huile. Le petit grain ne se confond pas avec l’huile tirée du zeste du même fruit.",
         "source": "hippocratus-cardio",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "pin-maritime",
@@ -5833,7 +7169,8 @@
         "text": "La fiche désigne une oléorésine de pin maritime, tandis que le cours évoque seulement un emploi externe pour les névralgies. Le produit exact et une quantité d’application vérifiable ne sont pas établis par cette mention.",
         "source": "hippocratus-rhum",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "pin-sylvestre",
@@ -5851,7 +7188,10 @@
       ],
       "componentSource": "hippocratus-rhum",
       "domains": [
-        "Rhumatologie"
+        "Rhumatologie",
+        "Muscles",
+        "Stress",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours cite des applications locales pour lumbagos, contractures sportives et douleurs rhumatismales.",
       "summarySource": "hippocratus-rhum",
@@ -5870,12 +7210,23 @@
           14
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours signale un potentiel allergisant lié aux terpènes.",
           "source": "hippocratus-rhum",
           "page": 7
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 14
         }
       ],
       "adverseEffects": [],
@@ -5891,11 +7242,12 @@
         "hippocratus-rhum",
         "hippocratus-cardio",
         "hippocratus",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "pin-sylvestre",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -5919,10 +7271,47 @@
           "page": 7
         }
       ],
-      "doseResearch": {
-        "text": "Le cours évoque l’huile des aiguilles pour les contractures et douleurs rhumatismales, mais ne décrit pas ici une dilution, un véhicule et une quantité vérifiables. Il signale en plus un potentiel allergisant lié aux terpènes.",
-        "source": "hippocratus-rhum",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Muscles",
+        "Stress",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des aiguilles de Pinus sylvestris",
+        "massage": "1–5 %",
+        "local": "1–10 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 14
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -5996,7 +7385,8 @@
         "text": "Le cours cite les voies ORL et respiratoires. Le rapport Anses identifie le ravintsara comme l’huile des feuilles de Cinnamomum camphora à chémotype 1,8-cinéole, mais cette identification ne fournit pas une dose clinique ni une voie sûre pour le produit de la fiche.",
         "source": "anses-ravintsara-rapport",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "romarin",
@@ -6125,6 +7515,11 @@
           "source": "ema-romarin-mo",
           "page": 4
         }
+      ],
+      "evidenceDomains": [
+        "Muscles",
+        "Articulations",
+        "Circulation"
       ]
     },
     {
@@ -6207,7 +7602,8 @@
         "text": "La monographie EMA concerne l’huile de romarin définie dans ses documents, sans établir une dose propre au chémotype à camphre de cette fiche. Le cours alerte sur sa neurotoxicité et privilégie la voie externe : aucune dose d’un autre chémotype n’est transposée.",
         "source": "ema-romarin",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "romarin-verbenone",
@@ -6268,7 +7664,8 @@
         "text": "La fiche mentionne un chémotype à verbénone sans fiabiliser la partie distillée. La monographie EMA de l’huile de romarin ne résout pas cette identité de produit ni une dose spécifique à ce chémotype.",
         "source": "ema-romarin",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "santal-blanc",
@@ -6285,7 +7682,11 @@
       ],
       "componentSource": "hippocratus-derm",
       "domains": [
-        "Peau"
+        "Peau",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours mentionne des activités antiseptiques et antivirales ; il souligne que la sécurité est mal connue. Ces activités ne suffisent pas à valider un traitement.",
       "summarySource": "hippocratus-derm",
@@ -6298,15 +7699,31 @@
           24
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le cours recommande un usage prudent et bref, en raison d’effets indésirables et de contre-indications mal connus.",
           "source": "hippocratus-derm",
           "page": 4
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 14
         }
       ],
-      "adverseEffects": [],
+      "adverseEffects": [
+        {
+          "text": "Dans le petit essai du sérum à 10 %, une personne a interrompu l’application pour une réaction cutanée légère au site traité ; la réaction a disparu après l’arrêt.",
+          "source": "trial-sandal-psoriasis"
+        }
+      ],
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
@@ -6315,20 +7732,90 @@
       ],
       "sourceIds": [
         "hippocratus-derm",
-        "hippocratus"
+        "hippocratus",
+        "trial-sandal-psoriasis",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-06",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "santal",
       "discovery": "L’identité botanique, la partie distillée et le produit précis doivent être distingués.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
-      "doseResearch": {
-        "text": "Le cours recommande pour le santal un usage prudent et bref, les effets indésirables et contre-indications restant mal connus. Il ne fournit pas ici de préparation et de schéma chiffré vérifiables pour l’huile du bois.",
-        "source": "hippocratus-derm",
-        "reviewedAt": "2026-10-08"
+      "riskSignals": {
+        "skin": {
+          "text": "Une réaction cutanée locale a entraîné un arrêt dans l’essai du sérum expérimental à 10 %.",
+          "source": "trial-sandal-psoriasis"
+        },
+        "allergy": {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 14
+        }
+      },
+      "clinicalStudies": [
+        {
+          "indication": "Psoriasis en plaques léger à modéré — piste exploratoire",
+          "population": "12 adultes inclus ; 11 évaluables après traitement, sans groupe témoin",
+          "route": "Application cutanée sur les plaques dans l’essai",
+          "preparation": "Sérum expérimental contenant 10 % (m/m) d’huile distillée du bois de Santalum album, avec plusieurs excipients",
+          "protocol": "Application deux fois par jour pendant 28 jours, sous suivi dermatologique",
+          "result": "9 des 11 personnes évaluables ont eu une baisse du score des plaques ; une personne a arrêté pour une réaction cutanée légère au point d’application.",
+          "limit": "Essai ouvert très petit et sans témoin, résultats intermédiaires, avec participation du fabricant ; l’amélioration ne prouve pas l’efficacité du santal. La formulation étudiée ne se transpose pas à l’huile pure ni à un mélange maison.",
+          "source": "trial-sandal-psoriasis"
+        }
+      ],
+      "evidenceDomains": [
+        "Peau",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée du bois de Santalum album",
+        "massage": "1–5 %",
+        "local": "1–10 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 14
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -6427,7 +7914,8 @@
         "text": "Le cours évoque des usages respiratoires et intestinaux, tout en proscrivant les applications cutanéo-muqueuses et en aérosol pour cette huile. Il ne documente pas ici une autre voie et une dose chiffrée pour une préparation définie.",
         "source": "hippocratus",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "sauge-espagne",
@@ -6440,7 +7928,12 @@
       "components": [],
       "componentSource": "hippocratus-cardio",
       "domains": [
-        "Mémoire"
+        "Mémoire",
+        "Peau",
+        "Muscles",
+        "Stress",
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours évoque un effet sur l’acétylcholinestérase et la mémoire. Les études, préparations et résultats cliniques doivent être vérifiés avant de retenir une indication.",
       "summarySource": "hippocratus-cardio",
@@ -6450,30 +7943,105 @@
           22
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
-        "Mention dans le cours ; bilan de sécurité incomplet et efficacité non recoupée indépendamment. Aucune formule ni posologie n’est transcrite.",
+        "Mention dans le cours ; bilan de sécurité incomplet et efficacité non recoupée indépendamment. Aucune formule du cours reproduite ; les quantités canadiennes concernent des produits définis.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité."
       ],
       "sourceIds": [
-        "hippocratus-cardio"
+        "hippocratus-cardio",
+        "trial-sage-memory",
+        "ncbi-sauge-taxonomie",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-04",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "sauge-espagne",
       "discovery": "La partie utilisée compte autant que le nom de la plante : feuilles, fleurs et zestes donnent des produits différents.",
       "collection": "hippocratus-2026-10",
       "riskSignals": {},
-      "doseResearch": {
-        "text": "La fiche concerne Salvia lavandulifolia et non la sauge officinale. La source de cours ne définit pas une préparation, une voie et une quantité vérifiables pour son huile ; une éventuelle dose d’une autre sauge serait une extrapolation.",
-        "source": "hippocratus-cardio",
-        "reviewedAt": "2026-10-08"
+      "clinicalStudies": [
+        {
+          "indication": "Performance de mémoire et d’attention à court terme chez des adultes sains",
+          "population": "36 adultes sains dans un essai croisé contre placebo",
+          "route": "Voie orale en gélules dans l’essai",
+          "preparation": "Gélule contenant une huile essentielle caractérisée de Salvia lavandulaefolia, variante orthographique de S. lavandulifolia",
+          "protocol": "Prise unique de 50 µl d’huile dans l’essai ; évaluations cognitives à 1 h et 4 h",
+          "result": "Amélioration de certaines tâches de mémoire secondaire et d’attention, surtout à 1 h, et baisse de la fatigue mentale rapportée.",
+          "limit": "Essai exploratoire chez des personnes en bonne santé ; ne démontre pas de traitement des troubles de mémoire ou de la démence et ne définit pas une dose d’automédication.",
+          "source": "trial-sage-memory"
+        }
+      ],
+      "evidenceDomains": [
+        "Mémoire",
+        "Peau",
+        "Muscles",
+        "Stress",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de petites irritations, coupures, ecchymoses ou brûlures",
+          "domain": "Peau",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée de la plante fleurie de Salvia lavandulifolia",
+        "massage": "1–5 %",
+        "local": "1–12,5 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 14
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -6493,7 +8061,12 @@
       ],
       "componentSource": "hippocratus-gynecologie",
       "domains": [
-        "Génital"
+        "Génital",
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
       ],
       "courseSummary": "Le cours cite cette huile dans le contexte de troubles gynécologiques. Ses affirmations hormonales nécessitent un recoupement : elles ne constituent pas ici une indication thérapeutique démontrée.",
       "summarySource": "hippocratus-gynecologie",
@@ -6512,11 +8085,22 @@
           10
         ]
       },
-      "contraindications": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        }
+      ],
       "precautions": [
         {
           "text": "Le linalol, l’acétate de linalyle et le sclaréol sont recensés comme allergènes de contact par le SCCS. Cette donnée sur les composants ne quantifie pas le risque du produit fini.",
           "source": "sccs-allergenes-contact"
+        },
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 14
         }
       ],
       "adverseEffects": [],
@@ -6525,18 +8109,20 @@
       "reviewNotes": [
         "Le cours qualifie l’effet hormonal du sclaréol de suspecté (p. 8), puis affirme un effet œstrogénique (p. 13). Cette divergence est conservée comme point à vérifier, sans conclure à un effet clinique établi.",
         "Ne pas confondre avec Salvia officinalis, Salvia lavandulifolia ou Salvia miltiorrhiza. Les informations propres à ces espèces ne sont pas transférées à cette fiche.",
-        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune posologie ni recette reproduite.",
+        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette du cours reproduite ; les quantités canadiennes concernent des produits définis.",
         "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche."
       ],
       "sourceIds": [
         "hippocratus-gynecologie",
         "kew-sclaree",
         "sccs-allergenes-contact",
-        "hippocratus-endocrinologie"
+        "hippocratus-endocrinologie",
+        "trial-sclaree-dysmenorrhee",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "sauge-sclaree",
       "discovery": "Le nom botanique et la préparation précise permettent de distinguer des huiles portant des noms proches.",
@@ -6554,10 +8140,76 @@
           "page": 13
         }
       ],
-      "doseResearch": {
-        "text": "Le cours évoque des usages gynécologiques de la sauge sclarée, sans fournir ici un schéma chiffré vérifiable pour son huile. Le signalement d’allergènes de contact par le SCCS ne définit pas non plus une dose sûre pour le produit fini.",
-        "source": "hippocratus-gynecologie",
-        "reviewedAt": "2026-10-08"
+      "clinicalStudies": [
+        {
+          "indication": "Douleurs et symptômes menstruels — piste exploratoire",
+          "population": "20 étudiantes sportives incluses ; seulement 12 ont terminé et ont été analysées",
+          "route": "Diffusion dans l’air de la chambre pendant l’essai",
+          "preparation": "Trois gouttes (15 µL selon l’étude) d’huile de Salvia sclarea dans 100 mL d’eau, dans le diffuseur étudié",
+          "protocol": "Diffusion 60 minutes au coucher, de la fin d’une menstruation jusqu’à la fin de la suivante ; comparaison croisée avec eau seule",
+          "result": "Les 12 participantes analysées rapportaient moins de douleurs, de troubles du sommeil et d’irritabilité pendant la période avec huile ; les taux hormonaux salivaires ne différaient pas significativement.",
+          "limit": "Effectif final très faible et 8 participantes non analysées ; résultats subjectifs à confirmer. Les trois gouttes décrivent un dispositif d’essai, pas une recommandation universelle de diffusion.",
+          "source": "trial-sclaree-dysmenorrhee"
+        }
+      ],
+      "evidenceDomains": [
+        "Génital",
+        "Muscles",
+        "Stress",
+        "Céphalées",
+        "Digestif",
+        "Respiratoire"
+      ],
+      "canadaUses": [
+        {
+          "label": "Soulagement de douleurs articulaires ou musculaires liées à une entorse, une foulure ou une polyarthrite rhumatoïde",
+          "domain": "Muscles",
+          "route": "cutanée",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement des maux de tête en aromathérapie",
+          "domain": "Céphalées",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement symptomatique de l’inconfort digestif comme carminatif ou antispasmodique",
+          "domain": "Digestif",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        },
+        {
+          "label": "Soulagement du rhume ou de la toux en aromathérapie",
+          "domain": "Respiratoire",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 10
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée de la plante fleurie de Salvia sclarea",
+        "massage": "1–5 %",
+        "local": "1–8 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 14
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     },
     {
@@ -6622,7 +8274,8 @@
         "text": "Le cours évoque la toux pour l’huile de Thymus serpyllum, sans définir une préparation, une voie et une quantité vérifiables. La monographie EMA du thym concerne Thymus vulgaris ou Thymus zygis : elle ne fixe pas une dose pour le serpolet.",
         "source": "ema-thyme",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "thym-carvacrol",
@@ -6673,7 +8326,8 @@
         "text": "La monographie EMA concerne une huile de thym définie par son identité et sa qualité, sans établir une posologie propre au chémotype à carvacrol de cette fiche. Sans composition du lot et préparation concordantes, ses chiffres ne sont pas repris ici.",
         "source": "ema-thyme",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "thym-linalol",
@@ -6728,7 +8382,8 @@
         "text": "Le cours distingue le thym à linalol, mais les repères EMA portent sur les préparations d’huile de thym définies dans la monographie et ne constituent pas une dose spécifique à ce chémotype. Une vérification du produit reste nécessaire.",
         "source": "ema-thyme",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "thym-thuyanol",
@@ -6783,7 +8438,8 @@
         "text": "Le thym à thuyanol est présenté comme un chémotype particulier dans le cours. La monographie EMA de l’huile de thym ne donne pas une quantité propre à ce chémotype et à un produit identifié ; une dose générique n’est pas transposée.",
         "source": "ema-thyme",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "thym-thymol",
@@ -6846,7 +8502,7 @@
       ],
       "reviewNotes": [
         "La rubrique de sécurité du cours regroupe quatre chémotypes sans préciser son champ d’application. Ne pas transférer indistinctement toutes ses exclusions à chaque chémotype.",
-        "Les modalités d’emploi restent non renseignées.",
+        "Les modalités chiffrées sont celles des médicaments d’huile de thym décrits par l’EMA, sous réserve d’une huile conforme à la spécification de la Pharmacopée européenne (1374). Une étiquette indiquant « thym à thymol » ne démontre pas seule cette conformité.",
         "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites."
       ],
       "sourceIds": [
@@ -6855,11 +8511,12 @@
         "ema-thyme-report",
         "hippocratus-gastro",
         "hippocratus-gynecologie",
-        "dgccrf-diffusion"
+        "dgccrf-diffusion",
+        "ema-thyme-mo"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "thym",
       "summarySource": "hippocratus",
@@ -6902,11 +8559,41 @@
           "source": "ema-thyme"
         }
       ],
-      "doseResearch": {
-        "text": "La monographie EMA définit des préparations et des voies pour l’huile de thym, mais pas une dose individualisée pour le chémotype à thymol de cette fiche. Son statut irritant pour les voies respiratoires en diffusion, signalé par la DGCCRF, impose aussi de ne pas improviser cette voie.",
-        "source": "ema-thyme",
-        "reviewedAt": "2026-10-08"
-      }
+      "verifiedRegimens": [
+        {
+          "indication": "Toux grasse associée au rhume",
+          "route": "Voie orale",
+          "population": "Adultes et personnes âgées uniquement",
+          "preparation": "Médicament liquide contenant l’huile de thym issue de Thymus vulgaris ou Thymus zygis, conforme à la monographie et à la spécification Ph. Eur. 1374",
+          "dose": "0,2–0,25 ml par prise, trois à cinq fois par jour ; total quotidien 0,6–1,25 ml",
+          "limit": "Repère de monographie pour un médicament identifié, pas pour tout flacon étiqueté « thym à thymol ». Usage oral non recommandé avant 18 ans ; consulter si les symptômes persistent plus d’une semaine ou s’accompagnent de dyspnée, fièvre ou crachats purulents.",
+          "source": "ema-thyme-mo",
+          "page": 4
+        },
+        {
+          "indication": "Soulagement des symptômes de toux et rhume",
+          "route": "Application cutanée",
+          "population": "Adultes et personnes âgées uniquement",
+          "preparation": "Médicament liquide ou semi-solide à base d’huile de thym conforme à la monographie, appliqué sur le thorax et le dos",
+          "dose": "Concentration maximale de 10 % d’huile ; jusqu’à trois applications par jour",
+          "limit": "Usage cutané non recommandé avant 18 ans ; ne pas appliquer sur le visage, surtout près du nez du nourrisson. Consulter en cas de dyspnée, fièvre ou crachats purulents.",
+          "source": "ema-thyme-mo",
+          "page": 4
+        },
+        {
+          "indication": "Soulagement des symptômes de toux et rhume",
+          "route": "Bain complet",
+          "population": "Adultes et personnes âgées ; autres âges à vérifier dans la monographie et la notice",
+          "preparation": "Médicament pour bain contenant l’huile de thym conforme à la monographie",
+          "dose": "0,007–0,025 g d’huile par litre d’eau ; un bain chaque jour ou un jour sur deux, 10–20 minutes à 35–38 °C",
+          "limit": "Bain chaud complet contre-indiqué en cas de grande plaie ou plaie ouverte, maladie cutanée aiguë, forte fièvre, infection grave, trouble circulatoire sévère ou insuffisance cardiaque. Prudence en cas d’hypertension ; pas de bain avec cette huile avant 3 ans.",
+          "source": "ema-thyme-mo",
+          "page": 4
+        }
+      ],
+      "evidenceDomains": [
+        "Respiratoire"
+      ]
     },
     {
       "id": "valeriane",
@@ -7049,7 +8736,11 @@
           "page": 4
         }
       ],
-      "identitySource": "kew-valeriane"
+      "identitySource": "kew-valeriane",
+      "evidenceDomains": [
+        "Sommeil",
+        "Stress"
+      ]
     },
     {
       "id": "verveine-odorante",
@@ -7127,7 +8818,8 @@
         "text": "La monographie EMA porte sur les feuilles de verveine citronnelle préparées en tisane, non sur l’huile essentielle. Le cours mentionne un effet sédatif sans dose propre de l’huile ; aucune quantité de feuilles ne lui est transposée.",
         "source": "ema-verveine-folium",
         "reviewedAt": "2026-10-08"
-      }
+      },
+      "evidenceDomains": []
     },
     {
       "id": "ylang-ylang-complet",
@@ -7154,8 +8846,25 @@
           23
         ]
       },
-      "contraindications": [],
-      "precautions": [],
+      "contraindications": [
+        {
+          "text": "La monographie canadienne d’aromathérapie indique de ne pas utiliser les produits qu’elle couvre pendant la grossesse ou l’allaitement.",
+          "source": "hc-aromatherapie-2025",
+          "page": 20
+        },
+        {
+          "text": "Santé Canada : les produits cutanés contenant cette huile à plus de 0,8 % ne doivent pas être utilisés chez les personnes sujettes aux réactions allergiques, à l’eczéma ou aux réactions cutanées inhabituelles.",
+          "source": "hc-aromatherapie-2025",
+          "page": 21
+        }
+      ],
+      "precautions": [
+        {
+          "text": "Santé Canada classe cette huile comme sensibilisante cutanée dans sa monographie d’aromathérapie : ne pas appliquer ses produits sur une peau lésée, irritée ou sensible.",
+          "source": "hc-aromatherapie-2025",
+          "page": 11
+        }
+      ],
       "adverseEffects": [
         {
           "text": "Les huiles de Cananga odorata / ylang-ylang figurent parmi les allergènes de contact établis chez l’humain dans l’avis SCCS.",
@@ -7167,16 +8876,17 @@
       "reviewNotes": [
         "Cette fiche concerne la distillation complète explicitement citée p. 23. La fraction extra, mentionnée p. 15, reste à documenter séparément.",
         "Le tableau SCCS concerne les huiles de Cananga odorata / ylang-ylang sans quantifier le risque pour chaque fraction de distillation.",
-        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune posologie ni recette reproduite."
+        "Identité botanique recoupée avec Kew ; efficacité clinique et bilan de sécurité encore incomplets. Aucune recette du cours reproduite ; les quantités canadiennes concernent des produits définis."
       ],
       "sourceIds": [
         "hippocratus-gynecologie",
         "kew-ylang",
-        "sccs-allergenes-contact"
+        "sccs-allergenes-contact",
+        "hc-aromatherapie-2025"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-07",
+      "reviewedAt": "2026-10-08",
       "dosage": null,
       "art": "ylang-ylang",
       "discovery": "Le nom botanique et la préparation précise permettent de distinguer des huiles portant des noms proches.",
@@ -7194,16 +8904,37 @@
           "page": 15
         }
       ],
-      "doseResearch": {
-        "text": "Le cours évoque un effet apaisant pour l’ylang-ylang, sans définir une préparation, une dilution et une quantité vérifiables pour l’huile issue d’une distillation complète. Le recensement d’allergènes de contact ne donne pas une dose sûre du produit fini.",
-        "source": "hippocratus-gynecologie",
-        "reviewedAt": "2026-10-08"
+      "evidenceDomains": [
+        "Stress"
+      ],
+      "canadaUses": [
+        {
+          "label": "Effet calmant en aromathérapie",
+          "domain": "Stress",
+          "route": "cutanée ou inhalation",
+          "source": "hc-aromatherapie-2025",
+          "page": 8
+        }
+      ],
+      "canadaTopical": {
+        "preparation": "HE distillée des fleurs de Cananga odorata",
+        "massage": "0,8–2 %",
+        "local": "0,8–2 %",
+        "population": "Adultes de 18 ans et plus",
+        "source": "hc-aromatherapie-2025",
+        "page": 11
+      },
+      "canadaInhalation": {
+        "tissue": "1 à 6 gouttes sur un mouchoir, inhalées occasionnellement, une à trois fois par jour",
+        "steam": "3 à 12 gouttes dans l’eau chaude ; inhalation lente pendant 5 à 10 minutes, une à trois fois par jour",
+        "source": "hc-aromatherapie-2025",
+        "page": 19
       }
     }
   ],
   "coverage": {
     "complete": false,
-    "note": "Inventaire Hippocratus en cours. Les cours sur les interactions traitent aussi de plantes, d'extraits et de boissons : leurs risques ne se transposent pas automatiquement aux huiles essentielles. Les signaux médicamenteux propres à chaque HE restent à vérifier.",
+    "note": "Inventaire Hippocratus encore incomplet : 18 modules parcourus, mais certaines pages d’autres modules sont vides ou restent à revérifier. La toxicologie de niveau 1 a été lue pages 1 à 24 ; ses listes de plantes et de composants doivent être recoupées avant attribution à une HE donnée. Les informations issues des cours sont séparées des monographies et des essais. La monographie 2025 de Santé Canada a été vérifiée pour un lot de 23 HE ; le rapprochement avec les autres fiches reste à faire.",
     "courses": [
       {
         "title": "HE les plus utilisées en infectiologie",
@@ -7306,6 +9037,12 @@
         "url": "https://cours.hippocratus.com/classroom/47137/player/36961",
         "pagesRead": "1–21 relevées ; page 22 : bilan",
         "status": "Cours parcouru ; formules non reprises comme conseils d’utilisation"
+      },
+      {
+        "title": "Hippocratus — Les huiles essentielles peuvent être toxiques (niveau 1)",
+        "url": "https://cours.hippocratus.com/classroom/47133/player/69008",
+        "pagesRead": "1–24 relues, dont effets neurologiques, cutanés, digestifs et variations de composition",
+        "status": "Cours parcouru ; listes générales et données animales non transposées aux fiches sans recoupement"
       }
     ]
   }

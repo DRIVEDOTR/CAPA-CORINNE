@@ -34,3 +34,38 @@
 .associations{padding:20px;border:1px solid #d7d0e6;border-radius:14px;background:#f9f6fd}.association-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin-top:14px}.association-card{background:#fff;border:1px solid #e1d9ec;border-radius:12px;padding:17px;box-shadow:0 5px 18px #6550800b}.association-tag{display:inline-block;background:#efe6f7;color:#684d80;border-radius:20px;padding:5px 9px;font-size:.68rem;font-weight:700}.association-card h4{font:600 1.05rem/1.35 Georgia,serif;color:#504164;margin:11px 0}.detail .association-card p{font-size:.82rem;line-height:1.55;margin:9px 0}.association-limit{padding:9px 11px;border-left:3px solid #b58063;background:#fff7f2;border-radius:0 7px 7px 0}.association-open{display:block;cursor:pointer;background:#71508c;color:#fff;border:0;border-radius:8px;padding:9px 12px;margin:14px 0 8px;font-size:.78rem;font-weight:700}.association-open:hover,.association-open:focus-visible{background:#593874}.association-card .source-link{margin:0}@media(max-width:700px){.associations{padding:16px}}
 
 .dose-research{max-width:780px;margin:1rem 0 0;padding:1rem 1.2rem;border:1px solid rgba(114,91,152,.24);border-left:4px solid #9a79bd;border-radius:14px;background:linear-gradient(125deg,#f9f6fc,#f2edf8);color:#3f3850}.dose-research strong{display:block;color:#5e467d;font-size:.96rem}.dose-research p{margin:.45rem 0 .7rem;line-height:1.58}.dose-research .source-link{font-size:.87rem}
+/* Lecture rapide et sources repliées par défaut. */
+.quick-read{border:1px solid #d6c9e7;background:linear-gradient(145deg,#faf7fe,#f0ebf7 62%,#f7f3ed);border-radius:18px;padding:20px;margin-bottom:28px;box-shadow:0 8px 22px #61517a0c}
+.quick-read .section-kicker{color:#694b81;margin:0 0 12px}
+.quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.quick-card{display:flex;flex-direction:column;gap:5px;min-width:0;padding:15px 17px;background:#fffefa;border:1px solid #e2dce9;border-radius:12px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s,border-color .2s}
+.quick-card:hover{transform:translateY(-2px);border-color:#b49bc9;box-shadow:0 5px 15px #65537c16;color:var(--ink)}
+.quick-card span{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-weight:750;color:#6d5b81}
+.quick-card strong{font-size:.93rem;line-height:1.35;font-weight:650;overflow-wrap:anywhere}
+.quick-card small{font-size:.69rem;line-height:1.45;color:#657066}
+.quick-card.quick-use{border-left:4px solid #8770a6}
+.quick-card.quick-alert{border-left:4px solid #b27559;background:#fffaf7}
+.detail:not(.sources-visible) .source-link{display:none!important}
+.detail-nav .source-toggle{border:1px solid #d4c5e1;border-radius:99px;background:#f4eff9;color:#5a426f;padding:7px 13px;font-size:.74rem;font-weight:650;white-space:nowrap}
+.detail-nav .source-toggle:hover,.detail-nav .source-toggle[aria-expanded=true]{background:#e8dcf1;border-color:#bda7ce}
+@media(max-width:900px){.quick-grid{grid-template-columns:1fr}.quick-card{padding:13px 15px}}
+@media(max-width:700px){.quick-read{padding:15px;margin-bottom:22px}.quick-card strong{font-size:.88rem}.detail-nav .source-toggle{padding:7px 10px;font-size:.7rem}}
+.clinical-studies{display:grid;gap:13px;margin:18px 0}
+.clinical-study{padding:18px 20px;border:1px solid #cfc0de;border-left:4px solid #8c70a4;border-radius:12px;background:#fbf8fe}
+.clinical-study .study-level{display:inline-block;margin-bottom:7px;color:#5e4675;font-size:.68rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase}
+.clinical-study h4{font:400 1.2rem/1.3 Georgia,serif;margin:0 0 9px;color:#42334f}
+.clinical-study p{font-size:.83rem;line-height:1.55;margin:6px 0}
+.clinical-study .study-limit{background:#f1ecf6;border-radius:8px;padding:9px 11px;margin-top:10px}
+
+/* Filtres documentaires : les études exploratoires restent distinctes des doses EMA. */
+.evidence-filters{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding-top:14px;border-top:1px solid #e8dfed;margin-top:13px}
+.evidence-filter-label{font-size:.78rem;font-weight:700;color:#57466b;margin-right:4px}
+.evidence-filters button{border:1px solid #d5c5e1;border-radius:999px;background:#f8f5fb;color:#543e69;padding:8px 12px;font-size:.77rem;font-weight:700;cursor:pointer;min-height:36px}
+.evidence-filters button:hover,.evidence-filters button:focus-visible{border-color:#a886bf;background:#efe6f5}
+.evidence-filters button[aria-pressed=true]{background:#6d5087;color:#fff;border-color:#6d5087}
+.evidence-filters button span{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;margin-left:4px;padding:0 4px;background:#e8ddf0;color:#5e4478;border-radius:50%;font-size:.68rem}
+.evidence-filters button[aria-pressed=true] span{background:#fff;color:#5e4478}
+.evidence-filters .reset-filters{margin-left:auto;border-color:#d8d1dc;background:#fff;color:#665c6b}
+.evidence-filters .reset-filters:disabled{opacity:.5;cursor:default}
+.evidence-filters p{flex-basis:100%;font-size:.72rem;line-height:1.5;color:#756b7c;margin:2px 0 0}
+@media(max-width:700px){.evidence-filters{align-items:stretch}.evidence-filter-label{width:100%}.evidence-filters button{font-size:.72rem;padding:7px 10px}.evidence-filters .reset-filters{margin-left:0}}
