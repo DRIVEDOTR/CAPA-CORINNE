@@ -1,9 +1,9 @@
 {
   "title": "CAPA — carnet d’aromathérapie",
-  "version": "0.9.5",
-  "date": "2026-10-09",
+  "version": "0.9.8",
+  "date": "2026-10-10",
   "status": "Base de travail — relecture nécessaire",
-  "scope": "79 fiches ; 45 avec dose ou concentration de monographie pour une préparation définie ; exemples de produits, essais et calculs toxicologiques séparés des posologies générales.",
+  "scope": "79 fiches ; 46 avec dose ou concentration de monographie pour une préparation définie ; exemples de produits, essais et calculs toxicologiques séparés des posologies générales.",
   "sources": {
     "hippocratus": {
       "title": "Hippocratus — HE les plus utilisées en infectiologie",
@@ -879,6 +879,90 @@
       "type": "Étude originale préclinique · pas d’indication humaine",
       "date": "2025",
       "consulted": "2026-10-09"
+    },
+    "who-aneth-2007": {
+      "title": "OMS — Monographs on selected medicinal plants, vol. 3, Fructus Anethi, p. 33–41",
+      "url": "https://www.e-lactancia.org/media/papers/Fitoterapia-Plantas-WHO-03_2007.pdf",
+      "type": "Monographie originale OMS · copie PDF accessible, non autorisation d’un produit",
+      "date": "2007",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-aneth-ca": {
+      "title": "Pranarôm Canada — Aneth, huile de fruit, précautions d’étiquetage",
+      "url": "https://pranarom.ca/fr/produit/aneth/",
+      "type": "Étiquette du fabricant · produit précis",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-thym-linalol-ca": {
+      "title": "Pranarôm Canada — Thym à linalol CT1, sommité en fleurs",
+      "url": "https://pranarom.ca/fr/produit/thym-a-linalol-p-e73/",
+      "type": "Étiquette du fabricant · NPN indiqué, statut de licence non vérifié indépendamment",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-thym-thuyanol-ca": {
+      "title": "Pranarôm Canada — Thym à thujanol CT4, sommité en fleurs",
+      "url": "https://pranarom.ca/fr/produit/thym-a-thujanol-p-e74/",
+      "type": "Étiquette du fabricant · NPN indiqué, statut de licence non vérifié indépendamment",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-ravintsara-ca": {
+      "title": "Pranarôm Canada — Ravintsara CT cinéole, huile de feuilles",
+      "url": "https://pranarom.ca/fr/produit/ravintsara-p-e07/",
+      "type": "Étiquette du fabricant · NPN indiqué, statut de licence non vérifié indépendamment",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-gaultherie-odorante-ca": {
+      "title": "Pranarôm Canada — Gaulthérie odorante, huile de feuilles",
+      "url": "https://pranarom.ca/fr/produit/gaultherie-odorante-p-e29/",
+      "type": "Étiquette du fabricant · NPN indiqué, statut de licence non vérifié indépendamment",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-romarin-camphre-ca": {
+      "title": "Pranarôm Canada — Romarin à camphre CT1, sommité en fleurs",
+      "url": "https://pranarom.ca/fr/produit/romarin-a-camphre-p-e51/",
+      "type": "Étiquette du fabricant · NPN indiqué, statut de licence non vérifié indépendamment",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-estragon-predilue-fr": {
+      "title": "Pranarôm France — Estragon prédilué dans l’huile de tournesol",
+      "url": "https://pranarom.fr/products/estragon-prediluee",
+      "type": "Étiquette du fabricant · complément alimentaire prédilué",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-sarriette-fr": {
+      "title": "Pranarôm France — Sarriette des montagnes, huile essentielle",
+      "url": "https://pranarom.fr/products/sarriette-des-montagnes-1",
+      "type": "Étiquette du fabricant · complément alimentaire, partie distillée non explicitée sur la page",
+      "date": "2026",
+      "consulted": "2026-10-10"
+    },
+    "pranarom-mandarinier-fr": {
+      "title": "Pranarôm France — Essence de Mandarinier, 10 ml BIO : mode d’emploi du produit",
+      "url": "https://pranarom.fr/products/huile-essentielle-de-mandarinier-bio",
+      "type": "Étiquette fabricant · produit précis",
+      "date": null,
+      "consulted": "2026-10-10"
+    },
+    "pranarom-cannelle-chine-fr": {
+      "title": "Pranarôm France — Cannelier de Chine, 10 ml BIO : mode d’emploi du produit",
+      "url": "https://pranarom.fr/products/cannelier-de-chine-bio-1",
+      "type": "Étiquette fabricant · produit précis",
+      "date": null,
+      "consulted": "2026-10-10"
+    },
+    "pranarom-romarin-verbenone-fr": {
+      "title": "Pranarôm France — Romarin à verbénone BIO, 5 ml : mode d’emploi du produit",
+      "url": "https://pranarom.fr/products/romarin-a-verbenone-bio",
+      "type": "Étiquette fabricant · produit précis",
+      "date": null,
+      "consulted": "2026-10-10"
     }
   },
   "oils": [
@@ -1200,6 +1284,11 @@
           "text": "Une crème vaginale à 2 % d’huile de graines a été testée dans un essai encadré ; l’étude ne valide pas l’application de l’huile pure ni une préparation maison sur une muqueuse.",
           "source": "trial-aneth-vvc-2018",
           "page": 3
+        },
+        {
+          "text": "La monographie OMS déconseille Fructus Anethi durant la grossesse et l’allaitement et rapporte une réaction allergique. Son repère oral de 2007 ne s’applique pas au produit canadien Pranarôm dont l’étiquette prévoit uniquement un usage externe.",
+          "source": "who-aneth-2007",
+          "page": 45
         }
       ],
       "adverseEffects": [
@@ -1219,11 +1308,13 @@
         "hippocratus-gastro",
         "hippocratus-gynecologie",
         "trial-aneth-vvc-2018",
-        "trial-aneth-postcesarean-2017"
+        "trial-aneth-postcesarean-2017",
+        "who-aneth-2007",
+        "pranarom-aneth-ca"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "aneth",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
@@ -1248,13 +1339,14 @@
         }
       ],
       "doseResearch": {
-        "title": "Protocole humain observé, pas de posologie générale",
-        "text": "Un essai clinique a utilisé une crème vaginale standardisée à 2 % d’huile de graines, 5 g chaque soir pendant 7 jours. Ce protocole clinique spécialisé ne fournit aucune dose pour l’usage digestif cité dans le cours et ne doit pas être transposé à un flacon. Un autre essai postopératoire a étudié l’huile d’aneth par voie orale, mais le résumé ne précise pas la partie distillée ; son protocole ne s’applique pas à l’huile de fruit CAPA.",
-        "source": "trial-aneth-vvc-2018",
-        "page": 3,
-        "reviewedAt": "2026-10-09"
+        "title": "Monographie OMS retrouvée pour le fruit",
+        "text": "L’OMS consigne 100 à 300 mg/j d’HE de fruit pour des préparations internes. Cette quantité documentaire est affichée séparément des deux protocoles cliniques spécialisés. Une étiquette actuelle d’huile de fruit interdit au contraire la voie orale pour son produit : le carnet ne transforme pas la dose OMS en conseil d’emploi du flacon.",
+        "source": "who-aneth-2007",
+        "page": 46,
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [
+        "Digestif",
         "Génital"
       ],
       "clinicalStudies": [
@@ -1280,12 +1372,34 @@
         }
       ],
       "indicationReview": {
-        "status": "Essais cliniques contextualisés",
-        "text": "Une crème à l’huile de graines/fruits a été évaluée dans la candidose vulvovaginale ; un essai oral après césarienne a étudié les flatulences, mais ne précise pas la partie distillée dans son résumé. Le premier ne valide pas l’usage digestif courant et le second n’est pas attribué automatiquement à l’huile de fruit CAPA.",
-        "source": "trial-aneth-vvc-2018",
-        "reviewedAt": "2026-10-09",
-        "additionalSource": "trial-aneth-postcesarean-2017"
-      }
+        "status": "Usage digestif documentaire et essais contextualisés",
+        "text": "L’OMS répertorie dyspepsie et flatulences parmi les usages du fruit décrits dans des pharmacopées, tout en signalant l’absence de données cliniques soutenant ces usages dans sa monographie de 2007. Les essais sur la candidose vaginale et les flatulences après césarienne restent des protocoles distincts, non transposables à la prise digestive ordinaire.",
+        "source": "who-aneth-2007",
+        "reviewedAt": "2026-10-10",
+        "additionalSource": "trial-aneth-vvc-2018"
+      },
+      "regulatoryUses": [
+        {
+          "label": "Dyspepsie et flatulences : usage décrit dans des pharmacopées",
+          "context": "La monographie OMS du fruit répertorie ces usages documentaires et précise qu’aucun usage n’est appuyé par des données cliniques dans cette monographie de 2007. Ce n’est pas une autorisation de mise sur le marché ni une preuve d’efficacité de l’HE.",
+          "domain": "Digestif",
+          "route": "orale dans une préparation interne définie",
+          "source": "who-aneth-2007",
+          "page": 44
+        }
+      ],
+      "regulatoryRegimens": [
+        {
+          "indication": "Usage digestif décrit pour le fruit d’aneth",
+          "route": "Orale · monographie documentaire",
+          "population": "Population non précisée dans cette monographie OMS ; aucune dose pédiatrique d’HE indiquée",
+          "preparation": "Huile essentielle tirée des fruits mûrs d’Anethum graveolens, sous forme galénique destinée à l’usage interne.",
+          "dose": "0,1 à 0,3 g d’huile essentielle par jour, soit 100 à 300 mg/j au total selon l’OMS (2007).",
+          "limit": "Repère historique, sans conversion en gouttes ni modalité de fabrication. Aucun essai clinique digestif n’est présenté par cette monographie. L’étiquette du produit Pranarôm Canada d’huile de fruit indique « usage externe seulement » et interdit la prise orale : suivre la notice du produit, ne pas employer ce chiffre pour ce flacon. Grossesse et allaitement déconseillés par l’OMS.",
+          "source": "who-aneth-2007",
+          "page": 46
+        }
+      ]
     },
     {
       "id": "anis-vert",
@@ -2845,7 +2959,8 @@
       ],
       "sourceIds": [
         "hippocratus-gastro",
-        "ema-cinnamon-index"
+        "ema-cinnamon-index",
+        "pranarom-cannelle-chine-fr"
       ],
       "status": "course",
       "publicationReady": false,
@@ -2873,7 +2988,17 @@
         "text": "Le cours cite un usage digestif, sans organe distillé connu. Les données sur l’écorce de cannelle de Ceylan ou une formule combinée à la cassia ne valident pas une indication pour cette huile non caractérisée.",
         "source": "ema-cinnamon-index",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm France Cannelier de Chine BIO · 10 ml",
+          "route": "Orale ; étiquette de ce produit seulement",
+          "preparation": "Huile du produit Pranarôm Cinnamomum cassia ; la partie distillée de la fiche CAPA reste non précisée.",
+          "dose": "1 goutte sur support neutre deux fois par jour ; maximum affiché : 2 gouttes/100 mg par jour, 7 jours au plus.",
+          "limit": "Huile dermocaustique ; le fabricant demande un avis professionnel pour la voie orale et déconseille grossesse, allaitement et enfant de moins de 6 ans. Cette étiquette ne renseigne pas une dose pour l’huile CAPA de partie inconnue.",
+          "source": "pranarom-cannelle-chine-fr"
+        }
+      ]
     },
     {
       "id": "cardamome",
@@ -4298,11 +4423,12 @@
         "hippocratus-snc",
         "hippocratus-gynecologie",
         "dgccrf-diffusion",
-        "ema-estragole"
+        "ema-estragole",
+        "pranarom-estragon-predilue-fr"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "estragon",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -4327,9 +4453,10 @@
         }
       ],
       "doseResearch": {
-        "text": "La composition exacte, notamment une éventuelle teneur en estragole, doit être connue avant d’évaluer l’exposition. La déclaration EMA sur l’estragole est une référence de sécurité, pas une monographie posologique de l’huile d’estragon.",
-        "source": "ema-estragole",
-        "reviewedAt": "2026-10-08"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-estragon-predilue-fr",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -4337,7 +4464,17 @@
         "text": "Les usages antispasmodiques cités dans le cours restent non validés pour cette HE. Des essais humains souvent cités avec Artemisia dracunculus concernent un extrait aqueux ou autre préparation, pas l’huile essentielle.",
         "source": "ema-estragole",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm France Estragon prédilué · complément alimentaire",
+          "route": "Orale ; adultes uniquement d’après l’étiquette",
+          "preparation": "Produit prédilué associant huile de tournesol et HE d’Artemisia dracunculus ; la proportion d’HE et la partie distillée ne sont pas précisées sur cette page.",
+          "dose": "1 goutte de PRODUIT PRÉDILUÉ par jour, soit 40 mg de mélange selon le fabricant ; ne pas dépasser 14 jours.",
+          "limit": "Les 40 mg ne sont pas 40 mg d’HE pure. Déconseillé avant 18 ans, pendant la grossesse et l’allaitement ; avis professionnel demandé. L’estragole justifie de ne pas extrapoler cette goutte à une HE pure.",
+          "source": "pranarom-estragon-predilue-fr"
+        }
+      ]
     },
     {
       "id": "eucalyptus-citronne",
@@ -5406,11 +5543,12 @@
       "sourceIds": [
         "hippocratus-rhum",
         "hippocratus-derm",
-        "anses-vigilance-2024"
+        "anses-vigilance-2024",
+        "pranarom-gaultherie-odorante-ca"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "gaultherie-odorante",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -5438,9 +5576,10 @@
         }
       ],
       "doseResearch": {
-        "text": "Le cours évoque un emploi local en rhumatologie, mais ne définit pas ici une préparation et une quantité vérifiables. La vigilance toxicologique de l’Anses, notamment sur l’ingestion, interdit de déduire une dose de cette simple mention.",
-        "source": "anses-vigilance-2024",
-        "reviewedAt": "2026-10-08"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-gaultherie-odorante-ca",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -5448,7 +5587,17 @@
         "text": "Les douleurs locomotrices restent des pistes du cours. Un essai de bain de bouche avec plusieurs ingrédients ne permet pas d’attribuer un effet clinique à Gaultheria fragrantissima seule.",
         "source": "anses-vigilance-2024",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm Canada Gaulthérie odorante · NPN affiché 80070002",
+          "route": "Topique local ; adultes ≥ 18 ans",
+          "preparation": "Huile pure de feuilles de Gaultheria fragrantissima, diluée dans une huile végétale.",
+          "dose": "2 à 4 gouttes dans 5 ml d’huile végétale, sur la zone concernée jusqu’à 3 fois/j.",
+          "limit": "Usage externe et occasionnel seulement. L’étiquette exclut grossesse/allaitement et peau lésée/irritée, déconseille chaleur et bandage serré, et demande un avis sous anticoagulants. L’Anses déconseille plus strictement les huiles de gaulthérie avec anticoagulants : suivre ce point de vigilance.",
+          "source": "pranarom-gaultherie-odorante-ca"
+        }
+      ]
     },
     {
       "id": "genevrier-baies",
@@ -7322,7 +7471,8 @@
       "sourceIds": [
         "hippocratus-snc",
         "hippocratus-gynecologie",
-        "study-mandarin-peel-animal-2022"
+        "study-mandarin-peel-animal-2022",
+        "pranarom-mandarinier-fr"
       ],
       "status": "course",
       "publicationReady": false,
@@ -7350,7 +7500,17 @@
         "text": "L’usage calmant du cours n’a pas été confirmé chez l’humain pour l’essence de zeste indiquée ici. L’étude retrouvée sur un extrait au CO₂ de zeste est animale et sa préparation diffère.",
         "source": "study-mandarin-peel-animal-2022",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm France Essence de Mandarinier BIO · 10 ml",
+          "route": "Orale ; étiquette de ce produit seulement",
+          "preparation": "Essence de zeste de mandarinier du fabricant ; confirmer le nom botanique et le procédé sur le flacon du lot avant tout rapprochement avec CAPA.",
+          "dose": "1 à 2 gouttes sur support neutre, sans dépasser 5 gouttes par jour (200 mg/j affichés par le fabricant).",
+          "limit": "Complément alimentaire, pas une dose générale du zeste de Citrus reticulata. Avis professionnel demandé ; étiquette déconseille grossesse, allaitement et enfant de moins de 6 ans.",
+          "source": "pranarom-mandarinier-fr"
+        }
+      ]
     },
     {
       "id": "marjolaine",
@@ -9697,11 +9857,12 @@
         "hippocratus-gynecologie",
         "anses-ravintsara-rapport",
         "hc-aromatherapie-2025",
-        "tox-essential-oils-2021"
+        "tox-essential-oils-2021",
+        "pranarom-ravintsara-ca"
       ],
       "status": "partial",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "ravintsara",
       "summarySource": "hippocratus",
@@ -9725,10 +9886,10 @@
         }
       ],
       "doseResearch": {
-        "title": "Calcul toxicologique pour un profil chimique défini",
-        "text": "Dans la même étude, les auteurs calculent 100 mg/j par voie orale chez l’adulte pour 2 semaines au maximum pour les spécifications de Cinnamomum camphora à 1,8-cinéole évaluées, limité notamment par le safrole retenu dans l’analyse. Ils précisent que la valeur ne vaut pas pour d’autres profils sans comparaison chimique et ne constitue pas une posologie thérapeutique ou une norme réglementaire.",
-        "source": "tox-essential-oils-2021",
-        "reviewedAt": "2026-10-09"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-ravintsara-ca",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -9741,7 +9902,17 @@
         "text": "Les usages respiratoires restent des pistes du cours. Les données humaines génériques sur Cinnamomum camphora ne caractérisent pas le chémotype cinéole de feuille malgache de cette fiche ; le travail toxicologique ne mesure pas une efficacité.",
         "source": "tox-essential-oils-2021",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm Canada Ravintsara CT cinéole · NPN affiché 80071003",
+          "route": "Topique local, inhalation directe, diffuseur ; adultes ≥ 18 ans",
+          "preparation": "Huile pure de feuilles de Cinnamomum camphora CT cinéole ; peau après dilution.",
+          "dose": "Peau : 2 à 5 gouttes dans 5 ml d’huile végétale, jusqu’à 3 fois/j ; mouchoir : 1 à 6 gouttes, occasionnellement jusqu’à 3 fois/j ; diffuseur ultrasonique ou atmosphérique : 1 à 6 gouttes.",
+          "limit": "Usage externe et occasionnel. La notice ne donne ni durée de diffusion ni quantité par volume de pièce, et ne décrit pas une nébulisation. Grossesse/allaitement exclus ; avis préalable si asthme ou épilepsie.",
+          "source": "pranarom-ravintsara-ca"
+        }
+      ]
     },
     {
       "id": "romarin",
@@ -10048,11 +10219,12 @@
         "kew-romarin",
         "hippocratus",
         "ema-romarin",
-        "belgium-rosemary-2020"
+        "belgium-rosemary-2020",
+        "pranarom-romarin-camphre-ca"
       ],
       "status": "course",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "romarin",
       "discovery": "Le nom botanique et la partie distillée permettent de distinguer cette huile des produits portant un nom voisin.",
@@ -10073,10 +10245,10 @@
         }
       ],
       "doseResearch": {
-        "text": "L’avis belge plafonne le camphre total à 60 mg/jour dans les compléments alimentaires en capsules conformes, mais impose l’analyse du lot et la conformité du chémotype. Sans composition mesurée de l’huile « à camphre » de cette fiche, on ne peut calculer une quantité d’HE. La dose EMA d’une autre préparation n’est pas transposée.",
-        "source": "belgium-rosemary-2020",
-        "page": 15,
-        "reviewedAt": "2026-10-09"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-romarin-camphre-ca",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -10089,7 +10261,17 @@
         "text": "Le cours cite les douleurs et contractures. La monographie EMA du romarin porte sur une huile répondant à une spécification de pharmacopée ; le nom du chémotype camphre seul ne prouve pas cette identité ni une efficacité propre.",
         "source": "ema-romarin",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm Canada Romarin à camphre CT1 · NPN affiché 80067155",
+          "route": "Topique local ; adultes > 18 ans selon l’étiquette",
+          "preparation": "Huile pure de sommités en fleurs de Rosmarinus officinalis CT camphre, diluée avant application.",
+          "dose": "1 à 5 gouttes dans 5 ml d’huile végétale, sur la zone concernée jusqu’à 3 fois/j.",
+          "limit": "Usage externe et occasionnel ; pas d’application pure ni de voie orale. Grossesse/allaitement exclus sur l’étiquette ; avis préalable si asthme ou épilepsie. Ne démontre pas la conformité pharmacopée exigée par l’EMA.",
+          "source": "pranarom-romarin-camphre-ca"
+        }
+      ]
     },
     {
       "id": "romarin-verbenone",
@@ -10143,7 +10325,8 @@
         "hippocratus-endocrinologie",
         "ema-romarin",
         "belgium-rosemary-2020",
-        "study-rosemary-verbenone-2025"
+        "study-rosemary-verbenone-2025",
+        "pranarom-romarin-verbenone-fr"
       ],
       "status": "course",
       "publicationReady": false,
@@ -10172,7 +10355,17 @@
         "source": "study-rosemary-verbenone-2025",
         "reviewedAt": "2026-10-09",
         "additionalSource": "ema-romarin"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm France Romarin à verbénone BIO · 5 ml",
+          "route": "Orale ; étiquette de ce produit seulement",
+          "preparation": "Huile de sommités fleuries de Rosmarinus officinalis CT verbénone selon le fabricant ; la partie de l’huile CAPA reste non fiabilisée.",
+          "dose": "1 goutte sur support neutre deux fois par jour (80 mg/j affichés par le fabricant).",
+          "limit": "Complément alimentaire et non monographie clinique. Le fabricant demande un avis professionnel et déconseille grossesse, allaitement et enfant de moins de 6 ans. Ne pas transposer au produit CAPA sans identité du lot et notice correspondante.",
+          "source": "pranarom-romarin-verbenone-fr"
+        }
+      ]
     },
     {
       "id": "santal-blanc",
@@ -10401,11 +10594,12 @@
         "hippocratus-gastro",
         "hippocratus-cardio",
         "hippocratus-gynecologie",
-        "trial-savory-temperature-2016"
+        "trial-savory-temperature-2016",
+        "pranarom-sarriette-fr"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "sarriette",
       "summarySource": "hippocratus",
@@ -10444,9 +10638,10 @@
         }
       ],
       "doseResearch": {
-        "text": "Le cours évoque des usages respiratoires et intestinaux, tout en proscrivant les applications cutanéo-muqueuses et en aérosol pour cette huile. Il ne documente pas ici une autre voie et une dose chiffrée pour une préparation définie.",
-        "source": "hippocratus",
-        "reviewedAt": "2026-10-08"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-sarriette-fr",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -10454,7 +10649,17 @@
         "text": "Un essai très court chez neuf volontaires a mesuré la température après ingestion d’huile de feuilles ; il n’étudie ni les sommités fleuries de la fiche ni une maladie. Les usages respiratoires et intestinaux du cours restent non confirmés.",
         "source": "trial-savory-temperature-2016",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm France Sarriette des montagnes · complément alimentaire",
+          "route": "Orale ; étiquette du fabricant",
+          "preparation": "HE de Satureja montana sur support neutre ; la page ne précise pas la partie distillée, alors que CAPA indique les sommités fleuries.",
+          "dose": "2 gouttes de ce PRODUIT, 3 fois/j ; le fabricant associe aussi la mention « 150 mg » à ce schéma sans en expliciter le calcul.",
+          "limit": "Dose d’étiquette, pas dose générale : identité de la partie distillée et formulation à confirmer. Pas de durée indiquée. La page déconseille grossesse/allaitement et moins de 3 ans sans avis autorisé ; huile dermocaustique selon la même source.",
+          "source": "pranarom-sarriette-fr"
+        }
+      ]
     },
     {
       "id": "sauge-espagne",
@@ -11027,11 +11232,12 @@
         "hippocratus",
         "hippocratus-gastro",
         "ema-thyme",
-        "belgium-thyme-2023"
+        "belgium-thyme-2023",
+        "pranarom-thym-linalol-ca"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "thym",
       "summarySource": "hippocratus",
@@ -11046,10 +11252,10 @@
       },
       "riskSignals": {},
       "doseResearch": {
-        "text": "L’avis belge sur les compléments alimentaires oraux couvre Thymus vulgaris mais ne fournit pas de dose d’huile propre au chémotype à linalol. Ses plafonds portent sur des constituants mesurés du produit, pas sur une quantité générale d’HE ; le chémotype et la composition du flacon restent à confirmer.",
-        "source": "belgium-thyme-2023",
-        "page": 20,
-        "reviewedAt": "2026-10-09"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-thym-linalol-ca",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -11057,7 +11263,17 @@
         "text": "Les études du chémotype linalol retrouvées sont essentiellement chimiques ou de laboratoire ; elles ne suffisent pas à attribuer les indications d’un autre thym ou d’une huile de pharmacopée à cette fiche.",
         "source": "ema-thyme",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm Canada Thym à linalol CT1 · NPN affiché 80061582",
+          "route": "Topique local et inhalation directe ; adultes ≥ 18 ans",
+          "preparation": "Huile pure de sommités en fleurs de Thymus vulgaris CT linalol ; dilution dans une huile végétale pour la peau.",
+          "dose": "Peau : 1 à 5 gouttes dans 5 ml d’huile végétale, jusqu’à 3 fois/j ; mouchoir : 1 à 6 gouttes, occasionnellement jusqu’à 3 fois/j.",
+          "limit": "Usage externe ; jamais pur sur la peau. Grossesse/allaitement exclus sur l’étiquette ; avis préalable si asthme ou épilepsie. Les allégations du fabricant concernent son produit, sans validation clinique du chémotype CAPA.",
+          "source": "pranarom-thym-linalol-ca"
+        }
+      ]
     },
     {
       "id": "thym-thuyanol",
@@ -11091,11 +11307,12 @@
         "hippocratus",
         "hippocratus-gastro",
         "ema-thyme",
-        "belgium-thyme-2023"
+        "belgium-thyme-2023",
+        "pranarom-thym-thuyanol-ca"
       ],
       "status": "draft",
       "publicationReady": false,
-      "reviewedAt": "2026-10-09",
+      "reviewedAt": "2026-10-10",
       "dosage": null,
       "art": "thym",
       "summarySource": "hippocratus",
@@ -11110,10 +11327,10 @@
       },
       "riskSignals": {},
       "doseResearch": {
-        "text": "L’avis belge exclut le chémotype 4-thujanol des compléments alimentaires oraux par manque de données. La monographie EMA de l’huile de thym ne donne pas de dose propre au produit de cette fiche ; aucune posologie n’est retenue.",
-        "source": "belgium-thyme-2023",
-        "page": 20,
-        "reviewedAt": "2026-10-09"
+        "title": "Dose d’un produit identifié seulement",
+        "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
+        "source": "pranarom-thym-thuyanol-ca",
+        "reviewedAt": "2026-10-10"
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -11126,7 +11343,17 @@
         "text": "La variabilité chimique du profil thuyanol est documentée, mais aucune étude clinique correspondante n’a été retenue. L’avis belge ne retient pas son emploi oral en complément faute de données suffisantes.",
         "source": "belgium-thyme-2023",
         "reviewedAt": "2026-10-09"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Pranarôm Canada Thym à thujanol CT4 · NPN affiché 80061600",
+          "route": "Topique local et inhalation directe ; adultes ≥ 18 ans",
+          "preparation": "Huile pure de sommités en fleurs de Thymus vulgaris CT thujanol ; peau après dilution.",
+          "dose": "Peau : 1 à 5 gouttes dans 5 ml d’huile végétale, jusqu’à 3 fois/j ; mouchoir : 1 à 6 gouttes, occasionnellement jusqu’à 3 fois/j.",
+          "limit": "Usage externe ; pas d’application pure. Grossesse/allaitement exclus sur l’étiquette ; avis préalable si asthme ou épilepsie. Le chiffre n’est pas une dose orale et ne valide pas les usages de l’HE CAPA.",
+          "source": "pranarom-thym-thuyanol-ca"
+        }
+      ]
     },
     {
       "id": "thym-thymol",
