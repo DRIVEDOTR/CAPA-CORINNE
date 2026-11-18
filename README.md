@@ -1,5 +1,15 @@
 # CAPA — Le Carnet de Coco
 
+## Édition du 18 novembre 2026
+
+Le carnet est consultable sur [GitHub Pages](https://drivedotr.github.io/CAPA-CORINNE/). Ouvrir `index.html` pour une consultation locale. Quatre entrées filtrent les fiches et leurs repères : diffusion ou brumisation d’ambiance, inhalation directe, application cutanée et voie orale. Sélectionner ensuite une huile et, si plusieurs usages sont présents, une carte d’objectif. Les quantités de monographies sont liées à une préparation, à une population et à une voie. Les notices de produits et les études exploratoires sont signalées séparément. Le bain et les usages buccaux ou dentaires sont accessibles dans les fiches.
+
+Cette édition réunit 80 fiches, dont 47 avec au moins un repère chiffré issu d’une monographie. La rubrique « Le flyer d’Égypte, vérifié » couvre les 16 entrées visibles et ouvre les fiches concernées. L’encens `Boswellia sacra` est une nouvelle fiche sourcée. La diffusion comporte des exemples de notices précises et d’études, ainsi qu’un guide de toxicovigilance. Le quiz porte sur la lecture des sources et les voies d’utilisation.
+
+Pour mettre à jour GitHub Pages depuis le dépôt utilisé pour CAPA, copier `index.html`, `styles.css`, `app.js`, `data.js`, `fiches.json` et ce `README.md` à la racine. Conserver le dossier `assets` existant. Les favoris et mémos sont conservés dans le navigateur qui les a enregistrés.
+
+## Historique du carnet
+
 Interface du carnet remaniée le 12 octobre 2026 : 79 fiches d’huiles essentielles illustrées. Le site se consulte en ouvrant `index.html` ; la recherche et les illustrations fonctionnent sans connexion. Les liens de sources nécessitent Internet et les cours Hippocratus un compte autorisé. Les fiches restent un travail documentaire évolutif : les 79 huiles sont livrées, sans que chacune dispose d’une preuve clinique ou d’une posologie.
 
 Treize fiches présentent des usages évalués par l’EMA avec leur niveau de preuve, la préparation concernée et les précautions : romarin, eucalyptus globuleux, thym à thymol, tea tree, lavande vraie, menthe poivrée, giroflier, anis vert, carvi, matricaire, écorce de cannelle de Ceylan, valériane officinale et genévrier des cônes de baies. Des alertes documentaires apparaissent sur les fiches fenouil amer, fenouil doux, bergamote et genévrier des rameaux. Les deux gaulthéries et le niaouli ont reçu des précautions de sécurité recoupées avec l’Anses ; un filtre « Coagulation » aide à retrouver les contre-indications des gaulthéries. Les monographies de médicaments ne valident pas automatiquement toutes les huiles du commerce. Les autres fiches restent à recouper. Trente modalités chiffrées issues de monographies EMA sont citées avec leur préparation et leur population ; aucune recette du cours privé n’est publiée.
@@ -16,9 +26,11 @@ La recherche du 10 octobre a retrouvé une quantité documentaire dans la monogr
 
 Une recherche séparée sur **les indications des 34 huiles initialement sans quantité de monographie** figure sur chaque fiche, sous « Indications », et dans `RECHERCHE-34-INDICATIONS.md`. La monographie OMS précise désormais l’usage digestif documentaire de l’aneth et son absence de preuve clinique dans ce texte. Les essais humains de l’aneth et de la verveine restent contextualisés. Une autre passe a précisé six fiches à partir d’études originales : lentisque, bois d’Inde, coriandre, origan compact, achillée millefeuille et romarin à verbénone. Le filtre « Indication sourcée » reste à 47 fiches sur 79.
 
+Clarification du 12 octobre : dans les 23 fiches reprenant l’allégation canadienne « nervine/calmative », le libellé visible devient « Détente et apaisement nerveux en aromathérapie ». Une phrase distingue cet objectif nerveux de la voie cutanée : cet usage ne désigne pas le soulagement d’une brûlure ou d’une irritation. Les données sources, quantités et conditions restent conservées. Les trois propositions de présentation sont encore des aperçus soumis au choix de Corinne.
+
 ## Mettre à jour le site sur GitHub
 
-Dans le dépôt `DRIVEDOTR/CAPACORINNE`, envoyer les fichiers du présent dossier directement à la racine du dépôt. Conserver le sous-dossier `assets` et remplacer les fichiers portant le même nom. Pour cette refonte du carnet, les fichiers à remplacer sont `index.html`, `styles.css`, `app.js` et ce README ; les données et les illustrations restent inchangées. Valider ensuite les changements (« Commit changes »). Aucun fichier caché `.github` n’est nécessaire pour une publication GitHub Pages depuis la branche principale.
+Dans le dépôt `DRIVEDOTR/CAPA-CORINNE`, envoyer les fichiers du présent dossier directement à la racine du dépôt. Conserver le sous-dossier `assets` et remplacer les fichiers portant le même nom. Pour cette refonte du carnet, les fichiers à remplacer sont `index.html`, `styles.css`, `app.js` et ce README ; les données et les illustrations restent inchangées. Valider ensuite les changements (« Commit changes »). Aucun fichier caché `.github` n’est nécessaire pour une publication GitHub Pages depuis la branche principale.
 
 Si GitHub Pages n’est pas encore activé : dans les réglages du dépôt, ouvrir « Pages », choisir la publication depuis une branche, puis la branche principale et le dossier racine `/`. La documentation officielle est ici : https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 

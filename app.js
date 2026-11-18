@@ -4,17 +4,37 @@ const data=window.CAPA_DATA;
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[’'\-·×]/g,' ').replace(/\s+/g,' ').trim();
 const oils=new Map(data.oils.map(o=>[o.id,o]));
-const needDefs=[['Sommeil','☾'],['Stress','≈'],['Digestif','◉'],['Muscles','↗'],['Peau','✧'],['Respiratoire','〰']];
+const mainRoutes = {
+ mist: { label: 'Diffuser / brumiser', short: 'Diffusion', symbol: '∿', description: 'Spray, diffuseur d’ambiance' },
+ air: { label: 'Inhaler', short: 'Inhalation', symbol: '≈', description: 'Mouchoir, vapeur, produit inhalé' },
+ skin: { label: 'Appliquer sur la peau', short: 'Peau', symbol: '✿', description: 'Application locale, massage' },
+ oral: { label: 'Prendre par voie orale', short: 'Voie orale', symbol: '◒', description: 'Préparation destinée à être avalée' },
+};
 const needLabel=d=>({Digestif:'Digestion',Muscles:'Muscles',Respiratoire:'Respiration'}[d]||d);
 const domainPatterns={Sommeil:/sommeil|coucher/,Stress:/stress|calmant|epuisement|anxie/,Digestif:/digest|abdomin|ballonn|flatulen|dyspepsi|carminatif|colique/,Muscles:/muscul|entorse|foulure/,Articulations:/articul|arthr/,Rhumatologie:/articul|arthr|rhumat/,Respiratoire:/toux|rhume|respir/,ORL:/toux|rhume|gorge/,Peau:/cutan|peau|acne|plaie|piqure|demangeaison|prurit|pied|furoncle/,Céphalées:/cephale|tete/,Urinaire:/urin|diures/,Circulation:/circul/,Génital:/genital|peri anal/,Mémoire:/memoire|cognit/,Infectiologie:/infect|mycos/,'Bucco-dentaire':/bouche|bucc|gorge|carie|dent/};
 function domainsFor(title){return Object.entries(domainPatterns).filter(([,p])=>p.test(norm(title))).map(([k])=>k);}
-function routeKey(route){const s=norm(route);return /bain|balneo/.test(s)&&!/bouche/.test(s)?'bath':/bucc|gargar|bouche|dent/.test(s)?'mouth':/cutan|peau|massage/.test(s)?'skin':/inhal|mouchoir|vapeur|diffus/.test(s)?'air':/oral|interne/.test(s)?'oral':'other';}
-const routeLabel=r=>({skin:'Cutanée',oral:'Orale',air:'Inhalation',bath:'Bain',mouth:'Buccale / dentaire',other:'À préciser'}[r]);
-const routeSymbol=r=>({skin:'✋',oral:'◒',air:'〰',bath:'≈',mouth:'◌',other:'◇'}[r]);
+function routeKeys(route) {
+ const text = norm(route).split(/\bsans diffusion\b/)[0];
+ const keys = [];
+ const mouth = /bucc|gargar|bouche|dent/.test(text);
+ if (mouth) keys.push('mouth');
+ if (/\bbain|balneo/.test(text) && !mouth) keys.push('bath');
+ if (/cutan|peau|massage|topique/.test(text) && !mouth) keys.push('skin');
+ if (/diffus|nebulis|brumis|aerosol|spray d ambiance/.test(text)) keys.push('mist');
+ if (/inhal|mouchoir|vapeur|olfactive/.test(text)) keys.push('air');
+ if (/\boral|\binterne|ingestion/.test(text) && !mouth) keys.push('oral');
+ return keys.length ? keys : ['other'];
+}
+const routeKey = route => routeKeys(route)[0];
+const routeLabel = route => mainRoutes[route]?.short ||
+ ({bath:'Bain',mouth:'Bouche / dents',other:'Voie particulière'}[route]);
 const hasDocumentedDose=o=>Boolean(o.verifiedRegimens?.length||o.canadaTopical||o.regulatoryRegimens?.length);
+// Clarification de l’allégation 5 (nervine/calmative), Santé Canada 2025, p. 7.
+const isNervineUse=(title,source)=>source==='hc-aromatherapie-2025'&&title==='Effet calmant en aromathérapie';
+const useTitle=(title,source)=>isNervineUse(title,source)?'Détente et apaisement nerveux en aromathérapie':title;
 function buildPlans(o){
  const out=[];
- const add=r=>out.push({...r,id:String(out.length),routeKey:routeKey(r.route),domains:r.domains||domainsFor(r.indication)});
+ const add=r=>out.push({...r,id:String(out.length),routeKey:routeKey(r.route),routeKeys:routeKeys(r.route),domains:r.domains||domainsFor(r.indication)});
  const prior=new Map(),emaLevels=[...new Set((o.verifiedUses||[]).map(x=>x.level))];
  (o.verifiedRegimens||[]).forEach(r=>{const indication=/^Mêmes usages/.test(r.indication)?(prior.get(r.source)||r.indication):r.indication;prior.set(r.source,indication);add({...r,indication,kind:'ema',level:emaLevels.length===1?emaLevels[0]+' · EMA':'Monographie EMA',quantities:[['Quantité & rythme',r.dose]]});});
  (o.regulatoryRegimens||[]).forEach(r=>add({...r,kind:r.source.startsWith('who-')?'historical':'regulatory',level:r.source.startsWith('who-')?'Repère historique · OMS':'Monographie · Canada',quantities:[['Quantité & rythme',r.dose]]}));
@@ -25,17 +45,30 @@ function buildPlans(o){
  return out;
 }
 const plans=new Map(data.oils.map(o=>[o.id,buildPlans(o)]));
-function groupsFor(o){const groups=[];for(const p of plans.get(o.id)){let g=groups.find(x=>norm(x.title)===norm(p.indication));if(!g){g={title:p.indication,entries:[],domains:[]};groups.push(g);}g.entries.push(p);g.domains=[...new Set([...g.domains,...p.domains])];}return groups;}
-function searchText(o){return norm([o.name,o.botanical,...o.aliases,o.chemotype,...o.domains,...o.components,...(o.verifiedUses||[]).map(x=>x.label),...(o.regulatoryUses||[]).map(x=>x.label),...(o.canadaUses||[]).map(x=>x.label),...(o.courseUses||[]).map(x=>x.label),...(o.clinicalStudies||[]).map(x=>x.indication),...plans.get(o.id).map(x=>x.indication)].join(' '));}
+const observations = new Map(data.oils.map(oil => [oil.id, [
+ ...(oil.clinicalStudies || []).map(item => ({...item, type:'study', routes:routeKeys(item.route)})),
+ ...(oil.productExamples || []).map(item => ({...item, type:'product', routes:routeKeys(item.route)})),
+]]));
+function observedFor(oil, route, need='') {
+ return observations.get(oil.id).filter(item => item.routes.includes(route) &&
+   (!need || (item.type==='study' && domainsFor(item.indication).includes(need))));
+}
+function practicesFor(oil, route, need='') {
+ return plans.get(oil.id).filter(item => (!route || item.routeKeys.includes(route)) &&
+   (!need || item.domains.includes(need)));
+}
+
+function groupsFor(o, route=''){const groups=[];for(const p of practicesFor(o, route)){let g=groups.find(x=>norm(x.title)===norm(p.indication));if(!g){g={title:p.indication,entries:[],domains:[]};groups.push(g);}g.entries.push(p);g.domains=[...new Set([...g.domains,...p.domains])];}return groups;}
+function searchText(o){return norm([o.name,o.botanical,...o.aliases,o.chemotype,...o.domains,...o.components,...(o.verifiedUses||[]).map(x=>x.label),...(o.regulatoryUses||[]).map(x=>x.label),...(o.canadaUses||[]).flatMap(x=>[x.label,useTitle(x.label,x.source)]),...(o.courseUses||[]).map(x=>x.label),...(o.clinicalStudies||[]).flatMap(x=>[x.indication,x.route]),...(o.productExamples||[]).flatMap(x=>[x.title,x.route]),...plans.get(o.id).map(x=>x.indication)].join(' '));}
 // UI
 const $=id=>document.getElementById(id),detail=$('detail'),search=$('search'),domain=$('domain'),results=$('results');
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
-let selected=oils.has(location.hash.slice(1))?location.hash.slice(1):'lavande-vraie',view='all',risk='',indicationOnly=false,groupIndex=0,planIndex=0,sourceVisible=false,timer;
+let selected=oils.has(location.hash.slice(1))?location.hash.slice(1):'lavande-vraie',view='all',activeRoute='',risk='',indicationOnly=false,groupIndex=0,planIndex=0,sourceVisible=false,timer;
 let favorites=new Set(),notes={};
 try{const saved=JSON.parse(localStorage.getItem('capa-favorites')||'[]');if(Array.isArray(saved))favorites=new Set(saved.filter(id=>oils.has(id)));const stored=JSON.parse(localStorage.getItem('capa-notes-v1')||'{}');if(stored&&typeof stored==='object'&&!Array.isArray(stored))notes=stored;}catch(_){}
 const searchable=new Map(data.oils.map(o=>[o.id,searchText(o)]));
 const date=s=>(s||'').split('-').reverse().join('/');
-function art(o){return `assets/plantes/${o.art}.webp`;}
+function art(o){return o.art ? `assets/plantes/${o.art}.webp` : '';}
 function announce(message){$('toast').textContent=message;$('toast').classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>$('toast').classList.remove('visible'),2800);}
 function saveFavorites(){try{localStorage.setItem('capa-favorites',JSON.stringify([...favorites]));return true;}catch(_){return false;}}
 function updateHash(){try{history.replaceState(null,'',location.pathname+location.search+(selected?'#'+selected:''));}catch(_){} }
@@ -43,7 +76,7 @@ function sourceLink(id,page){const s=data.sources[id];if(!s)return '';const pdfP
 function facts(items){return items.length?`<ul class="facts">${items.map(f=>`<li>${esc(f.text)} ${sourceLink(f.source,f.page)}</li>`).join('')}</ul>`:'<p class="unknown">À documenter.<small>Une information manquante ne signifie pas une absence de risque.</small></p>';}
 function topic(title,html,subtitle=''){return html?`<details class="topic"><summary><strong>${esc(title)}</strong>${subtitle?`<small>${esc(subtitle)}</small>`:''}</summary><div class="topic-content">${html}</div></details>`:'';}
 function verifiedUses(o){const uses=o.verifiedUses||[];return uses.length?`<div class="verified-uses" aria-label="Usages évalués par l’EMA">${uses.map(u=>`<article class="use-card"><span class="use-level ${u.level==='Usage bien établi'?'established':'traditional'}">${esc(u.level)}</span><h4>${esc(u.label)}</h4><p>${esc(u.context)}</p>${sourceLink(u.source)}</article>`).join('')}</div><p class="reading-note">Ces conclusions de l’EMA concernent des médicaments et des préparations définis, selon une voie précise. Elles ne valent pas pour toute huile essentielle du commerce.</p>`:'';}
-function canadaUses(o){const uses=o.canadaUses||[];return uses.length?`<div class="verified-uses" aria-label="Allégations d’aromathérapie de Santé Canada">${uses.map(u=>`<article class="use-card canada-use"><span class="use-level">Allégation prévue · Canada</span><h4>${esc(u.label)}</h4><p>Voie ${esc(u.route)} · sous les conditions de la monographie.</p>${sourceLink(u.source,u.page)}</article>`).join('')}</div><p class="reading-note">La monographie de Santé Canada prévoit ces formulations pour des demandes de licence de produits de santé naturels. Elle ne démontre pas à elle seule une efficacité clinique pour un flacon quelconque.</p>`:'';}
+function canadaUses(o){const uses=o.canadaUses||[];return uses.length?`<div class="verified-uses" aria-label="Allégations d’aromathérapie de Santé Canada">${uses.map(u=>`<article class="use-card canada-use"><span class="use-level">Allégation prévue · Canada</span><h4>${esc(useTitle(u.label,u.source))}</h4><p>Voie ${esc(u.route)} · sous les conditions de la monographie.</p>${sourceLink(u.source,u.page)}</article>`).join('')}</div><p class="reading-note">La monographie de Santé Canada prévoit ces formulations pour des demandes de licence de produits de santé naturels. Elle ne démontre pas à elle seule une efficacité clinique pour un flacon quelconque.</p>`:'';}
 function regulatoryUses(o){const uses=o.regulatoryUses||[];return uses.length?`<div class="verified-uses" aria-label="Usages décrits dans une monographie">${uses.map(u=>`<article class="use-card canada-use"><span class="use-level">${u.source.startsWith('who-')?'Usage documentaire · OMS':'Allégation de monographie · Canada'}</span><h4>${esc(u.label)}</h4><p>${esc(u.context)}</p><p>Voie : ${esc(u.route)}.</p>${sourceLink(u.source,u.page)}</article>`).join('')}</div><p class="reading-note">Ces usages sont décrits pour une préparation définie dans la monographie citée. Ils ne prouvent pas, à eux seuls, l’efficacité clinique d’un flacon quelconque.</p>`:'';}
 function courseUses(o){const uses=o.courseUses||[];return uses.length?`<div class="course-uses" aria-label="Pistes relevées dans les cours">${uses.map(u=>`<article class="course-use"><span class="course-tag">Mention du cours · à recouper</span><h4>${esc(u.label)}</h4>${sourceLink(u.source,u.page)}</article>`).join('')}</div><p class="reading-note">Ces mentions montrent le contenu du cours. Elles ne prouvent pas une efficacité clinique et ne définissent ni une voie, ni une dose.</p>`:'';}
 function indicationReview(o){const r=o.indicationReview;return r?`<aside class="dose-research indication-review"><strong>Indications · ${esc(r.status)}</strong><p>${esc(r.text)}</p>${sourceLink(r.source)}${r.additionalSource?' '+sourceLink(r.additionalSource):''}<p class="reading-note">État de la recherche ciblée au ${date(r.reviewedAt)} ; « non retenue » ne prouve pas l’absence d’études futures.</p></aside>`:'';}
@@ -68,18 +101,99 @@ const riskLabels={skin:'Peau',allergy:'Allergies',lungs:'Bronches',liver:'Foie',
 function section(id,title,subtitle,content,style=''){return `<details class="reference-section ${style}" id="${id}"><summary><span><strong>${title}</strong><small>${subtitle}</small></span><span class="expand-symbol" aria-hidden="true">+</span></summary><div class="reference-content">${content}</div></details>`;}
 function essentialAlerts(o){const items=[o.canadaExclusion,o.safetyNotice].filter(Boolean);return items.length?`<div class="identity-alerts">${items.map(n=>`<p><strong>Point à vérifier.</strong> ${esc(n.text)} ${sourceLink(n.source,n.page)}</p>`).join('')}</div>`:'';}
 function matchingRisk(o,p){if(p.routeKey==='air'){return o.precautions.filter(x=>x.source==='dgccrf-diffusion').map(x=>`<p><strong>Inhalation et diffusion.</strong> ${esc(x.text)} ${sourceLink(x.source,x.page)}</p>`).join('');}return '';}
-function renderPractice(o){
- const groups=groupsFor(o),g=groups[groupIndex];
- const picker=groups.length?`<div class="usage-picker"><label for="usage-select">Pour quel usage ? <span>${groups.length} repère${groups.length>1?'s':''}</span></label><select id="usage-select">${groupIndex<0?`<option value="-1" selected>Choisir un autre usage documenté</option>`:''}${groups.map((x,i)=>`<option value="${i}" ${i===groupIndex?'selected':''}>${esc(x.title)}</option>`).join('')}</select></div>`:'';
- if(!g){
-  const study=o.clinicalStudies?.length,uses=[o.verifiedUses,o.regulatoryUses,o.canadaUses,o.courseUses].find(x=>x?.length)||[];
-  return `${picker}<section class="practice research-state"><div class="practice-overline"><span class="evidence-badge tentative">${study?'Études exploratoires':'Dossier à compléter'}</span><span>REPÈRE DE TRAVAIL</span></div><h3>${domain.value?`Le besoin « ${esc(needLabel(domain.value))} » reste à préciser`:'Ce que l’on sait déjà'}</h3><p class="research-summary">${esc(o.courseSummary)}</p>${uses.length?`<div class="research-uses">${uses.slice(0,3).map(x=>`<span>${esc(x.label)}</span>`).join('')}</div>`:''}<div class="missing-dose"><span aria-hidden="true">◇</span><div><strong>${groups.length?'Aucune quantité reliée à ce besoin dans le carnet':'Pas de dose de monographie retenue'}</strong><p>La voie et la quantité restent à établir pour une préparation précise. ${o.productExamples?.length?'Un exemple de produit identifié est disponible ci-dessous.':study?'Les protocoles d’essais sont consultables dans le dossier.':'Les pistes et leurs limites sont conservées dans le dossier.'}</p></div></div><a class="inline-link" href="#connaissances">Explorer les usages et leurs limites →</a>${o.productExamples?.length?topic('Voir les exemples de produits précis',o.productExamples.map(r=>`<article class="product-example"><h4>${esc(r.title)}</h4><p><strong>Préparation :</strong> ${esc(r.preparation)}</p><p><strong>Voie :</strong> ${esc(r.route)}</p><p><strong>Quantité du produit :</strong> ${esc(r.dose)}</p><p class="scope-limit">${esc(r.limit)}</p>${sourceLink(r.source)}${r.additionalSource?sourceLink(r.additionalSource):''}</article>`).join(''),'Quantités propres à ces produits seulement'):''}</section>`;
+function selectedPractice(oil) {
+ const group = groupsFor(oil, activeRoute)[groupIndex];
+ return group?.entries[planIndex] || group?.entries[0];
+}
+
+function renderObservations(oil) {
+ if (!activeRoute) return '';
+ const items = observedFor(oil, activeRoute, domain.value);
+ return items.map(item => {
+  const study = item.type === 'study';
+  const label = study ? 'Essai clinique exploratoire' : 'Notice d’un produit précis';
+  const url = data.sources[item.source]?.url;
+  const amount = item.routeAmounts?.[activeRoute] || (item.routes.length===1 ? item.dose : '');
+  return `<details class="route-observation">
+   <summary><span>${esc(label)}</span><strong>${esc(item.title || item.indication)}</strong></summary>
+   <div><p><strong>Voie décrite.</strong> ${esc(item.route)}</p>
+   <p><strong>Préparation.</strong> ${esc(item.preparation)}</p>
+   ${study ? `<p><strong>Population étudiée.</strong> ${esc(item.population)}</p><p><strong>Résultat de l’essai.</strong> ${esc(item.result)}</p>` : ''}
+   ${!study && amount ? `<p class="product-amount"><strong>Quantité pour ce produit.</strong> ${esc(amount)}</p>` : ''}
+   <p class="scope-limit">${esc(item.limit)}</p>
+   ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${study ? 'Lire l’étude' : 'Consulter la notice du produit'} ↗</a>` : ''}
+   ${study ? '<a class="observation-dossier" href="#connaissances">Voir le dossier d’étude ↓</a>' : ''}
+   </div></details>`;
+ }).join('');
+}
+
+function renderPractice(oil) {
+ const groups = groupsFor(oil, activeRoute);
+ const group = groups[groupIndex];
+ const plan = selectedPractice(oil);
+ const options = groups.length > 1 || (groups.length && !group) ? `
+  <section class="usage-picker" aria-labelledby="usage-title">
+   <h3 id="usage-title">Quel objectif recherchez-vous ?</h3>
+   <div class="usage-cards" role="group" aria-labelledby="usage-title">
+    ${groups.map((g,i) => `<button type="button" class="usage-card" data-usage="${i}"
+      aria-pressed="${i===groupIndex}" aria-controls="current-practice">
+      <strong>${esc(useTitle(g.title,g.entries[0].source))}</strong>
+      <small>${esc([...new Set(g.entries.map(p=>p.level))].join(' / '))}</small>
+    </button>`).join('')}
+   </div>
+  </section>` : '';
+ const observations = renderObservations(oil);
+ if (!plan) {
+  const message = activeRoute
+   ? (observations ? 'Le carnet a repéré les documents suivants pour cette voie.' : 'Aucune quantité de monographie ne correspond à cette voie et à ces critères.')
+   : 'Le dossier contient les usages et les pistes recueillis pour cette huile.';
+  return `${options}<section class="practice research-state" id="current-practice">
+    <h3>${activeRoute ? esc(mainRoutes[activeRoute].label) : 'Ce que l’on sait déjà'}</h3>
+    <p>${esc(message)}</p>
+    ${activeRoute ? '' : `<p class="research-summary">${esc(oil.courseSummary)}</p>`}
+    ${observations || '<a class="inline-link" href="#connaissances">Consulter les usages et leurs limites ↓</a>'}
+   </section>`;
  }
- const p=g.entries[planIndex]||g.entries[0],routes=[...new Set(g.entries.map(x=>x.routeKey))],variants=g.entries.filter(x=>x.routeKey===p.routeKey);
- return `${picker}<section class="practice"><div class="practice-overline"><span class="evidence-badge ${p.kind==='historical'?'tentative':''}">${esc(p.level)}</span><span>PRÉPARATION DÉFINIE</span></div><h3>${esc(g.title)}</h3><div class="route-line"><span>Comment ?</span><div class="route-tabs" role="group" aria-label="Voies documentées pour cet usage">${routes.map(r=>`<button type="button" data-route="${r}" aria-pressed="${r===p.routeKey}"><span aria-hidden="true">${routeSymbol(r)}</span>${routeLabel(r)}</button>`).join('')}</div></div>${variants.length>1?`<div class="variant-picker"><label for="variant-select">Quelle préparation / population ?</label><select id="variant-select">${variants.map(v=>`<option value="${g.entries.indexOf(v)}" ${v.id===p.id?'selected':''}>${esc(v.variant||v.population)} · ${esc(v.level)}</option>`).join('')}</select></div>`:''}<div class="practice-grid"><div class="preparation-block"><span class="mini-label">01 · LA PRÉPARATION</span><p>${esc(p.preparation)}</p><div class="population"><span>Pour qui ?</span><strong>${esc(p.population)}</strong></div><div class="route-full"><span>Voie précise</span><strong>${esc(p.route)}</strong></div></div><div class="quantity-block"><span class="mini-label">02 · QUANTITÉ & RYTHME</span>${p.quantities.map(([label,value])=>`<div class="quantity-value"><span>${esc(label)}</span><strong class="${value.length>115?'long-quantity':''}">${esc(value)}</strong></div>`).join('')}${p.cadence?`<p class="cadence">${esc(p.cadence)}</p>`:''}<p class="quantity-scope">Pour cette préparation uniquement.</p></div></div><aside class="practice-alert"><div class="alert-heading"><span aria-hidden="true">!</span><strong>03 · Les conditions à respecter</strong></div><p>${esc(p.limit||'Vérifier la notice du produit et les vigilances de cette fiche.')}</p>${matchingRisk(o,p)}</aside><div class="plan-foot"><a href="#securite">Lire les contre-indications et précautions ↓</a><span>${sourceLink(p.source,p.page)}${p.usagePage?sourceLink(p.source,p.usagePage):''}</span></div></section>`;
+ const routes = [...new Set(group.entries.map(p=>p.routeKey))];
+ const variants = group.entries.filter(p=>p.routeKey===plan.routeKey);
+ const context = isNervineUse(group.title,plan.source) && plan.routeKeys.includes('skin')
+  ? '<p class="usage-context">L’objectif est la détente nerveuse. L’application sur la peau décrit la voie de cette préparation.</p>' : '';
+ return `${options}<section class="practice" id="current-practice">
+   <div class="practice-overline"><span class="evidence-badge ${plan.kind==='historical'?'tentative':''}">${esc(plan.level)}</span></div>
+   <p class="practice-label">Objectif documenté</p><h3>${esc(useTitle(group.title,plan.source))}</h3>${context}
+   ${routes.length>1 ? `<div class="route-line"><span>Voie d’utilisation</span>
+    <div class="route-tabs" role="group" aria-label="Voies documentées pour cet usage">
+     ${routes.map(route => `<button type="button" data-plan-route="${route}" aria-pressed="${route===plan.routeKey}">${esc(routeLabel(route))}</button>`).join('')}
+    </div></div>` : ''}
+   ${variants.length>1 ? `<div class="variant-picker">
+    <label for="variant-select">Préparation ou population</label><select id="variant-select">
+    ${variants.map(v=>`<option value="${group.entries.indexOf(v)}" ${v.id===plan.id?'selected':''}>${esc(v.variant||v.population)} · ${esc(v.level)}</option>`).join('')}
+    </select></div>` : ''}
+   <div class="practice-grid">
+    <div class="preparation-block">
+     <span class="mini-label">Préparation et utilisation</span><p>${esc(plan.preparation)}</p>
+     <div class="route-full"><span>Voie</span><strong>${esc(plan.route)}</strong></div>
+     <div class="population"><span>Pour qui ?</span><strong>${esc(plan.population)}</strong></div>
+    </div>
+    <div class="quantity-block">
+     <span class="mini-label">Quantité décrite par la source</span>
+     ${plan.quantities.map(([label,value])=>`<div class="quantity-value"><span>${esc(label)}</span><strong class="${value.length>115?'long-quantity':''}">${esc(value)}</strong></div>`).join('')}
+     ${plan.cadence ? `<p class="cadence">${esc(plan.cadence)}</p>` : ''}
+     <p class="quantity-scope">Pour cette préparation uniquement.</p>
+    </div>
+   </div>
+   <aside class="practice-alert">
+    <div class="alert-heading"><span aria-hidden="true">!</span><strong>Précautions de cette préparation</strong></div>
+    <p>${esc(plan.limit || 'Vérifier la notice du produit et les vigilances de cette fiche.')}</p>${matchingRisk(oil,plan)}
+   </aside>
+   <div class="plan-foot"><a href="#securite">Lire les vigilances complètes ↓</a><span>
+    ${sourceLink(plan.source,plan.page)}${plan.usagePage?sourceLink(plan.source,plan.usagePage):''}
+    ${isNervineUse(group.title,plan.source)&&plan.usagePage!==7?sourceLink(plan.source,7):''}
+   </span></div>
+  </section>${observations}`;
 }
 function safetyPreview(o){
- const g=groupsFor(o)[groupIndex],p=g?.entries[planIndex]||g?.entries[0];
+ const p=selectedPractice(o);
  const base=id=>(id||'').replace(/-(mo|ar)$/,'');
  const applicable=f=>!p||((p.routeKey==='bath'||!/bains? complets?/i.test(f.text))&&(!['oral','air'].includes(p.routeKey)||!/^(Santé Canada classe cette huile comme sensibilisante cutanée|Santé Canada classe cette huile comme phototoxique)/.test(f.text)));
  const same=f=>!p||base(f.source)===base(p.source);
@@ -92,30 +206,171 @@ function fullSafety(o){return `<p class="reading-note">Les données manquantes n
 function referenceKnowledge(o){return `<p class="course-summary">${esc(o.courseSummary)} ${sourceLink(o.summarySource,(o.summarySource||'').startsWith('hippocratus')?o.coursePage:null)}</p>${topic('Usages EMA',verifiedUses(o))}${topic('Autres monographies',regulatoryUses(o))}${topic('Allégations d’aromathérapie · Canada',canadaUses(o))}${topic('Études cliniques et protocoles',clinicalStudies(o))}${topic('Pistes citées dans les cours',courseUses(o))}${indicationReview(o)}<h4>Le niveau de preuve</h4>${o.evidence.length?facts(o.evidence):'<p class="reading-note">Les niveaux de preuve restent propres aux sources et aux préparations présentées ; aucun résultat ne s’étend automatiquement à tous les flacons.</p>'}`;}
 function dossier(o){return `<dl class="identity-grid"><div><dt>Famille</dt><dd>${esc(o.family)} ${sourceLink(o.identitySource)}</dd></div><div><dt>Partie utilisée</dt><dd>${esc(o.part)}</dd></div><div><dt>Chémotype</dt><dd>${esc(o.chemotype||'Non précisé')}</dd></div></dl><h4>Composition</h4>${o.components.length?`<div class="components">${o.components.map(x=>`<span>${esc(x)}</span>`).join('')}</div><p class="reading-note">Composants cités dans la référence ; vérifier la composition du produit. ${sourceLink(o.componentSource||'hippocratus')}</p>`:'<p class="reading-note">Composition détaillée à documenter.</p>'}<div class="botanical-note"><h4>Le détail botanique</h4><p>${esc(o.discovery)}</p></div>${regimens(o)}<details class="review"><summary>Limites de la fiche & points à relire</summary><ul>${o.reviewNotes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></details>`;}
 function sourcesPanel(o){return `<section class="sources" id="sources" ${sourceVisible?'':'hidden'}><div class="sources-heading"><h3>Les références de cette fiche</h3><button type="button" class="source-toggle text-button" aria-expanded="${sourceVisible}" aria-controls="sources">Masquer les sources</button></div><ol>${o.sourceIds.map(id=>{const s=data.sources[id];return `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a><span>${esc(s.type)}${id.startsWith('hippocratus')?` · pages ${esc((o.sourcePages?.[id]||[o.coursePage]).join(', '))} · connexion requise`:''} · consulté le ${date(s.consulted)}</span></li>`;}).join('')}</ol></section>`;}
-function showDetail(o){
+function oilImage(oil, width, height) {
+ return oil.art ? `<img src="${art(oil)}" alt="" width="${width}" height="${height}" ${width<100?'loading="lazy"':''}>`
+  : '<span class="art-placeholder" aria-hidden="true">✿</span>';
+}
+
+function showDetail(oil) {
  detail.classList.toggle('sources-visible',sourceVisible);
- if(!o){detail.innerHTML=`<div class="empty-detail"><span aria-hidden="true">✧</span><h2>Une autre piste ?</h2><p>Aucune huile ne correspond à ces filtres.</p><button type="button" data-reset>Retrouver tout le carnet</button></div>`;return;}
- const isFav=favorites.has(o.id);
- detail.innerHTML=`<header class="oil-header"><div class="oil-header-top"><span class="eyebrow">L’HERBIER / FICHE PRATIQUE</span><button type="button" class="favorite" id="favorite" aria-pressed="${isFav}" aria-label="${isFav?'Retirer':'Ajouter'} ${esc(o.name)} ${isFav?'de':'à'} mes huiles">${isFav?'♥':'♡'} <span>${isFav?'Dans mes huiles':'Garder cette huile'}</span></button></div><div class="oil-heading"><div><h2 id="oil-title" tabindex="-1">${esc(o.name)}</h2><p class="latin">${esc(o.botanical)}</p><p class="plant-part">${esc(o.part)}${o.chemotype?` <span>· ${esc(o.chemotype)}</span>`:''}</p></div><figure><img src="${art(o)}" alt="Illustration décorative de ${esc(o.botanical)}" width="1280" height="1280"></figure></div></header><div class="detail-toolbar"><span>${hasDocumentedDose(o)?'◈ Quantité de monographie disponible':'◇ Quantité de monographie à compléter'}</span><button type="button" class="source-toggle" aria-expanded="${sourceVisible}" aria-controls="sources">${sourceVisible?'Masquer':'Afficher'} les sources <span aria-hidden="true">↗</span></button></div><div class="detail-content">${essentialAlerts(o)}<div id="practice-area">${renderPractice(o)}</div>${safetyPreview(o)}<div class="further-heading"><span>POUR ALLER PLUS LOIN</span><span>À ouvrir selon votre besoin</span></div>${section('securite','Vigilances complètes','Contre-indications, précautions, interactions et effets indésirables',fullSafety(o),'safety-section')}${section('connaissances','Usages, études & pistes','Les connaissances recueillies, avec leur contexte',referenceKnowledge(o))}${o.studiedAssociations?.length?associations(o):''}${section('dossier','La plante & le dossier documentaire','Botanique, composition, autres quantités et points à recouper',dossier(o))}${section('memo','Mon mémo',notes[o.id]?'Une note enregistrée sur cet appareil':'Une idée, une observation, un point à vérifier',`<label for="personal-note">Vos notes pour ${esc(o.name)}</label><textarea id="personal-note" rows="4" maxlength="10000" placeholder="Une observation, un point à approfondir…">${esc(typeof notes[o.id]==='string'?notes[o.id]:'')}</textarea><p class="note-status" id="note-status">Enregistrement automatique dans ce navigateur, sur cet appareil.</p>`)}${sourcesPanel(o)}<p class="sheet-date">Dossier documentaire mis à jour le ${date(o.reviewedAt)} · Carnet de travail, sans prescription personnalisée.</p></div>`;
+ if (!oil) {
+  detail.innerHTML='<div class="empty-detail"><h2>Aucun résultat</h2><p>Essayez un autre besoin, une autre voie ou un terme plus court.</p><button type="button" data-reset>Réinitialiser les filtres</button></div>';
+  return;
+ }
+ const saved = favorites.has(oil.id);
+ detail.innerHTML=`<header class="oil-header">
+   <div class="oil-header-top">
+    <button type="button" class="source-toggle" aria-expanded="${sourceVisible}" aria-controls="sources">${sourceVisible?'Masquer':'Afficher'} les sources</button>
+    <button type="button" class="favorite" id="favorite" aria-pressed="${saved}" aria-label="Favori · ${esc(oil.name)}">${saved?'♥':'♡'} <span>${saved?'Dans mes huiles':'Garder cette huile'}</span></button>
+   </div>
+   <div class="oil-heading">
+    <div><h2 id="oil-title" tabindex="-1">${esc(oil.name)}</h2><p class="latin">${esc(oil.botanical)}</p>
+     <p class="plant-part">${esc(oil.part)}${oil.chemotype?` <span>· ${esc(oil.chemotype)}</span>`:''}</p></div>
+    <figure>${oilImage(oil,1280,1280)}</figure>
+   </div>
+  </header>
+  <div class="detail-content">${essentialAlerts(oil)}
+   <div id="practice-area">${renderPractice(oil)}</div>${safetyPreview(oil)}
+   ${section('securite','Vigilances complètes','Contre-indications, précautions, interactions et effets indésirables',fullSafety(oil),'safety-section')}
+   ${section('connaissances','Usages, études et pistes','Sources et niveaux de preuve',referenceKnowledge(oil))}
+   ${associations(oil)}
+   ${section('dossier','Plante et dossier documentaire','Botanique, composition et autres quantités',dossier(oil))}
+   ${section('memo','Mon mémo',notes[oil.id]?'Note enregistrée sur cet appareil':'Une observation ou un point à vérifier',`
+    <label for="personal-note">Vos notes pour ${esc(oil.name)}</label>
+    <textarea id="personal-note" rows="4" maxlength="10000" placeholder="Une observation, un point à approfondir…">${esc(typeof notes[oil.id]==='string'?notes[oil.id]:'')}</textarea>
+    <p class="note-status" id="note-status">Enregistrement automatique dans ce navigateur.</p>`)}
+   ${sourcesPanel(oil)}<p class="sheet-date">Dossier documentaire mis à jour le ${date(oil.reviewedAt)}.</p>
+  </div>`;
 }
-function chooseInitial(o){const gs=o?groupsFor(o):[];groupIndex=domain.value?gs.findIndex(g=>g.domains.includes(domain.value)):0;if(!domain.value&&search.value){const words=norm(search.value).split(' ').filter(Boolean);const hit=gs.findIndex(g=>words.every(w=>norm(g.title).includes(w)));if(hit>=0)groupIndex=hit;}planIndex=0;sourceVisible=false;}
-function filtered(){const words=norm(search.value).split(' ').filter(Boolean);return data.oils.filter(o=>(!domain.value||(indicationOnly?o.evidenceDomains||[]:o.domains).includes(domain.value))&&(!risk||Boolean(o.riskSignals?.[risk]))&&(!indicationOnly||o.evidenceDomains?.length)&&(view!=='dose'||hasDocumentedDose(o))&&(view!=='missing'||!hasDocumentedDose(o))&&(view!=='favorites'||favorites.has(o.id))&&words.every(w=>searchable.get(o.id).includes(w)));}
+
+function chooseInitial(oil) {
+ const groups = oil ? groupsFor(oil, activeRoute) : [];
+ groupIndex = domain.value ? groups.findIndex(g=>g.domains.includes(domain.value)) : 0;
+ if (!domain.value && search.value) {
+  const words = norm(search.value).split(' ').filter(Boolean);
+  const hit = groups.findIndex(g=>words.every(word=>norm(useTitle(g.title,g.entries[0].source)).includes(word)));
+  if (hit>=0) groupIndex=hit;
+ }
+ planIndex=0;
+ sourceVisible=false;
+}
+function hasQuantity(oil) {
+ return activeRoute ? practicesFor(oil,activeRoute,domain.value).length>0 : hasDocumentedDose(oil);
+}
+function matchingOils() {
+ const words = norm(search.value).split(' ').filter(Boolean);
+ return data.oils.filter(oil => {
+  if (activeRoute && !practicesFor(oil,activeRoute,domain.value).length) {
+   if (indicationOnly || !observedFor(oil,activeRoute,domain.value).length) return false;
+  }
+  return (!domain.value || (activeRoute && !indicationOnly) || (indicationOnly ? oil.evidenceDomains || [] : oil.domains).includes(domain.value)) &&
+   (!risk || Boolean(oil.riskSignals?.[risk])) &&
+   (!indicationOnly || oil.evidenceDomains?.length) &&
+   words.every(word=>searchable.get(oil.id).includes(word));
+ });
+}
+function filtered() {
+ return matchingOils().filter(oil => (view!=='dose'||hasQuantity(oil)) &&
+  (view!=='missing'||!hasQuantity(oil)) && (view!=='favorites'||favorites.has(oil.id)));
+}
 function keepSelectedVisible(){const active=results.querySelector('[aria-pressed="true"]');if(!active)return;const a=active.getBoundingClientRect(),r=results.getBoundingClientRect();if(matchMedia('(max-width:850px)').matches){if(a.left<r.left||a.right>r.right)results.scrollLeft+=a.left-r.left-(r.width-a.width)/2;}else if(a.top<r.top||a.bottom>r.bottom)results.scrollTop+=a.top-r.top-(r.height-a.height)/2;}
-function renderList(list){
- $('count').textContent=`${list.length} huile${list.length>1?'s':''}`;$('favorite-count').textContent=favorites.size;$('clear').hidden=!search.value;
- $('selection-caption').textContent=domain.value?`Besoin cité : ${needLabel(domain.value)}`:view==='favorites'?'Vos huiles, à retrouver en un geste.':view==='missing'?'Les dossiers à enrichir ensemble.':'Choisissez votre plante.';
- document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
- document.querySelectorAll('[data-need]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.need===domain.value)));
- $('my-oils').classList.toggle('active',view==='favorites');
- $('reset-filters').disabled=!(search.value||domain.value||view!=='all'||risk||indicationOnly);
- results.innerHTML=list.length?list.map(o=>`<button type="button" class="oil-item" data-id="${esc(o.id)}" aria-pressed="${o.id===selected}" aria-controls="detail"><img src="${art(o)}" alt="" width="64" height="72" loading="lazy"><span><strong>${esc(o.name)}</strong><small class="${hasDocumentedDose(o)?'has-dose':''}">${hasDocumentedDose(o)?'◈ Repère chiffré':o.clinicalStudies?.length?'◇ Étude à examiner':'◇ Dossier à compléter'}</small></span>${favorites.has(o.id)?'<b aria-label="Dans mes huiles">♥</b>':''}</button>`).join(''):`<div class="empty"><strong>${view==='favorites'&&!favorites.size?'Votre coin à vous':'Aucune huile trouvée'}</strong><p>${view==='favorites'&&!favorites.size?'Touchez le cœur d’une fiche pour la retrouver ici.':'Essayez un autre besoin ou élargissez vos filtres.'}</p><button type="button" data-reset>Tout le carnet</button></div>`;
+function catalogueNote(oil) {
+ if (hasQuantity(oil)) return activeRoute ? mainRoutes[activeRoute].short+' · repère chiffré' : 'Quantité de monographie';
+ const items = activeRoute ? observedFor(oil,activeRoute,domain.value) : observations.get(oil.id);
+ if (items.some(item=>item.type==='product')) return 'Notice d’un produit précis';
+ if (items.some(item=>item.type==='study')) return 'Essai exploratoire';
+ return 'Dossier à compléter';
 }
-function render(){const list=filtered();if(!list.some(o=>o.id===selected))selected=list[0]?.id||'';chooseInitial(oils.get(selected));updateHash();renderList(list);keepSelectedVisible();showDetail(oils.get(selected));}
+function renderList(list) {
+ $('count').textContent=`${list.length} huile${list.length===1?'':'s'}`;
+ $('favorite-count').textContent=favorites.size;
+ $('my-oils').setAttribute('aria-pressed', String(view==='favorites'));
+ $('clear').hidden=!search.value;
+ const counts = matchingOils();
+ $('total').textContent=counts.length;
+ $('dose-count').textContent=counts.filter(hasQuantity).length;
+ $('missing-dose-count').textContent=counts.filter(oil=>!hasQuantity(oil)).length;
+ $('missing-label').textContent=activeRoute?'Autres repères':'À compléter';
+ $('selection-caption').textContent=[activeRoute && mainRoutes[activeRoute].short,domain.value&&needLabel(domain.value),view==='favorites'&&'Favoris'].filter(Boolean).join(' · ');
+ document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
+ document.querySelectorAll('[data-explore-route]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.exploreRoute===activeRoute)));
+ $('my-oils').classList.toggle('active',view==='favorites');
+ $('reset-filters').disabled=!(search.value||domain.value||activeRoute||view!=='all'||risk||indicationOnly);
+ results.innerHTML=list.length ? list.map(oil=>`<button type="button" class="oil-item" data-id="${esc(oil.id)}" aria-pressed="${oil.id===selected}" aria-controls="detail">
+  ${oilImage(oil,64,72)}<span><strong>${esc(oil.name)}</strong><small>${esc(catalogueNote(oil))}</small></span>
+  ${favorites.has(oil.id)?'<b aria-label="Dans mes huiles">♥</b>':''}</button>`).join('')
+  : `<div class="empty"><strong>${view==='favorites'&&!favorites.size?'Vos favoris sont vides':'Aucune huile trouvée'}</strong>
+  <p>${view==='favorites'&&!favorites.size?'Utilisez le cœur d’une fiche pour la retrouver ici.':'Essayez de modifier les filtres.'}</p>
+  <button type="button" data-reset>Réinitialiser</button></div>`;
+}
+function render(){renderRouteGuide();const list=filtered();if(!list.some(o=>o.id===selected))selected=list[0]?.id||'';chooseInitial(oils.get(selected));updateHash();renderList(list);keepSelectedVisible();showDetail(oils.get(selected));}
 function openOil(id,focus=false){selected=id;chooseInitial(oils.get(id));updateHash();renderList(filtered());keepSelectedVisible();showDetail(oils.get(id));if(focus){$('oil-title').focus({preventScroll:true});if(matchMedia('(max-width:850px)').matches)detail.scrollIntoView({behavior:reduceMotion.matches?'auto':'smooth',block:'start'});}}
-function reset(){search.value='';domain.value='';view='all';risk='';indicationOnly=false;$('risk-filter').value='';$('indication-only').checked=false;render();}
+function reset(){search.value='';domain.value='';activeRoute='';view='all';risk='';indicationOnly=false;$('risk-filter').value='';$('indication-only').checked=false;render();}
 function reveal(target){let node=target;while(node){if(node.matches('details'))node.open=true;node=node.parentElement?.closest('details');}target.scrollIntoView({behavior:reduceMotion.matches?'auto':'smooth',block:'start'});if(target.matches('input,button'))target.focus({preventScroll:true});}
-$('total').textContent=data.oils.length;$('dose-count').textContent=data.oils.filter(hasDocumentedDose).length;$('missing-dose-count').textContent=data.oils.filter(o=>!hasDocumentedDose(o)).length;
-$('needs').innerHTML=needDefs.map(([d,icon])=>`<button type="button" data-need="${esc(d)}" aria-pressed="false"><span aria-hidden="true">${icon}</span>${needLabel(d)}</button>`).join('');
+function reference(id) {
+ const source = data.sources[id];
+ return source ? `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)} ↗</a>` : '';
+}
+function renderRouteGuide() {
+ const el = $('route-guide');
+ const guide = data.routeGuides?.[activeRoute];
+ el.hidden = !guide;
+ if (!guide) return;
+ const title = mainRoutes[activeRoute].label;
+ el.innerHTML = `<div class="route-guide-heading"><strong>${esc(title)}</strong><a href="#catalog">Voir les fiches ↓</a></div>
+ <p>${esc(guide.summary)}</p><details><summary>Précautions et références</summary>
+ <ul>${guide.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+ <div class="route-references">${guide.sources.map(reference).join('')}</div></details>`;
+}
+$('route-choices').innerHTML=Object.entries(mainRoutes).map(([id,route]) => `
+ <button type="button" class="explore-route" data-explore-route="${id}" aria-pressed="false" aria-controls="route-guide catalog">
+  <span class="route-icon" aria-hidden="true">${route.symbol}</span>
+  <span><strong>${route.label}</strong><small>${route.description}</small></span>
+  </button>`).join('');
+
+function renderFlyer() {
+ const rows = data.flyerReview || [];
+ $('flyer-body').innerHTML = rows.map(row => `
+  <details class="flyer-row">
+   <summary><strong>${esc(row.label)}</strong><span>${esc(row.status)}</span></summary>
+   <div><p><strong>Le flyer évoque</strong> ${esc(row.claim)}</p><p>${esc(row.finding)}</p>
+   ${row.oils.map(id=>`<button class="flyer-oil" type="button" data-open-oil="${esc(id)}">${esc(oils.get(id).name)} →</button>`).join('')}
+   <div class="route-references">${row.sources.map(reference).join('')}</div></div>
+  </details>`).join('');
+}
+
+const quiz = [
+ {question:'Une source décrit une inhalation sur mouchoir. Quel repère consulter pour un appareil qui brumise ?',
+  options:['La même quantité que sur le mouchoir','La notice du produit et du diffuseur','Une quantité liée à la taille du flacon'],
+  answer:1, explanation:'La notice précise les usages prévus pour le produit et le dispositif.'},
+ {question:'Pour la lavande vraie, que dit « application cutanée » lorsque l’objectif est la détente ?',
+  options:['Elle décrit la manière d’utiliser la préparation','Elle désigne une irritation à traiter','Elle désigne une huile à avaler'],
+  answer:0, explanation:'L’objectif est la détente nerveuse. La voie indique comment la préparation est utilisée.'},
+ {question:'Un article donne une quantité pour une gélule. Que vérifiez-vous avant de lire cette quantité ?',
+  options:['La couleur du flacon','La popularité de l’huile','La préparation, la population et l’usage'],
+  answer:2, explanation:'Le chiffre de la source est lié à la gélule et aux conditions de son emploi.'},
+];
+let quizIndex=0, quizChoice=null, quizScore=0;
+function renderQuiz() {
+ const el = $('quiz-body');
+ const q = quiz[quizIndex];
+ if (!q) {
+  el.innerHTML=`<h3 id="quiz-prompt" tabindex="-1">${quizScore} bonne${quizScore===1?' réponse':'s réponses'} sur ${quiz.length}</h3>
+   <button type="button" class="quiz-next" data-quiz-next>Rejouer</button>`;
+  return;
+ }
+ el.innerHTML=`<p class="quiz-progress">Question ${quizIndex+1} sur ${quiz.length}</p>
+  <h3 id="quiz-prompt" tabindex="-1">${q.question}</h3>
+  <div class="quiz-options" role="group" aria-labelledby="quiz-prompt">
+   ${q.options.map((option,i)=>`<button type="button" data-quiz-option="${i}"
+     ${quizChoice!==null&&quizChoice===i?'aria-pressed="true"':'aria-pressed="false"'}
+     ${quizChoice!==null?'aria-disabled="true"':''}>${esc(option)}</button>`).join('')}
+  </div>
+  ${quizChoice!==null?`<p class="quiz-feedback" role="status"><strong>${quizChoice===q.answer?'Bien vu.':'Bonne réponse : '+esc(q.options[q.answer])+'.'}</strong> ${q.explanation}</p>
+  <button type="button" class="quiz-next" data-quiz-next>${quizIndex+1===quiz.length?'Voir le résultat':'Question suivante'}</button>`:''}`;
+}
+renderFlyer();
+renderQuiz();
 [...new Set(data.oils.flatMap(o=>o.domains))].sort((a,b)=>a.localeCompare(b,'fr')).forEach(d=>{const option=document.createElement('option');option.value=d;option.textContent=needLabel(d);domain.append(option);});
 $('coverage').innerHTML=`<p>${esc(data.coverage?.note||'Inventaire en cours.')}</p><ul>${(data.coverage?.courses||[]).map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title)}</a> · ${esc(c.pagesRead)} · ${esc(c.status)}</li>`).join('')}</ul>`;
 search.addEventListener('input',render);domain.addEventListener('change',render);
@@ -125,13 +380,64 @@ $('reset-filters').addEventListener('click',reset);
 $('my-oils').addEventListener('click',()=>{view=view==='favorites'?'all':'favorites';render();reveal($('catalog'));});
 $('home').addEventListener('click',e=>{e.preventDefault();reset();openOil('lavande-vraie');window.scrollTo({top:0,behavior:reduceMotion.matches?'auto':'smooth'});});
 results.addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(b)openOil(b.dataset.id,true);});
-document.addEventListener('click',e=>{const need=e.target.closest('[data-need]'),v=e.target.closest('[data-view]');if(need){domain.value=domain.value===need.dataset.need?'':need.dataset.need;render();}if(v){view=v.dataset.view;render();}if(e.target.closest('[data-reset]'))reset();const a=e.target.closest('a[href^="#"]');if(a&&a.id!=='home'){const target=$(a.getAttribute('href').slice(1));if(target){e.preventDefault();reveal(target);}}});
-detail.addEventListener('change',e=>{if(e.target.id==='usage-select'){groupIndex=Number(e.target.value);planIndex=0;refreshPractice();$('usage-select')?.focus({preventScroll:true});}if(e.target.id==='variant-select'){planIndex=Number(e.target.value);refreshPractice();$('variant-select')?.focus({preventScroll:true});}});
+document.addEventListener('click', event => {
+ const target=event.target;
+ const route=target.closest('[data-explore-route]');
+ if (route) {
+  activeRoute=activeRoute===route.dataset.exploreRoute?'':route.dataset.exploreRoute;
+  if(view==='dose'||view==='missing')view='all';
+  render();
+ }
+ const viewButton=target.closest('[data-view]');
+ if (viewButton) {view=viewButton.dataset.view;render();}
+ if (target.closest('[data-reset]')) reset();
+ const linked=target.closest('[data-open-oil]');
+ if (linked && oils.has(linked.dataset.openOil)) {
+  reset();
+  openOil(linked.dataset.openOil,true);
+  reveal(detail);
+ }
+ const a=target.closest('a[href^="#"]');
+ if (a && a.id!=='home') {
+  const section=$(a.getAttribute('href').slice(1));
+  if (section) {event.preventDefault();reveal(section);}
+ }
+ const option=target.closest('[data-quiz-option]');
+ if (option && quizChoice===null) {
+  quizChoice=Number(option.dataset.quizOption);
+  if(quizChoice===quiz[quizIndex].answer) quizScore++;
+  renderQuiz();
+  $('quiz-body').querySelector('[data-quiz-next]').focus({preventScroll:true});
+ }
+ if (target.closest('[data-quiz-next]')) {
+  if (quizIndex===quiz.length) {quizIndex=0;quizScore=0;} else quizIndex++;
+  quizChoice=null;
+  renderQuiz();
+  $('quiz-prompt').focus({preventScroll:true});
+ }
+});
+detail.addEventListener('change', event => {
+ if(event.target.id!=='variant-select') return;
+ planIndex=Number(event.target.value);
+ refreshPractice();
+ $('variant-select')?.focus({preventScroll:true});
+});
 detail.addEventListener('click',e=>{
- const route=e.target.closest('[data-route]');if(route){const g=groupsFor(oils.get(selected))[groupIndex];planIndex=g.entries.findIndex(x=>x.routeKey===route.dataset.route);refreshPractice();detail.querySelector(`[data-route="${route.dataset.route}"]`)?.focus({preventScroll:true});}
- const source=e.target.closest('.source-toggle');if(source){sourceVisible=!sourceVisible;detail.classList.toggle('sources-visible',sourceVisible);$('sources').hidden=!sourceVisible;detail.querySelectorAll('.source-toggle').forEach(b=>{b.setAttribute('aria-expanded',String(sourceVisible));b.textContent=sourceVisible?'Masquer les sources':'Afficher les sources ↗';});if(!sourceVisible&&source.closest('#sources'))detail.querySelector('.detail-toolbar .source-toggle').focus({preventScroll:true});}
+ const usage=e.target.closest('[data-usage]');
+ if(usage){
+  groupIndex=Number(usage.dataset.usage);planIndex=0;
+  refreshPractice();
+  detail.querySelector(`[data-usage="${groupIndex}"]`)?.focus({preventScroll:true});
+ }
+ const route=e.target.closest('[data-plan-route]');
+ if(route){
+  const group=groupsFor(oils.get(selected),activeRoute)[groupIndex];
+  planIndex=group.entries.findIndex(x=>x.routeKey===route.dataset.planRoute);
+  refreshPractice();
+  detail.querySelector(`[data-plan-route="${route.dataset.planRoute}"]`)?.focus({preventScroll:true});
+ }
+ const source=e.target.closest('.source-toggle');if(source){sourceVisible=!sourceVisible;detail.classList.toggle('sources-visible',sourceVisible);$('sources').hidden=!sourceVisible;detail.querySelectorAll('.source-toggle').forEach(b=>{b.setAttribute('aria-expanded',String(sourceVisible));b.textContent=sourceVisible?'Masquer les sources':'Afficher les sources ↗';});if(!sourceVisible&&source.closest('#sources'))detail.querySelector('.oil-header .source-toggle').focus({preventScroll:true});}
  const fav=e.target.closest('#favorite');if(fav){const added=!favorites.has(selected);if(added)favorites.add(selected);else favorites.delete(selected);const saved=saveFavorites();if(view==='favorites'&&!added){render();$('favorite')?.focus({preventScroll:true});}else{renderList(filtered());showDetail(oils.get(selected));$('favorite').focus({preventScroll:true});}announce(saved?(added?'Huile ajoutée à votre sélection':'Huile retirée de votre sélection'):'Favori conservé pour cette session seulement');}
- const linked=e.target.closest('[data-open-oil]');if(linked&&oils.has(linked.dataset.openOil)){reset();openOil(linked.dataset.openOil,true);}
 });
 detail.addEventListener('input',e=>{if(e.target.id!=='personal-note')return;notes[selected]=e.target.value;try{localStorage.setItem('capa-notes-v1',JSON.stringify(notes));$('note-status').textContent='Mémo enregistré sur cet appareil.';}catch(_){$('note-status').textContent='Stockage indisponible : copiez votre mémo pour le conserver.';}});
 window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(oils.has(id)){reset();openOil(id);}});

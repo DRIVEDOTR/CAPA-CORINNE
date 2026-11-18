@@ -1,32 +1,91 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Le Carnet de Coco : retrouver un usage, une préparation, une voie et une quantité documentés pour chaque huile essentielle, avec les précautions et les sources.">
-<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#643aa4">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Retrouvez les huiles essentielles par voie d’utilisation, avec leurs préparations, précautions et sources.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#4a2b68">
 <title>CAPA · Le Carnet de Coco · La Nature, l’Essentiel en toute connaissance</title>
 <link rel="icon" type="image/png" href="assets/logo-capa-transparent.png">
-<link rel="stylesheet" href="styles.css?v=carnet-20261012"><script src="data.js?v=carnet-20261012" defer></script><script src="app.js?v=carnet-20261012" defer></script>
+<link rel="stylesheet" href="styles.css?v=voies-20261118">
+<script src="data.js?v=voies-20261118" defer></script>
+<script src="app.js?v=voies-20261118" defer></script>
 </head>
 <body>
 <a class="skip" href="#search">Aller à la recherche</a>
 <header class="masthead wrap">
- <a href="#" id="home" class="brand" aria-label="Le Carnet de Coco, accueil"><img src="assets/logo-capa-transparent.png" alt="CAPA" width="1024" height="1536"><div><span class="brand-kicker">UN CARNET, AU FIL DES PLANTES</span><h1>Le Carnet de Coco</h1><p>La Nature, <em>l’Essentiel en toute connaissance.</em></p></div></a>
- <nav class="main-nav" aria-label="Navigation principale"><a href="#explorer">Explorer</a><button type="button" id="my-oils">♡ Mes huiles <span id="favorite-count">0</span></button><a href="#about">Le carnet</a></nav>
+  <a href="#" id="home" class="brand" aria-label="Le Carnet de Coco, accueil">
+    <img src="assets/logo-capa-transparent.png" alt="CAPA" width="1024" height="1536">
+    <div><h1>Le Carnet de Coco</h1><p>La Nature, <em>l’Essentiel en toute connaissance.</em></p></div>
+  </a>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <a href="#catalog">Herbier</a><a href="#quiz">Quiz</a><a href="#flyer">Flyer d’Égypte</a>
+    <button type="button" id="my-oils" aria-pressed="false">♡ Mes huiles <span id="favorite-count">0</span></button>
+  </nav>
 </header>
 <main class="wrap">
- <section id="explorer" class="explorer" aria-labelledby="explorer-title">
-  <div class="explorer-intro"><div><p class="eyebrow">VOTRE POINT DE DÉPART</p><h2 id="explorer-title">Un besoin. Une huile.<br><em>Les bons repères.</em></h2></div><p>Retrouvez ensemble l’usage, la voie, la quantité et les précautions d’une préparation documentée.</p><img src="assets/plantes/lavande.webp" alt="" width="1280" height="1280"></div>
-  <div class="explorer-tools"><label for="search">Que cherchez-vous aujourd’hui ?</label><div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Une huile, le sommeil, les douleurs…" autocomplete="off"><button type="button" id="clear" aria-label="Effacer la recherche" hidden>×</button><kbd aria-hidden="true">/</kbd></div><div class="needs" id="needs" role="group" aria-label="Choisir un besoin"></div><div class="explorer-options"><label class="select-wrap" for="domain"><span>Autre besoin</span><select id="domain"><option value="">Tous les besoins</option></select></label><button type="button" id="reset-filters" class="text-button" disabled>↺ Tout réinitialiser</button></div></div>
- </section>
- <div class="library-bar"><div class="library-views" role="group" aria-label="Collection affichée"><button type="button" data-view="all" aria-pressed="true">Tout le carnet <span id="total">79</span></button><button type="button" data-view="dose" aria-pressed="false">Repères chiffrés <span id="dose-count"></span></button><button type="button" data-view="missing" aria-pressed="false">À compléter <span id="missing-dose-count"></span></button><button type="button" data-view="favorites" aria-pressed="false">Mes huiles ♡</button></div><details class="filter-menu"><summary>Affiner <span aria-hidden="true">⌄</span></summary><div><label for="risk-filter">Vigilance documentée</label><select id="risk-filter"><option value="">Toutes les vigilances</option><option value="skin">Peau et muqueuses</option><option value="allergy">Allergies</option><option value="lungs">Bronches</option><option value="liver">Foie</option><option value="kidney">Reins</option><option value="bleeding">Coagulation</option><option value="neuro">Neurologique</option></select><label class="check-label"><input id="indication-only" type="checkbox"> Indications recoupées seulement</label><p>Les besoins portent sur les usages cités. Ce filtre de vigilance porte sur les risques, jamais sur des indications de traitement.</p></div></details></div>
- <div class="workspace">
-  <aside class="catalog" id="catalog" aria-label="Huiles disponibles"><div class="catalog-heading"><h2>Les huiles</h2><span id="count" role="status" aria-live="polite"></span></div><p id="selection-caption" class="catalog-caption">Choisissez votre plante.</p><div id="results"></div><a class="mobile-detail-link" href="#detail">Aller à la fiche ↓</a></aside>
-  <article id="detail" class="detail" aria-label="Fiche de l’huile essentielle"></article>
- </div>
- <section id="about" class="about"><details><summary>Un carnet vivant, des repères transparents <span>La méthode & les sources explorées ↗</span></summary><div><p>Ce carnet de travail rassemble les informations recueillies pour Corinne. Les quantités concernent une préparation, un usage et une population précis ; elles ne valent pas pour tout flacon et ne constituent pas une prescription personnalisée. Les protocoles d’études, les étiquettes de fabricants et les mentions des cours gardent leur contexte. Une donnée manquante ne signifie pas une absence de risque.</p><div id="coverage"></div><p>Les favoris et vos mémos sont enregistrés dans ce navigateur, sur cet appareil. Les illustrations sont décoratives et ne permettent pas d’identifier une plante.</p></div></details></section>
+  <section id="explorer" class="explorer" aria-labelledby="explorer-title">
+    <div class="explorer-intro">
+      <div><h2 id="explorer-title">Les huiles essentielles<br><em>en pratique</em></h2>
+      <p>Partez d’une voie d’utilisation ou recherchez une huile. Retrouvez la préparation, la quantité lorsqu’elle est documentée et les précautions.</p></div>
+      <img src="assets/plantes/lavande.webp" alt="" width="1280" height="1280">
+    </div>
+    <div class="explorer-tools">
+      <h3 id="route-heading">Explorer par voie</h3>
+      <div id="route-choices" class="route-choices" role="group" aria-labelledby="route-heading"></div>
+      <div class="search-box"><span aria-hidden="true">⌕</span><label for="search" class="sr-only">Rechercher une huile ou un usage</label><input type="search" id="search" placeholder="Rechercher une huile ou un usage…" autocomplete="off"><button type="button" id="clear" aria-label="Effacer la recherche" hidden>×</button></div>
+    </div>
+  </section>
+  <section id="route-guide" class="route-guide" aria-label="Repères pour la voie sélectionnée" hidden></section>
+  <div class="library-bar">
+    <div class="library-views" role="group" aria-label="Collection affichée">
+      <button type="button" data-view="all" aria-pressed="true">Toutes <span id="total"></span></button>
+      <button type="button" data-view="dose" aria-pressed="false">Monographies <span id="dose-count"></span></button>
+      <button type="button" data-view="missing" aria-pressed="false"><span id="missing-label" class="view-label">À compléter</span> <span id="missing-dose-count"></span></button>
+      <button type="button" data-view="favorites" aria-pressed="false">Mes huiles ♡</button>
+    </div>
+    <div class="library-controls">
+      <button type="button" id="reset-filters" class="text-button" disabled>Réinitialiser</button>
+      <details class="filter-menu">
+        <summary>Affiner <span aria-hidden="true">⌄</span></summary>
+        <div><label for="domain">Besoin</label><select id="domain"><option value="">Tous les besoins</option></select>
+          <label for="risk-filter">Vigilance documentée</label><select id="risk-filter"><option value="">Toutes les vigilances</option><option value="skin">Peau et muqueuses</option><option value="allergy">Allergies</option><option value="lungs">Bronches</option><option value="liver">Foie</option><option value="kidney">Reins</option><option value="bleeding">Coagulation</option><option value="neuro">Neurologique</option></select>
+          <label class="check-label"><input id="indication-only" type="checkbox"> Indications recoupées seulement</label>
+        </div>
+      </details>
+    </div>
+  </div>
+  <div class="workspace">
+    <aside class="catalog" id="catalog" aria-label="Huiles disponibles">
+      <div class="catalog-heading"><h2>Herbier</h2><span id="count" role="status" aria-live="polite"></span></div>
+      <p id="selection-caption" class="catalog-caption"></p>
+      <div id="results"></div>
+      <a class="mobile-detail-link" href="#detail">Aller à la fiche ↓</a>
+    </aside>
+    <article id="detail" class="detail" aria-label="Fiche de l’huile essentielle"></article>
+  </div>
+  <div class="learning">
+    <section id="quiz" class="learning-card" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Quiz des bons réflexes</h2>
+      <div id="quiz-body"></div>
+    </section>
+    <section id="flyer" class="learning-card" aria-labelledby="flyer-heading">
+      <h2 id="flyer-heading">Le flyer d’Égypte, vérifié</h2>
+      <p>Les correspondances établies et les pistes écartées, entrée par entrée.</p>
+      <div id="flyer-body"></div>
+    </section>
+  </div>
+  <section id="about" class="about"><details>
+    <summary>Comment lire le carnet</summary>
+    <div><p>Chaque quantité correspond à la préparation, à la voie et à la population de sa source. Les études, les produits identifiés et les usages traditionnels sont signalés. Pour utiliser un produit, vérifier sa notice et demander conseil à un professionnel de santé.</p>
+      <div id="coverage"></div>
+      <p>Vos favoris et mémos sont enregistrés dans ce navigateur. Les illustrations sont décoratives.</p>
+    </div>
+  </details></section>
 </main>
-<footer class="wrap"><a href="#explorer">CAPA <span>Le Carnet de Coco</span></a><p>De la curiosité. Des plantes. Des repères à partager.</p><span>Édition du 12 octobre 2026</span></footer>
+<footer class="wrap"><a href="#explorer">Le Carnet de Coco</a><span>18 novembre 2026</span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <noscript><p>Activez JavaScript pour rechercher et consulter le carnet.</p></noscript>
-</body></html>
+</body>
+</html>
