@@ -1,9 +1,9 @@
 {
   "title": "CAPA — carnet d’aromathérapie",
-  "version": "revue-20261118",
+  "version": "revue-32-20261118",
   "date": "2026-11-18",
   "status": "Base de travail — relecture nécessaire",
-  "scope": "80 fiches ; 48 avec dose ou concentration de monographie pour une préparation définie ; 32 sans repère chiffré de monographie retenu. Notices précises, essais et évaluations toxicologiques sont présentés séparément.",
+  "scope": "80 fiches. 49 avec un repère chiffré de monographie pour une préparation définie, 31 sans repère de monographie retenu. Les notices, études et limites d’exposition sont identifiées séparément.",
   "sources": {
     "hippocratus": {
       "title": "Hippocratus — HE les plus utilisées en infectiologie",
@@ -1187,6 +1187,118 @@
       "type": "Étude de composition",
       "date": "2022",
       "consulted": "2026-11-18"
+    },
+    "escop-coriandre-2026": {
+      "title": "ESCOP — Coriandri aetheroleum, huile essentielle de fruit (2026)",
+      "url": "https://www.escop.com/downloads/coriandri-aetheroleum-coriander-oil/",
+      "type": "Monographie scientifique",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "puressentiel-origan-capsules": {
+      "title": "Puressentiel France — Capsules d’origan compact bio",
+      "url": "https://fr.puressentiel.com/products/capsules-huile-essentielle-origan-compact-bio",
+      "type": "Notice du fabricant",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "pranarom-romarin-verbenone-ca": {
+      "title": "Pranarôm Canada — Romarin à verbénone, P-E53",
+      "url": "https://pranarom.ca/fr/produit/romarin-a-verbenone-p-e53/",
+      "type": "Notice du fabricant",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "puressentiel-ciste-fr": {
+      "title": "Puressentiel France — Huile de ciste ladanifère, étiquette du produit",
+      "url": "https://fr.puressentiel.com/products/ciste-ladanifere-bio-huile-essentielle",
+      "type": "Notice du fabricant",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "ifra-bigarade-zeste": {
+      "title": "IFRA — Bitter orange peel oil expressed, standard 088",
+      "url": "https://ifrafragrance.org/standards/IFRA_STD_088.pdf",
+      "type": "Standard industriel",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "ue-mna-2022": {
+      "title": "Union européenne — Règlement (UE) 2022/135, méthyl-N-méthylanthranilate",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/135/oj/fra/pdf",
+      "type": "Règlement européen",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "study-mandarin-petitgrain-gc": {
+      "title": "Analyse de la composition des huiles de feuilles et de zestes de 41 cultivars de Citrus reticulata",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0305197899000368",
+      "type": "Étude de composition",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "hc-ravintsara-cineole": {
+      "title": "Santé Canada — Huile de feuilles de ravintsara de Madagascar, chémotype cinéole",
+      "url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=17016",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "hc-estragon-ingredient": {
+      "title": "Santé Canada — Huile essentielle de parties aériennes fleuries d’estragon",
+      "url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=16626",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "study-cypress-cones-2015": {
+      "title": "Étude de l’huile essentielle des cônes de Cupressus sempervirens (2015)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/538929",
+      "type": "Étude de laboratoire",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "tga-ingredients-2026": {
+      "title": "Australie — Permissible Ingredients Determination, annexe 1, Pimenta racemosa et Thymus serpyllum",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade/2026-06-11/text/original/epub/OEBPS/document_5/document_5.html",
+      "type": "Texte réglementaire",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "sccs-parfums-2012": {
+      "title": "Comité scientifique européen — Allergènes de contact des parfums",
+      "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_102.pdf",
+      "type": "Avis scientifique",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "normandie-thuyanol-sds": {
+      "title": "Normandie Arômes — Fiche de données de sécurité du thym à thuyanol",
+      "url": "https://www.normandiearomes.fr/wp-content/uploads/2023/10/NORMANDIE-AROMES-HE-THYM-THUJANOL-MSDS.pdf",
+      "type": "Fiche de sécurité du fournisseur",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "anses-ca-plantes-2019sa0155": {
+      "title": "Anses — Avis 2019-SA-0155 sur les avertissements des compléments alimentaires à base de plantes",
+      "url": "https://www.anses.fr/fr/system/files/NUT2019SA0155.pdf",
+      "type": "Avis scientifique",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "hekserij-geranium-egypte-2026": {
+      "title": "De Hekserij — Fiche technique de l’huile de géranium d’Égypte 20130",
+      "url": "https://www.hekserij.nl/wp-content/uploads/2026/03/1Doc-20130-EO-Geranium-Egypt-2026-02.pdf",
+      "type": "Fiche technique du fabricant",
+      "date": null,
+      "consulted": "2026-11-18"
+    },
+    "hc-coriandre-fruit-ingredient": {
+      "title": "Santé Canada — Huile essentielle de fruits de coriandre, rôles non médicinaux",
+      "url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=13996&lang=eng&wbdisable=true",
+      "type": "Référence institutionnelle",
+      "date": null,
+      "consulted": "2026-11-18"
     }
   },
   "oils": [
@@ -1239,7 +1351,12 @@
         "text": "La page de cours ne précise pas la partie distillée. L’espèce A. ligustica doit être caractérisée séparément ; les doses de l’achillée millefeuille ou de la plante entière ne sont pas attribuées à cette huile.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08",
-        "summary": "Les analyses décrivent des huiles de composition variable. La partie distillée de la fiche reste à confirmer avant de retenir une indication ou une quantité."
+        "summary": "Les analyses décrivent des huiles de composition variable. La partie distillée de la fiche reste à confirmer avant de retenir une indication ou une quantité.",
+        "followUp": {
+          "text": "L’analyse corse porte sur la composition. Elle ne fixe ni dose humaine ni interaction médicamenteuse. La partie distillée du produit doit être identifiée.",
+          "source": "study-achillea-ligustica-corse-2006",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -1302,7 +1419,12 @@
         "text": "La partie distillée et la composition de cette huile ne sont pas encore identifiées dans la fiche. Aucune dose de l’achillée millefeuille ni d’une autre achillée ne peut être substituée.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08",
-        "summary": "La composition varie entre les échantillons étudiés. Il manque une préparation clinique identifiable pour attribuer un usage, une voie et une quantité."
+        "summary": "La composition varie entre les échantillons étudiés. Il manque une préparation clinique identifiable pour attribuer un usage, une voie et une quantité.",
+        "followUp": {
+          "text": "Les profils alpins étudiés varient en thuyones et camphre. L’analyse du lot est nécessaire avant toute comparaison. Une quantité humaine et les interactions restent à établir.",
+          "source": "study-achillea-moschata-alpes-2022",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -1365,7 +1487,12 @@
         "text": "La monographie EMA repérée concerne les parties aériennes et leurs préparations, notamment les infusions. Aucune dose de cette monographie n’est transférée à l’huile essentielle, dont la partie distillée reste à identifier dans cette fiche.",
         "source": "ema-achillee-herba",
         "reviewedAt": "2026-10-08",
-        "summary": "L’EMA documente la plante et ses préparations. Les études d’extraits huileux ou de produits mal caractérisés laissent l’usage de l’huile essentielle à établir."
+        "summary": "L’EMA documente la plante et ses préparations. Les études d’extraits huileux ou de produits mal caractérisés laissent l’usage de l’huile essentielle à établir.",
+        "followUp": {
+          "text": "Les extraits huileux d’achillée ne suffisent pas à attribuer un schéma cutané à l’huile essentielle distillée. La préparation et sa tolérance restent à caractériser.",
+          "source": "trial-yarrow-oily-extracts-2017",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -2470,7 +2597,12 @@
         "source": "hc-aromatherapie-2025",
         "page": 6,
         "reviewedAt": "2026-10-09",
-        "summary": "Les instructions trouvées concernent un produit oral précis. Le chémotype estragole est exclu de la monographie canadienne d’aromathérapie."
+        "summary": "Les instructions trouvées concernent un produit oral précis. Le chémotype estragole est exclu de la monographie canadienne d’aromathérapie.",
+        "followUp": {
+          "text": "Le registre canadien permet de vérifier un exemple oral par son NPN. Le nom basilic à lui seul ne garantit ni le chémotype ni la teneur en estragole.",
+          "source": "hc-basil-npn-80047857",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "canadaExclusion": {
@@ -2713,6 +2845,10 @@
         {
           "text": "Santé Canada cite le bay oil (Pimenta racemosa) parmi les huiles dont la diffusion aromatique et l’ajout maison à un hydratant corporel pourraient présenter un risque. Cette évaluation est provisoire, sans seuil sûr ni dose pour la variété de cette fiche.",
           "source": "hc-bay-risk-2025"
+        },
+        {
+          "text": "Le règlement australien impose des conditions de conditionnement pour les préparations listées contenant de l’huile de Pimenta racemosa. Les seuils réglementaires concernent le produit fini.",
+          "source": "tga-ingredients-2026"
         }
       ],
       "adverseEffects": [],
@@ -2726,7 +2862,8 @@
         "ema-quality-essential-oils",
         "hc-bay-risk-2025",
         "study-bay-leaf-antimicrobial-2016",
-        "hc-bois-inde-risque"
+        "hc-bois-inde-risque",
+        "tga-ingredients-2026"
       ],
       "status": "course",
       "publicationReady": false,
@@ -2752,7 +2889,12 @@
         "text": "Le cours cite un usage local mais ne définit pas la teneur du produit, la dilution, la durée ni une posologie humaine vérifiée pour Pimenta racemosa var. racemosa. L’évaluation canadienne provisoire de l’huile de bay attire l’attention sur la diffusion et les préparations cutanées maison, sans fournir de posologie.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08",
-        "summary": "La diffusion d’ambiance et les mélanges cutanés maison font l’objet d’une évaluation toxicologique canadienne. Une quantité thérapeutique reste à établir."
+        "summary": "La diffusion d’ambiance et les mélanges cutanés maison font l’objet d’une évaluation toxicologique canadienne. Une quantité thérapeutique reste à établir.",
+        "followUp": {
+          "text": "Les règles de conditionnement australiennes et l’évaluation canadienne des expositions n’établissent pas de quantité thérapeutique. La diffusion d’ambiance et les préparations maison pour la peau demandent une vigilance particulière.",
+          "source": "tga-ingredients-2026",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -2823,7 +2965,12 @@
         "text": "L’étude de composition a analysé l’huile de l’écorce de Betula lenta, alors que cette fiche mentionne le bois. Elle ne fournit pas de dose humaine sûre, et son profil chimique ne peut être attribué au produit de cette fiche sans vérifier la partie distillée et le lot.",
         "source": "etude-bouleau-flexible-composition",
         "reviewedAt": "2026-10-09",
-        "summary": "Cette fiche concerne le bois. Les données de l’écorce et les limites liées au salicylate de méthyle ne permettent pas de doser l’huile du bois."
+        "summary": "Cette fiche concerne le bois. Les données de l’écorce et les limites liées au salicylate de méthyle ne permettent pas de doser l’huile du bois.",
+        "followUp": {
+          "text": "L’étude de référence analyse l’écorce. L’huile du bois doit être identifiée et analysée avant d’évaluer son exposition au salicylate ou de reprendre un repère cutané.",
+          "source": "etude-bouleau-flexible-composition",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -2897,7 +3044,12 @@
         "text": "L’Anses classe Betula alleghaniensis parmi les plantes à dérivés salicylés ; cet avis ne précise ni la composition de l’huile du bois étudiée ici ni une dose humaine. Ne pas reprendre la dose du bouleau flexible ou de la gaulthérie.",
         "source": "anses-bouleaux-salicylates",
         "reviewedAt": "2026-10-08",
-        "summary": "Les données retrouvées sur les salicylates ne précisent pas suffisamment la composition de l’huile du bois pour définir une voie ou une quantité."
+        "summary": "Les données retrouvées sur les salicylates ne précisent pas suffisamment la composition de l’huile du bois pour définir une voie ou une quantité.",
+        "followUp": {
+          "text": "Les données sur les salicylates ne précisent pas la teneur de l’huile de bois de la fiche. Ni dilution, ni interaction propre à cette préparation n’ont pu être établies.",
+          "source": "anses-bouleaux-salicylates",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -3222,7 +3374,12 @@
         ]
       },
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "Le Comité scientifique européen décrit plusieurs huiles de cassia provenant de parties végétales différentes. Les données sur l’huile de feuilles et rameaux et sur l’huile d’écorce doivent être vérifiées contre le produit en main.",
+          "source": "sccs-parfums-2012"
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -3232,7 +3389,8 @@
       "sourceIds": [
         "hippocratus-gastro",
         "ema-cinnamon-index",
-        "pranarom-cannelle-chine-fr"
+        "pranarom-cannelle-chine-fr",
+        "sccs-parfums-2012"
       ],
       "status": "course",
       "publicationReady": false,
@@ -3253,7 +3411,12 @@
         "text": "La monographie EMA du catalogue concerne l’huile de l’écorce de Cinnamomum verum (cannelle de Ceylan), pas Cinnamomum cassia. L’organe distillé du produit étudié ici n’est pas renseigné : dose et sécurité ne sont pas transposées.",
         "source": "ema-cinnamon-index",
         "reviewedAt": "2026-10-08",
-        "summary": "Un produit précis donne des instructions. La partie distillée de l’huile de la fiche reste à identifier pour appliquer des données de sécurité ou de dose à ce flacon."
+        "summary": "Un produit précis donne des instructions. La partie distillée de l’huile de la fiche reste à identifier pour appliquer des données de sécurité ou de dose à ce flacon.",
+        "followUp": {
+          "text": "Les dossiers sur écorce, feuilles ou rameaux ne sont applicables qu’après confirmation de l’organe distillé. Le chiffre du produit du commerce reste propre à son étiquette.",
+          "source": "sccs-parfums-2012",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -3465,7 +3628,12 @@
         "text": "La sous-espèce Daucus carota subsp. maximus et l’huile de ses semences demandent une identification et une composition propres. Les allégations du cours et le renvoi aux précautions du céleri ne suffisent pas à fixer une dose.",
         "source": "ema-quality-essential-oils",
         "reviewedAt": "2026-10-08",
-        "summary": "Les données sur les graines de carotte doivent correspondre à la sous-espèce de la fiche. Cet appariement reste à vérifier avant de retenir une quantité."
+        "summary": "Les données sur les graines de carotte doivent correspondre à la sous-espèce de la fiche. Cet appariement reste à vérifier avant de retenir une quantité.",
+        "followUp": {
+          "text": "L’étude de la sous-espèce maximus analyse des distillats et des effets en laboratoire. Une quantité humaine pour les semences et les interactions restent à établir.",
+          "source": "study-carrot-maximus-2017",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -3849,6 +4017,10 @@
           "text": "Le cours exclut le traitement des plaies importantes.",
           "source": "hippocratus-derm",
           "page": 13
+        },
+        {
+          "text": "Le produit cosmétique Puressentiel s’utilise dilué et en externe. Son étiquette exclut les moins de 7 ans, la grossesse, l’allaitement, les antécédents convulsifs et l’allergie aux huiles essentielles.",
+          "source": "puressentiel-ciste-fr"
         }
       ],
       "adverseEffects": [],
@@ -3859,7 +4031,12 @@
           "page": 13
         }
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "text": "Le fabricant décrit un usage cosmétique du produit dilué pour le bain et le massage. La notice porte sur l’huile de feuilles et de rameaux. Le carnet documente aussi une référence distincte pour la diffusion d’ambiance.",
+          "source": "puressentiel-ciste-fr"
+        }
+      ],
       "reviewNotes": [
         "Usages issus du cours, non validés indépendamment ; bilan de sécurité incomplet.",
         "La famille indiquée dans le cours est erronée. Le nom accepté et la famille Cistaceae sont vérifiés dans Plants of the World Online (Kew).",
@@ -3872,7 +4049,8 @@
         "ema-quality-essential-oils",
         "hc-aromatherapie-2025",
         "study-cistus-branches-2021",
-        "doterra-ciste-ca"
+        "doterra-ciste-ca",
+        "puressentiel-ciste-fr"
       ],
       "status": "course",
       "publicationReady": false,
@@ -3895,7 +4073,12 @@
         "source": "hc-aromatherapie-2025",
         "page": 2,
         "reviewedAt": "2026-10-09",
-        "summary": "Une notice précise un usage en diffusion d’ambiance pour un produit de feuilles et rameaux. La monographie canadienne concerne l’huile de gomme."
+        "summary": "Une notice précise un usage en diffusion d’ambiance pour un produit de feuilles et rameaux. La monographie canadienne concerne l’huile de gomme.",
+        "followUp": {
+          "text": "Deux produits de feuilles et rameaux documentent des voies différentes : diffusion d’ambiance pour l’un, bain ou massage cosmétique pour l’autre. L’interaction avec les anticoagulants signalée dans le cours reste à confirmer.",
+          "source": "puressentiel-ciste-fr",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -4320,7 +4503,9 @@
       ],
       "componentSource": "hippocratus-gastro",
       "domains": [
-        "Digestif"
+        "Digestif",
+        "Peau",
+        "Infectiologie"
       ],
       "courseSummary": "Le cours cite des usages digestifs et antispasmodiques de l’huile des fruits. Les constituants cités doivent être distingués de ceux de la feuille.",
       "summarySource": "hippocratus-gastro",
@@ -4336,11 +4521,30 @@
           "text": "Le cours signale une toxicité possible à forte dose ; il ne donne pas ici un bilan complet de sécurité.",
           "source": "hippocratus-gastro",
           "page": 15
+        },
+        {
+          "text": "Grossesse et allaitement : pas de données dans la monographie. L’ESCOP appelle à la prudence en cas de trouble hépatobiliaire ou d’hypersensibilité connue.",
+          "source": "escop-coriandre-2026"
         }
       ],
-      "adverseEffects": [],
-      "interactions": [],
-      "evidence": [],
+      "adverseEffects": [
+        {
+          "text": "Des réactions allergiques sont rapportées. L’ESCOP signale un potentiel de sensibilisation.",
+          "source": "escop-coriandre-2026"
+        }
+      ],
+      "interactions": [
+        {
+          "text": "L’ESCOP ne signale aucune interaction médicamenteuse connue pour la préparation décrite. Les données restent insuffisantes pour écarter une interaction individuelle.",
+          "source": "escop-coriandre-2026"
+        }
+      ],
+      "evidence": [
+        {
+          "text": "Le registre canadien mentionne un rôle de parfum topique et d’arôme oral. Ces rôles sont propres au cadre canadien présenté et distincts des usages examinés par l’ESCOP.",
+          "source": "hc-coriandre-fruit-ingredient"
+        }
+      ],
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
         "L’essai de migraine (Kasmaei et al., 2016) porte sur un extrait éthanolique en sirop ; l’huile essentielle n’était analysée que pour caractériser la plante, pas administrée."
@@ -4350,7 +4554,9 @@
         "trial-coriander-patch-2011",
         "trial-coriander-syrup-2016",
         "trial-coriander-tinea-2013",
-        "doterra-coriandre-ca"
+        "doterra-coriandre-ca",
+        "escop-coriandre-2026",
+        "hc-coriandre-fruit-ingredient"
       ],
       "status": "course",
       "publicationReady": false,
@@ -4359,7 +4565,12 @@
       "art": "coriandre",
       "discovery": "L’espèce, le chémotype et la partie distillée permettent de distinguer les huiles.",
       "collection": "hippocratus-2026-10",
-      "riskSignals": {},
+      "riskSignals": {
+        "allergy": {
+          "text": "Les réactions allergiques sont documentées par l’ESCOP.",
+          "source": "escop-coriandre-2026"
+        }
+      },
       "courseUses": [
         {
           "label": "Spasmes et inconfort digestifs",
@@ -4369,18 +4580,26 @@
       ],
       "doseResearch": {
         "title": "Tolérance testée, pas dose de traitement",
-        "text": "Une étude a testé sous patch une crème à 0,5 % et une lotion à 1 % d’huile essentielle de fruit chez 40 volontaires, sans irritation observée : elle ne mesure ni l’efficacité clinique ni la tolérance d’un usage répété. L’essai de migraine souvent cité utilisait un sirop d’extrait éthanolique de fruit, et non l’huile essentielle. Aucune dose thérapeutique de cette dernière n’est retenue.",
-        "source": "trial-coriander-patch-2011",
-        "reviewedAt": "2026-10-09",
-        "summary": "Un test cutané a mesuré la tolérance. Un produit précis décrit la diffusion d’ambiance. Une indication clinique et une quantité de traitement restent à établir."
+        "text": "La monographie ESCOP décrit les quantités pour l’huile distillée de fruits et pour une pommade définie. Les essais et la notice de diffusion relèvent de contextes distincts.",
+        "source": "escop-coriandre-2026",
+        "reviewedAt": "2026-11-18",
+        "summary": "Deux voies documentées par l’ESCOP pour l’huile de fruits : orale pour des troubles digestifs et cutanée en pommade pour certaines mycoses.",
+        "followUp": {
+          "text": "La monographie ESCOP identifie l’huile de fruits distillée et deux formes d’emploi. Ses rubriques de précautions et d’interactions figurent dans les vigilances de la fiche.",
+          "source": "escop-coriandre-2026",
+          "reviewedAt": "2026-11-18"
+        }
       },
-      "evidenceDomains": [],
+      "evidenceDomains": [
+        "Digestif",
+        "Peau",
+        "Infectiologie"
+      ],
       "indicationReview": {
-        "status": "Essai clinique voisin, indication non attribuée",
-        "text": "Une étude de l’huile essentielle de fruit a évalué la tolérance de préparations cutanées à 0,5 % et 1 % sous patch chez 40 volontaires, sans démontrer un traitement des infections. Un autre essai pilote a étudié une pommade à 6 % d’huile de coriandre contre la mycose entre les orteils, mais le résumé ne confirme pas la partie distillée. Ces concentrations expérimentales ne sont pas des posologies CAPA ; les usages digestifs du cours restent non validés.",
-        "source": "trial-coriander-patch-2011",
-        "reviewedAt": "2026-10-09",
-        "additionalSource": "trial-coriander-tinea-2013"
+        "status": "Usages documentés par l’ESCOP",
+        "text": "L’ESCOP rapporte un usage digestif traditionnel et un usage cutané dans les mycoses. Les données cliniques cutanées restent limitées. La pommade, le produit pour diffusion et le sirop d’extrait étudié ailleurs sont des préparations distinctes.",
+        "source": "escop-coriandre-2026",
+        "reviewedAt": "2026-11-18"
       },
       "productExamples": [
         {
@@ -4390,6 +4609,49 @@
           "dose": "La notice de ce produit indique 3 à 4 gouttes dans le diffuseur.",
           "limit": "Usage aromatique selon la notice. Elle ne précise ni le volume de la pièce ni la durée de diffusion. Aucune indication thérapeutique n’est attribuée à cet usage.",
           "source": "doterra-coriandre-ca"
+        }
+      ],
+      "regulatoryUses": [
+        {
+          "label": "Diarrhée et dyspepsie",
+          "domain": "Digestif",
+          "route": "Voie orale",
+          "context": "Usage digestif traditionnel décrit dans la monographie.",
+          "source": "escop-coriandre-2026"
+        },
+        {
+          "label": "Mycoses de la peau",
+          "domain": "Peau",
+          "route": "Application cutanée",
+          "context": "Données cliniques limitées, dont une étude sur la mycose du pied citée par l’ESCOP.",
+          "source": "escop-coriandre-2026"
+        }
+      ],
+      "regulatoryRegimens": [
+        {
+          "indication": "Diarrhée et dyspepsie",
+          "domains": [
+            "Digestif"
+          ],
+          "route": "Voie orale",
+          "population": "Adulte dans le carnet. La synthèse publique ne précise pas de schéma pédiatrique.",
+          "preparation": "Préparation orale contenant l’huile essentielle de fruits de Coriandrum sativum distillée à la vapeur.",
+          "dose": "0,1 g d’huile essentielle par prise, deux à trois fois par jour, selon l’ESCOP.",
+          "limit": "Usage digestif traditionnel décrit dans la monographie. Allergies possibles. Données insuffisantes pendant la grossesse et l’allaitement. L’ESCOP appelle à la prudence en cas de trouble hépatobiliaire.",
+          "source": "escop-coriandre-2026"
+        },
+        {
+          "indication": "Mycoses de la peau",
+          "domains": [
+            "Peau",
+            "Infectiologie"
+          ],
+          "route": "Application cutanée",
+          "population": "Adulte dans le carnet. La synthèse publique ne précise pas de schéma pédiatrique.",
+          "preparation": "Pommade contenant 6 % d’huile essentielle de fruits de Coriandrum sativum.",
+          "dose": "Concentration de la pommade : 6 %. La synthèse publique ne donne pas de quantité par application ni de fréquence.",
+          "limit": "Données cliniques limitées, dont une étude sur la mycose du pied citée par l’ESCOP. Allergies possibles. Données insuffisantes pendant la grossesse et l’allaitement. L’ESCOP appelle à la prudence en cas de trouble hépatobiliaire.",
+          "source": "escop-coriandre-2026"
         }
       ]
     },
@@ -4606,7 +4868,12 @@
         }
       ],
       "interactions": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "text": "Une étude originale porte sur l’huile des cônes de cyprès. Les tests antimicrobiens ont été réalisés en laboratoire et ne définissent ni une indication ni une dose chez l’humain.",
+          "source": "study-cypress-cones-2015"
+        }
+      ],
       "reviewNotes": [
         "Informations issues du cours ; recoupement indépendant et sécurité à compléter avant tout conseil.",
         "La partie distillée indiquée ici vient du cours ; vérifier le produit et ne pas assimiler cônes et rameaux.",
@@ -4624,7 +4891,8 @@
         "hippocratus",
         "hippocratus-endocrinologie",
         "ema-quality-essential-oils",
-        "hc-aromatherapie-2025"
+        "hc-aromatherapie-2025",
+        "study-cypress-cones-2015"
       ],
       "status": "course",
       "publicationReady": false,
@@ -4657,7 +4925,12 @@
         "source": "hc-aromatherapie-2025",
         "page": 3,
         "reviewedAt": "2026-10-09",
-        "summary": "Cette fiche concerne les cônes femelles. Les quantités retrouvées pour les aiguilles et rameaux exigent une autre préparation."
+        "summary": "Cette fiche concerne les cônes femelles. Les quantités retrouvées pour les aiguilles et rameaux exigent une autre préparation.",
+        "followUp": {
+          "text": "Les données des cônes retrouvées sont expérimentales. Une indication, une dose et les interactions chez l’humain restent à établir pour cet organe.",
+          "source": "study-cypress-cones-2015",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -4824,6 +5097,10 @@
         {
           "text": "L’EMA recommande de réduire autant que possible l’exposition à l’estragole dans les produits végétaux ; la teneur de chaque huile d’estragon doit être vérifiée avant toute évaluation de sécurité.",
           "source": "ema-estragole"
+        },
+        {
+          "text": "Pour l’estragon, le dossier canadien de licence orale demande la vérification de la teneur en thuyone lot par lot. Le même registre limite l’huile à 0,12 % comme parfum topique non médicinal. Vérifier également l’exposition à l’estragole, examinée séparément par l’EMA.",
+          "source": "hc-estragon-ingredient"
         }
       ],
       "adverseEffects": [],
@@ -4841,7 +5118,8 @@
         "hippocratus-gynecologie",
         "dgccrf-diffusion",
         "ema-estragole",
-        "pranarom-estragon-predilue-fr"
+        "pranarom-estragon-predilue-fr",
+        "hc-estragon-ingredient"
       ],
       "status": "course",
       "publicationReady": false,
@@ -4874,7 +5152,12 @@
         "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
         "source": "pranarom-estragon-predilue-fr",
         "reviewedAt": "2026-10-10",
-        "summary": "Un produit prédilué donne des instructions propres à sa formule. L’estragole justifie une attention particulière à la composition et à l’exposition."
+        "summary": "Un produit prédilué donne des instructions propres à sa formule. L’estragole justifie une attention particulière à la composition et à l’exposition.",
+        "followUp": {
+          "text": "Santé Canada demande de vérifier la thuyone pour le dossier oral. Le fabricant du produit prédilué donne un repère propre à sa formule. Aucune interaction clinique spécifique n’a été confirmée.",
+          "source": "hc-estragon-ingredient",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -5940,7 +6223,12 @@
         "source": "eda-gaultheria-2025",
         "reviewedAt": "2026-11-18",
         "summary": "Un fabricant documente l’application cutanée d’un produit de feuilles. La monographie égyptienne décrit des parties aériennes plus larges. Les vigilances liées aux salicylates restent essentielles.",
-        "page": 673
+        "page": 673,
+        "followUp": {
+          "text": "La monographie couvre des parties aériennes plus larges que les feuilles seules. Le risque avec les anticoagulants et les salicylés est documenté. La concentration de monographie reste rattachée à sa préparation.",
+          "source": "eda-gaultheria-2025",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -6479,7 +6767,12 @@
         "text": "La fiche porte sur des rameaux avec baies. La monographie EMA de l’huile de genévrier définit une huile obtenue à partir des cônes de baies mûres : cette posologie ne peut pas être reportée sans certitude sur la partie effectivement distillée.",
         "source": "ema-genevrier-ar",
         "reviewedAt": "2026-10-08",
-        "summary": "La fiche porte sur les rameaux avec baies. Le carnet présente séparément les préparations et quantités documentées pour l’huile de baies seules."
+        "summary": "La fiche porte sur les rameaux avec baies. Le carnet présente séparément les préparations et quantités documentées pour l’huile de baies seules.",
+        "followUp": {
+          "text": "Le rapport permet de vérifier les éléments propres à l’huile de baies. Pour les rameaux avec baies, vérifier la partie distillée avant de reprendre une voie, une dose ou une vigilance de cette monographie.",
+          "source": "ema-genevrier-ar",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -6666,7 +6959,12 @@
         ]
       },
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "Une fiche technique de géranium d’Égypte relève plusieurs allergènes de parfum, dont le citronellol. Vérifier l’étiquetage du produit exact : le fabricant emploie les deux noms botaniques P. graveolens et P. × asperum pour sa matière première.",
+          "source": "hekserij-geranium-egypte-2026"
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [],
@@ -6674,7 +6972,8 @@
         "Usages issus du cours, non validés indépendamment ; bilan de sécurité incomplet."
       ],
       "sourceIds": [
-        "hippocratus-derm"
+        "hippocratus-derm",
+        "hekserij-geranium-egypte-2026"
       ],
       "status": "course",
       "publicationReady": false,
@@ -6695,7 +6994,12 @@
         "text": "Le cours évoque des usages cutanés pour le géranium rosat d’Égypte, sans préciser une préparation, une dilution et une quantité vérifiables pour cette huile. Les données d’une autre espèce ou d’un autre cultivar ne déterminent pas sa dose.",
         "source": "hippocratus-derm",
         "reviewedAt": "2026-10-08",
-        "summary": "Les indications et quantités de Pelargonium graveolens ne permettent pas de doser le géranium rosat de cette fiche. Vérifier le nom botanique et l’origine du produit."
+        "summary": "Les indications et quantités de Pelargonium graveolens ne permettent pas de doser le géranium rosat de cette fiche. Vérifier le nom botanique et l’origine du produit.",
+        "followUp": {
+          "text": "Les noms d’étiquette pour le géranium d’Égypte divergent selon les fournisseurs. La fiche technique vérifiée renseigne des allergènes et appelle à contrôler le nom botanique du flacon.",
+          "source": "hekserij-geranium-egypte-2026",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -7991,7 +8295,12 @@
         "text": "Le cours évoque les jambes lourdes pour le lentisque, mais ne précise pas de préparation, de concentration et de quantité vérifiables pour l’huile des rameaux feuillés. Aucune dose n’est déduite de cet usage cité.",
         "source": "hippocratus-cardio",
         "reviewedAt": "2026-10-08",
-        "summary": "Les essais de mastic ou d’autres préparations ne permettent pas de fixer une quantité pour l’huile de rameaux feuillés de cette variété."
+        "summary": "Les essais de mastic ou d’autres préparations ne permettent pas de fixer une quantité pour l’huile de rameaux feuillés de cette variété.",
+        "followUp": {
+          "text": "La gomme de mastic et l’huile des rameaux feuillés sont deux préparations différentes. Une dose et des interactions propres à l’huile de rameaux restent à établir.",
+          "source": "study-lentisk-chia-composition-2004",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -8079,7 +8388,12 @@
         "text": "La mention du cours porte sur des mélanges pour le sommeil, sans définir la quantité propre à l’huile de zeste de mandarine ni le procédé d’obtention du produit. Une dose isolée ne peut pas être extrapolée du mélange.",
         "source": "hippocratus-snc",
         "reviewedAt": "2026-10-08",
-        "summary": "Les instructions orales retrouvées restent propres à un produit identifié. Les données du petit-grain concernent les feuilles."
+        "summary": "Les instructions orales retrouvées restent propres à un produit identifié. Les données du petit-grain concernent les feuilles.",
+        "followUp": {
+          "text": "La page canadienne consultée décrit une évaluation encore provisoire. L’exposition doit être évaluée selon la formulation et la partie utilisée. Les quantités orales relevées sont propres au produit étiqueté.",
+          "source": "hc-mandarine-risque",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -9019,7 +9333,12 @@
         "source": "hc-aromatherapie-2025",
         "page": 5,
         "reviewedAt": "2026-10-09",
-        "summary": "L’essai porte sur une préparation combinée. Les repères pour feuilles et rameaux seuls ne permettent pas de doser cette huile de rameaux avec baies."
+        "summary": "L’essai porte sur une préparation combinée. Les repères pour feuilles et rameaux seuls ne permettent pas de doser cette huile de rameaux avec baies.",
+        "followUp": {
+          "text": "Le résultat de l’étude sur l’acné concerne une formule combinée. Aucune quantité indépendante n’a été retenue pour l’huile des rameaux avec baies.",
+          "source": "trial-myrtle-oregano-acne-2020",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -9582,6 +9901,11 @@
         {
           "text": "Pour son huile de zeste exprimé, le fabricant demande d’éviter le soleil après une application cutanée. Vérifier le mode d’extraction et les précautions de la notice du produit.",
           "source": "florilab-bigarade-zeste"
+        },
+        {
+          "text": "L’IFRA documente la phototoxicité du zeste de bigarade exprimé. Des restrictions de formulation s’appliquent à certaines catégories de produits parfumés. Le cumul des ingrédients phototoxiques riches en furocoumarines compte dans ces formulations.",
+          "source": "ifra-bigarade-zeste",
+          "page": 2
         }
       ],
       "adverseEffects": [],
@@ -9597,7 +9921,8 @@
         "hippocratus-endocrinologie",
         "hc-aromatherapie-2025",
         "trial-bitterorange-angio-2021",
-        "florilab-bigarade-zeste"
+        "florilab-bigarade-zeste",
+        "ifra-bigarade-zeste"
       ],
       "status": "course",
       "publicationReady": false,
@@ -9608,8 +9933,9 @@
       "collection": "hippocratus-2026-10",
       "riskSignals": {
         "skin": {
-          "text": "Le fabricant de l’huile de zeste exprimé avertit d’un risque de photosensibilisation après application cutanée.",
-          "source": "florilab-bigarade-zeste"
+          "text": "Phototoxicité documentée pour l’huile exprimée. Vérifier le procédé d’extraction et la notice cutanée.",
+          "source": "ifra-bigarade-zeste",
+          "page": 2
         }
       },
       "courseUses": [
@@ -9624,7 +9950,12 @@
         "source": "hc-aromatherapie-2025",
         "page": 3,
         "reviewedAt": "2026-10-09",
-        "summary": "Le zeste exprimé a une vigilance cutanée liée au soleil. Le néroli et le petit-grain sont documentés séparément, car ils proviennent des fleurs et des feuilles."
+        "summary": "Le zeste exprimé a une vigilance cutanée liée au soleil. Le néroli et le petit-grain sont documentés séparément, car ils proviennent des fleurs et des feuilles.",
+        "followUp": {
+          "text": "Pour le zeste exprimé, le risque phototoxique et le cumul des furocoumarines sont documentés. Les limites de formulation ne fixent pas de dose thérapeutique.",
+          "source": "ifra-bigarade-zeste",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -9665,12 +9996,20 @@
         {
           "text": "Le cours exclut l’emploi chez l’enfant et pendant la grossesse, sans seuil d’âge précisé.",
           "source": "hippocratus"
+        },
+        {
+          "text": "Les capsules sont réservées aux adultes. Leur étiquette exclut la grossesse, l’allaitement, les antécédents convulsifs ou épileptiques et l’allergie aux huiles essentielles.",
+          "source": "puressentiel-origan-capsules"
         }
       ],
       "precautions": [
         {
           "text": "Le cours proscrit les usages cutanéo-muqueux et en aérosol.",
           "source": "hippocratus"
+        },
+        {
+          "text": "Le fabricant déconseille les capsules en cas de troubles gastro-œsophagiens.",
+          "source": "puressentiel-origan-capsules"
         }
       ],
       "adverseEffects": [
@@ -9679,7 +10018,12 @@
           "source": "hippocratus"
         }
       ],
-      "interactions": [],
+      "interactions": [
+        {
+          "text": "La notice de ces capsules demande un avis professionnel en cas de traitement, notamment anticoagulant ou antidiabétique oral. Elle déconseille l’emploi avec des médicaments potentiellement hépatotoxiques. Ces avertissements d’étiquetage ne quantifient pas une interaction clinique.",
+          "source": "puressentiel-origan-capsules"
+        }
+      ],
       "evidence": [],
       "reviewNotes": [
         "Les autres origans cités dans le cours ne sont pas fusionnés avec O. compactum.",
@@ -9688,7 +10032,8 @@
       "sourceIds": [
         "hippocratus",
         "tox-essential-oils-2021",
-        "study-oregano-compact-flowering-2024"
+        "study-oregano-compact-flowering-2024",
+        "puressentiel-origan-capsules"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -9726,7 +10071,12 @@
         "text": "Une évaluation toxicologique originale d’huiles de sommités fleuries d’Origanum compactum propose 100 mg/j par voie orale chez l’adulte pendant 2 semaines au maximum, sous conditions de composition et hors maladie hépatique. Ce chiffre estime une exposition jugée acceptable pour les spécifications analysées : il ne démontre ni efficacité anti-infectieuse, ni posologie pour un autre flacon.",
         "source": "tox-essential-oils-2021",
         "reviewedAt": "2026-10-09",
-        "summary": "Le calcul toxicologique publié répond à une question de sécurité. L’espèce et la préparation doivent être confirmées avant de retenir une indication assortie d’une quantité."
+        "summary": "Une capsule orale identifiée contient 33 mg d’huile de sommités fleuries. Sa notice précise la quantité, la durée et les vigilances en cas de traitement.",
+        "followUp": {
+          "text": "La notice des capsules permet de vérifier l’organe, la masse par capsule et les précautions médicamenteuses. La quantité reste celle du complément prêt à l’emploi.",
+          "source": "puressentiel-origan-capsules",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -9735,7 +10085,17 @@
         "source": "study-oregano-compact-flowering-2024",
         "reviewedAt": "2026-10-09",
         "additionalSource": "tox-essential-oils-2021"
-      }
+      },
+      "productExamples": [
+        {
+          "title": "Puressentiel · Capsules d’origan compact BIO",
+          "route": "Voie orale",
+          "preparation": "Complément alimentaire prêt à avaler. Chaque capsule contient 33 mg d’huile de sommités fleuries d’Origanum compactum avec de l’huile de tournesol.",
+          "dose": "Étiquette adulte : au maximum 1 capsule par jour, au repas, pendant au plus deux semaines.",
+          "limit": "Vérifier la notice. Grossesse, allaitement, antécédent convulsif ou épileptique et allergie aux huiles essentielles exclus sur l’étiquette. Demander un avis en cas de traitement ou de trouble de la coagulation.",
+          "source": "puressentiel-origan-capsules"
+        }
+      ]
     },
     {
       "id": "origan-vrai",
@@ -9795,7 +10155,12 @@
         "text": "Une série de 14 adultes a utilisé 600 mg/j d’huile émulsionnée d’Origanum vulgare pendant six semaines dans un contexte de parasites intestinaux. L’étude n’avait pas de groupe témoin et ne précise pas, dans le résumé original, la sous-espèce ni la partie distillée. Ce chiffre n’est donc pas attribué à la plante fleurie O. vulgare subsp. vulgare de CAPA. Le total indiqué dans le résumé original est bien 600 mg/j.",
         "source": "trial-oregano-parasites-2000",
         "reviewedAt": "2026-10-09",
-        "summary": "La composition mesurée chez Origanum vulgare subsp. vulgare varie selon la préparation. Les études sur des huiles d’origan insuffisamment identifiées laissent la quantité à établir."
+        "summary": "La composition mesurée chez Origanum vulgare subsp. vulgare varie selon la préparation. Les études sur des huiles d’origan insuffisamment identifiées laissent la quantité à établir.",
+        "followUp": {
+          "text": "Une étude caractérise la sous-espèce vulgare. Les données cliniques retrouvées ne permettent pas de relier clairement une dose et des interactions à cette sous-espèce.",
+          "source": "study-origan-vulgare-culture-2013",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -10139,6 +10504,11 @@
         {
           "text": "Santé Canada rappelle que l’huile de feuille de Citrus reticulata est limitée à 0,1 % dans le cadre cosmétique cité. Ce chiffre relève de la formulation cosmétique.",
           "source": "hc-mandarine-risque"
+        },
+        {
+          "text": "Quand le lot contient du méthyl-N-méthylanthranilate, ce composé phototoxique est soumis à des limites dans les cosmétiques européens. Il est exclu des produits solaires et des produits destinés à l’exposition aux UV dans les conditions du règlement. Vérifier l’analyse du lot.",
+          "source": "ue-mna-2022",
+          "page": 3
         }
       ],
       "adverseEffects": [],
@@ -10152,7 +10522,9 @@
       "sourceIds": [
         "hippocratus-cardio",
         "hippocratus-snc",
-        "hc-mandarine-risque"
+        "hc-mandarine-risque",
+        "study-mandarin-petitgrain-gc",
+        "ue-mna-2022"
       ],
       "status": "course",
       "publicationReady": false,
@@ -10173,7 +10545,12 @@
         "text": "Le cours mentionne les feuilles de mandarinier dans une formule pour le stress, sans isoler une quantité vérifiée de cette huile. Le petit grain ne se confond pas avec l’huile tirée du zeste du même fruit.",
         "source": "hippocratus-cardio",
         "reviewedAt": "2026-10-08",
-        "summary": "Cette huile vient des feuilles. Les limites canadiennes citées concernent la formulation cosmétique. Une quantité de traitement reste à établir."
+        "summary": "Cette huile vient des feuilles. Les limites canadiennes citées concernent la formulation cosmétique. Une quantité de traitement reste à établir.",
+        "followUp": {
+          "text": "Le cadre européen cible un constituant phototoxique qui peut être présent dans l’huile foliaire. Vérifier le lot. Les concentrations cosmétiques ne définissent pas de quantité thérapeutique.",
+          "source": "ue-mna-2022",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -10181,6 +10558,10 @@
         "text": "Les usages calmants ou cardiaques cités dans le cours ne sont pas confirmés par un essai humain portant spécifiquement sur l’huile de feuilles de mandarinier.",
         "source": "hippocratus-cardio",
         "reviewedAt": "2026-10-09"
+      },
+      "compositionNote": {
+        "text": "Les profils des feuilles varient selon le cultivar. Certains sont riches en méthyl-N-méthylanthranilate. Les profils de feuilles et de zestes sont distincts.",
+        "source": "study-mandarin-petitgrain-gc"
       }
     },
     {
@@ -10498,7 +10879,12 @@
       "courseSummary": "Le cours cite des usages ORL et broncho-pulmonaires, avec des propriétés antivirales et expectorantes rapportées. Leur portée clinique n’a pas été vérifiée dans ce lot.",
       "coursePage": 10,
       "contraindications": [],
-      "precautions": [],
+      "precautions": [
+        {
+          "text": "Pour l’usage topique dans le cadre canadien, l’huile de feuilles de Madagascar CT cinéole doit être accompagnée d’un certificat attestant l’absence de safrole et de méthyleugénol. Vérifier l’origine, le chémotype et le certificat du produit.",
+          "source": "hc-ravintsara-cineole"
+        }
+      ],
       "adverseEffects": [],
       "interactions": [],
       "evidence": [
@@ -10520,7 +10906,8 @@
         "anses-ravintsara-rapport",
         "hc-aromatherapie-2025",
         "tox-essential-oils-2021",
-        "pranarom-ravintsara-ca"
+        "pranarom-ravintsara-ca",
+        "hc-ravintsara-cineole"
       ],
       "status": "partial",
       "publicationReady": false,
@@ -10552,7 +10939,12 @@
         "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
         "source": "pranarom-ravintsara-ca",
         "reviewedAt": "2026-10-10",
-        "summary": "Les instructions retrouvées s’appliquent à un produit externe précis. Les données sur les bois ou écorces de camphrier concernent d’autres matières premières."
+        "summary": "Les instructions retrouvées s’appliquent à un produit externe précis. Les données sur les bois ou écorces de camphrier concernent d’autres matières premières.",
+        "followUp": {
+          "text": "Le dossier canadien identifie l’huile foliaire CT cinéole de Madagascar et ses exigences topiques. La notice du produit identifié reste la référence pour la quantité.",
+          "source": "hc-ravintsara-cineole",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -10883,6 +11275,10 @@
           "text": "Pour le seul cadre des compléments alimentaires oraux en capsules évalués par l’avis belge : déconseillé pendant la grossesse, l’allaitement et avant 18 ans, ainsi qu’en cas d’obstruction biliaire, de cholangite, de maladie hépatique ou de calculs biliaires ; durée au plus 21 jours. Cela ne constitue pas une posologie pour l’huile de cette fiche.",
           "source": "belgium-rosemary-2020",
           "page": 15
+        },
+        {
+          "text": "Pour les compléments oraux d’huile essentielle de romarin, l’Anses identifie notamment le camphre, le 1,8-cinéole, la pulégone et la verbénone comme constituants à surveiller. L’exposition dépend du chémotype et du lot.",
+          "source": "anses-ca-plantes-2019sa0155"
         }
       ],
       "adverseEffects": [],
@@ -10899,7 +11295,8 @@
         "hippocratus",
         "ema-romarin",
         "belgium-rosemary-2020",
-        "pranarom-romarin-camphre-ca"
+        "pranarom-romarin-camphre-ca",
+        "anses-ca-plantes-2019sa0155"
       ],
       "status": "course",
       "publicationReady": false,
@@ -10928,7 +11325,12 @@
         "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
         "source": "pranarom-romarin-camphre-ca",
         "reviewedAt": "2026-10-10",
-        "summary": "Une notice décrit un produit cutané précis. La monographie du romarin ne fournit pas de quantité distincte pour le chémotype camphre."
+        "summary": "Une notice décrit un produit cutané précis. La monographie du romarin ne fournit pas de quantité distincte pour le chémotype camphre.",
+        "followUp": {
+          "text": "L’Anses souligne l’importance de la teneur en camphre dans les compléments oraux. La quantité retrouvée dans la notice cutanée ne permet pas de fixer une prise orale.",
+          "source": "anses-ca-plantes-2019sa0155",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -10988,6 +11390,14 @@
           "text": "Pour le seul cadre des compléments alimentaires oraux en capsules évalués par l’avis belge : déconseillé pendant la grossesse, l’allaitement et avant 18 ans, ainsi qu’en cas d’obstruction biliaire, de cholangite, de maladie hépatique ou de calculs biliaires ; durée au plus 21 jours. Cela ne constitue pas une posologie pour l’huile de cette fiche.",
           "source": "belgium-rosemary-2020",
           "page": 15
+        },
+        {
+          "text": "Pour le produit cutané P-E53, l’étiquette demande un avis en cas d’asthme ou d’épilepsie. Elle exclut la grossesse et l’allaitement.",
+          "source": "pranarom-romarin-verbenone-ca"
+        },
+        {
+          "text": "Pour les compléments oraux d’huile essentielle de romarin, l’Anses identifie notamment le camphre, le 1,8-cinéole, la pulégone et la verbénone comme constituants à surveiller. L’exposition dépend du chémotype et du lot.",
+          "source": "anses-ca-plantes-2019sa0155"
         }
       ],
       "adverseEffects": [],
@@ -11006,7 +11416,9 @@
         "ema-romarin",
         "belgium-rosemary-2020",
         "study-rosemary-verbenone-2025",
-        "pranarom-romarin-verbenone-fr"
+        "pranarom-romarin-verbenone-fr",
+        "pranarom-romarin-verbenone-ca",
+        "anses-ca-plantes-2019sa0155"
       ],
       "status": "course",
       "publicationReady": false,
@@ -11022,7 +11434,12 @@
         "source": "belgium-rosemary-2020",
         "page": 15,
         "reviewedAt": "2026-10-09",
-        "summary": "Les indications et instructions d’étiquetage concernent un produit précis. La partie végétale de la fiche reste à confirmer."
+        "summary": "Deux produits identifiés ont des notices distinctes : application cutanée au Canada et complément oral en France. Les quantités sont propres à chaque produit.",
+        "followUp": {
+          "text": "Le produit canadien indique explicitement le chémotype et les sommités fleuries. Sa quantité cutanée est liée à cette notice et à sa population adulte.",
+          "source": "pranarom-romarin-verbenone-ca",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -11045,6 +11462,14 @@
           "dose": "1 goutte sur support neutre deux fois par jour (80 mg/j affichés par le fabricant).",
           "limit": "Complément alimentaire et non monographie clinique. Le fabricant demande un avis professionnel et déconseille grossesse, allaitement et enfant de moins de 6 ans. Ne pas transposer au produit CAPA sans identité du lot et notice correspondante.",
           "source": "pranarom-romarin-verbenone-fr"
+        },
+        {
+          "title": "Pranarôm Canada · Romarin à verbénone P-E53",
+          "route": "Application cutanée",
+          "preparation": "Huile de sommités fleuries de Rosmarinus officinalis CT verbénone du produit canadien, diluée dans un support huileux. Adultes de 18 ans et plus.",
+          "dose": "Notice : 1 à 5 gouttes dans 5 mL d’huile végétale, en application locale sur le thorax ou le plexus solaire jusqu’à trois fois par jour.",
+          "limit": "Usage occasionnel externe pour ce produit. Éviter en cas de grossesse ou d’allaitement et demander conseil en cas d’asthme ou d’épilepsie. Éviter l’exposition solaire des zones traitées. La notice française concerne un produit différent.",
+          "source": "pranarom-romarin-verbenone-ca"
         }
       ]
     },
@@ -11324,7 +11749,12 @@
         "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
         "source": "pranarom-sarriette-fr",
         "reviewedAt": "2026-10-10",
-        "summary": "Le carnet distingue les instructions d’un produit identifié et le résultat d’un essai. La monographie de la sarriette des jardins concerne une autre espèce."
+        "summary": "Le carnet distingue les instructions d’un produit identifié et le résultat d’un essai. La monographie de la sarriette des jardins concerne une autre espèce.",
+        "followUp": {
+          "text": "Le protocole d’essai ne suffit pas à définir un schéma d’usage thérapeutique. La notice orale identifiée reste liée à son propre produit.",
+          "source": "trial-savory-temperature-2016",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -11733,6 +12163,10 @@
         {
           "text": "La base canadienne d’ingrédients limite le thymol et le carvacrol dans les applications topiques non médicinales visées. L’emploi comme parfum dans ce cadre ne donne pas de dose de traitement.",
           "source": "hc-serpolet-ingredient"
+        },
+        {
+          "text": "En Australie, les produits listés à forte concentration d’huile de serpolet relèvent d’exigences de conditionnement visant notamment l’accès des enfants. Il s’agit de règles de sécurité du produit.",
+          "source": "tga-ingredients-2026"
         }
       ],
       "adverseEffects": [],
@@ -11751,7 +12185,8 @@
         "hippocratus",
         "ema-thyme",
         "florilab-serpolet",
-        "hc-serpolet-ingredient"
+        "hc-serpolet-ingredient",
+        "tga-ingredients-2026"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -11777,7 +12212,12 @@
         "text": "Le cours évoque la toux pour l’huile de Thymus serpyllum, sans définir une préparation, une voie et une quantité vérifiables. La monographie EMA du thym concerne Thymus vulgaris ou Thymus zygis : elle ne fixe pas une dose pour le serpolet.",
         "source": "ema-thyme",
         "reviewedAt": "2026-10-08",
-        "summary": "Une fiche technique identifie l’huile de sommités fleuries comme arôme alimentaire. La monographie du thym commun et du thym d’Espagne décrit d’autres espèces."
+        "summary": "Une fiche technique identifie l’huile de sommités fleuries comme arôme alimentaire. La monographie du thym commun et du thym d’Espagne décrit d’autres espèces.",
+        "followUp": {
+          "text": "Le règlement australien encadre le conditionnement de certaines huiles concentrées. Le registre canadien décrit un usage comme ingrédient de parfum. Aucun de ces textes ne fixe de dose de traitement.",
+          "source": "tga-ingredients-2026",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -11871,7 +12311,12 @@
         "source": "belgium-thyme-2023",
         "page": 20,
         "reviewedAt": "2026-10-09",
-        "summary": "Les limites d’exposition et la déclaration du carvacrol relèvent de la sécurité réglementaire. Une quantité thérapeutique propre à ce chémotype reste à établir."
+        "summary": "Les limites d’exposition et la déclaration du carvacrol relèvent de la sécurité réglementaire. Une quantité thérapeutique propre à ce chémotype reste à établir.",
+        "followUp": {
+          "text": "Le cadre canadien de l’ingrédient et l’avis belge concernent l’exposition et les conditions réglementaires. La précaution avec les anticoagulants citée dans la fiche vise les compléments oraux.",
+          "source": "hc-huile-thym-ingredient",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "regulatoryLimits": [
@@ -11973,7 +12418,12 @@
         "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
         "source": "pranarom-thym-linalol-ca",
         "reviewedAt": "2026-10-10",
-        "summary": "Les instructions d’un produit à linalol restent liées à sa notice. La monographie EMA couvre une huile de thym avec une composition différente."
+        "summary": "Les instructions d’un produit à linalol restent liées à sa notice. La monographie EMA couvre une huile de thym avec une composition différente.",
+        "followUp": {
+          "text": "La notice canadienne précise deux voies pour le produit à linalol : application locale et inhalation directe. Les interactions propres au chémotype restent à documenter.",
+          "source": "pranarom-thym-linalol-ca",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "indicationReview": {
@@ -12013,7 +12463,13 @@
       "coursePage": 5,
       "contraindications": [],
       "precautions": [],
-      "adverseEffects": [],
+      "adverseEffects": [
+        {
+          "text": "La fiche de sécurité du concentré de thym à thuyanol signale irritation et sensibilisation cutanées. Elle porte sur la matière concentrée du fournisseur.",
+          "source": "normandie-thuyanol-sds",
+          "page": 1
+        }
+      ],
       "interactions": [],
       "evidence": [],
       "reviewNotes": [
@@ -12026,7 +12482,8 @@
         "hippocratus-gastro",
         "ema-thyme",
         "belgium-thyme-2023",
-        "pranarom-thym-thuyanol-ca"
+        "pranarom-thym-thuyanol-ca",
+        "normandie-thuyanol-sds"
       ],
       "status": "draft",
       "publicationReady": false,
@@ -12049,7 +12506,12 @@
         "text": "Une étiquette de fabricant fournit un schéma chiffré pour le produit nommé ci-dessus. Ce schéma reste attaché à sa composition, sa voie, son âge d’emploi et ses précautions ; il ne constitue pas une posologie de monographie pour toute huile portant ce nom.",
         "source": "pranarom-thym-thuyanol-ca",
         "reviewedAt": "2026-10-10",
-        "summary": "Le dossier contient les instructions d’un produit précis. Une quantité thérapeutique par voie orale reste à établir pour ce chémotype."
+        "summary": "Le dossier contient les instructions d’un produit précis. Une quantité thérapeutique par voie orale reste à établir pour ce chémotype.",
+        "followUp": {
+          "text": "La fiche de sécurité confirme le risque cutané du produit concentré. Pour les quantités de produit fini, la fiche cite une notice canadienne distincte pour la peau et l’inhalation.",
+          "source": "normandie-thuyanol-sds",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [],
       "safetyNotice": {
@@ -12524,7 +12986,12 @@
         "source": "trial-verveine-anxiety-2021",
         "page": 2,
         "reviewedAt": "2026-10-09",
-        "summary": "Des essais explorent l’inhalation. L’EMA documente la feuille en tisane. L’usage cosmétique comme parfum fait l’objet d’une restriction européenne."
+        "summary": "Des essais explorent l’inhalation. L’EMA documente la feuille en tisane. L’usage cosmétique comme parfum fait l’objet d’une restriction européenne.",
+        "followUp": {
+          "text": "L’inhalation a été étudiée en contexte préopératoire. Sa quantité expérimentale ne constitue pas de repère de diffusion domestique ni de donnée d’interaction.",
+          "source": "trial-verveine-preop-2023",
+          "reviewedAt": "2026-11-18"
+        }
       },
       "evidenceDomains": [
         "Stress"
