@@ -8,9 +8,9 @@
 <meta name="theme-color" content="#4a2b68">
 <title>CAPA · Le Carnet de Coco · La Nature, l’Essentiel en toute connaissance</title>
 <link rel="icon" type="image/png" href="assets/logo-capa-transparent.png">
-<link rel="stylesheet" href="styles.css?v=voies-20261118">
-<script src="data.js?v=voies-20261118" defer></script>
-<script src="app.js?v=voies-20261118" defer></script>
+<link rel="stylesheet" href="styles.css?v=voies-20261118b">
+<script src="data.js?v=voies-20261118b" defer></script>
+<script src="app.js?v=voies-20261118b" defer></script>
 </head>
 <body>
 <a class="skip" href="#search">Aller à la recherche</a>
@@ -20,7 +20,7 @@
     <div><h1>Le Carnet de Coco</h1><p>La Nature, <em>l’Essentiel en toute connaissance.</em></p></div>
   </a>
   <nav class="main-nav" aria-label="Navigation principale">
-    <a href="#catalog">Herbier</a><a href="#quiz">Quiz</a><a href="#flyer">Flyer d’Égypte</a>
+    <a href="#catalog">Herbier</a><a href="#quiz">Quiz</a>
     <button type="button" id="my-oils" aria-pressed="false">♡ Mes huiles <span id="favorite-count">0</span></button>
   </nav>
 </header>
@@ -65,17 +65,10 @@
     </aside>
     <article id="detail" class="detail" aria-label="Fiche de l’huile essentielle"></article>
   </div>
-  <div class="learning">
-    <section id="quiz" class="learning-card" aria-labelledby="quiz-heading">
-      <h2 id="quiz-heading">Quiz des bons réflexes</h2>
-      <div id="quiz-body"></div>
-    </section>
-    <section id="flyer" class="learning-card" aria-labelledby="flyer-heading">
-      <h2 id="flyer-heading">Le flyer d’Égypte, vérifié</h2>
-      <p>Les correspondances établies et les pistes écartées, entrée par entrée.</p>
-      <div id="flyer-body"></div>
-    </section>
-  </div>
+  <section id="quiz" class="learning-card" aria-labelledby="quiz-heading">
+    <h2 id="quiz-heading">Quiz des bons réflexes</h2>
+    <div id="quiz-body"></div>
+  </section>
   <section id="about" class="about"><details>
     <summary>Comment lire le carnet</summary>
     <div><p>Chaque quantité correspond à la préparation, à la voie et à la population de sa source. Les études, les produits identifiés et les usages traditionnels sont signalés. Pour utiliser un produit, vérifier sa notice et demander conseil à un professionnel de santé.</p>

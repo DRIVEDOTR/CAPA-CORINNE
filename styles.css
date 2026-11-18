@@ -119,25 +119,17 @@ body {background:radial-gradient(ellipse at 88% 0,#efe5f8 0,transparent 47rem),v
 .route-observation>div {padding:0 14px 14px;font-size:.86rem}
 .route-observation p {margin:7px 0}
 .route-observation a {display:inline-block;margin:3px 10px 0 0}
-.learning {display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:17px;align-items:start;margin:28px 0 20px}
-.learning-card {padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.learning-card {max-width:640px;margin:28px 0 20px;padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}
 .learning-card h2 {font-size:clamp(1.43rem,2.3vw,1.95rem);margin:0 0 12px}
 .learning-card h3 {font:650 .96rem/1.5 system-ui,sans-serif;margin:0 0 10px}
-.learning-card>p {font-size:.88rem;color:var(--muted)}
 .quiz-progress {color:var(--muted);margin-bottom:5px;font-size:.77rem;font-weight:650}
 .quiz-options {display:grid;gap:7px}
-.quiz-options button,.flyer-oil {min-height:44px;text-align:left;border:1px solid var(--line);border-radius:9px;padding:8px 11px;background:#fcf9ff;font-size:.84rem}
+.quiz-options button {min-height:44px;text-align:left;border:1px solid var(--line);border-radius:9px;padding:8px 11px;background:#fcf9ff;font-size:.84rem}
 .quiz-options button:not([aria-disabled=true]):hover {border-color:#9366ba}
 .quiz-options button[aria-pressed=true] {background:#eee3f9;border-color:var(--purple)}
 .quiz-options button[aria-disabled=true] {cursor:default}
 .quiz-feedback {font-size:.87rem;line-height:1.5;padding:10px 12px;background:var(--teal-light);color:#275a4b;border-radius:8px;margin:10px 0}
-.quiz-next,.flyer-oil {min-height:44px;border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:#f2e9fa;color:var(--purple-dark);font-weight:650;font-size:.84rem}
-.flyer-row {border-top:1px solid var(--line)}
-.flyer-row summary {padding:10px 2px;min-height:45px;cursor:pointer;font-size:.88rem}
-.flyer-row summary>span {margin-left:8px;color:var(--muted);font-size:.75rem}
-.flyer-row>div {padding:0 4px 12px;font-size:.85rem}
-.flyer-row p {margin:6px 0 9px}
-.flyer-row .route-references {margin-top:7px}
+.quiz-next {min-height:44px;border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:#f2e9fa;color:var(--purple-dark);font-weight:650;font-size:.84rem}
 footer {align-items:center}
 @media(max-width:900px) {
  .explorer-intro {padding:24px}
@@ -159,7 +151,6 @@ footer {align-items:center}
  .explorer-intro p {max-width:32ch;font-size:.85rem;margin-bottom:0}
  .explorer-intro img {height:140%;width:170px;right:-20px;bottom:-52px;opacity:.42}
  .explorer-tools {padding:15px}
- .learning {grid-template-columns:1fr}
 }
 @media(max-width:420px) {
  .wrap {padding-inline:12px}
@@ -174,6 +165,6 @@ footer {align-items:center}
  .learning-card {padding:16px}
 }
 @media(prefers-reduced-motion:reduce) {.explore-route {transition:none}}
-@media print {.route-guide,.learning {display:none!important}.oil-header-top {display:none}}
+@media print {.route-guide,.learning-card {display:none!important}.oil-header-top {display:none}}
 .product-amount {padding:9px 11px;border-radius:8px;background:var(--teal-light);color:var(--teal)}
 .library-views button span.view-label {padding:0;margin:0;border-radius:0;background:none;color:inherit;font-size:inherit}

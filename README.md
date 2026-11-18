@@ -4,7 +4,7 @@
 
 Le carnet est consultable sur [GitHub Pages](https://drivedotr.github.io/CAPA-CORINNE/). Ouvrir `index.html` pour une consultation locale. Quatre entrées filtrent les fiches et leurs repères : diffusion ou brumisation d’ambiance, inhalation directe, application cutanée et voie orale. Sélectionner ensuite une huile et, si plusieurs usages sont présents, une carte d’objectif. Les quantités de monographies sont liées à une préparation, à une population et à une voie. Les notices de produits et les études exploratoires sont signalées séparément. Le bain et les usages buccaux ou dentaires sont accessibles dans les fiches.
 
-Cette édition réunit 80 fiches, dont 47 avec au moins un repère chiffré issu d’une monographie. La rubrique « Le flyer d’Égypte, vérifié » couvre les 16 entrées visibles et ouvre les fiches concernées. L’encens `Boswellia sacra` est une nouvelle fiche sourcée. La diffusion comporte des exemples de notices précises et d’études, ainsi qu’un guide de toxicovigilance. Le quiz porte sur la lecture des sources et les voies d’utilisation.
+Cette édition réunit 80 fiches, dont 47 avec au moins un repère chiffré issu d’une monographie. L’encens `Boswellia sacra` est une nouvelle fiche sourcée. La diffusion comporte des exemples de notices précises et d’études, ainsi qu’un guide de toxicovigilance. Le quiz porte sur la lecture des sources et les voies d’utilisation.
 
 Pour mettre à jour GitHub Pages depuis le dépôt utilisé pour CAPA, copier `index.html`, `styles.css`, `app.js`, `data.js`, `fiches.json` et ce `README.md` à la racine. Conserver le dossier `assets` existant. Les favoris et mémos sont conservés dans le navigateur qui les a enregistrés.
 

@@ -328,17 +328,6 @@ $('route-choices').innerHTML=Object.entries(mainRoutes).map(([id,route]) => `
   <span><strong>${route.label}</strong><small>${route.description}</small></span>
   </button>`).join('');
 
-function renderFlyer() {
- const rows = data.flyerReview || [];
- $('flyer-body').innerHTML = rows.map(row => `
-  <details class="flyer-row">
-   <summary><strong>${esc(row.label)}</strong><span>${esc(row.status)}</span></summary>
-   <div><p><strong>Le flyer évoque</strong> ${esc(row.claim)}</p><p>${esc(row.finding)}</p>
-   ${row.oils.map(id=>`<button class="flyer-oil" type="button" data-open-oil="${esc(id)}">${esc(oils.get(id).name)} →</button>`).join('')}
-   <div class="route-references">${row.sources.map(reference).join('')}</div></div>
-  </details>`).join('');
-}
-
 const quiz = [
  {question:'Une source décrit une inhalation sur mouchoir. Quel repère consulter pour un appareil qui brumise ?',
   options:['La même quantité que sur le mouchoir','La notice du produit et du diffuseur','Une quantité liée à la taille du flacon'],
@@ -369,7 +358,6 @@ function renderQuiz() {
   ${quizChoice!==null?`<p class="quiz-feedback" role="status"><strong>${quizChoice===q.answer?'Bien vu.':'Bonne réponse : '+esc(q.options[q.answer])+'.'}</strong> ${q.explanation}</p>
   <button type="button" class="quiz-next" data-quiz-next>${quizIndex+1===quiz.length?'Voir le résultat':'Question suivante'}</button>`:''}`;
 }
-renderFlyer();
 renderQuiz();
 [...new Set(data.oils.flatMap(o=>o.domains))].sort((a,b)=>a.localeCompare(b,'fr')).forEach(d=>{const option=document.createElement('option');option.value=d;option.textContent=needLabel(d);domain.append(option);});
 $('coverage').innerHTML=`<p>${esc(data.coverage?.note||'Inventaire en cours.')}</p><ul>${(data.coverage?.courses||[]).map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title)}</a> · ${esc(c.pagesRead)} · ${esc(c.status)}</li>`).join('')}</ul>`;

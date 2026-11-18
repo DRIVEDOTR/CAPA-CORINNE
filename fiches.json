@@ -1,6 +1,6 @@
 {
   "title": "CAPA — carnet d’aromathérapie",
-  "version": "voies-20261118",
+  "version": "voies-20261118b",
   "date": "2026-11-18",
   "status": "Base de travail — relecture nécessaire",
   "scope": "79 fiches ; 46 avec dose ou concentration de monographie pour une préparation définie ; exemples de produits, essais et calculs toxicologiques séparés des posologies générales.",
@@ -992,41 +992,6 @@
       "date": null,
       "consulted": "2026-11-18"
     },
-    "anses-he-rapport": {
-      "title": "Anses — Rapport de toxicovigilance sur les huiles essentielles",
-      "url": "https://www.anses.fr/sites/default/files/VPC2022SA0190RA.pdf",
-      "type": "Rapport d’expertise · voir la définition des huiles végétales",
-      "date": null,
-      "consulted": "2026-11-18"
-    },
-    "essai-nigelle-dyspepsie": {
-      "title": "Mohtashami et al. — Huile de graines de nigelle et miel, essai de 2015",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/26386381/",
-      "type": "Essai randomisé chez 70 patients · résumé de la publication originale",
-      "date": null,
-      "consulted": "2026-11-18"
-    },
-    "nccih-aloe": {
-      "title": "NIH/NCCIH — Formes et sécurité de l’aloe vera",
-      "url": "https://www.nccih.nih.gov/health/aloe-vera",
-      "type": "Information institutionnelle",
-      "date": null,
-      "consulted": "2026-11-18"
-    },
-    "ec-amande-douce": {
-      "title": "Commission européenne — Inventaire des ingrédients cosmétiques",
-      "url": "https://ec.europa.eu/health/archive/ph_risk/committees/sccp/documents/out123cm_en.pdf",
-      "type": "Entrée Prunus amygdalus dulcis oil · huile fixe, émollient",
-      "date": null,
-      "consulted": "2026-11-18"
-    },
-    "essai-laitue-sommeil": {
-      "title": "Yakoot et al. — Huile de graines de laitue et sommeil, essai pilote",
-      "url": "https://www.dovepress.com/article/download/7636",
-      "type": "Étude originale sur une préparation définie",
-      "date": null,
-      "consulted": "2026-11-18"
-    },
     "pranarom-diffusion-eucalyptus-globuleux": {
       "title": "Pranarôm Canada — Eucalyptus globuleux",
       "url": "https://pranarom.ca/fr/produit/eucalyptus-globuleux-p-e25/",
@@ -1284,7 +1249,7 @@
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
         "La dose orale canadienne vise l’huile du bulbe dans un produit conforme ; elle n’autorise pas la conversion en gouttes ni l’usage oral d’un flacon ordinaire.",
-        "Flyer Philae : aucune validation du traitement des caillots ni de la quantité en cuillerée. Le repère de Santé Canada concerne un produit oral défini, exprimé en milligrammes."
+        "Le repère canadien porte sur l’huile distillée du bulbe dans un produit oral défini. La monographie ne décrit aucun usage pour dissoudre des caillots."
       ],
       "sourceIds": [
         "hippocratus-gastro",
@@ -4252,7 +4217,7 @@
       "reviewNotes": [
         "Synthèse d’un cours : usages à recouper indépendamment et évaluation de sécurité incomplète.",
         "La TGA australienne précise que, pour les fruits secs des Apiacées comme le cumin et le fenouil, « fruit » et « graine » sont deux noms admis pour la même partie végétale. Cette équivalence ne dispense pas de vérifier la composition et la préparation du produit.",
-        "Flyer Philae : le « cumin noir » peut renvoyer à Nigella sativa. Aucune donnée sur cette plante ne doit être reportée sur le cumin vrai Cuminum cyminum."
+        "Le cumin vrai (Cuminum cyminum) et la nigelle (Nigella sativa), parfois appelée « cumin noir », sont deux plantes distinctes. Leurs préparations ont des usages différents."
       ],
       "sourceIds": [
         "hippocratus-gastro",
@@ -4502,7 +4467,7 @@
       "components": [],
       "interactions": [],
       "reviewNotes": [
-        "L’espèce du flacon Philae reste inconnue. Vérifier Boswellia sacra, résine, distillation et destination du produit sur l’étiquette.",
+        "Vérifier sur l’étiquette l’espèce Boswellia sacra, la résine, le procédé de distillation et la destination du produit.",
         "La monographie orale du Boswellia concerne d’autres préparations de résine. Les repères ici sont externes."
       ],
       "contraindications": [
@@ -4924,7 +4889,7 @@
         "La révision finale 2025 prime sur l’ancienne synthèse publique pour la sécurité. Les autres limites d’âge et conditions d’emploi dépendent de la voie et du médicament : consulter sa notice.",
         "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
         "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche.",
-        "Flyer Philae : l’usage traditionnel évalué cible la toux liée au rhume. Le flacon et le schéma du flyer demeurent non vérifiés. L’asthme ou l’allergie nasale demandent une évaluation distincte."
+        "L’usage traditionnel évalué par l’EMA cible la toux liée au rhume. La prise en charge de l’asthme ou d’une allergie nasale relève d’une autre évaluation."
       ],
       "sourceIds": [
         "ema-eucalyptus",
@@ -6635,8 +6600,7 @@
         "Conserver côte à côte les deux informations sur les interactions : les contextes et niveaux de preuve diffèrent.",
         "Ne pas déduire une administration dans l’oreille de la mention d’otite.",
         "Les mentions de formules cardiovasculaires dans le cours ne sont pas reprises comme prescriptions ni comme preuves d’efficacité.",
-        "La modalité dentaire EMA décrit une préparation et une application très ciblées ; irritation muqueuse et toxicité en cas d’ingestion, surtout chez l’enfant, imposent de conserver ce contexte.",
-        "Flyer Philae : la monographie distingue l’application ciblée à la carie de l’usage buccal. Elle demande d’éviter les gencives lors de l’application dentaire."
+        "La modalité dentaire EMA décrit une préparation et une application très ciblées ; irritation muqueuse et toxicité en cas d’ingestion, surtout chez l’enfant, imposent de conserver ce contexte."
       ],
       "sourceIds": [
         "hippocratus",
@@ -8266,7 +8230,7 @@
         "Cette huile est citée dans le cours de gynécologie. Les références ci-dessous documentent cette mention ; elles ne valident pas une indication clinique ni l’emploi d’une recette. Les formulations ne sont pas reproduites.",
         "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
         "La monographie EMA décrit une inhalation dans un médicament défini pour les symptômes du rhume, alors que la DGCCRF déconseille la diffusion ou l’inhalation libre de cette huile ; ne pas assimiler ces contextes.",
-        "Flyer Philae : correspondance limitée aux symptômes du rhume pour la menthe poivrée identifiée. Le gargarisme proposé ne traite pas une infection dentaire."
+        "La monographie EMA mentionne certains symptômes du rhume pour des préparations définies de menthe poivrée. Elle ne décrit pas de gargarisme pour traiter une infection dentaire."
       ],
       "sourceIds": [
         "ema-menthe",
@@ -8526,7 +8490,7 @@
         "Cette fiche concerne l’huile essentielle issue de la gomme-résine, et non une teinture, un extrait ou la résine entière. Leurs propriétés et précautions ne sont pas interchangeables.",
         "Commiphora abyssinica, aussi citée dans le cours de gynécologie, n’est pas fusionnée avec Commiphora myrrha.",
         "Le cours d’endocrinologie est cité comme référence de lecture. Ses affirmations hormonales ou métaboliques restent à recouper : aucune nouvelle efficacité clinique, garantie de sécurité ou posologie n’en est déduite dans cette fiche.",
-        "Flyer Philae : la détente nerveuse ne figure pas parmi les usages d’aromathérapie de l’huile de myrrhe répertoriés par Santé Canada."
+        "La détente nerveuse ne figure pas parmi les usages d’aromathérapie répertoriés par Santé Canada pour l’huile essentielle de myrrhe."
       ],
       "sourceIds": [
         "hippocratus",
@@ -10697,7 +10661,7 @@
       "reviewNotes": [
         "Usages issus du cours, non validés indépendamment ; bilan de sécurité incomplet.",
         "Référence complémentaire au cours d’infectiologie ; ses affirmations générales de bonne tolérance ne constituent pas une garantie de sécurité.",
-        "Flyer Philae : aucun repère retenu pour le masque antirides ni pour le mélange santal–eucalyptus présenté contre la douleur."
+        "Les sources retenues ne documentent pas d’usage antirides ni d’association du santal avec l’eucalyptus contre la douleur."
       ],
       "sourceIds": [
         "hippocratus-derm",
@@ -12375,179 +12339,5 @@
         "cap-premiers-secours"
       ]
     }
-  },
-  "flyerReview": [
-    {
-      "label": "41 · Menthe",
-      "status": "Correspondance partielle",
-      "claim": "Rhume, grippe, nez bouché et infection dentaire.",
-      "finding": "L’EMA documente certains symptômes du rhume pour des préparations définies de menthe poivrée (Mentha × piperita). Le nom « menthe » du flyer ne précise pas l’espèce. La recette, le traitement de la grippe et celui des infections dentaires restent sans validation pour le produit montré.",
-      "sources": [
-        "ema-menthe-mo"
-      ],
-      "oils": [
-        "menthe-poivree"
-      ]
-    },
-    {
-      "label": "42 · Eucalyptus",
-      "status": "Vigilance respiratoire",
-      "claim": "Toux, allergies et asthme.",
-      "finding": "L’EMA retient l’usage traditionnel de préparations d’huiles d’eucalyptus riches en cinéole pour la toux associée au rhume. Elle distingue les études menées avec le cinéole isolé. L’asthme demande un avis professionnel, et l’Anses relève des irritations respiratoires avec les sprays et diffuseurs. L’espèce et la concentration du flyer sont inconnues.",
-      "sources": [
-        "ema-eucalyptus",
-        "anses-air-2020",
-        "ansm-vaporub"
-      ],
-      "oils": [
-        "eucalyptus-globuleux"
-      ]
-    },
-    {
-      "label": "43 · Bois de santal",
-      "status": "Mélanges écartés",
-      "claim": "Massage avec de l’eucalyptus pour les douleurs et masque antirides.",
-      "finding": "La monographie canadienne décrit quatre autres allégations d’aromathérapie pour le santal blanc identifié, dont la détente nerveuse. Elle ne valide ni le mélange pour douleurs et sciatique ni le masque du flyer. Les concentrations du santal blanc concernent des produits finis conformes.",
-      "sources": [
-        "hc-aromatherapie-2025"
-      ],
-      "oils": [
-        "santal-blanc"
-      ]
-    },
-    {
-      "label": "44 · Ambre royal",
-      "status": "Composition inconnue",
-      "claim": "Détente, insomnie et ronflement.",
-      "finding": "Le nom commercial ne permet pas d’identifier une espèce, un extrait ni un mélange. Une étiquette complète et une source portant sur cette formulation seraient nécessaires.",
-      "sources": [],
-      "oils": []
-    },
-    {
-      "label": "45 · Musc",
-      "status": "Composition inconnue",
-      "claim": "Migraine et maux de tête par application locale.",
-      "finding": "Le nom « musc » ne précise ni la composition ni la nature du produit. Le flyer n’apporte pas de preuve de l’indication ou d’une concentration adaptée au contact du visage.",
-      "sources": [],
-      "oils": []
-    },
-    {
-      "label": "47 · Amande",
-      "status": "Huile végétale possible",
-      "claim": "Peau sèche et plusieurs affections, dont brûlures, herpès et eczéma.",
-      "finding": "Si l’étiquette confirme une huile d’amande douce, il s’agit d’une huile fixe utilisée comme émollient. Ce rôle cosmétique ne valide pas la liste d’affections du flyer, et le produit exact reste à identifier.",
-      "sources": [
-        "ec-amande-douce"
-      ],
-      "oils": []
-    },
-    {
-      "label": "48 · Aloe vera",
-      "status": "Forme à identifier",
-      "claim": "Brûlures, perte de cheveux et application sur le cuir chevelu.",
-      "finding": "Le gel de feuille, le latex et les extraits de feuille sont des formes distinctes. Le flyer ne précise pas la forme. Les travaux sur le gel ne permettent pas de valider les consignes capillaires ou le produit présenté.",
-      "sources": [
-        "nccih-aloe"
-      ],
-      "oils": []
-    },
-    {
-      "label": "49 · Girofle",
-      "status": "Indication dentaire précisée",
-      "claim": "Douleur dentaire, massage des gencives et cellulite.",
-      "finding": "L’EMA décrit un soulagement temporaire de la douleur de carie avec un médicament dentaire appliqué à la carie en évitant la gencive, dans l’attente des soins dentaires. L’usage buccal pour de petites inflammations correspond à une préparation différente. Le massage des gencives et l’usage anticellulite du flyer sont écartés.",
-      "sources": [
-        "ema-clove"
-      ],
-      "oils": [
-        "giroflier-clou"
-      ]
-    },
-    {
-      "label": "50 · Encens (frankincense)",
-      "status": "Nouvelle fiche sourcée",
-      "claim": "Parfum et expérience de détente ou de méditation.",
-      "finding": "Plusieurs espèces sont vendues sous ce nom. Une fiche distincte présente l’huile distillée de résine de Boswellia sacra et les usages décrits par Santé Canada, dont la détente nerveuse. Le rapprochement ne permet pas d’identifier le flacon du flyer. Son usage autour de la méditation reste une description du vendeur.",
-      "sources": [
-        "hc-aromatherapie-2025"
-      ],
-      "oils": [
-        "encens-boswellia-sacra"
-      ]
-    },
-    {
-      "label": "51 · Myrrhe",
-      "status": "Préparations distinctes",
-      "claim": "Parfum et expérience de détente ou de méditation.",
-      "finding": "Les usages d’aromathérapie répertoriés pour l’huile de Commiphora myrrha au Canada ne comprennent pas l’allégation de détente nerveuse. La teinture de résine évaluée par l’EMA relève d’autres usages et d’une autre préparation.",
-      "sources": [
-        "hc-aromatherapie-2025",
-        "ema-myrrha"
-      ],
-      "oils": [
-        "myrrhe"
-      ]
-    },
-    {
-      "label": "IV · Lait de la reine Cléopâtre",
-      "status": "Composition inconnue",
-      "claim": "Peau sèche, cernes, taches et coups de soleil.",
-      "finding": "Ce nom seul n’identifie ni les ingrédients ni leur concentration. Évaluation à reprendre à partir de la liste de composition du produit.",
-      "sources": [],
-      "oils": []
-    },
-    {
-      "label": "52 · Cumin noir",
-      "status": "Essai sur une huile de graines",
-      "claim": "Troubles digestifs, troubles urinaires et immunité.",
-      "finding": "Le cumin noir peut désigner la nigelle (Nigella sativa). Un essai randomisé a étudié une préparation à base d’huile fixe de graines et de miel en complément du traitement de la dyspepsie fonctionnelle. Le résultat ne valide ni une huile essentielle ni la recette du flyer. Le cumin vrai du carnet est une autre plante, Cuminum cyminum.",
-      "sources": [
-        "essai-nigelle-dyspepsie",
-        "anses-he-rapport"
-      ],
-      "oils": [
-        "cumin"
-      ]
-    },
-    {
-      "label": "53 · Huile de cresson",
-      "status": "Usage non validé",
-      "claim": "Fertilité, sexualité, nicotine et diabète.",
-      "finding": "L’espèce et le procédé sont absents. La recherche ciblée n’a pas identifié de preuve clinique applicable à ce produit pour les usages annoncés.",
-      "sources": [],
-      "oils": []
-    },
-    {
-      "label": "54 · Laitue",
-      "status": "Usage non validé",
-      "claim": "Perte de poids.",
-      "finding": "Un essai pilote a examiné une huile de graines de laitue particulière pour le sommeil. Il ne soutient pas l’allégation de perte de poids du flyer.",
-      "sources": [
-        "essai-laitue-sommeil"
-      ],
-      "oils": []
-    },
-    {
-      "label": "55 · Huile d’ail",
-      "status": "Vigilance sur la préparation",
-      "claim": "Cholestérol, caillots, infections et autres usages.",
-      "finding": "Santé Canada distingue le bulbe sec de l’huile essentielle distillée. Sa monographie traite notamment des lipides élevés et fixe pour l’huile une quantité en milligrammes dans une préparation orale précise. Cela ne valide pas la cuillerée du flyer, ni l’allégation de dissolution des caillots. La monographie demande un avis en cas de traitement anticoagulant.",
-      "sources": [
-        "hc-garlic-2026"
-      ],
-      "oils": [
-        "ail"
-      ]
-    },
-    {
-      "label": "56 · Sésame",
-      "status": "Nature du produit à confirmer",
-      "claim": "Prise de poids.",
-      "finding": "Si le produit est de l’huile pressée de graines de sésame, il relève des huiles végétales. La recherche n’a pas permis de vérifier l’allégation de prise de poids pour la préparation du flyer.",
-      "sources": [
-        "anses-he-rapport"
-      ],
-      "oils": []
-    }
-  ]
+  }
 }
